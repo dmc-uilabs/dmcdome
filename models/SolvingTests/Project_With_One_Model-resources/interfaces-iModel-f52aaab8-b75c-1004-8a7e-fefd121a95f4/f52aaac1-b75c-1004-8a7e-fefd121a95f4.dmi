@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="f52aaac1-b75c-1004-8a7e-fefd121a95f4" name="Default Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <parameters>
+        <parameter id="f55a2cd6-b75c-1004-8a7e-fefd121a95f4" name="C">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <relations>
+        <relation type="Procedural" id="f5355d04-b75c-1004-8a7e-fefd121a95f4" name="C_equals_A_plus_B">
+            <parameters>
+                <parameter id="f556d431-b75c-1004-8a7e-fefd121a95f4" name="A">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="f5580d15-b75c-1004-8a7e-fefd121a95f4" name="B">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="f55a2cd5-b75c-1004-8a7e-fefd121a95f4" name="C">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <body><![CDATA[C = A + B]]></body>
+            <dependencies>
+                <dependency idRef="f55a2cd5-b75c-1004-8a7e-fefd121a95f4">
+                    <parameter name="A" idRef="f556d431-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f5355d04-b75c-1004-8a7e-fefd121a95f4"/>
+                    <parameter name="B" idRef="f5580d15-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f5355d04-b75c-1004-8a7e-fefd121a95f4"/>
+                </dependency>
+            </dependencies>
+        </relation>
+    </relations>
+    <contexts>
+        <context id="IFACE_MODEL_CXT" name="Model View">
+            <modelobjects>
+                <relation name="C_equals_A_plus_B" idRef="f5355d04-b75c-1004-8a7e-fefd121a95f4"/>
+            </modelobjects>
+        </context>
+    </contexts>
+    <views>
+        <view name="Build View">
+            <context id="IFACE_BUILD_CXT" name="Build View">
+                <modelobjects>
+                    <parameter name="C" idRef="f55a2cd6-b75c-1004-8a7e-fefd121a95f4"/>
+                </modelobjects>
+            </context>
+        </view>
+        <view name="Interface Causality View">
+            <filter id="INPUTS_FILTER" name="Inputs"/>
+            <filter id="OUTPUTS_FILTER" name="Outputs">
+                <parameters>
+                    <parameter name="C" idRef="f55a2cd6-b75c-1004-8a7e-fefd121a95f4" causality="Result"/>
+                </parameters>
+            </filter>
+            <filter id="INDETERMINATES_FILTER" name="Indeterminates"/>
+        </view>
+        <view name="System Causality View">
+            <filter id="f52aaac2-b75c-1004-8a7e-fefd121a95f4" name="Independent"/>
+            <filter id="f52aaac3-b75c-1004-8a7e-fefd121a95f4" name="Intermediate"/>
+            <filter id="f52aaac4-b75c-1004-8a7e-fefd121a95f4" name="Result">
+                <parameters>
+                    <parameter name="C" idRef="f55a2cd6-b75c-1004-8a7e-fefd121a95f4"/>
+                </parameters>
+            </filter>
+        </view>
+    </views>
+    <directedGraph id="f52aaac1-b75c-1004-8a7e-fefd121a95f4">
+        <nodes>
+            <node idRef="f55a2cd6-b75c-1004-8a7e-fefd121a95f4"/>
+            <node idRef="f5355d00-b75c-1004-8a7e-fefd121a95f4" name="*MODEL*"/>
+        </nodes>
+        <arcs>
+            <from idRef="f5355d00-b75c-1004-8a7e-fefd121a95f4" name="*MODEL*">
+                <to idRef="f55a2cd6-b75c-1004-8a7e-fefd121a95f4"/>
+            </from>
+        </arcs>
+    </directedGraph>
+    <interfaceToRelParamMap>
+        <iToRpMap relParamId="f55a2cd4-b75c-1004-8a7e-fefd121a95f4" ifaceId="f55a2cd6-b75c-1004-8a7e-fefd121a95f4"/>
+    </interfaceToRelParamMap>
+</modelinterface>

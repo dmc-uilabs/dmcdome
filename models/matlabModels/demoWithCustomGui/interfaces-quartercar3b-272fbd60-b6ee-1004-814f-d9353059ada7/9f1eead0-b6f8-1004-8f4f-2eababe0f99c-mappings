@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="9f1eead0-b6f8-1004-8f4f-2eababe0f99c" name="quarterCarSuspenionInterface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="axle tube outer diameter" idRef="9fa49404-b6f8-1004-8f4f-2eababe0f99c">
+                    <parameter name="axle tube outer diameter" idRef="293d1b84-b6ee-1004-814f-d9353059ada7" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7"/>
+                </mappedParameter>
+                <mappedParameter name="leaf spring thickness" idRef="9fa49401-b6f8-1004-8f4f-2eababe0f99c">
+                    <parameter name="leaf spring thickness" idRef="28622218-b6ee-1004-814f-d9353059ada7" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7"/>
+                </mappedParameter>
+                <mappedParameter name="maximum accelaration" idRef="9febf05c-b6f8-1004-8f4f-2eababe0f99c">
+                    <parameter name="maximum accelaration" idRef="2aa25f48-b6ee-1004-814f-d9353059ada7" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7"/>
+                </mappedParameter>
+                <mappedParameter name="suspension mass" idRef="9fcc75c4-b6f8-1004-8f4f-2eababe0f99c">
+                    <parameter name="suspension mass" idRef="9c351024-b6f8-1004-8f4f-2eababe0f99c" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7"/>
+                </mappedParameter>
+                <mappedParameter name="quarter vehicle mass" idRef="9fcc75c5-b6f8-1004-8f4f-2eababe0f99c">
+                    <parameter name="quarter vehicle mass" idRef="9c36be9c-b6f8-1004-8f4f-2eababe0f99c" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7"/>
+                </mappedParameter>
+                <mappedParameter name="leaf spring length" idRef="9fa49400-b6f8-1004-8f4f-2eababe0f99c">
+                    <parameter name="leaf spring length" idRef="2812853c-b6ee-1004-814f-d9353059ada7" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7"/>
+                </mappedParameter>
+                <mappedParameter name="axle tube thickness" idRef="9fa49403-b6f8-1004-8f4f-2eababe0f99c">
+                    <parameter name="axle tube thickness" idRef="28f3e9a0-b6ee-1004-814f-d9353059ada7" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7"/>
+                </mappedParameter>
+                <mappedParameter name="damping coefficient" idRef="d9e6d858-b6f8-1004-84c7-3b41f69cb7a0">
+                    <parameter name="damping coefficient" idRef="d26f256c-b6f8-1004-8210-7cd65827d9c3" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7"/>
+                </mappedParameter>
+                <mappedParameter name="leaf spring width" idRef="9fa49402-b6f8-1004-8f4f-2eababe0f99c">
+                    <parameter name="leaf spring width" idRef="28a81e80-b6ee-1004-814f-d9353059ada7" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7"/>
+                </mappedParameter>
+                <mappedParameter name="tire stiffness" idRef="d9b83d7c-b6f8-1004-84c7-3b41f69cb7a0">
+                    <parameter name="tire stiffness" idRef="c5606f0c-b6f8-1004-85ff-491bcd7d91fd" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects/>
+    </mappingsandintermediates>
+</modelinterface>

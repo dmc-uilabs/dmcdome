@@ -1,0 +1,2 @@
+this is a small test file for Dome to check mit.cadlab.dome3.objectmodel/dataobject/FileData class.
+it has just 2 lines.

@@ -1,0 +1,29 @@
+####################################################################
+# NAME          COLOR           BOLD		ITALIC		NO #
+####################################################################
+unfinished	black		false 		false 		1
+default		black		false		false		2
+keyword1	63,187,239	true		false		3
+keyword2	63,187,239	false		false		4
+keyword3 	63,187,239	false		false		5
+keyword4	63,187,239	false		true		6
+literal1	82,132,19	false		false		7
+literal2	black		false		false		8
+literal3	82,132,19	false		true		9
+literal4	orange		true		false		10
+comment1	166,166,166	false		true		11	
+comment2	166,166,166	false		true		12
+comment3	166,166,166	false		true		13
+comment4	166,166,166	false		true		14
+tag1		169,212,109	false		false		15
+tag2		234,107,72	false		false		16
+tag3		102,153,255	false		false		17
+tag4		26,26,26	false		false		18
+operator	black		true		false		19
+separator1	0,153,102	true		false		20
+separator2	205,204,153	false		false		21
+include		245,183,87	true		false		22
+identifier1	black		false		false		23	
+identifier2	240,255,240	false		true		24
+error		red		true		true		25
+domekeyword	106,79,154	false		false		26

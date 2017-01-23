@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="83598a6c-b83d-1004-856f-c2f5dcf7da5d" name="sum and product">
+    <interfaceinfo>
+        <version>0.0.1</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="n3" idRef="839308ca-b83d-1004-856f-c2f5dcf7da5d">
+                    <parameter name="n3" idRef="839308c8-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d"/>
+                </mappedParameter>
+                <mappedParameter name="n3" idRef="839104c6-b83d-1004-856f-c2f5dcf7da5d">
+                    <parameter name="n3" idRef="839104c4-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d"/>
+                </mappedParameter>
+                <mappedParameter name="n2" idRef="838edff2-b83d-1004-856f-c2f5dcf7da5d">
+                    <parameter name="n2" idRef="838edff0-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d"/>
+                </mappedParameter>
+                <mappedParameter name="sum" idRef="83ba3742-b83d-1004-856f-c2f5dcf7da5d">
+                    <parameter name="sum" idRef="83ba3740-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d"/>
+                </mappedParameter>
+                <mappedParameter name="product" idRef="83bd1e9e-b83d-1004-856f-c2f5dcf7da5d">
+                    <parameter name="product" idRef="83bd1e9c-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d"/>
+                </mappedParameter>
+                <mappedParameter name="n1" idRef="8384e540-b83d-1004-856f-c2f5dcf7da5d">
+                    <parameter name="n1" idRef="83849658-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d"/>
+                </mappedParameter>
+                <mappedParameter name="n2" idRef="838edff1-b83d-1004-856f-c2f5dcf7da5d">
+                    <parameter name="n2" idRef="838edff0-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d"/>
+                </mappedParameter>
+                <mappedParameter name="sum" idRef="83ba3741-b83d-1004-856f-c2f5dcf7da5d">
+                    <parameter name="sum" idRef="83ba3740-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d"/>
+                </mappedParameter>
+                <mappedParameter name="n3" idRef="839104c5-b83d-1004-856f-c2f5dcf7da5d">
+                    <parameter name="n3" idRef="839104c4-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d"/>
+                </mappedParameter>
+                <mappedParameter name="n3" idRef="839308c9-b83d-1004-856f-c2f5dcf7da5d">
+                    <parameter name="n3" idRef="839308c8-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d"/>
+                </mappedParameter>
+                <mappedParameter name="n1" idRef="83849659-b83d-1004-856f-c2f5dcf7da5d">
+                    <parameter name="n1" idRef="83849658-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d"/>
+                </mappedParameter>
+                <mappedParameter name="product" idRef="83bd1e9d-b83d-1004-856f-c2f5dcf7da5d">
+                    <parameter name="product" idRef="83bd1e9c-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects/>
+    </mappingsandintermediates>
+    <lookupdata>
+        <objectmap>
+            <parameter name="n1" idRef="83849658-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d" description="key"/>
+            <parameter name="n1" idRef="83849659-b83d-1004-856f-c2f5dcf7da5d" description="value"/>
+            <parameter name="n3" idRef="839308c8-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d" description="key"/>
+            <parameter name="n3" idRef="839308c9-b83d-1004-856f-c2f5dcf7da5d" description="value"/>
+            <parameter name="sum" idRef="83ba3740-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d" description="key"/>
+            <parameter name="sum" idRef="83ba3741-b83d-1004-856f-c2f5dcf7da5d" description="value"/>
+            <parameter name="n2" idRef="838edff0-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d" description="key"/>
+            <parameter name="n2" idRef="838edff1-b83d-1004-856f-c2f5dcf7da5d" description="value"/>
+            <parameter name="product" idRef="83bd1e9c-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d" description="key"/>
+            <parameter name="product" idRef="83bd1e9d-b83d-1004-856f-c2f5dcf7da5d" description="value"/>
+            <parameter name="n3" idRef="839104c4-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d" description="key"/>
+            <parameter name="n3" idRef="839104c5-b83d-1004-856f-c2f5dcf7da5d" description="value"/>
+        </objectmap>
+        <viewobjectmap>
+            <parameter name="n2" idRef="838edff1-b83d-1004-856f-c2f5dcf7da5d" description="key"/>
+            <parameter name="n2" idRef="838edff2-b83d-1004-856f-c2f5dcf7da5d" description="value"/>
+            <parameter name="sum" idRef="83ba3741-b83d-1004-856f-c2f5dcf7da5d" description="key"/>
+            <parameter name="sum" idRef="83ba3742-b83d-1004-856f-c2f5dcf7da5d" description="value"/>
+            <parameter name="n3" idRef="839104c5-b83d-1004-856f-c2f5dcf7da5d" description="key"/>
+            <parameter name="n3" idRef="839104c6-b83d-1004-856f-c2f5dcf7da5d" description="value"/>
+            <parameter name="n3" idRef="839308c9-b83d-1004-856f-c2f5dcf7da5d" description="key"/>
+            <parameter name="n3" idRef="839308ca-b83d-1004-856f-c2f5dcf7da5d" description="value"/>
+            <parameter name="n1" idRef="83849659-b83d-1004-856f-c2f5dcf7da5d" description="key"/>
+            <parameter name="n1" idRef="8384e540-b83d-1004-856f-c2f5dcf7da5d" description="value"/>
+            <parameter name="product" idRef="83bd1e9d-b83d-1004-856f-c2f5dcf7da5d" description="key"/>
+            <parameter name="product" idRef="83bd1e9e-b83d-1004-856f-c2f5dcf7da5d" description="value"/>
+        </viewobjectmap>
+        <relationobjectmap/>
+    </lookupdata>
+</modelinterface>

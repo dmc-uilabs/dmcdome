@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="4e9d46dc-b6ae-1004-80ec-4fad9b9ba845" name="SimpleInterface">
+    <interfaceinfo>
+        <version>0.0.2</version>
+    </interfaceinfo>
+    <parameters>
+        <parameter id="4ec862cc-b6ae-1004-80ec-4fad9b9ba845" name="east">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="4ec862cd-b6ae-1004-80ec-4fad9b9ba845" name="west">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="4ec862ce-b6ae-1004-80ec-4fad9b9ba845" name="north">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="4ec862cf-b6ae-1004-80ec-4fad9b9ba845" name="south">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="4ec862d0-b6ae-1004-80ec-4fad9b9ba845" name="area">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <relations/>
+    <contexts>
+        <context id="IFACE_MODEL_CXT" name="Model View"/>
+    </contexts>
+    <views>
+        <view name="Build View">
+            <context id="IFACE_BUILD_CXT" name="Build View">
+                <modelobjects>
+                    <parameter name="east" idRef="4ec862cc-b6ae-1004-80ec-4fad9b9ba845"/>
+                    <parameter name="west" idRef="4ec862cd-b6ae-1004-80ec-4fad9b9ba845"/>
+                    <parameter name="north" idRef="4ec862ce-b6ae-1004-80ec-4fad9b9ba845"/>
+                    <parameter name="south" idRef="4ec862cf-b6ae-1004-80ec-4fad9b9ba845"/>
+                    <parameter name="area" idRef="4ec862d0-b6ae-1004-80ec-4fad9b9ba845"/>
+                </modelobjects>
+            </context>
+        </view>
+        <view name="Interface Causality View">
+            <filter id="INPUTS_FILTER" name="Inputs">
+                <parameters>
+                    <parameter name="east" idRef="4ec862cc-b6ae-1004-80ec-4fad9b9ba845"/>
+                    <parameter name="west" idRef="4ec862cd-b6ae-1004-80ec-4fad9b9ba845"/>
+                    <parameter name="north" idRef="4ec862ce-b6ae-1004-80ec-4fad9b9ba845"/>
+                    <parameter name="south" idRef="4ec862cf-b6ae-1004-80ec-4fad9b9ba845"/>
+                </parameters>
+            </filter>
+            <filter id="OUTPUTS_FILTER" name="Outputs">
+                <parameters>
+                    <parameter name="area" idRef="4ec862d0-b6ae-1004-80ec-4fad9b9ba845" causality="Result"/>
+                </parameters>
+            </filter>
+            <filter id="INDETERMINATES_FILTER" name="Indeterminates"/>
+        </view>
+        <view name="System Causality View">
+            <filter id="67f38a00-b6dc-1004-8ffd-33d1ecd1ea3f" name="Independent">
+                <parameters>
+                    <parameter name="east" idRef="4ec862cc-b6ae-1004-80ec-4fad9b9ba845"/>
+                    <parameter name="west" idRef="4ec862cd-b6ae-1004-80ec-4fad9b9ba845"/>
+                    <parameter name="north" idRef="4ec862ce-b6ae-1004-80ec-4fad9b9ba845"/>
+                    <parameter name="south" idRef="4ec862cf-b6ae-1004-80ec-4fad9b9ba845"/>
+                </parameters>
+            </filter>
+            <filter id="67f38a01-b6dc-1004-8ffd-33d1ecd1ea3f" name="Intermediate"/>
+            <filter id="67f38a02-b6dc-1004-8ffd-33d1ecd1ea3f" name="Result">
+                <parameters>
+                    <parameter name="area" idRef="4ec862d0-b6ae-1004-80ec-4fad9b9ba845"/>
+                </parameters>
+            </filter>
+        </view>
+    </views>
+    <directedGraph id="4e9d46dc-b6ae-1004-80ec-4fad9b9ba845">
+        <nodes>
+            <node idRef="4ec862ce-b6ae-1004-80ec-4fad9b9ba845"/>
+            <node idRef="4ec862d0-b6ae-1004-80ec-4fad9b9ba845"/>
+            <node idRef="4ec862cd-b6ae-1004-80ec-4fad9b9ba845"/>
+            <node idRef="4ec862cf-b6ae-1004-80ec-4fad9b9ba845"/>
+            <node idRef="4ec862cc-b6ae-1004-80ec-4fad9b9ba845"/>
+        </nodes>
+        <arcs>
+            <from idRef="4ec862cc-b6ae-1004-80ec-4fad9b9ba845">
+                <to idRef="4ec862d0-b6ae-1004-80ec-4fad9b9ba845"/>
+            </from>
+            <from idRef="4ec862cf-b6ae-1004-80ec-4fad9b9ba845">
+                <to idRef="4ec862d0-b6ae-1004-80ec-4fad9b9ba845"/>
+            </from>
+            <from idRef="4ec862cd-b6ae-1004-80ec-4fad9b9ba845">
+                <to idRef="4ec862d0-b6ae-1004-80ec-4fad9b9ba845"/>
+            </from>
+            <from idRef="4ec862ce-b6ae-1004-80ec-4fad9b9ba845">
+                <to idRef="4ec862d0-b6ae-1004-80ec-4fad9b9ba845"/>
+            </from>
+        </arcs>
+    </directedGraph>
+</modelinterface>

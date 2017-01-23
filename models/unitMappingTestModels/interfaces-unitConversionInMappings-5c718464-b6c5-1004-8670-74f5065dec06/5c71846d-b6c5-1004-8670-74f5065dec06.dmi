@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="5c71846d-b6c5-1004-8670-74f5065dec06" name="Default Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <parameters>
+        <parameter id="5c788c6a-b6c5-1004-8670-74f5065dec06" name="a">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="50.0" unit="[cm]"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="5c7ef5cc-b6c5-1004-8670-74f5065dec06" name="d">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.5" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <relations>
+        <relation type="Equal" id="5c788c64-b6c5-1004-8670-74f5065dec06" name="Equal Relation">
+            <parameters>
+                <parameter id="5c788c68-b6c5-1004-8670-74f5065dec06" name="a">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="50.0" unit="[cm]"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="5c788c69-b6c5-1004-8670-74f5065dec06" name="b">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.5" unit="m"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <body><![CDATA[b = a]]></body>
+            <dependencies>
+                <dependency idRef="5c788c69-b6c5-1004-8670-74f5065dec06">
+                    <parameter name="a" idRef="5c788c68-b6c5-1004-8670-74f5065dec06" idRelationRef="5c788c64-b6c5-1004-8670-74f5065dec06"/>
+                </dependency>
+            </dependencies>
+        </relation>
+        <relation type="Equal" id="5c7ecebc-b6c5-1004-8670-74f5065dec06" name="Equal Relation">
+            <parameters>
+                <parameter id="5c7ecec0-b6c5-1004-8670-74f5065dec06" name="c">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.5" unit="m"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="5c7ecec1-b6c5-1004-8670-74f5065dec06" name="d">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.5" unit="m"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <body><![CDATA[d = c]]></body>
+            <dependencies>
+                <dependency idRef="5c7ecec1-b6c5-1004-8670-74f5065dec06">
+                    <parameter name="c" idRef="5c7ecec0-b6c5-1004-8670-74f5065dec06" idRelationRef="5c7ecebc-b6c5-1004-8670-74f5065dec06"/>
+                </dependency>
+            </dependencies>
+        </relation>
+    </relations>
+    <contexts>
+        <context id="IFACE_MODEL_CXT" name="Model View">
+            <modelobjects>
+                <relation name="Equal Relation" idRef="5c788c64-b6c5-1004-8670-74f5065dec06"/>
+                <relation name="Equal Relation" idRef="5c7ecebc-b6c5-1004-8670-74f5065dec06"/>
+            </modelobjects>
+        </context>
+    </contexts>
+    <views>
+        <view name="Build View">
+            <context id="IFACE_BUILD_CXT" name="Build View">
+                <modelobjects>
+                    <parameter name="a" idRef="5c788c6a-b6c5-1004-8670-74f5065dec06"/>
+                    <parameter name="d" idRef="5c7ef5cc-b6c5-1004-8670-74f5065dec06"/>
+                </modelobjects>
+            </context>
+        </view>
+        <view name="Interface Causality View">
+            <filter id="INPUTS_FILTER" name="Inputs">
+                <parameters>
+                    <parameter name="a" idRef="5c788c6a-b6c5-1004-8670-74f5065dec06"/>
+                </parameters>
+            </filter>
+            <filter id="OUTPUTS_FILTER" name="Outputs">
+                <parameters>
+                    <parameter name="d" idRef="5c7ef5cc-b6c5-1004-8670-74f5065dec06" causality="Result"/>
+                </parameters>
+            </filter>
+            <filter id="INDETERMINATES_FILTER" name="Indeterminates"/>
+        </view>
+        <view name="System Causality View">
+            <filter id="5c71846e-b6c5-1004-8670-74f5065dec06" name="Independent">
+                <parameters>
+                    <parameter name="a" idRef="5c788c6a-b6c5-1004-8670-74f5065dec06"/>
+                </parameters>
+            </filter>
+            <filter id="5c71846f-b6c5-1004-8670-74f5065dec06" name="Intermediate"/>
+            <filter id="5c718470-b6c5-1004-8670-74f5065dec06" name="Result">
+                <parameters>
+                    <parameter name="d" idRef="5c7ef5cc-b6c5-1004-8670-74f5065dec06"/>
+                </parameters>
+            </filter>
+        </view>
+    </views>
+</modelinterface>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project id="dc7cba8f-d0ad-1004-8ef8-9e203c99f336" name="Drews Integrated model">
+    <projectinfo>
+        <version>0.0.1</version>
+    </projectinfo>
+    <resources>
+        <resource type="model" id="dc7cba91-d0ad-1004-8ef8-9e203c99f336" name="Square Model">
+            <location id="90a28cad-d093-1004-87f0-b45ab5d8f614" hostName="ceed2.crd.ge.com" ipAddress="3.1.116.204" port="8080"/>
+            <subscribedInterfaceIds>
+                <ifaceId>90a28cae-d093-1004-87f0-b45ab5d8f614</ifaceId>
+            </subscribedInterfaceIds>
+        </resource>
+        <resource type="model" id="dc7cba92-d0ad-1004-8ef8-9e203c99f336" name="SquareRoot Model">
+            <location id="90a28cc4-d093-1004-87f0-b45ab5d8f614" hostName="ceed2.crd.ge.com" ipAddress="3.1.116.204" port="8080"/>
+            <subscribedInterfaceIds>
+                <ifaceId>90a28cc5-d093-1004-87f0-b45ab5d8f614</ifaceId>
+            </subscribedInterfaceIds>
+        </resource>
+        <resource type="imodel" id="dc7cba93-d0ad-1004-8ef8-9e203c99f336" name="iModel">
+            <location id="dc7cba93-d0ad-1004-8ef8-9e203c99f336" hostName="" ipAddress="" port=""/>
+        </resource>
+    </resources>
+    <integrationModels>
+        <imodel id="dc7cba93-d0ad-1004-8ef8-9e203c99f336" name="Drews iModel"/>
+    </integrationModels>
+</project>

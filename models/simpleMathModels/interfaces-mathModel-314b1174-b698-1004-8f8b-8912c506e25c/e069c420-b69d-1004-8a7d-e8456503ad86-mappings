@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="e069c420-b69d-1004-8a7d-e8456503ad86" name="areaInterface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="height" idRef="e09e23f1-b69d-1004-8a7d-e8456503ad86">
+                    <parameter name="height" idRef="314b1182-b698-1004-8f8b-8912c506e25c" idModelRef="314b1174-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="width" idRef="e09e23f0-b69d-1004-8a7d-e8456503ad86">
+                    <parameter name="width" idRef="314b1181-b698-1004-8f8b-8912c506e25c" idModelRef="314b1174-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="volume" idRef="e09e23f4-b69d-1004-8a7d-e8456503ad86">
+                    <parameter name="volume" idRef="314b1184-b698-1004-8f8b-8912c506e25c" idModelRef="314b1174-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="area" idRef="e09e23f3-b69d-1004-8a7d-e8456503ad86">
+                    <parameter name="area" idRef="314b1183-b698-1004-8f8b-8912c506e25c" idModelRef="314b1174-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="lengthR2" idRef="e09e23f2-b69d-1004-8a7d-e8456503ad86">
+                    <parameter name="lengthR2" idRef="314b3884-b698-1004-8f8b-8912c506e25c" idRelationRef="314b118c-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects/>
+    </mappingsandintermediates>
+</modelinterface>

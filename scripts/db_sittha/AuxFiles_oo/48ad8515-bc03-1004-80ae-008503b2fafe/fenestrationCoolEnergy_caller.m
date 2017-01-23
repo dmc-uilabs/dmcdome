@@ -1,0 +1,1 @@
+[qbtot, qdtot, qctot, qtot, qtotR] = fenestrationCoolEnergy(U, A, Af, coolDegHrs, glassID, IAC, theta, ED, Ed, Er, Tin);

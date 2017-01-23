@@ -1,0 +1,177 @@
+{
+   "model":{
+      "modelName":"Fourth that Root",
+      "interFace":{
+         "type":"interface",
+         "version":1,
+         "modelId":"",
+         "interfaceId":"",
+         "name":"Fourth that Root",
+         "path":[
+
+         ]
+      },
+      "inParams":{
+         "Input":{
+            "name":"Input",
+            "type":"Real",
+            "category":"no unit",
+            "value":"16",
+            "parameterid":""
+         }
+      },
+      "outParams":{
+         "sqrt(input)":{
+            "name":"sqrt(input)",
+            "type":"Real",
+            "category":"no unit",
+            "value":"4",
+            "parameterid":""
+         },
+         "sqrt(sqrt(input))":{
+            "name":"sqrt(sqrt(input))",
+            "type":"Real",
+            "category":"no unit",
+            "value":"2",
+            "parameterid":""
+         }
+      }
+   },
+   "resources":{
+      "1":{
+         "interFace":{
+            "version":1,
+            "modelId":"90a28cc4-d093-1004-87f0-b45ab5d8f614",
+            "interfaceId":"90a28cc5-d093-1004-87f0-b45ab5d8f614",
+            "type":"interface",
+            "name":"Default Interface",
+            "path":[
+               29,
+               32
+            ]
+         },
+         "inParams":{
+            "InParam":{
+               "name":"InParam",
+               "type":"Real",
+               "unit":"no unit",
+               "category":"no unit",
+               "value":0,
+               "parameterid":"dc7cba73-d0ad-1004-8ef8-9e203c99f336"
+            }
+         },
+         "outParams":{
+            "OutParam":{
+               "name":"OutParam",
+               "type":"Real",
+               "unit":"no unit",
+               "category":"no unit",
+               "value":0,
+               "parameterid":"dc7cba76-d0ad-1004-8ef8-9e203c99f336"
+            }
+         },
+         "modelName":"Default Interface",
+         "modelDescription":"",
+         "server":{
+            "name":"localhost",
+            "port":"7790",
+            "user":"darpa",
+            "pw":"darpa",
+            "space":"USER"
+         }
+      },
+      "2":{
+         "interFace":{
+            "version":1,
+            "modelId":"90a28cc4-d093-1004-87f0-b45ab5d8f614",
+            "interfaceId":"90a28cc5-d093-1004-87f0-b45ab5d8f614",
+            "type":"interface",
+            "name":"Default Interface",
+            "path":[
+               29,
+               32
+            ]
+         },
+         "inParams":{
+            "InParam":{
+               "name":"InParam",
+               "type":"Real",
+               "unit":"no unit",
+               "category":"no unit",
+               "value":0,
+               "parameterid":"dc7cba73-d0ad-1004-8ef8-9e203c99f336"
+            }
+         },
+         "outParams":{
+            "OutParam":{
+               "name":"OutParam",
+               "type":"Real",
+               "unit":"no unit",
+               "category":"no unit",
+               "value":0,
+               "parameterid":"dc7cba76-d0ad-1004-8ef8-9e203c99f336"
+            }
+         },
+         "modelName":"Default Interface",
+         "modelDescription":"",
+         "server":{
+            "name":"localhost",
+            "port":"7790",
+            "user":"darpa",
+            "pw":"darpa",
+            "space":"USER"
+         }
+      }
+   },
+   "connectors":{
+      "1":{
+         "from":{
+            "instancename":1,
+            "name":"OutParam"
+         },
+         "to":{
+            "instancename":2,
+            "name":"InParam"
+         }
+      },
+      "2":{
+         "from":{
+            "instancename":0,
+            "name":"Input"
+         },
+         "to":{
+            "instancename":1,
+            "name":"InParam"
+         }
+      },
+      "3":{
+         "from":{
+            "instancename":1,
+            "name":"OutParam"
+         },
+         "to":{
+            "instancename":0,
+            "name":"sqrt(input)"
+         }
+      },
+      "4":{
+         "from":{
+            "instancename":2,
+            "name":"OutParam"
+         },
+         "to":{
+            "instancename":0,
+            "name":"sqrt(sqrt(input))"
+         }
+      }
+   },
+   "space":"USERS",
+   "folder":{
+      "type":"folder",
+      "name":"jefftest",
+      "path":[
+
+      ]
+   },
+   "description":"does it work?"
+}

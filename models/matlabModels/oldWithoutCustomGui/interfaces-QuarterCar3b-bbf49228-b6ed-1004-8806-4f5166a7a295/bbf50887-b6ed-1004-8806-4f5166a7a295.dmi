@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="bbf50887-b6ed-1004-8806-4f5166a7a295" name="Default Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <parameters>
+        <parameter id="bd5d02d0-b6ed-1004-8806-4f5166a7a295" name="leaf spring length">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="1.0" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="bf496729-b6ed-1004-8806-4f5166a7a295" name="leaf spring thickness">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0050" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="bf8e039d-b6ed-1004-8806-4f5166a7a295" name="leaf spring thickness">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.1" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="bfce0aa1-b6ed-1004-8806-4f5166a7a295" name="axle tube thickness">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.01" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="c02ffda1-b6ed-1004-8806-4f5166a7a295" name="axle tube outer diameter">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.125" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="c077cf91-b6ed-1004-8806-4f5166a7a295" name="wheel to leaf spring distance">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.5" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="c0bfa11c-b6ed-1004-8806-4f5166a7a295" name="MaxAccel">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="[MPs_S]"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="bd5d02d1-b6ed-1004-8806-4f5166a7a295" name="leaf spring length">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="1.0" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="bf49672a-b6ed-1004-8806-4f5166a7a295" name="leaf spring thickness">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0050" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="bf8e039e-b6ed-1004-8806-4f5166a7a295" name="leaf spring thickness">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.1" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="bfce0aa2-b6ed-1004-8806-4f5166a7a295" name="axle tube thickness">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.01" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="c02ffda2-b6ed-1004-8806-4f5166a7a295" name="axle tube outer diameter">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.125" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="c077cf92-b6ed-1004-8806-4f5166a7a295" name="wheel to leaf spring distance">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.5" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="c0bfa11d-b6ed-1004-8806-4f5166a7a295" name="MaxAccel">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="[MPs_S]"/>
+                </dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <relations/>
+    <contexts>
+        <context id="IFACE_MODEL_CXT" name="Model View">
+            <modelobjects>
+                <parameter name="leaf spring length" idRef="bd5d02d0-b6ed-1004-8806-4f5166a7a295"/>
+                <parameter name="leaf spring thickness" idRef="bf496729-b6ed-1004-8806-4f5166a7a295"/>
+                <parameter name="leaf spring thickness" idRef="bf8e039d-b6ed-1004-8806-4f5166a7a295"/>
+                <parameter name="axle tube thickness" idRef="bfce0aa1-b6ed-1004-8806-4f5166a7a295"/>
+                <parameter name="axle tube outer diameter" idRef="c02ffda1-b6ed-1004-8806-4f5166a7a295"/>
+                <parameter name="wheel to leaf spring distance" idRef="c077cf91-b6ed-1004-8806-4f5166a7a295"/>
+                <parameter name="MaxAccel" idRef="c0bfa11c-b6ed-1004-8806-4f5166a7a295"/>
+            </modelobjects>
+        </context>
+    </contexts>
+    <views>
+        <view name="Build View">
+            <context id="IFACE_BUILD_CXT" name="Build View">
+                <modelobjects>
+                    <parameter name="leaf spring length" idRef="bd5d02d1-b6ed-1004-8806-4f5166a7a295"/>
+                    <parameter name="leaf spring thickness" idRef="bf49672a-b6ed-1004-8806-4f5166a7a295"/>
+                    <parameter name="leaf spring thickness" idRef="bf8e039e-b6ed-1004-8806-4f5166a7a295"/>
+                    <parameter name="axle tube thickness" idRef="bfce0aa2-b6ed-1004-8806-4f5166a7a295"/>
+                    <parameter name="axle tube outer diameter" idRef="c02ffda2-b6ed-1004-8806-4f5166a7a295"/>
+                    <parameter name="wheel to leaf spring distance" idRef="c077cf92-b6ed-1004-8806-4f5166a7a295"/>
+                    <parameter name="MaxAccel" idRef="c0bfa11d-b6ed-1004-8806-4f5166a7a295"/>
+                </modelobjects>
+            </context>
+        </view>
+        <view name="Interface Causality View">
+            <filter id="INPUTS_FILTER" name="Inputs">
+                <parameters>
+                    <parameter name="leaf spring length" idRef="bd5d02d1-b6ed-1004-8806-4f5166a7a295"/>
+                    <parameter name="leaf spring thickness" idRef="bf49672a-b6ed-1004-8806-4f5166a7a295"/>
+                    <parameter name="leaf spring thickness" idRef="bf8e039e-b6ed-1004-8806-4f5166a7a295"/>
+                    <parameter name="axle tube thickness" idRef="bfce0aa2-b6ed-1004-8806-4f5166a7a295"/>
+                    <parameter name="axle tube outer diameter" idRef="c02ffda2-b6ed-1004-8806-4f5166a7a295"/>
+                    <parameter name="wheel to leaf spring distance" idRef="c077cf92-b6ed-1004-8806-4f5166a7a295"/>
+                </parameters>
+            </filter>
+            <filter id="OUTPUTS_FILTER" name="Outputs">
+                <parameters>
+                    <parameter name="MaxAccel" idRef="c0bfa11d-b6ed-1004-8806-4f5166a7a295" causality="Result"/>
+                </parameters>
+            </filter>
+            <filter id="INDETERMINATES_FILTER" name="Indeterminates"/>
+        </view>
+        <view name="System Causality View">
+            <filter id="ee8a0354-b70f-1004-82bb-82c220aef49f" name="Independent"/>
+            <filter id="ee8a0355-b70f-1004-82bb-82c220aef49f" name="Intermediate"/>
+            <filter id="ee8a0356-b70f-1004-82bb-82c220aef49f" name="Result"/>
+        </view>
+    </views>
+    <directedGraph id="bbf50887-b6ed-1004-8806-4f5166a7a295">
+        <nodes>
+            <node idRef="c02ffda2-b6ed-1004-8806-4f5166a7a295"/>
+            <node idRef="bfce0aa2-b6ed-1004-8806-4f5166a7a295"/>
+            <node idRef="bd5d02d1-b6ed-1004-8806-4f5166a7a295"/>
+            <node idRef="bf49672a-b6ed-1004-8806-4f5166a7a295"/>
+            <node idRef="bf8e039e-b6ed-1004-8806-4f5166a7a295"/>
+            <node idRef="c077cf92-b6ed-1004-8806-4f5166a7a295"/>
+            <node idRef="c0bfa11d-b6ed-1004-8806-4f5166a7a295"/>
+        </nodes>
+        <arcs>
+            <from idRef="c02ffda2-b6ed-1004-8806-4f5166a7a295">
+                <to idRef="c0bfa11d-b6ed-1004-8806-4f5166a7a295"/>
+            </from>
+            <from idRef="bf8e039e-b6ed-1004-8806-4f5166a7a295">
+                <to idRef="c0bfa11d-b6ed-1004-8806-4f5166a7a295"/>
+            </from>
+            <from idRef="c077cf92-b6ed-1004-8806-4f5166a7a295">
+                <to idRef="c0bfa11d-b6ed-1004-8806-4f5166a7a295"/>
+            </from>
+            <from idRef="bd5d02d1-b6ed-1004-8806-4f5166a7a295">
+                <to idRef="c0bfa11d-b6ed-1004-8806-4f5166a7a295"/>
+            </from>
+            <from idRef="bf49672a-b6ed-1004-8806-4f5166a7a295">
+                <to idRef="c0bfa11d-b6ed-1004-8806-4f5166a7a295"/>
+            </from>
+            <from idRef="bfce0aa2-b6ed-1004-8806-4f5166a7a295">
+                <to idRef="c0bfa11d-b6ed-1004-8806-4f5166a7a295"/>
+            </from>
+        </arcs>
+    </directedGraph>
+    <interfaceToRelParamMap>
+        <iToRpMap relParamId="bd5cdbc0-b6ed-1004-8806-4f5166a7a295" ifaceId="bd5d02d1-b6ed-1004-8806-4f5166a7a295"/>
+        <iToRpMap relParamId="bf496728-b6ed-1004-8806-4f5166a7a295" ifaceId="bf49672a-b6ed-1004-8806-4f5166a7a295"/>
+        <iToRpMap relParamId="bf8e039c-b6ed-1004-8806-4f5166a7a295" ifaceId="bf8e039e-b6ed-1004-8806-4f5166a7a295"/>
+        <iToRpMap relParamId="bfce0aa0-b6ed-1004-8806-4f5166a7a295" ifaceId="bfce0aa2-b6ed-1004-8806-4f5166a7a295"/>
+        <iToRpMap relParamId="c02ffda0-b6ed-1004-8806-4f5166a7a295" ifaceId="c02ffda2-b6ed-1004-8806-4f5166a7a295"/>
+        <iToRpMap relParamId="c077cf90-b6ed-1004-8806-4f5166a7a295" ifaceId="c077cf92-b6ed-1004-8806-4f5166a7a295"/>
+        <iToRpMap relParamId="c0bf7a0c-b6ed-1004-8806-4f5166a7a295" ifaceId="c0bfa11d-b6ed-1004-8806-4f5166a7a295"/>
+    </interfaceToRelParamMap>
+</modelinterface>

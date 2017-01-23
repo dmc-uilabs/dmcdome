@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project id="f274b91c-b75c-1004-8a7e-fefd121a95f4" name="Project_With_Two_Models">
+    <projectinfo>
+        <version>0.0.2</version>
+    </projectinfo>
+    <resources>
+        <resource type="model" id="f28b7d3c-b75c-1004-8a7e-fefd121a95f4" name="Y_equals_X">
+            <location id="f26d57a8-b75c-1004-89fe-53c809e5870d" hostName="cadlab48" ipAddress="18.80.4.55" port="8080"/>
+            <subscribedInterfaceIds>
+                <ifaceId>f26d57a9-b75c-1004-89fe-53c809e5870d</ifaceId>
+            </subscribedInterfaceIds>
+        </resource>
+        <resource type="model" id="f28f284c-b75c-1004-8a7e-fefd121a95f4" name="B_equals_A">
+            <location id="f25c3298-b75c-1004-89fe-53c809e5870d" hostName="cadlab48" ipAddress="18.80.4.55" port="8080"/>
+            <subscribedInterfaceIds>
+                <ifaceId>f25c80b8-b75c-1004-89fe-53c809e5870d</ifaceId>
+            </subscribedInterfaceIds>
+        </resource>
+    </resources>
+    <integrationModels>
+        <imodel id="f3dc7290-b75c-1004-8a7e-fefd121a95f4" name="T_equals_S"/>
+    </integrationModels>
+</project>

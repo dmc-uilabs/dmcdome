@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="30361099-b6e3-1004-852e-73f7ffb2a5f6" name="Default Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="actualModulus" idRef="31309f26-b6e3-1004-852e-73f7ffb2a5f6">
+                    <parameter name="actualModulus" idRef="31309f24-b6e3-1004-852e-73f7ffb2a5f6" idRelationRef="305e8534-b6e3-1004-852e-73f7ffb2a5f6"/>
+                </mappedParameter>
+                <mappedParameter name="curingTemperature" idRef="312b1c9a-b6e3-1004-852e-73f7ffb2a5f6">
+                    <parameter name="curingTemperature" idRef="312b1c98-b6e3-1004-852e-73f7ffb2a5f6" idRelationRef="305e8534-b6e3-1004-852e-73f7ffb2a5f6"/>
+                </mappedParameter>
+                <mappedParameter name="actualModulus" idRef="31309f25-b6e3-1004-852e-73f7ffb2a5f6" idRelationRef="305f6f94-b6e3-1004-852e-73f7ffb2a5f6">
+                    <parameter name="actualModulus" idRef="31309f24-b6e3-1004-852e-73f7ffb2a5f6" idRelationRef="305e8534-b6e3-1004-852e-73f7ffb2a5f6"/>
+                </mappedParameter>
+                <mappedParameter name="curingTemperature" idRef="312b1c99-b6e3-1004-852e-73f7ffb2a5f6" idRelationRef="305f6f94-b6e3-1004-852e-73f7ffb2a5f6">
+                    <parameter name="curingTemperature" idRef="312b1c98-b6e3-1004-852e-73f7ffb2a5f6" idRelationRef="305e8534-b6e3-1004-852e-73f7ffb2a5f6"/>
+                </mappedParameter>
+                <mappedParameter name="nominalModulus" idRef="312ddf3e-b6e3-1004-852e-73f7ffb2a5f6">
+                    <parameter name="nominalModulus" idRef="312ddf3c-b6e3-1004-852e-73f7ffb2a5f6" idRelationRef="305e8534-b6e3-1004-852e-73f7ffb2a5f6"/>
+                </mappedParameter>
+                <mappedParameter name="nominalModulus" idRef="312ddf3d-b6e3-1004-852e-73f7ffb2a5f6" idRelationRef="305f6f94-b6e3-1004-852e-73f7ffb2a5f6">
+                    <parameter name="nominalModulus" idRef="312ddf3c-b6e3-1004-852e-73f7ffb2a5f6" idRelationRef="305e8534-b6e3-1004-852e-73f7ffb2a5f6"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects/>
+    </mappingsandintermediates>
+    <lookupdata>
+        <objectmap>
+            <relation name="temperaturePropertyRelation" idRef="305e8534-b6e3-1004-852e-73f7ffb2a5f6" description="key"/>
+            <relation name="temperaturePropertyRelation" idRef="305f6f94-b6e3-1004-852e-73f7ffb2a5f6" description="value"/>
+            <parameter name="actualModulus" idRef="31309f24-b6e3-1004-852e-73f7ffb2a5f6" idRelationRef="305e8534-b6e3-1004-852e-73f7ffb2a5f6" description="key"/>
+            <parameter name="actualModulus" idRef="31309f25-b6e3-1004-852e-73f7ffb2a5f6" idRelationRef="305f6f94-b6e3-1004-852e-73f7ffb2a5f6" description="value"/>
+            <parameter name="curingTemperature" idRef="312b1c98-b6e3-1004-852e-73f7ffb2a5f6" idRelationRef="305e8534-b6e3-1004-852e-73f7ffb2a5f6" description="key"/>
+            <parameter name="curingTemperature" idRef="312b1c99-b6e3-1004-852e-73f7ffb2a5f6" idRelationRef="305f6f94-b6e3-1004-852e-73f7ffb2a5f6" description="value"/>
+            <parameter name="nominalModulus" idRef="312ddf3c-b6e3-1004-852e-73f7ffb2a5f6" idRelationRef="305e8534-b6e3-1004-852e-73f7ffb2a5f6" description="key"/>
+            <parameter name="nominalModulus" idRef="312ddf3d-b6e3-1004-852e-73f7ffb2a5f6" idRelationRef="305f6f94-b6e3-1004-852e-73f7ffb2a5f6" description="value"/>
+        </objectmap>
+        <viewobjectmap/>
+        <relationobjectmap>
+            <parameter name="actualModulus" idRef="31309f24-b6e3-1004-852e-73f7ffb2a5f6" idRelationRef="305e8534-b6e3-1004-852e-73f7ffb2a5f6" description="key"/>
+            <parameter name="actualModulus" idRef="31309f26-b6e3-1004-852e-73f7ffb2a5f6" description="value"/>
+            <parameter name="curingTemperature" idRef="312b1c98-b6e3-1004-852e-73f7ffb2a5f6" idRelationRef="305e8534-b6e3-1004-852e-73f7ffb2a5f6" description="key"/>
+            <parameter name="curingTemperature" idRef="312b1c9a-b6e3-1004-852e-73f7ffb2a5f6" description="value"/>
+            <parameter name="nominalModulus" idRef="312ddf3c-b6e3-1004-852e-73f7ffb2a5f6" idRelationRef="305e8534-b6e3-1004-852e-73f7ffb2a5f6" description="key"/>
+            <parameter name="nominalModulus" idRef="312ddf3e-b6e3-1004-852e-73f7ffb2a5f6" description="value"/>
+        </relationobjectmap>
+    </lookupdata>
+</modelinterface>

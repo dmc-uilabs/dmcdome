@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="4689b36c-c09c-1004-8149-43c742e7b24b" name="Complete Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="estimated population" idRef="4689b379-c09c-1004-8149-43c742e7b24b">
+                    <parameter name="estimated population" idRef="4689b34f-c09c-1004-8149-43c742e7b24b"/>
+                </mappedParameter>
+                <mappedParameter name="life expectancy at birth" idRef="4689b373-c09c-1004-8149-43c742e7b24b">
+                    <parameter name="life expectancy at birth" idRef="4689b323-c09c-1004-8149-43c742e7b24b"/>
+                </mappedParameter>
+                <mappedParameter name="death rate" idRef="4689b375-c09c-1004-8149-43c742e7b24b">
+                    <parameter name="death rate" idRef="4689b325-c09c-1004-8149-43c742e7b24b"/>
+                </mappedParameter>
+                <mappedParameter name="population density" idRef="4689b377-c09c-1004-8149-43c742e7b24b">
+                    <parameter name="population density" idRef="4689b327-c09c-1004-8149-43c742e7b24b"/>
+                </mappedParameter>
+                <mappedParameter name="sample birth" idRef="4689b372-c09c-1004-8149-43c742e7b24b">
+                    <parameter name="sample birth" idRef="4689b322-c09c-1004-8149-43c742e7b24b"/>
+                </mappedParameter>
+                <mappedParameter name="sample population" idRef="4689b371-c09c-1004-8149-43c742e7b24b">
+                    <parameter name="sample population" idRef="4689b321-c09c-1004-8149-43c742e7b24b"/>
+                </mappedParameter>
+                <mappedParameter name="birth rate" idRef="4689b374-c09c-1004-8149-43c742e7b24b">
+                    <parameter name="birth rate" idRef="4689b324-c09c-1004-8149-43c742e7b24b"/>
+                </mappedParameter>
+                <mappedParameter name="estimated final pollution" idRef="4689b378-c09c-1004-8149-43c742e7b24b">
+                    <parameter name="estimated final pollution" idRef="4689b34e-c09c-1004-8149-43c742e7b24b"/>
+                </mappedParameter>
+                <mappedParameter name="estimated pollution" idRef="4689b37a-c09c-1004-8149-43c742e7b24b">
+                    <parameter name="estimated pollution" idRef="4689b350-c09c-1004-8149-43c742e7b24b"/>
+                </mappedParameter>
+                <mappedParameter name="percentage of land area increase" idRef="4689b376-c09c-1004-8149-43c742e7b24b">
+                    <parameter name="percentage of land area increase" idRef="4689b326-c09c-1004-8149-43c742e7b24b"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects/>
+    </mappingsandintermediates>
+</modelinterface>

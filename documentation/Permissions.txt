@@ -1,0 +1,53 @@
+Permission Implementation in DOME
+
+The following macros are referred to in this document:
+
+MODEL_MODIFY_PRIVILEGES = "Modify model or iProject";
+MODEL_COPY_PRIVILEGES = "Copy model or iProject";
+PLAYSPACE_MODIFY_PRIVILEGES = "Modify playspace";
+PLAYSPACE_COPY_PRIVILEGES = "Copy playspace";
+PLAYSPACE_CHANGE_PRIVILEGES = "Change values";
+PERMISSION_TO_VIEW_INTERFACE ="View and run in a new playspace";
+PERMISSION_TO_SUBSCRIBE_TO_INTERFACE = "Subscribe to interface";
+
+The permission constraints explained below do not apply to the administrator, as the administrator has permission to execute all operations.
+
+The OBJECT_PERMISSIONS table has three columns 'OBJET_ID', 'USER_ID' and 'PERMISSION_ID'.
+
+A user can see an interface if one or more of these conditions is satisfied:  1. user has PERMISSION_ID =PERMISSION_TO_VIEW_INTERFACE for that interface
+					       			            2. user belongs to a group that has PERMISSION_ID = PERMISSION_TO_VIEW_INTERFACE  for that interface
+
+
+A user can see the model if one or more of these conditions is satisfied: 1. the model has one or more interfaces that the user can see.
+								         2. the model has one or more interfaces that a group, that the user belongs to, can see
+
+A user can see a playspace if one or more of these conditions is satisfied: 1. user has PERMISSION_ID =PLAYSPACE_CHANGE_PRIVILEGES for that playspace
+					       			            2. user belongs to a group that has  PERMISSION_ID =PLAYSPACE_CHANGE_PRIVILEGES for that playspace
+
+When checking out a model the model_name.dml file is saved to local directory. If specific permissions are satisfied the interfaces of the model are saved, as well as the *.dvc file, which contains the version information.
+
+A user can checkout a model if one or more of these conditions is satisfied: 1. user has PERMISSION_ID = MODEL_COPY_PRIVILEGES for that model
+					       			              2. user belongs to a group that has PERMISSION_ID = MODEL_COPY_PRIVILEGES for that model
+
+During checkout the version information (*.dvc file) is saved if one or more of these conditions is satisfied: 1. user has PERMISSION_ID = MODEL_MODIFY_PRIVILEGES for that model
+									       			        2. user belongs to a group that has 	PERMISSION_ID = MODEL_MODIFY_PRIVILEGES for that model
+
+Note: when checking out a model, only the interfaces that the user can see (see notes above on when a user can see an interface) are checked-out.
+
+
+When checking out a playspace the playspace_name.dps file is saved to local directory. If specific permissions are satisfied the *.dvc file, which contains the version information, is also saved.
+
+A user can checkout a playspace if one or more of these conditions is satisfied: 1. user has PERMISSION_ID = PLAYSPACE_COPY_PRIVILEGES for that playspace
+				 	       			                    2. user belongs to a group that has PERMISSION_ID = PLAYSPACE_COPY_PRIVILEGES for that playspace
+
+During checkout the version information (*.dvc file) is saved if one or more of these conditions is satisfied: 1. user has PERMISSION_ID =  PLAYSPACE_MODIFY_PRIVILEGES for that playspace
+									       			        2. user belongs to a group that has 	PERMISSION_ID = PLAYSPACE_MODIFY_PRIVILEGES for
+													that playspace
+
+A user can see an interface, in the Model subscriber browser, if one or more of these conditions is satisfied:  1. user has PERMISSION_ID =PERMISSION_TO_SUBSCRIBE_TO_INTERFACE for that interface
+					       			            2. user belongs to a group that has PERMISSION_ID = PERMISSION_TO_SUBSCRIBE_TO_INTERFACE  for that interface
+
+
+Note:'guest' is treated as a group. In addition to the permissions that the user has, the user also has all the permissions that the 'guest' has.
+
+

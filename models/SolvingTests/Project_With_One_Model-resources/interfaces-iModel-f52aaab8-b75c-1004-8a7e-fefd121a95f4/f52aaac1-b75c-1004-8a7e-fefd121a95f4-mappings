@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="f52aaac1-b75c-1004-8a7e-fefd121a95f4" name="Default Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="C" idRef="f55a2cd6-b75c-1004-8a7e-fefd121a95f4">
+                    <parameter name="C" idRef="f55a2cd4-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f5355d00-b75c-1004-8a7e-fefd121a95f4"/>
+                </mappedParameter>
+                <mappedParameter name="A" idRef="f556d432-b75c-1004-8a7e-fefd121a95f4">
+                    <parameter name="A" idRef="f556d430-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f5355d00-b75c-1004-8a7e-fefd121a95f4"/>
+                </mappedParameter>
+                <mappedParameter name="B" idRef="f5580d16-b75c-1004-8a7e-fefd121a95f4">
+                    <parameter name="B" idRef="f5580d14-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f5355d00-b75c-1004-8a7e-fefd121a95f4"/>
+                </mappedParameter>
+                <mappedParameter name="A" idRef="f556d431-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f5355d04-b75c-1004-8a7e-fefd121a95f4">
+                    <parameter name="A" idRef="f556d430-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f5355d00-b75c-1004-8a7e-fefd121a95f4"/>
+                </mappedParameter>
+                <mappedParameter name="C" idRef="f55a2cd5-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f5355d04-b75c-1004-8a7e-fefd121a95f4">
+                    <parameter name="C" idRef="f55a2cd4-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f5355d00-b75c-1004-8a7e-fefd121a95f4"/>
+                </mappedParameter>
+                <mappedParameter name="B" idRef="f5580d15-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f5355d04-b75c-1004-8a7e-fefd121a95f4">
+                    <parameter name="B" idRef="f5580d14-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f5355d00-b75c-1004-8a7e-fefd121a95f4"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects>
+            <parameter id="f556d432-b75c-1004-8a7e-fefd121a95f4" name="A">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="0.0" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+            </parameter>
+            <parameter id="f5580d16-b75c-1004-8a7e-fefd121a95f4" name="B">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="0.0" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+            </parameter>
+        </intermediateobjects>
+    </mappingsandintermediates>
+    <lookupdata>
+        <objectmap>
+            <parameter name="C" idRef="f55a2cd4-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f5355d00-b75c-1004-8a7e-fefd121a95f4" description="key"/>
+            <parameter name="C" idRef="f55a2cd5-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f5355d04-b75c-1004-8a7e-fefd121a95f4" description="value"/>
+            <parameter name="A" idRef="f556d430-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f5355d00-b75c-1004-8a7e-fefd121a95f4" description="key"/>
+            <parameter name="A" idRef="f556d431-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f5355d04-b75c-1004-8a7e-fefd121a95f4" description="value"/>
+            <relation name="C_equals_A_plus_B" idRef="f5355d00-b75c-1004-8a7e-fefd121a95f4" description="key"/>
+            <relation name="C_equals_A_plus_B" idRef="f5355d04-b75c-1004-8a7e-fefd121a95f4" description="value"/>
+            <parameter name="B" idRef="f5580d14-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f5355d00-b75c-1004-8a7e-fefd121a95f4" description="key"/>
+            <parameter name="B" idRef="f5580d15-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f5355d04-b75c-1004-8a7e-fefd121a95f4" description="value"/>
+        </objectmap>
+        <viewobjectmap/>
+        <relationobjectmap>
+            <parameter name="C" idRef="f55a2cd4-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f5355d00-b75c-1004-8a7e-fefd121a95f4" description="key"/>
+            <parameter name="C" idRef="f55a2cd6-b75c-1004-8a7e-fefd121a95f4" description="value"/>
+            <parameter name="A" idRef="f556d430-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f5355d00-b75c-1004-8a7e-fefd121a95f4" description="key"/>
+            <parameter name="A" idRef="f556d432-b75c-1004-8a7e-fefd121a95f4" description="value"/>
+            <parameter name="B" idRef="f5580d14-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f5355d00-b75c-1004-8a7e-fefd121a95f4" description="key"/>
+            <parameter name="B" idRef="f5580d16-b75c-1004-8a7e-fefd121a95f4" description="value"/>
+        </relationobjectmap>
+    </lookupdata>
+</modelinterface>

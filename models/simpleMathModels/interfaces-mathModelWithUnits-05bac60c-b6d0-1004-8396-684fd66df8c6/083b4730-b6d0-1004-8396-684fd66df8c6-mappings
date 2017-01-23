@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="083b4730-b6d0-1004-8396-684fd66df8c6" name="mathModelInterface">
+    <interfaceinfo>
+        <version>0.0.2</version>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="length" idRef="085e9c83-b6d0-1004-8396-684fd66df8c6">
+                    <parameter name="lengthR2" idRef="069cd7e6-b6d0-1004-8396-684fd66df8c6" idRelationRef="069cd7e0-b6d0-1004-8396-684fd66df8c6"/>
+                </mappedParameter>
+                <mappedParameter name="height" idRef="085e9c81-b6d0-1004-8396-684fd66df8c6">
+                    <parameter name="heightR1" idRef="05e0580a-b6d0-1004-8396-684fd66df8c6" idRelationRef="05e05804-b6d0-1004-8396-684fd66df8c6"/>
+                </mappedParameter>
+                <mappedParameter name="area" idRef="085e9c82-b6d0-1004-8396-684fd66df8c6">
+                    <parameter name="areaR1" idRef="05e05809-b6d0-1004-8396-684fd66df8c6" idRelationRef="05e05804-b6d0-1004-8396-684fd66df8c6"/>
+                </mappedParameter>
+                <mappedParameter name="width" idRef="085e9c80-b6d0-1004-8396-684fd66df8c6">
+                    <parameter name="widthR1" idRef="05e05808-b6d0-1004-8396-684fd66df8c6" idRelationRef="05e05804-b6d0-1004-8396-684fd66df8c6"/>
+                </mappedParameter>
+                <mappedParameter name="volume" idRef="085e9c84-b6d0-1004-8396-684fd66df8c6">
+                    <parameter name="volumeR2" idRef="069cd7e5-b6d0-1004-8396-684fd66df8c6" idRelationRef="069cd7e0-b6d0-1004-8396-684fd66df8c6"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects/>
+    </mappingsandintermediates>
+</modelinterface>

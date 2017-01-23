@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<model type="DomeModel" id="e5859b8a-c08f-1004-8ac5-e5fc5549eda4" name="iModel">
+    <modelinfo>
+        <version>0.0.2</version>
+        <imodel/>
+    </modelinfo>
+    <parameters/>
+    <relations/>
+    <visualizations/>
+    <subscriptions>
+        <subscription type="Subscription" id="e5859c0a-c08f-1004-8ac5-e5fc5549eda4" name="Complete Interface" version="1">
+            <locationIds resourceId="e5859be8-c08f-1004-8ac5-e5fc5549eda4" ifaceId="99259733-c08e-1004-889d-85f18abe9692"/>
+            <loginInfo>
+                <loginType>ADMIN</loginType>
+                <loginName>root</loginName>
+                <password>TJn1gnmkMVt/E3tY6pdIeIS/TGk=</password>
+                <serverPort>localhost:8080</serverPort>
+            </loginInfo>
+            <parameters>
+                <parameter id="e5859c0c-c08f-1004-8ac5-e5fc5549eda4" name="sample population">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="1000.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="e5859c0d-c08f-1004-8ac5-e5fc5549eda4" name="sample birth">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="40.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="e5859c0e-c08f-1004-8ac5-e5fc5549eda4" name="life expectancy at birth">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="37.55" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="e5859c0f-c08f-1004-8ac5-e5fc5549eda4" name="birth rate">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="e5859c10-c08f-1004-8ac5-e5fc5549eda4" name="death rate">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="e5859c11-c08f-1004-8ac5-e5fc5549eda4" name="percentage of land area increase">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0040" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="e5859c12-c08f-1004-8ac5-e5fc5549eda4" name="population density">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <contexts>
+                <context id="SUBSCRIPTION_BUILD_CXT" name="Build View">
+                    <modelobjects>
+                        <parameter name="sample population" idRef="e5859c0c-c08f-1004-8ac5-e5fc5549eda4"/>
+                        <parameter name="sample birth" idRef="e5859c0d-c08f-1004-8ac5-e5fc5549eda4"/>
+                        <parameter name="life expectancy at birth" idRef="e5859c0e-c08f-1004-8ac5-e5fc5549eda4"/>
+                        <parameter name="birth rate" idRef="e5859c0f-c08f-1004-8ac5-e5fc5549eda4"/>
+                        <parameter name="death rate" idRef="e5859c10-c08f-1004-8ac5-e5fc5549eda4"/>
+                        <parameter name="percentage of land area increase" idRef="e5859c11-c08f-1004-8ac5-e5fc5549eda4"/>
+                        <parameter name="population density" idRef="e5859c12-c08f-1004-8ac5-e5fc5549eda4"/>
+                    </modelobjects>
+                </context>
+            </contexts>
+            <directedGraph id="e5859c0a-c08f-1004-8ac5-e5fc5549eda4">
+                <nodes>
+                    <node idRef="e5859c0c-c08f-1004-8ac5-e5fc5549eda4"/>
+                    <node idRef="e5859c0d-c08f-1004-8ac5-e5fc5549eda4"/>
+                    <node idRef="e5859c0e-c08f-1004-8ac5-e5fc5549eda4"/>
+                    <node idRef="e5859c0f-c08f-1004-8ac5-e5fc5549eda4"/>
+                    <node idRef="e5859c10-c08f-1004-8ac5-e5fc5549eda4"/>
+                    <node idRef="e5859c11-c08f-1004-8ac5-e5fc5549eda4"/>
+                    <node idRef="e5859c12-c08f-1004-8ac5-e5fc5549eda4"/>
+                </nodes>
+                <arcs>
+                    <from idRef="e5859c0c-c08f-1004-8ac5-e5fc5549eda4">
+                        <to idRef="e5859c0f-c08f-1004-8ac5-e5fc5549eda4"/>
+                    </from>
+                    <from idRef="e5859c0d-c08f-1004-8ac5-e5fc5549eda4">
+                        <to idRef="e5859c0f-c08f-1004-8ac5-e5fc5549eda4"/>
+                    </from>
+                    <from idRef="e5859c0e-c08f-1004-8ac5-e5fc5549eda4">
+                        <to idRef="e5859c10-c08f-1004-8ac5-e5fc5549eda4"/>
+                    </from>
+                    <from idRef="e5859c11-c08f-1004-8ac5-e5fc5549eda4">
+                        <to idRef="e5859c12-c08f-1004-8ac5-e5fc5549eda4"/>
+                    </from>
+                </arcs>
+            </directedGraph>
+            <paramIdMap>
+                <entry thisId="e5859c0c-c08f-1004-8ac5-e5fc5549eda4" origId="e5859bc7-c08f-1004-8ac5-e5fc5549eda4"/>
+                <entry thisId="e5859c0d-c08f-1004-8ac5-e5fc5549eda4" origId="e5859bc8-c08f-1004-8ac5-e5fc5549eda4"/>
+                <entry thisId="e5859c0e-c08f-1004-8ac5-e5fc5549eda4" origId="e5859bc9-c08f-1004-8ac5-e5fc5549eda4"/>
+                <entry thisId="e5859c0f-c08f-1004-8ac5-e5fc5549eda4" origId="e5859bca-c08f-1004-8ac5-e5fc5549eda4"/>
+                <entry thisId="e5859c10-c08f-1004-8ac5-e5fc5549eda4" origId="e5859bcb-c08f-1004-8ac5-e5fc5549eda4"/>
+                <entry thisId="e5859c11-c08f-1004-8ac5-e5fc5549eda4" origId="e5859bcc-c08f-1004-8ac5-e5fc5549eda4"/>
+                <entry thisId="e5859c12-c08f-1004-8ac5-e5fc5549eda4" origId="e5859bcd-c08f-1004-8ac5-e5fc5549eda4"/>
+            </paramIdMap>
+        </subscription>
+        <subscription type="Subscription" id="e5859c52-c08f-1004-8ac5-e5fc5549eda4" name="Simple Interface" version="2">
+            <locationIds resourceId="e5859c4e-c08f-1004-8ac5-e5fc5549eda4" ifaceId="99259732-c08e-1004-889d-85f18abe9692"/>
+            <loginInfo>
+                <loginType>ADMIN</loginType>
+                <loginName>root</loginName>
+                <password>TJn1gnmkMVt/E3tY6pdIeIS/TGk=</password>
+                <serverPort>localhost:8080</serverPort>
+            </loginInfo>
+            <parameters>
+                <parameter id="e5859c54-c08f-1004-8ac5-e5fc5549eda4" name="given birth rate">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.04" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="e5859c55-c08f-1004-8ac5-e5fc5549eda4" name="given death rate">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.028" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="e5859c56-c08f-1004-8ac5-e5fc5549eda4" name="given population density">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="26.5" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="e5859c57-c08f-1004-8ac5-e5fc5549eda4" name="estimated final pollution">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="e5859c58-c08f-1004-8ac5-e5fc5549eda4" name="estimated population">
+                    <currentType value="Vector"/>
+                    <data>
+                        <dataobject type="Vector">
+                            <unit>No_Unit</unit>
+                            <rowVector>false</rowVector>
+                            <initialValue type="real">0.0</initialValue>
+                            <fixedSize>false</fixedSize>
+                            <data type="real"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <contexts>
+                <context id="SUBSCRIPTION_BUILD_CXT" name="Build View">
+                    <modelobjects>
+                        <parameter name="given birth rate" idRef="e5859c54-c08f-1004-8ac5-e5fc5549eda4"/>
+                        <parameter name="given death rate" idRef="e5859c55-c08f-1004-8ac5-e5fc5549eda4"/>
+                        <parameter name="given population density" idRef="e5859c56-c08f-1004-8ac5-e5fc5549eda4"/>
+                        <parameter name="estimated final pollution" idRef="e5859c57-c08f-1004-8ac5-e5fc5549eda4"/>
+                        <parameter name="estimated population" idRef="e5859c58-c08f-1004-8ac5-e5fc5549eda4"/>
+                    </modelobjects>
+                </context>
+            </contexts>
+            <directedGraph id="e5859c52-c08f-1004-8ac5-e5fc5549eda4">
+                <nodes>
+                    <node idRef="e5859c54-c08f-1004-8ac5-e5fc5549eda4"/>
+                    <node idRef="e5859c55-c08f-1004-8ac5-e5fc5549eda4"/>
+                    <node idRef="e5859c56-c08f-1004-8ac5-e5fc5549eda4"/>
+                    <node idRef="e5859c57-c08f-1004-8ac5-e5fc5549eda4"/>
+                    <node idRef="e5859c58-c08f-1004-8ac5-e5fc5549eda4"/>
+                </nodes>
+                <arcs>
+                    <from idRef="e5859c54-c08f-1004-8ac5-e5fc5549eda4">
+                        <to idRef="e5859c57-c08f-1004-8ac5-e5fc5549eda4"/>
+                        <to idRef="e5859c58-c08f-1004-8ac5-e5fc5549eda4"/>
+                    </from>
+                    <from idRef="e5859c55-c08f-1004-8ac5-e5fc5549eda4">
+                        <to idRef="e5859c57-c08f-1004-8ac5-e5fc5549eda4"/>
+                        <to idRef="e5859c58-c08f-1004-8ac5-e5fc5549eda4"/>
+                    </from>
+                </arcs>
+            </directedGraph>
+            <paramIdMap>
+                <entry thisId="e5859c54-c08f-1004-8ac5-e5fc5549eda4" origId="e5859b42-c08f-1004-8ac5-e5fc5549eda4"/>
+                <entry thisId="e5859c55-c08f-1004-8ac5-e5fc5549eda4" origId="e5859b44-c08f-1004-8ac5-e5fc5549eda4"/>
+                <entry thisId="e5859c56-c08f-1004-8ac5-e5fc5549eda4" origId="e5859c47-c08f-1004-8ac5-e5fc5549eda4"/>
+                <entry thisId="e5859c57-c08f-1004-8ac5-e5fc5549eda4" origId="e5859b45-c08f-1004-8ac5-e5fc5549eda4"/>
+                <entry thisId="e5859c58-c08f-1004-8ac5-e5fc5549eda4" origId="e5859b47-c08f-1004-8ac5-e5fc5549eda4"/>
+            </paramIdMap>
+        </subscription>
+    </subscriptions>
+    <contexts>
+        <context id="BUILD_CXT" name="Build View">
+            <modelobjects>
+                <subscription name="Complete Interface" idRef="e5859c0a-c08f-1004-8ac5-e5fc5549eda4"/>
+                <subscription name="Simple Interface" idRef="e5859c52-c08f-1004-8ac5-e5fc5549eda4"/>
+            </modelobjects>
+        </context>
+        <context id="FILE_CXT" name="Files"/>
+    </contexts>
+    <mappings>
+        <modelMappings>
+            <mappedParameter name="death rate" idRef="e5859c10-c08f-1004-8ac5-e5fc5549eda4">
+                <parameter name="given death rate" idRef="e5859c55-c08f-1004-8ac5-e5fc5549eda4"/>
+            </mappedParameter>
+            <mappedParameter name="given birth rate" idRef="e5859c54-c08f-1004-8ac5-e5fc5549eda4">
+                <parameter name="birth rate" idRef="e5859c0f-c08f-1004-8ac5-e5fc5549eda4"/>
+            </mappedParameter>
+            <mappedParameter name="population density" idRef="e5859c12-c08f-1004-8ac5-e5fc5549eda4">
+                <parameter name="given population density" idRef="e5859c56-c08f-1004-8ac5-e5fc5549eda4"/>
+            </mappedParameter>
+        </modelMappings>
+    </mappings>
+    <auxfiles/>
+</model>

@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="b25d34c8-b6a5-1004-8d71-293cc5648337" name="Default Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="lVm" idRef="b2603988-b6a5-1004-8d71-293cc5648337" idRelationRef="b2603980-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="lVm" idRef="2d594628-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594620-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="sVm" idRef="b2605cb3-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="sVm" idRef="2d596d1f-b698-1004-8f8b-8912c506e25c" idRelationRef="2d596d18-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="lEf" idRef="b2605c95-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="lEf" idRef="2d594624-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594620-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="tEm" idRef="b2605ca5-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="tEm" idRef="2d59462e-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594629-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="pVm" idRef="b2605cbb-b6a5-1004-8d71-293cc5648337" idRelationRef="b2605cb4-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="pVm" idRef="2d596d28-b698-1004-8f8b-8912c506e25c" idRelationRef="2d596d21-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="lVf" idRef="b2603986-b6a5-1004-8d71-293cc5648337" idRelationRef="b2603980-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="lVf" idRef="2d594626-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594620-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="tVm" idRef="b2605c9f-b6a5-1004-8d71-293cc5648337" idRelationRef="b2605c98-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="tVm" idRef="2d594630-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594629-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="Ef" idRef="b2601644-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="Ef" idRef="2d591f05-b698-1004-8f8b-8912c506e25c" idModelRef="2d591ef8-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="pVf" idRef="b2605cba-b6a5-1004-8d71-293cc5648337" idRelationRef="b2605cb4-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="pVf" idRef="2d596d27-b698-1004-8f8b-8912c506e25c" idRelationRef="2d596d21-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="tEf" idRef="b2605c9c-b6a5-1004-8d71-293cc5648337" idRelationRef="b2605c98-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="tEf" idRef="2d59462d-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594629-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="vf" idRef="b260164b-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="vf" idRef="2d59460b-b698-1004-8f8b-8912c506e25c" idModelRef="2d591ef8-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="Num" idRef="b2601649-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="Num" idRef="2d59460a-b698-1004-8f8b-8912c506e25c" idModelRef="2d591ef8-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="sGf" idRef="b2605cab-b6a5-1004-8d71-293cc5648337" idRelationRef="b2605ca6-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="sGf" idRef="2d596d1d-b698-1004-8f8b-8912c506e25c" idRelationRef="2d596d18-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="pNuf" idRef="b2607fbe-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="pNuf" idRef="2d596d25-b698-1004-8f8b-8912c506e25c" idRelationRef="2d596d21-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="pNuf" idRef="b2605cb8-b6a5-1004-8d71-293cc5648337" idRelationRef="b2605cb4-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="pNuf" idRef="2d596d25-b698-1004-8f8b-8912c506e25c" idRelationRef="2d596d21-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="Gf" idRef="b2601654-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="Gf" idRef="2d594612-b698-1004-8f8b-8912c506e25c" idRelationRef="2d59460c-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="E2" idRef="b2605ca1-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="E2" idRef="2d594631-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594629-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="Gm" idRef="b2603974-b6a5-1004-8d71-293cc5648337" idRelationRef="b260396e-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="Gm" idRef="2d594619-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594613-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="sGm" idRef="b2605cb2-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="sGm" idRef="2d596d1e-b698-1004-8f8b-8912c506e25c" idRelationRef="2d596d18-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="mVf" idRef="b260397e-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="mVf" idRef="2d59461e-b698-1004-8f8b-8912c506e25c" idRelationRef="2d59461a-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="tVf" idRef="b2605c9e-b6a5-1004-8d71-293cc5648337" idRelationRef="b2605c98-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="tVf" idRef="2d59462f-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594629-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="pVf" idRef="b2607fc0-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="pVf" idRef="2d596d27-b698-1004-8f8b-8912c506e25c" idRelationRef="2d596d21-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="E1" idRef="b2603987-b6a5-1004-8d71-293cc5648337" idRelationRef="b2603980-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="E1" idRef="2d594627-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594620-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="nu12" idRef="b2605cbc-b6a5-1004-8d71-293cc5648337" idRelationRef="b2605cb4-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="nu12" idRef="2d596d29-b698-1004-8f8b-8912c506e25c" idRelationRef="2d596d21-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="nu12" idRef="b2607fbd-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="nu12" idRef="2d596d29-b698-1004-8f8b-8912c506e25c" idRelationRef="2d596d21-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="lEf" idRef="b2603984-b6a5-1004-8d71-293cc5648337" idRelationRef="b2603980-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="lEf" idRef="2d594624-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594620-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="sVf" idRef="b2605cb0-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="sVf" idRef="2d596d1c-b698-1004-8f8b-8912c506e25c" idRelationRef="2d596d18-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="Num" idRef="b260164a-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="Num" idRef="2d59460a-b698-1004-8f8b-8912c506e25c" idModelRef="2d591ef8-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="mNum" idRef="b2603976-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="mNum" idRef="2d594618-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594613-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="sVf" idRef="b2605caa-b6a5-1004-8d71-293cc5648337" idRelationRef="b2605ca6-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="sVf" idRef="2d596d1c-b698-1004-8f8b-8912c506e25c" idRelationRef="2d596d18-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="fEf" idRef="b260396d-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="fEf" idRef="2d594610-b698-1004-8f8b-8912c506e25c" idRelationRef="2d59460c-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="lEm" idRef="b2603985-b6a5-1004-8d71-293cc5648337" idRelationRef="b2603980-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="lEm" idRef="2d594625-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594620-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="E2" idRef="b2605ca0-b6a5-1004-8d71-293cc5648337" idRelationRef="b2605c98-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="E2" idRef="2d594631-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594629-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="mEm" idRef="b2603972-b6a5-1004-8d71-293cc5648337" idRelationRef="b260396e-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="mEm" idRef="2d594617-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594613-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="Nuf" idRef="b2601646-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="Nuf" idRef="2d594608-b698-1004-8f8b-8912c506e25c" idModelRef="2d591ef8-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="sGm" idRef="b2605cac-b6a5-1004-8d71-293cc5648337" idRelationRef="b2605ca6-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="sGm" idRef="2d596d1e-b698-1004-8f8b-8912c506e25c" idRelationRef="2d596d18-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="mVf" idRef="b260397c-b6a5-1004-8d71-293cc5648337" idRelationRef="b2603978-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="mVf" idRef="2d59461e-b698-1004-8f8b-8912c506e25c" idRelationRef="2d59461a-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="Em" idRef="b2601647-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="Em" idRef="2d594609-b698-1004-8f8b-8912c506e25c" idModelRef="2d591ef8-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="sGf" idRef="b2605cb1-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="sGf" idRef="2d596d1d-b698-1004-8f8b-8912c506e25c" idRelationRef="2d596d18-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="vm" idRef="b260397d-b6a5-1004-8d71-293cc5648337" idRelationRef="b2603978-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="vm" idRef="2d59461f-b698-1004-8f8b-8912c506e25c" idRelationRef="2d59461a-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="lVf" idRef="b2603989-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="lVf" idRef="2d594626-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594620-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="G12" idRef="b2605cae-b6a5-1004-8d71-293cc5648337" idRelationRef="b2605ca6-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="G12" idRef="2d596d20-b698-1004-8f8b-8912c506e25c" idRelationRef="2d596d18-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="mEm" idRef="b2603977-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="mEm" idRef="2d594617-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594613-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="tEm" idRef="b2605c9d-b6a5-1004-8d71-293cc5648337" idRelationRef="b2605c98-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="tEm" idRef="2d59462e-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594629-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="fNuf" idRef="b260396c-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="fNuf" idRef="2d594611-b698-1004-8f8b-8912c506e25c" idRelationRef="2d59460c-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="Gm" idRef="b2603975-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="Gm" idRef="2d594619-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594613-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="vf" idRef="b260164c-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="vf" idRef="2d59460b-b698-1004-8f8b-8912c506e25c" idModelRef="2d591ef8-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="Ef" idRef="b25ff31c-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="Ef" idRef="2d591f05-b698-1004-8f8b-8912c506e25c" idModelRef="2d591ef8-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="E1" idRef="b2605c96-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="E1" idRef="2d594627-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594620-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="vm" idRef="b260397f-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="vm" idRef="2d59461f-b698-1004-8f8b-8912c506e25c" idRelationRef="2d59461a-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="pNum" idRef="b2605cb9-b6a5-1004-8d71-293cc5648337" idRelationRef="b2605cb4-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="pNum" idRef="2d596d26-b698-1004-8f8b-8912c506e25c" idRelationRef="2d596d21-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="G12" idRef="b2605caf-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="G12" idRef="2d596d20-b698-1004-8f8b-8912c506e25c" idRelationRef="2d596d18-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="lVm" idRef="b2605c94-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="lVm" idRef="2d594628-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594620-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="Nuf" idRef="b2601645-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="Nuf" idRef="2d594608-b698-1004-8f8b-8912c506e25c" idModelRef="2d591ef8-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="fNuf" idRef="b2601652-b6a5-1004-8d71-293cc5648337" idRelationRef="b260164d-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="fNuf" idRef="2d594611-b698-1004-8f8b-8912c506e25c" idRelationRef="2d59460c-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="fEf" idRef="b2601651-b6a5-1004-8d71-293cc5648337" idRelationRef="b260164d-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="fEf" idRef="2d594610-b698-1004-8f8b-8912c506e25c" idRelationRef="2d59460c-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="pNum" idRef="b2607fbf-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="pNum" idRef="2d596d26-b698-1004-8f8b-8912c506e25c" idRelationRef="2d596d21-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="pVm" idRef="b2607fbc-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="pVm" idRef="2d596d28-b698-1004-8f8b-8912c506e25c" idRelationRef="2d596d21-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="Em" idRef="b2601648-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="Em" idRef="2d594609-b698-1004-8f8b-8912c506e25c" idModelRef="2d591ef8-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="sVm" idRef="b2605cad-b6a5-1004-8d71-293cc5648337" idRelationRef="b2605ca6-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="sVm" idRef="2d596d1f-b698-1004-8f8b-8912c506e25c" idRelationRef="2d596d18-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="lEm" idRef="b2605c97-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="lEm" idRef="2d594625-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594620-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="tEf" idRef="b2605ca4-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="tEf" idRef="2d59462d-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594629-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="tVm" idRef="b2605ca3-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="tVm" idRef="2d594630-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594629-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="tVf" idRef="b2605ca2-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="tVf" idRef="2d59462f-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594629-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="Gf" idRef="b2601653-b6a5-1004-8d71-293cc5648337" idRelationRef="b260164d-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="Gf" idRef="2d594612-b698-1004-8f8b-8912c506e25c" idRelationRef="2d59460c-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="mNum" idRef="b2603973-b6a5-1004-8d71-293cc5648337" idRelationRef="b260396e-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="mNum" idRef="2d594618-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594613-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects>
+            <parameter id="b2605c95-b6a5-1004-8d71-293cc5648337" name="lEf">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="3.0E7" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+                <documentation>
+                    <text format="plain"><![CDATA[fiber Young's modulus]]></text>
+                </documentation>
+            </parameter>
+            <parameter id="b2605ca5-b6a5-1004-8d71-293cc5648337" name="tEm">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="500000.0" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+                <documentation>
+                    <text format="plain"><![CDATA[matrix Young's modulus]]></text>
+                </documentation>
+            </parameter>
+            <parameter id="b2605ca2-b6a5-1004-8d71-293cc5648337" name="tVf">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="0.6" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+                <documentation>
+                    <text format="plain"><![CDATA[fiber volume fraction]]></text>
+                </documentation>
+            </parameter>
+            <parameter id="b2603976-b6a5-1004-8d71-293cc5648337" name="mNum">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="0.35" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+                <documentation>
+                    <text format="plain"><![CDATA[matrix Possion ration]]></text>
+                </documentation>
+            </parameter>
+            <parameter id="b260396d-b6a5-1004-8d71-293cc5648337" name="fEf">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="3.0E7" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+                <documentation>
+                    <text format="plain"><![CDATA[fiber Young's modulus]]></text>
+                </documentation>
+            </parameter>
+            <parameter id="b2603977-b6a5-1004-8d71-293cc5648337" name="mEm">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="500000.0" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+                <documentation>
+                    <text format="plain"><![CDATA[matrix Young's modulus]]></text>
+                </documentation>
+            </parameter>
+            <parameter id="b2603975-b6a5-1004-8d71-293cc5648337" name="Gm">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="185185.18518518517" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+                <documentation>
+                    <text format="plain"><![CDATA[matrix shear modulus
+]]></text>
+                </documentation>
+            </parameter>
+            <parameter id="b2605cb2-b6a5-1004-8d71-293cc5648337" name="sGm">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="185185.18518518517" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+                <documentation>
+                    <text format="plain"><![CDATA[matrix shear modulus
+]]></text>
+                </documentation>
+            </parameter>
+            <parameter id="b2605c97-b6a5-1004-8d71-293cc5648337" name="lEm">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="500000.0" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+                <documentation>
+                    <text format="plain"><![CDATA[matrix Young's modulus]]></text>
+                </documentation>
+            </parameter>
+            <parameter id="b2605cb0-b6a5-1004-8d71-293cc5648337" name="sVf">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="0.6" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+                <documentation>
+                    <text format="plain"><![CDATA[fiber volume fraction]]></text>
+                </documentation>
+            </parameter>
+            <parameter id="b2603989-b6a5-1004-8d71-293cc5648337" name="lVf">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="0.6" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+                <documentation>
+                    <text format="plain"><![CDATA[fiber volume fraction]]></text>
+                </documentation>
+            </parameter>
+            <parameter id="b260397e-b6a5-1004-8d71-293cc5648337" name="mVf">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="0.6" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+                <documentation>
+                    <text format="plain"><![CDATA[fiber volume fraction]]></text>
+                </documentation>
+            </parameter>
+            <parameter id="b2607fc0-b6a5-1004-8d71-293cc5648337" name="pVf">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="0.6" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+                <documentation>
+                    <text format="plain"><![CDATA[fiber volume fraction]]></text>
+                </documentation>
+            </parameter>
+            <parameter id="b2605ca3-b6a5-1004-8d71-293cc5648337" name="tVm">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="0.4" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+                <documentation>
+                    <text format="plain"><![CDATA[matrix volume fraction
+]]></text>
+                </documentation>
+            </parameter>
+            <parameter id="b260397f-b6a5-1004-8d71-293cc5648337" name="vm">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="0.4" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+                <documentation>
+                    <text format="plain"><![CDATA[matrix volume fraction
+]]></text>
+                </documentation>
+            </parameter>
+            <parameter id="b2605ca4-b6a5-1004-8d71-293cc5648337" name="tEf">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="3.0E7" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+                <documentation>
+                    <text format="plain"><![CDATA[fiber Young's modulus]]></text>
+                </documentation>
+            </parameter>
+            <parameter id="b2605cb3-b6a5-1004-8d71-293cc5648337" name="sVm">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="0.4" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+                <documentation>
+                    <text format="plain"><![CDATA[matrix volume fraction
+]]></text>
+                </documentation>
+            </parameter>
+            <parameter id="b260396c-b6a5-1004-8d71-293cc5648337" name="fNuf">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="0.2" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+                <documentation>
+                    <text format="plain"><![CDATA[fiber Possion ration]]></text>
+                </documentation>
+            </parameter>
+            <parameter id="b2607fbc-b6a5-1004-8d71-293cc5648337" name="pVm">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="0.4" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+                <documentation>
+                    <text format="plain"><![CDATA[matrix volume fraction
+]]></text>
+                </documentation>
+            </parameter>
+            <parameter id="b2601654-b6a5-1004-8d71-293cc5648337" name="Gf">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="1.25E7" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+                <documentation>
+                    <text format="plain"><![CDATA[fiber shear modulus]]></text>
+                </documentation>
+            </parameter>
+            <parameter id="b2605cb1-b6a5-1004-8d71-293cc5648337" name="sGf">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="1.25E7" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+                <documentation>
+                    <text format="plain"><![CDATA[fiber shear modulus]]></text>
+                </documentation>
+            </parameter>
+            <parameter id="b2607fbf-b6a5-1004-8d71-293cc5648337" name="pNum">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="0.35" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+                <documentation>
+                    <text format="plain"><![CDATA[matrix Possion ration]]></text>
+                </documentation>
+            </parameter>
+            <parameter id="b2607fbe-b6a5-1004-8d71-293cc5648337" name="pNuf">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="0.2" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+                <documentation>
+                    <text format="plain"><![CDATA[fiber Possion ration]]></text>
+                </documentation>
+            </parameter>
+            <parameter id="b2605c94-b6a5-1004-8d71-293cc5648337" name="lVm">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="0.4" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+                <documentation>
+                    <text format="plain"><![CDATA[matrix volume fraction
+]]></text>
+                </documentation>
+            </parameter>
+        </intermediateobjects>
+    </mappingsandintermediates>
+    <lookupdata>
+        <objectmap>
+            <relation name="TransverseFiberModulus" idRef="2d594629-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <relation name="TransverseFiberModulus" idRef="b2605c98-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="Em" idRef="2d594609-b698-1004-8f8b-8912c506e25c" idModelRef="2d591ef8-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <parameter name="Em" idRef="b2601647-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <relation name="PoissonRatio" idRef="2d596d21-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <relation name="PoissonRatio" idRef="b2605cb4-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="Nuf" idRef="2d594608-b698-1004-8f8b-8912c506e25c" idModelRef="2d591ef8-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <parameter name="Nuf" idRef="b2601645-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <relation name="FiberShearModulus" idRef="2d59460c-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <relation name="FiberShearModulus" idRef="b260164d-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <relation name="ShearModulus" idRef="2d596d18-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <relation name="ShearModulus" idRef="b2605ca6-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <relation name="MatrixVolumeFraction" idRef="2d59461a-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <relation name="MatrixVolumeFraction" idRef="b2603978-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="vf" idRef="2d59460b-b698-1004-8f8b-8912c506e25c" idModelRef="2d591ef8-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <parameter name="vf" idRef="b260164b-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="Ef" idRef="2d591f05-b698-1004-8f8b-8912c506e25c" idModelRef="2d591ef8-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <parameter name="Ef" idRef="b25ff31c-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <relation name="MatrixShearModulus" idRef="2d594613-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <relation name="MatrixShearModulus" idRef="b260396e-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="Num" idRef="2d59460a-b698-1004-8f8b-8912c506e25c" idModelRef="2d591ef8-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <parameter name="Num" idRef="b2601649-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <relation name="LongitudinalFiberModulus" idRef="2d594620-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <relation name="LongitudinalFiberModulus" idRef="b2603980-b6a5-1004-8d71-293cc5648337" description="value"/>
+        </objectmap>
+        <viewobjectmap>
+            <parameter name="Nuf" idRef="b2601645-b6a5-1004-8d71-293cc5648337" description="key"/>
+            <parameter name="Nuf" idRef="b2601646-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="Ef" idRef="b25ff31c-b6a5-1004-8d71-293cc5648337" description="key"/>
+            <parameter name="Ef" idRef="b2601644-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="Em" idRef="b2601647-b6a5-1004-8d71-293cc5648337" description="key"/>
+            <parameter name="Em" idRef="b2601648-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="vf" idRef="b260164b-b6a5-1004-8d71-293cc5648337" description="key"/>
+            <parameter name="vf" idRef="b260164c-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="Num" idRef="b2601649-b6a5-1004-8d71-293cc5648337" description="key"/>
+            <parameter name="Num" idRef="b260164a-b6a5-1004-8d71-293cc5648337" description="value"/>
+        </viewobjectmap>
+        <relationobjectmap>
+            <parameter name="pNuf" idRef="2d596d25-b698-1004-8f8b-8912c506e25c" idRelationRef="2d596d21-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <parameter name="pNuf" idRef="b2607fbe-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="sGf" idRef="2d596d1d-b698-1004-8f8b-8912c506e25c" idRelationRef="2d596d18-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <parameter name="sGf" idRef="b2605cb1-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="tEf" idRef="2d59462d-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594629-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <parameter name="tEf" idRef="b2605ca4-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="lVf" idRef="2d594626-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594620-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <parameter name="lVf" idRef="b2603989-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="mEm" idRef="2d594617-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594613-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <parameter name="mEm" idRef="b2603977-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="vm" idRef="2d59461f-b698-1004-8f8b-8912c506e25c" idRelationRef="2d59461a-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <parameter name="vm" idRef="b260397f-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="Gf" idRef="2d594612-b698-1004-8f8b-8912c506e25c" idRelationRef="2d59460c-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <parameter name="Gf" idRef="b2601654-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="lVm" idRef="2d594628-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594620-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <parameter name="lVm" idRef="b2605c94-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="tEm" idRef="2d59462e-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594629-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <parameter name="tEm" idRef="b2605ca5-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="fEf" idRef="2d594610-b698-1004-8f8b-8912c506e25c" idRelationRef="2d59460c-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <parameter name="fEf" idRef="b260396d-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="nu12" idRef="2d596d29-b698-1004-8f8b-8912c506e25c" idRelationRef="2d596d21-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <parameter name="nu12" idRef="b2607fbd-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="sGm" idRef="2d596d1e-b698-1004-8f8b-8912c506e25c" idRelationRef="2d596d18-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <parameter name="sGm" idRef="b2605cb2-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="G12" idRef="2d596d20-b698-1004-8f8b-8912c506e25c" idRelationRef="2d596d18-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <parameter name="G12" idRef="b2605caf-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="fNuf" idRef="2d594611-b698-1004-8f8b-8912c506e25c" idRelationRef="2d59460c-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <parameter name="fNuf" idRef="b260396c-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="tVm" idRef="2d594630-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594629-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <parameter name="tVm" idRef="b2605ca3-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="mVf" idRef="2d59461e-b698-1004-8f8b-8912c506e25c" idRelationRef="2d59461a-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <parameter name="mVf" idRef="b260397e-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="sVm" idRef="2d596d1f-b698-1004-8f8b-8912c506e25c" idRelationRef="2d596d18-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <parameter name="sVm" idRef="b2605cb3-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="pVf" idRef="2d596d27-b698-1004-8f8b-8912c506e25c" idRelationRef="2d596d21-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <parameter name="pVf" idRef="b2607fc0-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="pVm" idRef="2d596d28-b698-1004-8f8b-8912c506e25c" idRelationRef="2d596d21-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <parameter name="pVm" idRef="b2607fbc-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="lEm" idRef="2d594625-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594620-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <parameter name="lEm" idRef="b2605c97-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="mNum" idRef="2d594618-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594613-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <parameter name="mNum" idRef="b2603976-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="E1" idRef="2d594627-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594620-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <parameter name="E1" idRef="b2605c96-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="sVf" idRef="2d596d1c-b698-1004-8f8b-8912c506e25c" idRelationRef="2d596d18-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <parameter name="sVf" idRef="b2605cb0-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="E2" idRef="2d594631-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594629-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <parameter name="E2" idRef="b2605ca1-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="pNum" idRef="2d596d26-b698-1004-8f8b-8912c506e25c" idRelationRef="2d596d21-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <parameter name="pNum" idRef="b2607fbf-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="lEf" idRef="2d594624-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594620-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <parameter name="lEf" idRef="b2605c95-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="tVf" idRef="2d59462f-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594629-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <parameter name="tVf" idRef="b2605ca2-b6a5-1004-8d71-293cc5648337" description="value"/>
+            <parameter name="Gm" idRef="2d594619-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594613-b698-1004-8f8b-8912c506e25c" description="key"/>
+            <parameter name="Gm" idRef="b2603975-b6a5-1004-8d71-293cc5648337" description="value"/>
+        </relationobjectmap>
+    </lookupdata>
+</modelinterface>

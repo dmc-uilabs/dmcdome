@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="5b626385-c08e-1004-87bc-6bbffbf0d682" name="Default Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <parameters>
+        <parameter id="5b62638f-c08e-1004-87bc-6bbffbf0d682" name="given birth rate">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.04" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="5b626392-c08e-1004-87bc-6bbffbf0d682" name="estimated population">
+            <currentType value="Vector"/>
+            <data>
+                <dataobject type="Vector">
+                    <unit>No_Unit</unit>
+                    <rowVector>false</rowVector>
+                    <initialValue type="real">0.0</initialValue>
+                    <fixedSize>false</fixedSize>
+                    <data type="real"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="5b626396-c08e-1004-87bc-6bbffbf0d682" name="given cap invest rate">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.05" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="e5859b29-c08f-1004-8ac5-e5fc5549eda4" name="given death rate">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.028" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="e5859b2c-c08f-1004-8ac5-e5fc5549eda4" name="estimated final pollution">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="e5859b2f-c08f-1004-8ac5-e5fc5549eda4" name="estimated capital ratio">
+            <currentType value="Vector"/>
+            <data>
+                <dataobject type="Vector">
+                    <unit>No_Unit</unit>
+                    <rowVector>false</rowVector>
+                    <initialValue type="real">0.0</initialValue>
+                    <fixedSize>false</fixedSize>
+                    <data type="real"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="e5859c45-c08f-1004-8ac5-e5fc5549eda4" name="given population density">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="26.5" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="5b626390-c08e-1004-87bc-6bbffbf0d682" name="given birth rate">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.04" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="5b626393-c08e-1004-87bc-6bbffbf0d682" name="estimated population">
+            <currentType value="Vector"/>
+            <data>
+                <dataobject type="Vector">
+                    <unit>No_Unit</unit>
+                    <rowVector>false</rowVector>
+                    <initialValue type="real">0.0</initialValue>
+                    <fixedSize>false</fixedSize>
+                    <data type="real"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="5b626397-c08e-1004-87bc-6bbffbf0d682" name="given cap invest rate">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.05" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="e5859b2a-c08f-1004-8ac5-e5fc5549eda4" name="given death rate">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.028" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="e5859b2d-c08f-1004-8ac5-e5fc5549eda4" name="estimated final pollution">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="e5859b30-c08f-1004-8ac5-e5fc5549eda4" name="estimated capital ratio">
+            <currentType value="Vector"/>
+            <data>
+                <dataobject type="Vector">
+                    <unit>No_Unit</unit>
+                    <rowVector>false</rowVector>
+                    <initialValue type="real">0.0</initialValue>
+                    <fixedSize>false</fixedSize>
+                    <data type="real"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="e5859c46-c08f-1004-8ac5-e5fc5549eda4" name="given population density">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="26.5" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <visualizations/>
+    <relations/>
+    <contexts>
+        <context id="IFACE_MODEL_CXT" name="Model View">
+            <modelobjects>
+                <parameter name="given birth rate" idRef="5b62638f-c08e-1004-87bc-6bbffbf0d682"/>
+                <parameter name="estimated population" idRef="5b626392-c08e-1004-87bc-6bbffbf0d682"/>
+                <parameter name="given cap invest rate" idRef="5b626396-c08e-1004-87bc-6bbffbf0d682"/>
+                <parameter name="given death rate" idRef="e5859b29-c08f-1004-8ac5-e5fc5549eda4"/>
+                <parameter name="estimated final pollution" idRef="e5859b2c-c08f-1004-8ac5-e5fc5549eda4"/>
+                <parameter name="estimated capital ratio" idRef="e5859b2f-c08f-1004-8ac5-e5fc5549eda4"/>
+                <parameter name="given population density" idRef="e5859c45-c08f-1004-8ac5-e5fc5549eda4"/>
+            </modelobjects>
+        </context>
+    </contexts>
+    <views>
+        <view name="Build View">
+            <context id="IFACE_BUILD_CXT" name="Build View">
+                <modelobjects>
+                    <parameter name="given birth rate" idRef="5b626390-c08e-1004-87bc-6bbffbf0d682"/>
+                    <parameter name="estimated population" idRef="5b626393-c08e-1004-87bc-6bbffbf0d682"/>
+                    <parameter name="given cap invest rate" idRef="5b626397-c08e-1004-87bc-6bbffbf0d682"/>
+                    <parameter name="given death rate" idRef="e5859b2a-c08f-1004-8ac5-e5fc5549eda4"/>
+                    <parameter name="estimated final pollution" idRef="e5859b2d-c08f-1004-8ac5-e5fc5549eda4"/>
+                    <parameter name="estimated capital ratio" idRef="e5859b30-c08f-1004-8ac5-e5fc5549eda4"/>
+                    <parameter name="given population density" idRef="e5859c46-c08f-1004-8ac5-e5fc5549eda4"/>
+                </modelobjects>
+            </context>
+        </view>
+        <view name="Interface Causality View">
+            <filter id="INPUTS_FILTER" name="Inputs">
+                <parameters>
+                    <parameter name="given cap invest rate" idRef="5b626397-c08e-1004-87bc-6bbffbf0d682"/>
+                    <parameter name="given death rate" idRef="e5859b2a-c08f-1004-8ac5-e5fc5549eda4"/>
+                    <parameter name="given birth rate" idRef="5b626390-c08e-1004-87bc-6bbffbf0d682"/>
+                    <parameter name="given population density" idRef="e5859c46-c08f-1004-8ac5-e5fc5549eda4"/>
+                </parameters>
+            </filter>
+            <filter id="OUTPUTS_FILTER" name="Outputs">
+                <parameters>
+                    <parameter name="estimated capital ratio" idRef="e5859b30-c08f-1004-8ac5-e5fc5549eda4" causality="Result"/>
+                    <parameter name="estimated population" idRef="5b626393-c08e-1004-87bc-6bbffbf0d682" causality="Result"/>
+                    <parameter name="estimated final pollution" idRef="e5859b2d-c08f-1004-8ac5-e5fc5549eda4" causality="Result"/>
+                </parameters>
+            </filter>
+            <filter id="INDETERMINATES_FILTER" name="Indeterminates"/>
+        </view>
+    </views>
+    <directedGraph id="5b626385-c08e-1004-87bc-6bbffbf0d682">
+        <nodes>
+            <node idRef="5b626390-c08e-1004-87bc-6bbffbf0d682"/>
+            <node idRef="5b626393-c08e-1004-87bc-6bbffbf0d682"/>
+            <node idRef="5b626397-c08e-1004-87bc-6bbffbf0d682"/>
+            <node idRef="e5859b2a-c08f-1004-8ac5-e5fc5549eda4"/>
+            <node idRef="e5859b2d-c08f-1004-8ac5-e5fc5549eda4"/>
+            <node idRef="e5859b30-c08f-1004-8ac5-e5fc5549eda4"/>
+            <node idRef="e5859c46-c08f-1004-8ac5-e5fc5549eda4"/>
+        </nodes>
+        <arcs>
+            <from idRef="5b626390-c08e-1004-87bc-6bbffbf0d682">
+                <to idRef="5b626393-c08e-1004-87bc-6bbffbf0d682"/>
+                <to idRef="e5859b2d-c08f-1004-8ac5-e5fc5549eda4"/>
+                <to idRef="e5859b30-c08f-1004-8ac5-e5fc5549eda4"/>
+            </from>
+            <from idRef="5b626397-c08e-1004-87bc-6bbffbf0d682">
+                <to idRef="5b626393-c08e-1004-87bc-6bbffbf0d682"/>
+                <to idRef="e5859b2d-c08f-1004-8ac5-e5fc5549eda4"/>
+                <to idRef="e5859b30-c08f-1004-8ac5-e5fc5549eda4"/>
+            </from>
+            <from idRef="e5859b2a-c08f-1004-8ac5-e5fc5549eda4">
+                <to idRef="5b626393-c08e-1004-87bc-6bbffbf0d682"/>
+                <to idRef="e5859b2d-c08f-1004-8ac5-e5fc5549eda4"/>
+                <to idRef="e5859b30-c08f-1004-8ac5-e5fc5549eda4"/>
+            </from>
+            <from idRef="e5859c46-c08f-1004-8ac5-e5fc5549eda4">
+                <to idRef="5b626393-c08e-1004-87bc-6bbffbf0d682"/>
+                <to idRef="e5859b2d-c08f-1004-8ac5-e5fc5549eda4"/>
+                <to idRef="e5859b30-c08f-1004-8ac5-e5fc5549eda4"/>
+            </from>
+        </arcs>
+    </directedGraph>
+    <interfaceToRelParamMap>
+        <iToRpMap relParamId="5b626390-c08e-1004-87bc-6bbffbf0d682" ifaceId="5b62638e-c08e-1004-87bc-6bbffbf0d682"/>
+        <iToRpMap relParamId="5b626393-c08e-1004-87bc-6bbffbf0d682" ifaceId="5b626391-c08e-1004-87bc-6bbffbf0d682"/>
+        <iToRpMap relParamId="5b626397-c08e-1004-87bc-6bbffbf0d682" ifaceId="5b626395-c08e-1004-87bc-6bbffbf0d682"/>
+        <iToRpMap relParamId="e5859b2a-c08f-1004-8ac5-e5fc5549eda4" ifaceId="e5859b28-c08f-1004-8ac5-e5fc5549eda4"/>
+        <iToRpMap relParamId="e5859b2d-c08f-1004-8ac5-e5fc5549eda4" ifaceId="e5859b2b-c08f-1004-8ac5-e5fc5549eda4"/>
+        <iToRpMap relParamId="e5859b30-c08f-1004-8ac5-e5fc5549eda4" ifaceId="e5859b2e-c08f-1004-8ac5-e5fc5549eda4"/>
+        <iToRpMap relParamId="e5859c46-c08f-1004-8ac5-e5fc5549eda4" ifaceId="e5859c44-c08f-1004-8ac5-e5fc5549eda4"/>
+    </interfaceToRelParamMap>
+</modelinterface>

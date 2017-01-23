@@ -1,0 +1,3 @@
+add this line to the 129th line of DOMEdB.script
+
+INSERT INTO MODEL_TYPES VALUES('VENSIM')

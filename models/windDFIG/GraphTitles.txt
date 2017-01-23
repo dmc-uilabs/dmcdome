@@ -1,0 +1,19 @@
+Grid Plots
+Vabc_B120(pu)              	
+Vabc_B25(pu)			
+Vabc_B575(pu)			
+P_B25(MW)			
+Q_B25(Mvar)			
+V_Plant 2.3kV pos. seq(pu)	
+I Plant pos. seq (pu/2 MVA)	
+Motor speed (pu)
+Turbine Plots
+Pos. seq V1_B575(pu)
+Pos. seq I1_B575(pu)
+Generated P (MW)
+Generated Q(Mvar)
+Vdc(V)
+Speed(pu)
+Wind Speed (m/s)
+pitch angle (deg)
+

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="e5da2871-dad4-1004-8855-6b2aadfa974a" name="Default Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="GraphTitles" idRef="1375f029-db05-1004-8f38-e210175dd8c1">
+                    <parameter name="GraphTitles" idRef="1375f027-db05-1004-8f38-e210175dd8c1" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                </mappedParameter>
+                <mappedParameter name="Line Length" idRef="e5da288f-dad4-1004-8855-6b2aadfa974a">
+                    <parameter name="Line Length" idRef="e5da288d-dad4-1004-8855-6b2aadfa974a" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                </mappedParameter>
+                <mappedParameter name="Number Of Turbines" idRef="42b8e3c1-dad7-1004-80f4-772a6c6cf8e0">
+                    <parameter name="Number Of Turbines" idRef="42b8e3bf-dad7-1004-80f4-772a6c6cf8e0" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                </mappedParameter>
+                <mappedParameter name="Frequency" idRef="57e0637e-dad7-1004-816b-799bc0accdc8">
+                    <parameter name="Frequency" idRef="57e0637c-dad7-1004-816b-799bc0accdc8" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                </mappedParameter>
+                <mappedParameter name="Grid Data" idRef="57e0638f-dad7-1004-816b-799bc0accdc8">
+                    <parameter name="Grid Data" idRef="57e0638d-dad7-1004-816b-799bc0accdc8" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                </mappedParameter>
+                <mappedParameter name="Turbine Data " idRef="57e06392-dad7-1004-816b-799bc0accdc8">
+                    <parameter name="Turbine Data " idRef="57e06390-dad7-1004-816b-799bc0accdc8" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                </mappedParameter>
+                <mappedParameter name="Object Number" idRef="db216ce1-dade-1004-8f81-a646163d805e">
+                    <parameter name="Object Number" idRef="db216cdf-dade-1004-8f81-a646163d805e" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                </mappedParameter>
+                <mappedParameter name="Starting Wind Speed" idRef="42b8e3c9-dad7-1004-80f4-772a6c6cf8e0">
+                    <parameter name="Starting Wind Speed" idRef="42b8e3c7-dad7-1004-80f4-772a6c6cf8e0" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                </mappedParameter>
+                <mappedParameter name="Number Of Turbines" idRef="42b8e3c0-dad7-1004-80f4-772a6c6cf8e0">
+                    <parameter name="Number Of Turbines" idRef="42b8e3bf-dad7-1004-80f4-772a6c6cf8e0" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                </mappedParameter>
+                <mappedParameter name="Frequency" idRef="57e0637d-dad7-1004-816b-799bc0accdc8">
+                    <parameter name="Frequency" idRef="57e0637c-dad7-1004-816b-799bc0accdc8" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                </mappedParameter>
+                <mappedParameter name="Starting Wind Speed" idRef="42b8e3c8-dad7-1004-80f4-772a6c6cf8e0">
+                    <parameter name="Starting Wind Speed" idRef="42b8e3c7-dad7-1004-80f4-772a6c6cf8e0" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                </mappedParameter>
+                <mappedParameter name="Turbine Data " idRef="57e06391-dad7-1004-816b-799bc0accdc8">
+                    <parameter name="Turbine Data " idRef="57e06390-dad7-1004-816b-799bc0accdc8" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                </mappedParameter>
+                <mappedParameter name="Object Number" idRef="db216ce0-dade-1004-8f81-a646163d805e">
+                    <parameter name="Object Number" idRef="db216cdf-dade-1004-8f81-a646163d805e" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                </mappedParameter>
+                <mappedParameter name="Grid Data" idRef="57e0638e-dad7-1004-816b-799bc0accdc8">
+                    <parameter name="Grid Data" idRef="57e0638d-dad7-1004-816b-799bc0accdc8" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                </mappedParameter>
+                <mappedParameter name="GraphTitles" idRef="1375f028-db05-1004-8f38-e210175dd8c1">
+                    <parameter name="GraphTitles" idRef="1375f027-db05-1004-8f38-e210175dd8c1" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                </mappedParameter>
+                <mappedParameter name="Line Length" idRef="e5da288e-dad4-1004-8855-6b2aadfa974a">
+                    <parameter name="Line Length" idRef="e5da288d-dad4-1004-8855-6b2aadfa974a" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects/>
+    </mappingsandintermediates>
+    <lookupdata>
+        <objectmap>
+            <context name="Output" idRef="e5da2893-dad4-1004-8855-6b2aadfa974a" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a" description="key"/>
+            <context name="Output" idRef="e5da2894-dad4-1004-8855-6b2aadfa974a" description="value"/>
+            <parameter name="Grid Data" idRef="57e0638d-dad7-1004-816b-799bc0accdc8" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a" description="key"/>
+            <parameter name="Grid Data" idRef="57e0638e-dad7-1004-816b-799bc0accdc8" description="value"/>
+            <parameter name="Number Of Turbines" idRef="42b8e3bf-dad7-1004-80f4-772a6c6cf8e0" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a" description="key"/>
+            <parameter name="Number Of Turbines" idRef="42b8e3c0-dad7-1004-80f4-772a6c6cf8e0" description="value"/>
+            <parameter name="Frequency" idRef="57e0637c-dad7-1004-816b-799bc0accdc8" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a" description="key"/>
+            <parameter name="Frequency" idRef="57e0637d-dad7-1004-816b-799bc0accdc8" description="value"/>
+            <parameter name="Starting Wind Speed" idRef="42b8e3c7-dad7-1004-80f4-772a6c6cf8e0" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a" description="key"/>
+            <parameter name="Starting Wind Speed" idRef="42b8e3c8-dad7-1004-80f4-772a6c6cf8e0" description="value"/>
+            <parameter name="GraphTitles" idRef="1375f027-db05-1004-8f38-e210175dd8c1" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a" description="key"/>
+            <parameter name="GraphTitles" idRef="1375f028-db05-1004-8f38-e210175dd8c1" description="value"/>
+            <parameter name="Object Number" idRef="db216cdf-dade-1004-8f81-a646163d805e" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a" description="key"/>
+            <parameter name="Object Number" idRef="db216ce0-dade-1004-8f81-a646163d805e" description="value"/>
+            <parameter name="Turbine Data " idRef="57e06390-dad7-1004-816b-799bc0accdc8" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a" description="key"/>
+            <parameter name="Turbine Data " idRef="57e06391-dad7-1004-816b-799bc0accdc8" description="value"/>
+            <parameter name="Line Length" idRef="e5da288d-dad4-1004-8855-6b2aadfa974a" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a" description="key"/>
+            <parameter name="Line Length" idRef="e5da288e-dad4-1004-8855-6b2aadfa974a" description="value"/>
+            <context name="Inputs" idRef="e5da287a-dad4-1004-8855-6b2aadfa974a" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a" description="key"/>
+            <context name="Inputs" idRef="e5da287b-dad4-1004-8855-6b2aadfa974a" description="value"/>
+        </objectmap>
+        <viewobjectmap>
+            <parameter name="Number Of Turbines" idRef="42b8e3c0-dad7-1004-80f4-772a6c6cf8e0" description="key"/>
+            <parameter name="Number Of Turbines" idRef="42b8e3c1-dad7-1004-80f4-772a6c6cf8e0" description="value"/>
+            <parameter name="Frequency" idRef="57e0637d-dad7-1004-816b-799bc0accdc8" description="key"/>
+            <parameter name="Frequency" idRef="57e0637e-dad7-1004-816b-799bc0accdc8" description="value"/>
+            <parameter name="Starting Wind Speed" idRef="42b8e3c8-dad7-1004-80f4-772a6c6cf8e0" description="key"/>
+            <parameter name="Starting Wind Speed" idRef="42b8e3c9-dad7-1004-80f4-772a6c6cf8e0" description="value"/>
+            <parameter name="Turbine Data " idRef="57e06391-dad7-1004-816b-799bc0accdc8" description="key"/>
+            <parameter name="Turbine Data " idRef="57e06392-dad7-1004-816b-799bc0accdc8" description="value"/>
+            <parameter name="Object Number" idRef="db216ce0-dade-1004-8f81-a646163d805e" description="key"/>
+            <parameter name="Object Number" idRef="db216ce1-dade-1004-8f81-a646163d805e" description="value"/>
+            <parameter name="Grid Data" idRef="57e0638e-dad7-1004-816b-799bc0accdc8" description="key"/>
+            <parameter name="Grid Data" idRef="57e0638f-dad7-1004-816b-799bc0accdc8" description="value"/>
+            <parameter name="GraphTitles" idRef="1375f028-db05-1004-8f38-e210175dd8c1" description="key"/>
+            <parameter name="GraphTitles" idRef="1375f029-db05-1004-8f38-e210175dd8c1" description="value"/>
+            <parameter name="Line Length" idRef="e5da288e-dad4-1004-8855-6b2aadfa974a" description="key"/>
+            <parameter name="Line Length" idRef="e5da288f-dad4-1004-8855-6b2aadfa974a" description="value"/>
+        </viewobjectmap>
+        <relationobjectmap/>
+    </lookupdata>
+</modelinterface>

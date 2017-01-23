@@ -1,0 +1,50 @@
+LANDUSEINFO
+134
+130
+41
+4
+2
+250
+250
+0	unknown	unknown
+111	publicOffices	publicoffices2000
+1112	publicOffices	public-offices2000-10000
+1113	publicOffices	public-offices10000-50000
+1114	publicOffices	public-offices50000-
+112	cultureCenters	education-and-culture-2000
+1122	cultureCenters	education-and-culture2000-10000
+1123	cultureCenters	education-and-culture10000-50000
+1124	cultureCenters	education-and-culture50000-
+113	healthServices	health-service-facilities
+114	utilities	utilities
+121	officeBldgs	office-buildings-2000
+1212	officeBldgs	office-buildings2000-10000
+1213	officeBldgs	office-buildings10000-50000
+1214	officeBldgs	office-buildings50000-
+122	commerceBldgs	commercialbuildings-500
+1222	commerceBldgs	commercialbuildings500-
+123	shopResid	combined-shop-and-residence-500
+1232	shopResid	combined-shop-and-residence500-
+124	hotels	hotels-and-amusement
+125	recreation	sports-and-recreation
+131	houses	houses
+132	apartments	apartments-500
+1322	apartments	apartments500-
+141	factories	factories-and-workshops
+142	workshopResid	combined-workshop-and-residence-500
+1422	workshopResid	combined-workshop-and-residence500-
+143	warehouses	warehouses-and-transport-facilities
+210	outdoorFacil	outdoor-facilities-planned-buildings
+300	parks	parks
+400	unusedLand	unused-residence-land
+510	roads	roads
+520	railroadHarbor	railroads-and-harbors
+150	agriculture	agriculture-and-fisheries
+611	riceFields	rice-fields
+612	agricultural	agricultural-fields
+613	orchards	orchards
+620	pastures	grazing-pastures
+700	rivers	rivers-and-channels
+900	fields	fields
+800	forests	forests
+999	other	other

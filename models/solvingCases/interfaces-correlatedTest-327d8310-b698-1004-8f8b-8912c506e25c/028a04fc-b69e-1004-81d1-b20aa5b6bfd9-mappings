@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="028a04fc-b69e-1004-81d1-b20aa5b6bfd9" name="completeInterface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="c" idRef="02cd8bba-b69e-1004-81d1-b20aa5b6bfd9">
+                    <parameter name="c" idRef="327daa35-b698-1004-8f8b-8912c506e25c" idRelationRef="327daa2f-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="x" idRef="02cd8bb5-b69e-1004-81d1-b20aa5b6bfd9">
+                    <parameter name="x" idRef="327d8322-b698-1004-8f8b-8912c506e25c" idRelationRef="327d831e-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="j" idRef="02cd8bb8-b69e-1004-81d1-b20aa5b6bfd9">
+                    <parameter name="j" idRef="327dd135-b698-1004-8f8b-8912c506e25c" idRelationRef="327dd130-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="k" idRef="02cd8bb9-b69e-1004-81d1-b20aa5b6bfd9">
+                    <parameter name="k" idRef="327dd136-b698-1004-8f8b-8912c506e25c" idRelationRef="327dd130-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="f" idRef="02cd8bbb-b69e-1004-81d1-b20aa5b6bfd9">
+                    <parameter name="f" idRef="327daa36-b698-1004-8f8b-8912c506e25c" idRelationRef="327daa2f-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="y" idRef="02cd8bb6-b69e-1004-81d1-b20aa5b6bfd9">
+                    <parameter name="y" idRef="327d8323-b698-1004-8f8b-8912c506e25c" idRelationRef="327d831e-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="z" idRef="02cd8bb7-b69e-1004-81d1-b20aa5b6bfd9">
+                    <parameter name="z" idRef="327daa3e-b698-1004-8f8b-8912c506e25c" idRelationRef="327daa39-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="h" idRef="02cd8bb4-b69e-1004-81d1-b20aa5b6bfd9">
+                    <parameter name="h" idRef="327d831d-b698-1004-8f8b-8912c506e25c" idModelRef="327d8310-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects/>
+    </mappingsandintermediates>
+</modelinterface>

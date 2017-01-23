@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<model type="DomeModel" id="f3dc7290-b75c-1004-8a7e-fefd121a95f4" name="T_equals_S">
+    <modelinfo>
+        <version>0.0.0</version>
+        <imodel/>
+    </modelinfo>
+    <parameters/>
+    <relations>
+        <relation type="Procedural" id="f4020938-b75c-1004-8a7e-fefd121a95f4" name="T_equals_S">
+            <parameters>
+                <parameter id="f44ca344-b75c-1004-8a7e-fefd121a95f4" name="S">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="f44e51bc-b75c-1004-8a7e-fefd121a95f4" name="T">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <body><![CDATA[T = S]]></body>
+            <dependencies>
+                <dependency idRef="f44e51bc-b75c-1004-8a7e-fefd121a95f4">
+                    <parameter name="S" idRef="f44ca344-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f4020938-b75c-1004-8a7e-fefd121a95f4"/>
+                </dependency>
+            </dependencies>
+        </relation>
+    </relations>
+    <visualizations/>
+    <subscriptions>
+        <subscription type="Subscription" id="f3f9c91c-b75c-1004-8a7e-fefd121a95f4" name="Y_equals_X">
+            <locationIds resourceId="f28b7d3c-b75c-1004-8a7e-fefd121a95f4" ifaceId="f26d57a9-b75c-1004-89fe-53c809e5870d"/>
+            <loginInfo>
+                <loginType>ADMIN</loginType>
+                <loginName>root</loginName>
+                <password>TJn1gnmkMVt/E3tY6pdIeIS/TGk=</password>
+            </loginInfo>
+            <defaultView>
+                <filter name="Inputs">
+                    <parameter id="f3f9c91d-b75c-1004-8a7e-fefd121a95f4" name="X">
+                        <currentType value="Real"/>
+                        <data>
+                            <dataobject type="Real">
+                                <quantity magnitude="0.0" unit="No_Unit"/>
+                            </dataobject>
+                        </data>
+                    </parameter>
+                </filter>
+                <filter name="Outputs">
+                    <parameter id="f3f9c91e-b75c-1004-8a7e-fefd121a95f4" name="Y">
+                        <currentType value="Real"/>
+                        <data>
+                            <dataobject type="Real">
+                                <quantity magnitude="0.0" unit="No_Unit"/>
+                            </dataobject>
+                        </data>
+                    </parameter>
+                </filter>
+                <filter name="Indeterminates"/>
+            </defaultView>
+            <directedGraph id="f3f9c91c-b75c-1004-8a7e-fefd121a95f4">
+                <nodes>
+                    <node idRef="f3f9c91d-b75c-1004-8a7e-fefd121a95f4"/>
+                    <node idRef="f3f9c91e-b75c-1004-8a7e-fefd121a95f4"/>
+                </nodes>
+                <arcs>
+                    <from idRef="f3f9c91d-b75c-1004-8a7e-fefd121a95f4">
+                        <to idRef="f3f9c91e-b75c-1004-8a7e-fefd121a95f4"/>
+                    </from>
+                </arcs>
+            </directedGraph>
+            <paramIdMap>
+                <entry thisId="f3f9c91d-b75c-1004-8a7e-fefd121a95f4" origId="e2daf8ba-b75c-1004-8ca4-1216ce4da944"/>
+                <entry thisId="f3f9c91e-b75c-1004-8a7e-fefd121a95f4" origId="e2dc5912-b75c-1004-8ca4-1216ce4da944"/>
+            </paramIdMap>
+        </subscription>
+        <subscription type="Subscription" id="f3f9f032-b75c-1004-8a7e-fefd121a95f4" name="B_equals_A">
+            <locationIds resourceId="f28f284c-b75c-1004-8a7e-fefd121a95f4" ifaceId="f25c80b8-b75c-1004-89fe-53c809e5870d"/>
+            <loginInfo>
+                <loginType>ADMIN</loginType>
+                <loginName>root</loginName>
+                <password>TJn1gnmkMVt/E3tY6pdIeIS/TGk=</password>
+            </loginInfo>
+            <defaultView>
+                <filter name="Inputs">
+                    <parameter id="f3f9f033-b75c-1004-8a7e-fefd121a95f4" name="A">
+                        <currentType value="Real"/>
+                        <data>
+                            <dataobject type="Real">
+                                <quantity magnitude="0.0" unit="No_Unit"/>
+                            </dataobject>
+                        </data>
+                    </parameter>
+                </filter>
+                <filter name="Outputs">
+                    <parameter id="f3f9f034-b75c-1004-8a7e-fefd121a95f4" name="B">
+                        <currentType value="Real"/>
+                        <data>
+                            <dataobject type="Real">
+                                <quantity magnitude="0.0" unit="No_Unit"/>
+                            </dataobject>
+                        </data>
+                    </parameter>
+                </filter>
+                <filter name="Indeterminates"/>
+            </defaultView>
+            <directedGraph id="f3f9f032-b75c-1004-8a7e-fefd121a95f4">
+                <nodes>
+                    <node idRef="f3f9f034-b75c-1004-8a7e-fefd121a95f4"/>
+                    <node idRef="f3f9f033-b75c-1004-8a7e-fefd121a95f4"/>
+                </nodes>
+                <arcs>
+                    <from idRef="f3f9f033-b75c-1004-8a7e-fefd121a95f4">
+                        <to idRef="f3f9f034-b75c-1004-8a7e-fefd121a95f4"/>
+                    </from>
+                </arcs>
+            </directedGraph>
+            <paramIdMap>
+                <entry thisId="f3f9f033-b75c-1004-8a7e-fefd121a95f4" origId="d3c42e1c-b75c-1004-8ca4-1216ce4da944"/>
+                <entry thisId="f3f9f034-b75c-1004-8a7e-fefd121a95f4" origId="d3c5b522-b75c-1004-8ca4-1216ce4da944"/>
+            </paramIdMap>
+        </subscription>
+    </subscriptions>
+    <contexts>
+        <context id="BUILD_CXT" name="Build View">
+            <modelobjects>
+                <subscription name="Y_equals_X" idRef="f3f9c91c-b75c-1004-8a7e-fefd121a95f4"/>
+                <subscription name="B_equals_A" idRef="f3f9f032-b75c-1004-8a7e-fefd121a95f4"/>
+                <relation name="T_equals_S" idRef="f4020938-b75c-1004-8a7e-fefd121a95f4"/>
+            </modelobjects>
+        </context>
+    </contexts>
+    <mappings>
+        <modelMappings>
+            <mappedParameter name="A" idRef="f3f9f033-b75c-1004-8a7e-fefd121a95f4">
+                <parameter name="T" idRef="f44e51bc-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f4020938-b75c-1004-8a7e-fefd121a95f4"/>
+            </mappedParameter>
+            <mappedParameter name="S" idRef="f44ca344-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f4020938-b75c-1004-8a7e-fefd121a95f4">
+                <parameter name="Y" idRef="f3f9c91e-b75c-1004-8a7e-fefd121a95f4"/>
+            </mappedParameter>
+        </modelMappings>
+    </mappings>
+    <auxfiles/>
+</model>

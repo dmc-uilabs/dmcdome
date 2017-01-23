@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<model type="PluginModel" id="a025103c-b6fb-1004-838c-f144bf0bdddf" name="Excel cable drum glass drop" pluginType="EXCEL">
+    <modelinfo>
+        <version>0.0.1</version>
+    </modelinfo>
+    <parameters>
+        <parameter id="cf55c020-b6cb-1004-8511-6d78516dd70d" name="BPillarHeight">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="400.0" unit="mm"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="cfb19648-b6cb-1004-8511-6d78516dd70d" name="GlassRadius">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="1293.0" unit="mm"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="d000e504-b6cb-1004-8511-6d78516dd70d" name="SealDragB">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.05" unit="[NPMM]"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="d021710c-b6cb-1004-8511-6d78516dd70d" name="MotorSpeed">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="82.0" unit="[RPM]"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="d0446f40-b6cb-1004-8511-6d78516dd70d" name="MotorTorque">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="5.5" unit="J"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="d0badc0c-b6cb-1004-8511-6d78516dd70d" name="GlassThickness">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="3.0" unit="mm"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="d0f11b8c-b6cb-1004-8511-6d78516dd70d" name="MaxVel">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="[CMPS]"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="d11c94d8-b6cb-1004-8511-6d78516dd70d" name="HeaderLength">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="300.0" unit="mm"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="d3b040a0-b6cb-1004-8511-6d78516dd70d" name="MaxStall">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="N"/>
+                </dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <contexts>
+        <context id="BUILD_CXT" name="Build View">
+            <modelobjects>
+                <parameter name="BPillarHeight" idRef="cf55c020-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+                <parameter name="GlassRadius" idRef="cfb19648-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+                <parameter name="SealDragB" idRef="d000e504-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+                <parameter name="MotorSpeed" idRef="d021710c-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+                <parameter name="MotorTorque" idRef="d0446f40-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+                <parameter name="GlassThickness" idRef="d0badc0c-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+                <parameter name="MaxVel" idRef="d0f11b8c-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+                <parameter name="HeaderLength" idRef="d11c94d8-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+                <parameter name="MaxStall" idRef="d3b040a0-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+            </modelobjects>
+        </context>
+    </contexts>
+    <mappings>
+        <modelMappings>
+            <mappedParameter name="GlassThickness" idRef="d0badc0c-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf">FBDDK1!$I$41</mappedParameter>
+            <mappedParameter name="MotorTorque" idRef="d0446f40-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf">FBDDK1!$G$70</mappedParameter>
+            <mappedParameter name="MaxVel" idRef="d0f11b8c-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf">FBDDK1!$M$30</mappedParameter>
+            <mappedParameter name="BPillarHeight" idRef="cf55c020-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf">FBDDK1!$I$34</mappedParameter>
+            <mappedParameter name="HeaderLength" idRef="d11c94d8-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf">FBDDK1!$I$48</mappedParameter>
+            <mappedParameter name="GlassRadius" idRef="cfb19648-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf">FBDDK1!$I$40</mappedParameter>
+            <mappedParameter name="SealDragB" idRef="d000e504-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf">FBDDK1!$I$30</mappedParameter>
+            <mappedParameter name="MaxStall" idRef="d3b040a0-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf">FBDDK1!$M$31</mappedParameter>
+            <mappedParameter name="MotorSpeed" idRef="d021710c-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf">FBDDK1!$G$69</mappedParameter>
+        </modelMappings>
+    </mappings>
+    <dependencies>
+        <dependency idRef="d0f11b8c-b6cb-1004-8511-6d78516dd70d">
+            <parameter name="BPillarHeight" idRef="cf55c020-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+            <parameter name="GlassRadius" idRef="cfb19648-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+            <parameter name="SealDragB" idRef="d000e504-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+            <parameter name="MotorSpeed" idRef="d021710c-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+            <parameter name="MotorTorque" idRef="d0446f40-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+            <parameter name="GlassThickness" idRef="d0badc0c-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+            <parameter name="HeaderLength" idRef="d11c94d8-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+        </dependency>
+        <dependency idRef="d3b040a0-b6cb-1004-8511-6d78516dd70d">
+            <parameter name="BPillarHeight" idRef="cf55c020-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+            <parameter name="GlassRadius" idRef="cfb19648-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+            <parameter name="SealDragB" idRef="d000e504-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+            <parameter name="MotorSpeed" idRef="d021710c-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+            <parameter name="MotorTorque" idRef="d0446f40-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+            <parameter name="GlassThickness" idRef="d0badc0c-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+            <parameter name="HeaderLength" idRef="d11c94d8-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+        </dependency>
+    </dependencies>
+    <setup>
+        <parameter id="xls file location" name="xls file location">
+            <currentType value="File"/>
+            <data>
+                <dataobject type="File">
+                    <filePath>C:\dome3\DomeModelFilesForTesting\excel\Cable_DrumPub.xls</filePath>
+                    <fileType>Excel</fileType>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="software version" name="software version">
+            <currentType value="Enumeration"/>
+            <data>
+                <dataobject type="Enumeration">
+                    <data>
+                        <dataobject name="Excel 2000" type="String"></dataobject>
+                    </data>
+                    <lastSelectionIndex>0</lastSelectionIndex>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="run in foreground" name="run in foreground">
+            <currentType value="Boolean"/>
+            <data>
+                <dataobject type="Boolean">false</dataobject>
+            </data>
+        </parameter>
+    </setup>
+</model>

@@ -1,0 +1,2 @@
+this is a small test file for Dome to check mit.cadlab.dome3.objectmodel/dataobject/FileData class.
+it is stored in same directory as junit test source file.

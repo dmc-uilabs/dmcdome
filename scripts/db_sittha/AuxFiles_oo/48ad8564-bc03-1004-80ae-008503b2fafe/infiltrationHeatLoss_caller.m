@@ -1,0 +1,1 @@
+[AFR, Qinf, totQinf] = infiltrationHeatLoss(leakType, leakSize, numSto, shield, Tin, T975, wind);

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="30361099-b6e3-1004-852e-73f7ffb2a5f6" name="Default Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <parameters>
+        <parameter id="312b1c9a-b6e3-1004-852e-73f7ffb2a5f6" name="curingTemperature">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="80.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="312ddf3e-b6e3-1004-852e-73f7ffb2a5f6" name="nominalModulus">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="500000.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="31309f26-b6e3-1004-852e-73f7ffb2a5f6" name="actualModulus">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="500000.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <relations>
+        <relation type="Procedural" id="305f6f94-b6e3-1004-852e-73f7ffb2a5f6" name="temperaturePropertyRelation">
+            <parameters>
+                <parameter id="312b1c99-b6e3-1004-852e-73f7ffb2a5f6" name="curingTemperature">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="80.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="312ddf3d-b6e3-1004-852e-73f7ffb2a5f6" name="nominalModulus">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="500000.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="31309f25-b6e3-1004-852e-73f7ffb2a5f6" name="actualModulus">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="500000.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <body><![CDATA[actualModulus = nominalModulus * curingTemperature/80]]></body>
+            <dependencies>
+                <dependency idRef="31309f25-b6e3-1004-852e-73f7ffb2a5f6">
+                    <parameter name="curingTemperature" idRef="312b1c99-b6e3-1004-852e-73f7ffb2a5f6" idRelationRef="305f6f94-b6e3-1004-852e-73f7ffb2a5f6"/>
+                    <parameter name="nominalModulus" idRef="312ddf3d-b6e3-1004-852e-73f7ffb2a5f6" idRelationRef="305f6f94-b6e3-1004-852e-73f7ffb2a5f6"/>
+                </dependency>
+            </dependencies>
+        </relation>
+    </relations>
+    <contexts>
+        <context id="IFACE_MODEL_CXT" name="Model View">
+            <modelobjects>
+                <relation name="temperaturePropertyRelation" idRef="305f6f94-b6e3-1004-852e-73f7ffb2a5f6"/>
+            </modelobjects>
+        </context>
+    </contexts>
+    <views>
+        <view name="Build View">
+            <context id="IFACE_BUILD_CXT" name="Build View">
+                <modelobjects>
+                    <parameter name="curingTemperature" idRef="312b1c9a-b6e3-1004-852e-73f7ffb2a5f6"/>
+                    <parameter name="nominalModulus" idRef="312ddf3e-b6e3-1004-852e-73f7ffb2a5f6"/>
+                    <parameter name="actualModulus" idRef="31309f26-b6e3-1004-852e-73f7ffb2a5f6"/>
+                </modelobjects>
+            </context>
+        </view>
+        <view name="Interface Causality View">
+            <filter id="INPUTS_FILTER" name="Inputs">
+                <parameters>
+                    <parameter name="curingTemperature" idRef="312b1c9a-b6e3-1004-852e-73f7ffb2a5f6"/>
+                    <parameter name="nominalModulus" idRef="312ddf3e-b6e3-1004-852e-73f7ffb2a5f6"/>
+                </parameters>
+            </filter>
+            <filter id="OUTPUTS_FILTER" name="Outputs">
+                <parameters>
+                    <parameter name="actualModulus" idRef="31309f26-b6e3-1004-852e-73f7ffb2a5f6" causality="Result"/>
+                </parameters>
+            </filter>
+            <filter id="INDETERMINATES_FILTER" name="Indeterminates"/>
+        </view>
+        <view name="System Causality View">
+            <filter id="3036109a-b6e3-1004-852e-73f7ffb2a5f6" name="Independent">
+                <parameters>
+                    <parameter name="curingTemperature" idRef="312b1c9a-b6e3-1004-852e-73f7ffb2a5f6"/>
+                    <parameter name="nominalModulus" idRef="312ddf3e-b6e3-1004-852e-73f7ffb2a5f6"/>
+                </parameters>
+            </filter>
+            <filter id="3036109b-b6e3-1004-852e-73f7ffb2a5f6" name="Intermediate"/>
+            <filter id="3036109c-b6e3-1004-852e-73f7ffb2a5f6" name="Result">
+                <parameters>
+                    <parameter name="actualModulus" idRef="31309f26-b6e3-1004-852e-73f7ffb2a5f6"/>
+                </parameters>
+            </filter>
+        </view>
+    </views>
+    <directedGraph id="30361099-b6e3-1004-852e-73f7ffb2a5f6">
+        <nodes>
+            <node idRef="31309f26-b6e3-1004-852e-73f7ffb2a5f6"/>
+            <node idRef="312b1c9a-b6e3-1004-852e-73f7ffb2a5f6"/>
+            <node idRef="312ddf3e-b6e3-1004-852e-73f7ffb2a5f6"/>
+        </nodes>
+        <arcs>
+            <from idRef="312b1c9a-b6e3-1004-852e-73f7ffb2a5f6">
+                <to idRef="31309f26-b6e3-1004-852e-73f7ffb2a5f6"/>
+            </from>
+            <from idRef="312ddf3e-b6e3-1004-852e-73f7ffb2a5f6">
+                <to idRef="31309f26-b6e3-1004-852e-73f7ffb2a5f6"/>
+            </from>
+        </arcs>
+    </directedGraph>
+</modelinterface>

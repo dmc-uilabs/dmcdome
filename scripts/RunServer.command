@@ -1,0 +1,2 @@
+cd ~/dome3/development/scripts/db
+java -DDOMEROOT=/Users/jacobwronski/dome3/development -DQMOOROOT=/Users/jacobwronski/dome3/development/out -cp ../../lib/hsqldb.jar:../../out:../../lib/dom4j-full.jar:../../lib/domehelp.jar:../../lib/jh.jar:../../lib/jakarta-oro-2.0.6.jar:../../lib/jfreechart-0.8.1x.jar:../../lib/jcommon-0.6.1.jar:../../lib/jython.jar:../../lib/Jama-1.0.1.jar:../../lib/ui.jar:../../lib/ostermillerutils_1_02_24.jar:../../lib/colt.jar:../../lib/jcommon-0.8.9.jar:../../lib/jfreechart-0.9.14.jar mit.cadlab.dome3.network.server.DomeServer -debug:50

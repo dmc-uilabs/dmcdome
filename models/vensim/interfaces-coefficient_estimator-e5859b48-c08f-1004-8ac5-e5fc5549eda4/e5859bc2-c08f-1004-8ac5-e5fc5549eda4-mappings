@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="e5859bc2-c08f-1004-8ac5-e5fc5549eda4" name="Complete Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="population density" idRef="e5859bcd-c08f-1004-8ac5-e5fc5549eda4">
+                    <parameter name="population density" idRef="e5859b6c-c08f-1004-8ac5-e5fc5549eda4" idModelRef="e5859b48-c08f-1004-8ac5-e5fc5549eda4"/>
+                </mappedParameter>
+                <mappedParameter name="life expectancy at birth" idRef="e5859bc9-c08f-1004-8ac5-e5fc5549eda4">
+                    <parameter name="life expectancy at birth" idRef="e5859b5d-c08f-1004-8ac5-e5fc5549eda4" idModelRef="e5859b48-c08f-1004-8ac5-e5fc5549eda4"/>
+                </mappedParameter>
+                <mappedParameter name="sample population" idRef="e5859bc7-c08f-1004-8ac5-e5fc5549eda4">
+                    <parameter name="sample population" idRef="e5859b66-c08f-1004-8ac5-e5fc5549eda4" idModelRef="e5859b48-c08f-1004-8ac5-e5fc5549eda4"/>
+                </mappedParameter>
+                <mappedParameter name="death rate" idRef="e5859bcb-c08f-1004-8ac5-e5fc5549eda4">
+                    <parameter name="death rate" idRef="e5859b63-c08f-1004-8ac5-e5fc5549eda4" idModelRef="e5859b48-c08f-1004-8ac5-e5fc5549eda4"/>
+                </mappedParameter>
+                <mappedParameter name="sample birth" idRef="e5859bc8-c08f-1004-8ac5-e5fc5549eda4">
+                    <parameter name="sample birth" idRef="e5859b5a-c08f-1004-8ac5-e5fc5549eda4" idModelRef="e5859b48-c08f-1004-8ac5-e5fc5549eda4"/>
+                </mappedParameter>
+                <mappedParameter name="percentage of land area increase" idRef="e5859bcc-c08f-1004-8ac5-e5fc5549eda4">
+                    <parameter name="percentage of land area increase" idRef="e5859b69-c08f-1004-8ac5-e5fc5549eda4" idModelRef="e5859b48-c08f-1004-8ac5-e5fc5549eda4"/>
+                </mappedParameter>
+                <mappedParameter name="birth rate" idRef="e5859bca-c08f-1004-8ac5-e5fc5549eda4">
+                    <parameter name="birth rate" idRef="e5859b60-c08f-1004-8ac5-e5fc5549eda4" idModelRef="e5859b48-c08f-1004-8ac5-e5fc5549eda4"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects/>
+    </mappingsandintermediates>
+</modelinterface>

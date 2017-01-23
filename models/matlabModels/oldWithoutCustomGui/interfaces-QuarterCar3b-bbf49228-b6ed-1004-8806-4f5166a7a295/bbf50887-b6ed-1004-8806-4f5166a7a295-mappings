@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="bbf50887-b6ed-1004-8806-4f5166a7a295" name="Default Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="axle tube outer diameter" idRef="c02ffda2-b6ed-1004-8806-4f5166a7a295">
+                    <parameter name="axle tube outer diameter" idRef="c02ffda0-b6ed-1004-8806-4f5166a7a295" idModelRef="bbf49228-b6ed-1004-8806-4f5166a7a295"/>
+                </mappedParameter>
+                <mappedParameter name="leaf spring thickness" idRef="bf8e039d-b6ed-1004-8806-4f5166a7a295">
+                    <parameter name="leaf spring thickness" idRef="bf8e039c-b6ed-1004-8806-4f5166a7a295" idModelRef="bbf49228-b6ed-1004-8806-4f5166a7a295"/>
+                </mappedParameter>
+                <mappedParameter name="MaxAccel" idRef="c0bfa11c-b6ed-1004-8806-4f5166a7a295">
+                    <parameter name="MaxAccel" idRef="c0bf7a0c-b6ed-1004-8806-4f5166a7a295" idModelRef="bbf49228-b6ed-1004-8806-4f5166a7a295"/>
+                </mappedParameter>
+                <mappedParameter name="axle tube thickness" idRef="bfce0aa1-b6ed-1004-8806-4f5166a7a295">
+                    <parameter name="axle tube thickness" idRef="bfce0aa0-b6ed-1004-8806-4f5166a7a295" idModelRef="bbf49228-b6ed-1004-8806-4f5166a7a295"/>
+                </mappedParameter>
+                <mappedParameter name="leaf spring thickness" idRef="bf8e039e-b6ed-1004-8806-4f5166a7a295">
+                    <parameter name="leaf spring thickness" idRef="bf8e039c-b6ed-1004-8806-4f5166a7a295" idModelRef="bbf49228-b6ed-1004-8806-4f5166a7a295"/>
+                </mappedParameter>
+                <mappedParameter name="wheel to leaf spring distance" idRef="c077cf92-b6ed-1004-8806-4f5166a7a295">
+                    <parameter name="wheel to leaf spring distance" idRef="c077cf90-b6ed-1004-8806-4f5166a7a295" idModelRef="bbf49228-b6ed-1004-8806-4f5166a7a295"/>
+                </mappedParameter>
+                <mappedParameter name="wheel to leaf spring distance" idRef="c077cf91-b6ed-1004-8806-4f5166a7a295">
+                    <parameter name="wheel to leaf spring distance" idRef="c077cf90-b6ed-1004-8806-4f5166a7a295" idModelRef="bbf49228-b6ed-1004-8806-4f5166a7a295"/>
+                </mappedParameter>
+                <mappedParameter name="leaf spring length" idRef="bd5d02d1-b6ed-1004-8806-4f5166a7a295">
+                    <parameter name="leaf spring length" idRef="bd5cdbc0-b6ed-1004-8806-4f5166a7a295" idModelRef="bbf49228-b6ed-1004-8806-4f5166a7a295"/>
+                </mappedParameter>
+                <mappedParameter name="axle tube thickness" idRef="bfce0aa2-b6ed-1004-8806-4f5166a7a295">
+                    <parameter name="axle tube thickness" idRef="bfce0aa0-b6ed-1004-8806-4f5166a7a295" idModelRef="bbf49228-b6ed-1004-8806-4f5166a7a295"/>
+                </mappedParameter>
+                <mappedParameter name="leaf spring thickness" idRef="bf496729-b6ed-1004-8806-4f5166a7a295">
+                    <parameter name="leaf spring thickness" idRef="bf496728-b6ed-1004-8806-4f5166a7a295" idModelRef="bbf49228-b6ed-1004-8806-4f5166a7a295"/>
+                </mappedParameter>
+                <mappedParameter name="leaf spring thickness" idRef="bf49672a-b6ed-1004-8806-4f5166a7a295">
+                    <parameter name="leaf spring thickness" idRef="bf496728-b6ed-1004-8806-4f5166a7a295" idModelRef="bbf49228-b6ed-1004-8806-4f5166a7a295"/>
+                </mappedParameter>
+                <mappedParameter name="axle tube outer diameter" idRef="c02ffda1-b6ed-1004-8806-4f5166a7a295">
+                    <parameter name="axle tube outer diameter" idRef="c02ffda0-b6ed-1004-8806-4f5166a7a295" idModelRef="bbf49228-b6ed-1004-8806-4f5166a7a295"/>
+                </mappedParameter>
+                <mappedParameter name="MaxAccel" idRef="c0bfa11d-b6ed-1004-8806-4f5166a7a295">
+                    <parameter name="MaxAccel" idRef="c0bf7a0c-b6ed-1004-8806-4f5166a7a295" idModelRef="bbf49228-b6ed-1004-8806-4f5166a7a295"/>
+                </mappedParameter>
+                <mappedParameter name="leaf spring length" idRef="bd5d02d0-b6ed-1004-8806-4f5166a7a295">
+                    <parameter name="leaf spring length" idRef="bd5cdbc0-b6ed-1004-8806-4f5166a7a295" idModelRef="bbf49228-b6ed-1004-8806-4f5166a7a295"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects/>
+    </mappingsandintermediates>
+    <lookupdata>
+        <objectmap>
+            <parameter name="axle tube outer diameter" idRef="c02ffda0-b6ed-1004-8806-4f5166a7a295" idModelRef="bbf49228-b6ed-1004-8806-4f5166a7a295" description="key"/>
+            <parameter name="axle tube outer diameter" idRef="c02ffda1-b6ed-1004-8806-4f5166a7a295" description="value"/>
+            <parameter name="leaf spring length" idRef="bd5cdbc0-b6ed-1004-8806-4f5166a7a295" idModelRef="bbf49228-b6ed-1004-8806-4f5166a7a295" description="key"/>
+            <parameter name="leaf spring length" idRef="bd5d02d0-b6ed-1004-8806-4f5166a7a295" description="value"/>
+            <parameter name="axle tube thickness" idRef="bfce0aa0-b6ed-1004-8806-4f5166a7a295" idModelRef="bbf49228-b6ed-1004-8806-4f5166a7a295" description="key"/>
+            <parameter name="axle tube thickness" idRef="bfce0aa1-b6ed-1004-8806-4f5166a7a295" description="value"/>
+            <parameter name="leaf spring thickness" idRef="bf496728-b6ed-1004-8806-4f5166a7a295" idModelRef="bbf49228-b6ed-1004-8806-4f5166a7a295" description="key"/>
+            <parameter name="leaf spring thickness" idRef="bf496729-b6ed-1004-8806-4f5166a7a295" description="value"/>
+            <parameter name="leaf spring thickness" idRef="bf8e039c-b6ed-1004-8806-4f5166a7a295" idModelRef="bbf49228-b6ed-1004-8806-4f5166a7a295" description="key"/>
+            <parameter name="leaf spring thickness" idRef="bf8e039d-b6ed-1004-8806-4f5166a7a295" description="value"/>
+            <parameter name="wheel to leaf spring distance" idRef="c077cf90-b6ed-1004-8806-4f5166a7a295" idModelRef="bbf49228-b6ed-1004-8806-4f5166a7a295" description="key"/>
+            <parameter name="wheel to leaf spring distance" idRef="c077cf91-b6ed-1004-8806-4f5166a7a295" description="value"/>
+            <parameter name="MaxAccel" idRef="c0bf7a0c-b6ed-1004-8806-4f5166a7a295" idModelRef="bbf49228-b6ed-1004-8806-4f5166a7a295" description="key"/>
+            <parameter name="MaxAccel" idRef="c0bfa11c-b6ed-1004-8806-4f5166a7a295" description="value"/>
+        </objectmap>
+        <viewobjectmap>
+            <parameter name="leaf spring thickness" idRef="bf8e039d-b6ed-1004-8806-4f5166a7a295" description="key"/>
+            <parameter name="leaf spring thickness" idRef="bf8e039e-b6ed-1004-8806-4f5166a7a295" description="value"/>
+            <parameter name="MaxAccel" idRef="c0bfa11c-b6ed-1004-8806-4f5166a7a295" description="key"/>
+            <parameter name="MaxAccel" idRef="c0bfa11d-b6ed-1004-8806-4f5166a7a295" description="value"/>
+            <parameter name="axle tube thickness" idRef="bfce0aa1-b6ed-1004-8806-4f5166a7a295" description="key"/>
+            <parameter name="axle tube thickness" idRef="bfce0aa2-b6ed-1004-8806-4f5166a7a295" description="value"/>
+            <parameter name="wheel to leaf spring distance" idRef="c077cf91-b6ed-1004-8806-4f5166a7a295" description="key"/>
+            <parameter name="wheel to leaf spring distance" idRef="c077cf92-b6ed-1004-8806-4f5166a7a295" description="value"/>
+            <parameter name="leaf spring thickness" idRef="bf496729-b6ed-1004-8806-4f5166a7a295" description="key"/>
+            <parameter name="leaf spring thickness" idRef="bf49672a-b6ed-1004-8806-4f5166a7a295" description="value"/>
+            <parameter name="axle tube outer diameter" idRef="c02ffda1-b6ed-1004-8806-4f5166a7a295" description="key"/>
+            <parameter name="axle tube outer diameter" idRef="c02ffda2-b6ed-1004-8806-4f5166a7a295" description="value"/>
+            <parameter name="leaf spring length" idRef="bd5d02d0-b6ed-1004-8806-4f5166a7a295" description="key"/>
+            <parameter name="leaf spring length" idRef="bd5d02d1-b6ed-1004-8806-4f5166a7a295" description="value"/>
+        </viewobjectmap>
+        <relationobjectmap/>
+    </lookupdata>
+</modelinterface>

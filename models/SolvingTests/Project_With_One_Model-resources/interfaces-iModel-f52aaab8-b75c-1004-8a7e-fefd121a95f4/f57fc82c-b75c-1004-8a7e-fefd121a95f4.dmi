@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="f57fc82c-b75c-1004-8a7e-fefd121a95f4" name="C_equals_A_plus_B (iface)">
+    <interfaceinfo>
+        <version>0.0.1</version>
+    </interfaceinfo>
+    <parameters>
+        <parameter id="f5ed82cc-b75c-1004-8a7e-fefd121a95f4" name="A">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="f5ed82cd-b75c-1004-8a7e-fefd121a95f4" name="B">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="f5ed82ce-b75c-1004-8a7e-fefd121a95f4" name="C">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="f5ed82cf-b75c-1004-8a7e-fefd121a95f4" name="X">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="f5ed82d0-b75c-1004-8a7e-fefd121a95f4" name="Y">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <relations/>
+    <contexts>
+        <context id="IFACE_MODEL_CXT" name="Model View"/>
+    </contexts>
+    <views>
+        <view name="Build View">
+            <context id="IFACE_BUILD_CXT" name="Build View">
+                <modelobjects>
+                    <parameter name="A" idRef="f5ed82cc-b75c-1004-8a7e-fefd121a95f4"/>
+                    <parameter name="B" idRef="f5ed82cd-b75c-1004-8a7e-fefd121a95f4"/>
+                    <parameter name="C" idRef="f5ed82ce-b75c-1004-8a7e-fefd121a95f4"/>
+                    <parameter name="X" idRef="f5ed82cf-b75c-1004-8a7e-fefd121a95f4"/>
+                    <parameter name="Y" idRef="f5ed82d0-b75c-1004-8a7e-fefd121a95f4"/>
+                </modelobjects>
+            </context>
+        </view>
+        <view name="Interface Causality View">
+            <filter id="INPUTS_FILTER" name="Inputs">
+                <parameters>
+                    <parameter name="X" idRef="f5ed82cf-b75c-1004-8a7e-fefd121a95f4"/>
+                </parameters>
+            </filter>
+            <filter id="OUTPUTS_FILTER" name="Outputs">
+                <parameters>
+                    <parameter name="A" idRef="f5ed82cc-b75c-1004-8a7e-fefd121a95f4" causality="Intermediate"/>
+                    <parameter name="B" idRef="f5ed82cd-b75c-1004-8a7e-fefd121a95f4" causality="Intermediate"/>
+                    <parameter name="C" idRef="f5ed82ce-b75c-1004-8a7e-fefd121a95f4" causality="Result"/>
+                    <parameter name="Y" idRef="f5ed82d0-b75c-1004-8a7e-fefd121a95f4" causality="Intermediate"/>
+                </parameters>
+            </filter>
+            <filter id="INDETERMINATES_FILTER" name="Indeterminates"/>
+        </view>
+        <view name="System Causality View">
+            <filter id="f57fc82d-b75c-1004-8a7e-fefd121a95f4" name="Independent">
+                <parameters>
+                    <parameter name="X" idRef="f5ed82cf-b75c-1004-8a7e-fefd121a95f4"/>
+                </parameters>
+            </filter>
+            <filter id="f57fc82e-b75c-1004-8a7e-fefd121a95f4" name="Intermediate">
+                <parameters>
+                    <parameter name="A" idRef="f5ed82cc-b75c-1004-8a7e-fefd121a95f4"/>
+                    <parameter name="B" idRef="f5ed82cd-b75c-1004-8a7e-fefd121a95f4"/>
+                    <parameter name="Y" idRef="f5ed82d0-b75c-1004-8a7e-fefd121a95f4"/>
+                </parameters>
+            </filter>
+            <filter id="f57fc82f-b75c-1004-8a7e-fefd121a95f4" name="Result">
+                <parameters>
+                    <parameter name="C" idRef="f5ed82ce-b75c-1004-8a7e-fefd121a95f4"/>
+                </parameters>
+            </filter>
+        </view>
+    </views>
+    <directedGraph id="f57fc82c-b75c-1004-8a7e-fefd121a95f4">
+        <nodes>
+            <node idRef="f5ed82cf-b75c-1004-8a7e-fefd121a95f4"/>
+            <node idRef="f5ed82ce-b75c-1004-8a7e-fefd121a95f4"/>
+            <node idRef="f5ed82d0-b75c-1004-8a7e-fefd121a95f4"/>
+            <node idRef="f5ed82cc-b75c-1004-8a7e-fefd121a95f4"/>
+            <node idRef="f5ed82cd-b75c-1004-8a7e-fefd121a95f4"/>
+        </nodes>
+        <arcs>
+            <from idRef="f5ed82d0-b75c-1004-8a7e-fefd121a95f4">
+                <to idRef="f5ed82cc-b75c-1004-8a7e-fefd121a95f4"/>
+                <to idRef="f5ed82cd-b75c-1004-8a7e-fefd121a95f4"/>
+            </from>
+            <from idRef="f5ed82cf-b75c-1004-8a7e-fefd121a95f4">
+                <to idRef="f5ed82d0-b75c-1004-8a7e-fefd121a95f4"/>
+            </from>
+            <from idRef="f5ed82cd-b75c-1004-8a7e-fefd121a95f4">
+                <to idRef="f5ed82ce-b75c-1004-8a7e-fefd121a95f4"/>
+            </from>
+            <from idRef="f5ed82cc-b75c-1004-8a7e-fefd121a95f4">
+                <to idRef="f5ed82ce-b75c-1004-8a7e-fefd121a95f4"/>
+            </from>
+        </arcs>
+    </directedGraph>
+    <interfaceToRelParamMap>
+        <iToRpMap relParamId="f556d430-b75c-1004-8a7e-fefd121a95f4" ifaceId="f5ed82cc-b75c-1004-8a7e-fefd121a95f4"/>
+        <iToRpMap relParamId="f5580d14-b75c-1004-8a7e-fefd121a95f4" ifaceId="f5ed82cd-b75c-1004-8a7e-fefd121a95f4"/>
+        <iToRpMap relParamId="f55a2cd4-b75c-1004-8a7e-fefd121a95f4" ifaceId="f5ed82ce-b75c-1004-8a7e-fefd121a95f4"/>
+        <iToRpMap relParamId="f5a07b4b-b75c-1004-8a7e-fefd121a95f4" ifaceId="f5ed82cf-b75c-1004-8a7e-fefd121a95f4"/>
+        <iToRpMap relParamId="f5a07b4c-b75c-1004-8a7e-fefd121a95f4" ifaceId="f5ed82d0-b75c-1004-8a7e-fefd121a95f4"/>
+    </interfaceToRelParamMap>
+</modelinterface>

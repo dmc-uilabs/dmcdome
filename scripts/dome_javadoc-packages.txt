@@ -1,0 +1,15 @@
+mit.cadlab.dome3.objectmodel
+mit.cadlab.dome3.objectmodel.dataobject
+mit.cadlab.dome3.objectmodel.dataobject.interfaces
+mit.cadlab.dome3.objectmodel.modelinterface
+mit.cadlab.dome3.objectmodel.modelinterface.dome
+mit.cadlab.dome3.objectmodel.modelinterface.manager
+mit.cadlab.dome3.objectmodel.modelobject
+mit.cadlab.dome3.objectmodel.modelobject.context
+mit.cadlab.dome3.objectmodel.modelobject.parameter
+mit.cadlab.dome3.objectmodel.modelobject.relation
+mit.cadlab.dome3.objectmodel.modelobject.relation.equal
+mit.cadlab.dome3.objectmodel.modelobject.relation.iteration
+mit.cadlab.dome3.objectmodel.modelobject.relation.procedural
+mit.cadlab.dome3.objectmodel.modelobject.subscription
+mit.cadlab.dome3.objectmodel.modelobject.visualization

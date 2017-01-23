@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="7b29a608-b6e2-1004-83ba-73d47b60c0a0" name="Mechanical Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="SealDragB" idRef="736cafa8-b6ee-1004-8c23-55cd2887f3bb">
+                    <parameter name="SealDragB" idRef="d000e504-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+                </mappedParameter>
+                <mappedParameter name="GlassRadius" idRef="36856649-b6f8-1004-8ce2-080c14818a9c">
+                    <parameter name="GlassRadius" idRef="cfb19648-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+                </mappedParameter>
+                <mappedParameter name="BPillarHeight" idRef="36856648-b6f8-1004-8ce2-080c14818a9c">
+                    <parameter name="BPillarHeight" idRef="cf55c020-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+                </mappedParameter>
+                <mappedParameter name="MaxVel" idRef="7396982c-b6ee-1004-8c23-55cd2887f3bb">
+                    <parameter name="MaxVel" idRef="d0f11b8c-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+                </mappedParameter>
+                <mappedParameter name="HeaderLength" idRef="3685664b-b6f8-1004-8ce2-080c14818a9c">
+                    <parameter name="HeaderLength" idRef="d11c94d8-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+                </mappedParameter>
+                <mappedParameter name="GlassThickness" idRef="3685664a-b6f8-1004-8ce2-080c14818a9c">
+                    <parameter name="GlassThickness" idRef="d0badc0c-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+                </mappedParameter>
+                <mappedParameter name="MaxStall" idRef="7396982d-b6ee-1004-8c23-55cd2887f3bb">
+                    <parameter name="MaxStall" idRef="d3b040a0-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects/>
+    </mappingsandintermediates>
+</modelinterface>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="4689b36c-c09c-1004-8149-43c742e7b24b" name="Complete Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+    </interfaceinfo>
+    <parameters>
+        <parameter id="4689b371-c09c-1004-8149-43c742e7b24b" name="sample population">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="1000.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="4689b372-c09c-1004-8149-43c742e7b24b" name="sample birth">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="40.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="4689b373-c09c-1004-8149-43c742e7b24b" name="life expectancy at birth">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="37.55" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="4689b374-c09c-1004-8149-43c742e7b24b" name="birth rate">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="4689b375-c09c-1004-8149-43c742e7b24b" name="death rate">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="4689b376-c09c-1004-8149-43c742e7b24b" name="percentage of land area increase">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0040" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="4689b377-c09c-1004-8149-43c742e7b24b" name="population density">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="4689b378-c09c-1004-8149-43c742e7b24b" name="estimated final pollution">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="4689b379-c09c-1004-8149-43c742e7b24b" name="estimated population">
+            <currentType value="Vector"/>
+            <data>
+                <dataobject type="Vector">
+                    <unit>No_Unit</unit>
+                    <rowVector>false</rowVector>
+                    <initialValue type="real">0.0</initialValue>
+                    <fixedSize>false</fixedSize>
+                    <data type="real"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="4689b37a-c09c-1004-8149-43c742e7b24b" name="estimated pollution">
+            <currentType value="Vector"/>
+            <data>
+                <dataobject type="Vector">
+                    <unit>No_Unit</unit>
+                    <rowVector>false</rowVector>
+                    <initialValue type="real">0.0</initialValue>
+                    <fixedSize>false</fixedSize>
+                    <data type="real"/>
+                </dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <visualizations/>
+    <relations/>
+    <contexts>
+        <context id="IFACE_MODEL_CXT" name="Model View"/>
+    </contexts>
+    <views>
+        <view name="Build View">
+            <context id="IFACE_BUILD_CXT" name="Build View">
+                <modelobjects>
+                    <parameter name="sample population" idRef="4689b371-c09c-1004-8149-43c742e7b24b"/>
+                    <parameter name="sample birth" idRef="4689b372-c09c-1004-8149-43c742e7b24b"/>
+                    <parameter name="life expectancy at birth" idRef="4689b373-c09c-1004-8149-43c742e7b24b"/>
+                    <parameter name="birth rate" idRef="4689b374-c09c-1004-8149-43c742e7b24b"/>
+                    <parameter name="death rate" idRef="4689b375-c09c-1004-8149-43c742e7b24b"/>
+                    <parameter name="percentage of land area increase" idRef="4689b376-c09c-1004-8149-43c742e7b24b"/>
+                    <parameter name="population density" idRef="4689b377-c09c-1004-8149-43c742e7b24b"/>
+                    <parameter name="estimated final pollution" idRef="4689b378-c09c-1004-8149-43c742e7b24b"/>
+                    <parameter name="estimated population" idRef="4689b379-c09c-1004-8149-43c742e7b24b"/>
+                    <parameter name="estimated pollution" idRef="4689b37a-c09c-1004-8149-43c742e7b24b"/>
+                </modelobjects>
+            </context>
+        </view>
+        <view name="Interface Causality View">
+            <filter id="INPUTS_FILTER" name="Inputs">
+                <parameters>
+                    <parameter name="sample population" idRef="4689b371-c09c-1004-8149-43c742e7b24b"/>
+                    <parameter name="sample birth" idRef="4689b372-c09c-1004-8149-43c742e7b24b"/>
+                    <parameter name="life expectancy at birth" idRef="4689b373-c09c-1004-8149-43c742e7b24b"/>
+                    <parameter name="percentage of land area increase" idRef="4689b376-c09c-1004-8149-43c742e7b24b"/>
+                </parameters>
+            </filter>
+            <filter id="OUTPUTS_FILTER" name="Outputs">
+                <parameters>
+                    <parameter name="birth rate" idRef="4689b374-c09c-1004-8149-43c742e7b24b" causality="Intermediate"/>
+                    <parameter name="death rate" idRef="4689b375-c09c-1004-8149-43c742e7b24b" causality="Intermediate"/>
+                    <parameter name="population density" idRef="4689b377-c09c-1004-8149-43c742e7b24b" causality="Intermediate"/>
+                    <parameter name="estimated final pollution" idRef="4689b378-c09c-1004-8149-43c742e7b24b" causality="Result"/>
+                    <parameter name="estimated population" idRef="4689b379-c09c-1004-8149-43c742e7b24b" causality="Result"/>
+                    <parameter name="estimated pollution" idRef="4689b37a-c09c-1004-8149-43c742e7b24b" causality="Result"/>
+                </parameters>
+            </filter>
+            <filter id="INDETERMINATES_FILTER" name="Indeterminates"/>
+        </view>
+    </views>
+    <directedGraph id="4689b36c-c09c-1004-8149-43c742e7b24b">
+        <nodes>
+            <node idRef="4689b371-c09c-1004-8149-43c742e7b24b"/>
+            <node idRef="4689b372-c09c-1004-8149-43c742e7b24b"/>
+            <node idRef="4689b373-c09c-1004-8149-43c742e7b24b"/>
+            <node idRef="4689b374-c09c-1004-8149-43c742e7b24b"/>
+            <node idRef="4689b375-c09c-1004-8149-43c742e7b24b"/>
+            <node idRef="4689b376-c09c-1004-8149-43c742e7b24b"/>
+            <node idRef="4689b377-c09c-1004-8149-43c742e7b24b"/>
+            <node idRef="4689b378-c09c-1004-8149-43c742e7b24b"/>
+            <node idRef="4689b379-c09c-1004-8149-43c742e7b24b"/>
+            <node idRef="4689b37a-c09c-1004-8149-43c742e7b24b"/>
+        </nodes>
+        <arcs>
+            <from idRef="4689b371-c09c-1004-8149-43c742e7b24b">
+                <to idRef="4689b374-c09c-1004-8149-43c742e7b24b"/>
+            </from>
+            <from idRef="4689b372-c09c-1004-8149-43c742e7b24b">
+                <to idRef="4689b374-c09c-1004-8149-43c742e7b24b"/>
+            </from>
+            <from idRef="4689b373-c09c-1004-8149-43c742e7b24b">
+                <to idRef="4689b375-c09c-1004-8149-43c742e7b24b"/>
+            </from>
+            <from idRef="4689b374-c09c-1004-8149-43c742e7b24b">
+                <to idRef="4689b378-c09c-1004-8149-43c742e7b24b"/>
+                <to idRef="4689b379-c09c-1004-8149-43c742e7b24b"/>
+                <to idRef="4689b37a-c09c-1004-8149-43c742e7b24b"/>
+            </from>
+            <from idRef="4689b375-c09c-1004-8149-43c742e7b24b">
+                <to idRef="4689b378-c09c-1004-8149-43c742e7b24b"/>
+                <to idRef="4689b379-c09c-1004-8149-43c742e7b24b"/>
+                <to idRef="4689b37a-c09c-1004-8149-43c742e7b24b"/>
+            </from>
+            <from idRef="4689b376-c09c-1004-8149-43c742e7b24b">
+                <to idRef="4689b377-c09c-1004-8149-43c742e7b24b"/>
+            </from>
+            <from idRef="4689b377-c09c-1004-8149-43c742e7b24b">
+                <to idRef="4689b378-c09c-1004-8149-43c742e7b24b"/>
+                <to idRef="4689b379-c09c-1004-8149-43c742e7b24b"/>
+                <to idRef="4689b37a-c09c-1004-8149-43c742e7b24b"/>
+            </from>
+        </arcs>
+    </directedGraph>
+    <interfaceToRelParamMap>
+        <iToRpMap relParamId="4689b371-c09c-1004-8149-43c742e7b24b" ifaceId="4689b321-c09c-1004-8149-43c742e7b24b"/>
+        <iToRpMap relParamId="4689b372-c09c-1004-8149-43c742e7b24b" ifaceId="4689b322-c09c-1004-8149-43c742e7b24b"/>
+        <iToRpMap relParamId="4689b373-c09c-1004-8149-43c742e7b24b" ifaceId="4689b323-c09c-1004-8149-43c742e7b24b"/>
+        <iToRpMap relParamId="4689b374-c09c-1004-8149-43c742e7b24b" ifaceId="4689b324-c09c-1004-8149-43c742e7b24b"/>
+        <iToRpMap relParamId="4689b375-c09c-1004-8149-43c742e7b24b" ifaceId="4689b325-c09c-1004-8149-43c742e7b24b"/>
+        <iToRpMap relParamId="4689b376-c09c-1004-8149-43c742e7b24b" ifaceId="4689b326-c09c-1004-8149-43c742e7b24b"/>
+        <iToRpMap relParamId="4689b377-c09c-1004-8149-43c742e7b24b" ifaceId="4689b327-c09c-1004-8149-43c742e7b24b"/>
+        <iToRpMap relParamId="4689b378-c09c-1004-8149-43c742e7b24b" ifaceId="4689b34e-c09c-1004-8149-43c742e7b24b"/>
+        <iToRpMap relParamId="4689b379-c09c-1004-8149-43c742e7b24b" ifaceId="4689b34f-c09c-1004-8149-43c742e7b24b"/>
+        <iToRpMap relParamId="4689b37a-c09c-1004-8149-43c742e7b24b" ifaceId="4689b350-c09c-1004-8149-43c742e7b24b"/>
+    </interfaceToRelParamMap>
+</modelinterface>

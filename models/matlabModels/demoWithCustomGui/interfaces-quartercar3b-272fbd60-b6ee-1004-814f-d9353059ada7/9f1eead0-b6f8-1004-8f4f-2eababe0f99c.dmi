@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="9f1eead0-b6f8-1004-8f4f-2eababe0f99c" name="quarterCarSuspenionInterface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+    </interfaceinfo>
+    <parameters>
+        <parameter id="9fa49400-b6f8-1004-8f4f-2eababe0f99c" name="leaf spring length">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="1.0" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="9fa49401-b6f8-1004-8f4f-2eababe0f99c" name="leaf spring thickness">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0050" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="9fa49402-b6f8-1004-8f4f-2eababe0f99c" name="leaf spring width">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.1" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="9fa49403-b6f8-1004-8f4f-2eababe0f99c" name="axle tube thickness">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.01" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="9fa49404-b6f8-1004-8f4f-2eababe0f99c" name="axle tube outer diameter">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.5" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="9fcc75c4-b6f8-1004-8f4f-2eababe0f99c" name="suspension mass">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="60.0" unit="kg"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="9fcc75c5-b6f8-1004-8f4f-2eababe0f99c" name="quarter vehicle mass">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="1800.0" unit="kg"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="9febf05c-b6f8-1004-8f4f-2eababe0f99c" name="maximum accelaration">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="[MPs_S]"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="d9b83d7c-b6f8-1004-84c7-3b41f69cb7a0" name="tire stiffness">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="161600.0" unit="[NPM]"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="d9e6d858-b6f8-1004-84c7-3b41f69cb7a0" name="damping coefficient">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="1000.0" unit="[NSPM]"/>
+                </dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <relations/>
+    <contexts>
+        <context id="IFACE_MODEL_CXT" name="Model View"/>
+        <context id="9f71afe0-b6f8-1004-8f4f-2eababe0f99c" name="geometry">
+            <modelobjects>
+                <parameter name="leaf spring length" idRef="9fa49400-b6f8-1004-8f4f-2eababe0f99c"/>
+                <parameter name="leaf spring thickness" idRef="9fa49401-b6f8-1004-8f4f-2eababe0f99c"/>
+                <parameter name="leaf spring width" idRef="9fa49402-b6f8-1004-8f4f-2eababe0f99c"/>
+                <parameter name="axle tube thickness" idRef="9fa49403-b6f8-1004-8f4f-2eababe0f99c"/>
+                <parameter name="axle tube outer diameter" idRef="9fa49404-b6f8-1004-8f4f-2eababe0f99c"/>
+            </modelobjects>
+        </context>
+        <context id="9faa62b8-b6f8-1004-8f4f-2eababe0f99c" name="mass">
+            <modelobjects>
+                <parameter name="suspension mass" idRef="9fcc75c4-b6f8-1004-8f4f-2eababe0f99c"/>
+                <parameter name="quarter vehicle mass" idRef="9fcc75c5-b6f8-1004-8f4f-2eababe0f99c"/>
+            </modelobjects>
+        </context>
+        <context id="9fd0bd78-b6f8-1004-8f4f-2eababe0f99c" name="performance">
+            <modelobjects>
+                <parameter name="maximum accelaration" idRef="9febf05c-b6f8-1004-8f4f-2eababe0f99c"/>
+            </modelobjects>
+        </context>
+        <context id="d9a23c48-b6f8-1004-84c7-3b41f69cb7a0" name="stiffness">
+            <modelobjects>
+                <parameter name="tire stiffness" idRef="d9b83d7c-b6f8-1004-84c7-3b41f69cb7a0"/>
+            </modelobjects>
+        </context>
+        <context id="d9d25e8c-b6f8-1004-84c7-3b41f69cb7a0" name="coefficient">
+            <modelobjects>
+                <parameter name="damping coefficient" idRef="d9e6d858-b6f8-1004-84c7-3b41f69cb7a0"/>
+            </modelobjects>
+        </context>
+    </contexts>
+    <views>
+        <view name="Build View">
+            <context id="IFACE_BUILD_CXT" name="Build View">
+                <modelobjects>
+                    <context name="geometry" idRef="9f71afe0-b6f8-1004-8f4f-2eababe0f99c"/>
+                    <context name="mass" idRef="9faa62b8-b6f8-1004-8f4f-2eababe0f99c"/>
+                    <context name="performance" idRef="9fd0bd78-b6f8-1004-8f4f-2eababe0f99c"/>
+                    <context name="stiffness" idRef="d9a23c48-b6f8-1004-84c7-3b41f69cb7a0"/>
+                    <context name="coefficient" idRef="d9d25e8c-b6f8-1004-84c7-3b41f69cb7a0"/>
+                </modelobjects>
+            </context>
+        </view>
+        <view name="Interface Causality View">
+            <filter id="INPUTS_FILTER" name="Inputs">
+                <parameters>
+                    <parameter name="leaf spring length" idRef="9fa49400-b6f8-1004-8f4f-2eababe0f99c"/>
+                    <parameter name="leaf spring thickness" idRef="9fa49401-b6f8-1004-8f4f-2eababe0f99c"/>
+                    <parameter name="leaf spring width" idRef="9fa49402-b6f8-1004-8f4f-2eababe0f99c"/>
+                    <parameter name="axle tube thickness" idRef="9fa49403-b6f8-1004-8f4f-2eababe0f99c"/>
+                    <parameter name="axle tube outer diameter" idRef="9fa49404-b6f8-1004-8f4f-2eababe0f99c"/>
+                    <parameter name="suspension mass" idRef="9fcc75c4-b6f8-1004-8f4f-2eababe0f99c"/>
+                    <parameter name="quarter vehicle mass" idRef="9fcc75c5-b6f8-1004-8f4f-2eababe0f99c"/>
+                    <parameter name="tire stiffness" idRef="d9b83d7c-b6f8-1004-84c7-3b41f69cb7a0"/>
+                    <parameter name="damping coefficient" idRef="d9e6d858-b6f8-1004-84c7-3b41f69cb7a0"/>
+                </parameters>
+            </filter>
+            <filter id="OUTPUTS_FILTER" name="Outputs">
+                <parameters>
+                    <parameter name="maximum accelaration" idRef="9febf05c-b6f8-1004-8f4f-2eababe0f99c" causality="Result"/>
+                </parameters>
+            </filter>
+            <filter id="INDETERMINATES_FILTER" name="Indeterminates"/>
+        </view>
+        <view name="System Causality View">
+            <filter id="eaf1b41c-b70f-1004-82bb-82c220aef49f" name="Independent"/>
+            <filter id="eaf1b41d-b70f-1004-82bb-82c220aef49f" name="Intermediate"/>
+            <filter id="eaf1b41e-b70f-1004-82bb-82c220aef49f" name="Result"/>
+        </view>
+    </views>
+    <customGUIs>
+        <customGuiInfo>
+            <jarFilepath>C:\dome3\development\src\test\customGui\suspensionGui.jar</jarFilepath>
+            <shortName>Suspension Custom GUI</shortName>
+            <className>suspensionGui.SuspensionGui</className>
+        </customGuiInfo>
+    </customGUIs>
+    <directedGraph id="9f1eead0-b6f8-1004-8f4f-2eababe0f99c">
+        <nodes>
+            <node idRef="9fcc75c5-b6f8-1004-8f4f-2eababe0f99c"/>
+            <node idRef="9fa49401-b6f8-1004-8f4f-2eababe0f99c"/>
+            <node idRef="d9b83d7c-b6f8-1004-84c7-3b41f69cb7a0"/>
+            <node idRef="9fcc75c4-b6f8-1004-8f4f-2eababe0f99c"/>
+            <node idRef="9febf05c-b6f8-1004-8f4f-2eababe0f99c"/>
+            <node idRef="d9e6d858-b6f8-1004-84c7-3b41f69cb7a0"/>
+            <node idRef="9fa49402-b6f8-1004-8f4f-2eababe0f99c"/>
+            <node idRef="9fa49403-b6f8-1004-8f4f-2eababe0f99c"/>
+            <node idRef="9fa49400-b6f8-1004-8f4f-2eababe0f99c"/>
+            <node idRef="9fa49404-b6f8-1004-8f4f-2eababe0f99c"/>
+        </nodes>
+        <arcs>
+            <from idRef="9fa49404-b6f8-1004-8f4f-2eababe0f99c">
+                <to idRef="9febf05c-b6f8-1004-8f4f-2eababe0f99c"/>
+            </from>
+            <from idRef="9fa49401-b6f8-1004-8f4f-2eababe0f99c">
+                <to idRef="9febf05c-b6f8-1004-8f4f-2eababe0f99c"/>
+            </from>
+            <from idRef="9fcc75c4-b6f8-1004-8f4f-2eababe0f99c">
+                <to idRef="9febf05c-b6f8-1004-8f4f-2eababe0f99c"/>
+            </from>
+            <from idRef="9fa49400-b6f8-1004-8f4f-2eababe0f99c">
+                <to idRef="9febf05c-b6f8-1004-8f4f-2eababe0f99c"/>
+            </from>
+            <from idRef="9fcc75c5-b6f8-1004-8f4f-2eababe0f99c">
+                <to idRef="9febf05c-b6f8-1004-8f4f-2eababe0f99c"/>
+            </from>
+            <from idRef="9fa49403-b6f8-1004-8f4f-2eababe0f99c">
+                <to idRef="9febf05c-b6f8-1004-8f4f-2eababe0f99c"/>
+            </from>
+            <from idRef="d9e6d858-b6f8-1004-84c7-3b41f69cb7a0">
+                <to idRef="9febf05c-b6f8-1004-8f4f-2eababe0f99c"/>
+            </from>
+            <from idRef="9fa49402-b6f8-1004-8f4f-2eababe0f99c">
+                <to idRef="9febf05c-b6f8-1004-8f4f-2eababe0f99c"/>
+            </from>
+            <from idRef="d9b83d7c-b6f8-1004-84c7-3b41f69cb7a0">
+                <to idRef="9febf05c-b6f8-1004-8f4f-2eababe0f99c"/>
+            </from>
+        </arcs>
+    </directedGraph>
+    <interfaceToRelParamMap>
+        <iToRpMap relParamId="2812853c-b6ee-1004-814f-d9353059ada7" ifaceId="9fa49400-b6f8-1004-8f4f-2eababe0f99c"/>
+        <iToRpMap relParamId="28622218-b6ee-1004-814f-d9353059ada7" ifaceId="9fa49401-b6f8-1004-8f4f-2eababe0f99c"/>
+        <iToRpMap relParamId="28a81e80-b6ee-1004-814f-d9353059ada7" ifaceId="9fa49402-b6f8-1004-8f4f-2eababe0f99c"/>
+        <iToRpMap relParamId="28f3e9a0-b6ee-1004-814f-d9353059ada7" ifaceId="9fa49403-b6f8-1004-8f4f-2eababe0f99c"/>
+        <iToRpMap relParamId="293d1b84-b6ee-1004-814f-d9353059ada7" ifaceId="9fa49404-b6f8-1004-8f4f-2eababe0f99c"/>
+        <iToRpMap relParamId="2aa25f48-b6ee-1004-814f-d9353059ada7" ifaceId="9febf05c-b6f8-1004-8f4f-2eababe0f99c"/>
+        <iToRpMap relParamId="9c351024-b6f8-1004-8f4f-2eababe0f99c" ifaceId="9fcc75c4-b6f8-1004-8f4f-2eababe0f99c"/>
+        <iToRpMap relParamId="9c36be9c-b6f8-1004-8f4f-2eababe0f99c" ifaceId="9fcc75c5-b6f8-1004-8f4f-2eababe0f99c"/>
+        <iToRpMap relParamId="c5606f0c-b6f8-1004-85ff-491bcd7d91fd" ifaceId="d9b83d7c-b6f8-1004-84c7-3b41f69cb7a0"/>
+        <iToRpMap relParamId="d26f256c-b6f8-1004-8210-7cd65827d9c3" ifaceId="d9e6d858-b6f8-1004-84c7-3b41f69cb7a0"/>
+    </interfaceToRelParamMap>
+</modelinterface>

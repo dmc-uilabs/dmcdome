@@ -1,0 +1,34 @@
+import mit.cadlab.dome3.api.*;
+
+def SERVER_SPACE = "server";
+def INTERFACE_PATH = [ "public", "Ford wind noise", "3D parametric door/body/seal design and interference tool", "Geometry and analysis interface" ];
+def DOME_SERVER = "18.80.1.251:8080";
+def USER_ID = "root";
+def USER_PWD = "cadlab";
+def DOWNLOAD_FOLDER_FOR_FILE_PARAMS = "C:/dome3/models";
+
+/* open a connection to DOME server and locate the interface that is going to be executed */
+def conn = new DomeConnection(USER_ID, USER_PWD, DOME_SERVER);
+RuntimeInterface.setDefaultDownloadFolder(DOWNLOAD_FOLDER_FOR_FILE_PARAMS);
+def runtimeInterface = conn.getInterfaceByPath(SERVER_SPACE, INTERFACE_PATH.toArray(new String[INTERFACE_PATH.size()])).createRuntimeInterface();
+def paramList = runtimeInterface.getParameters();
+println "[INIT PARAM LIST] " + paramList;
+
+/* changes the values of input parameters */
+runtimeInterface.getParameterByName("seal gap").setRealValue(8);
+
+/* execute the interface */
+runtimeInterface.submit();
+
+/* retrieve output paramters and assign it to  */
+am.getData().setValue(Math.random() * 1000);
+
+/* Show API call result */
+println "[RESULT PARAM LIST] " + paramList;
+println "VRML file contents: " + runtimeInterface.getParameterByName("interference seal vrml file").getFileValue();
+
+/* log out and close connection */
+conn.close();
+
+
+

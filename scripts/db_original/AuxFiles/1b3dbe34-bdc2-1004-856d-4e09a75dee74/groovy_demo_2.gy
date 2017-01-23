@@ -1,0 +1,29 @@
+import mit.cadlab.dome3.api.*;
+
+def INTERFACE_PATH = "public/Tutorial examples/Polymer curing model/polymer curing interface";
+def DOME_SERVER = "localhost:8080";
+def USER_ID = "tutorialUser";
+def USER_PWD = "123";
+
+/* open a connection to DOME server and locate the interface that is going to be executed */
+def conn = new DomeConnection(USER_ID, USER_PWD, DOME_SERVER);
+def runtimeInterface = conn.getInterfaceByPath("server", INTERFACE_PATH).createRuntimeInterface();
+
+def paramList = runtimeInterface.getParameters();
+println "[PARAM LIST] " + paramList;
+
+/* changes the values of input parameters */
+runtimeInterface.getParameterByName("nominalModulus").setRealValue(nm.getData().getValue());
+runtimeInterface.getParameterByName("curingTemperature").setRealValue(ct.getData().getValue());
+
+/* execute the interface */
+runtimeInterface.submit();
+
+/* retrieve output paramters and assign it to  */
+am.getData().setValue(runtimeInterface.getParameterByName("actualModulus").getRealValue());
+
+/* log out and close connection */
+conn.close();
+
+
+

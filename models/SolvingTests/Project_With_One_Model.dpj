@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project id="f4f1f9d4-b75c-1004-8a7e-fefd121a95f4" name="Project_With_One_Model">
+    <projectinfo>
+        <version>0.0.1</version>
+    </projectinfo>
+    <resources>
+        <resource type="model" id="f5274e2c-b75c-1004-8a7e-fefd121a95f4" name="Y_equals_X">
+            <location id="f26d57a8-b75c-1004-89fe-53c809e5870d" hostName="cadlab48" ipAddress="18.80.4.55" port="8080"/>
+            <subscribedInterfaceIds>
+                <ifaceId>f26d57a9-b75c-1004-89fe-53c809e5870d</ifaceId>
+            </subscribedInterfaceIds>
+        </resource>
+    </resources>
+    <integrationModels>
+        <imodel id="f52aaab8-b75c-1004-8a7e-fefd121a95f4" name="iModel"/>
+    </integrationModels>
+</project>

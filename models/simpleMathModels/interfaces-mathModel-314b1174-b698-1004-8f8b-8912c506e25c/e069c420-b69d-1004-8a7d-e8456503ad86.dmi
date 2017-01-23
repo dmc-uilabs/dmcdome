@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="e069c420-b69d-1004-8a7d-e8456503ad86" name="areaInterface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+    </interfaceinfo>
+    <parameters>
+        <parameter id="e09e23f0-b69d-1004-8a7d-e8456503ad86" name="width">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="3.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="e09e23f1-b69d-1004-8a7d-e8456503ad86" name="height">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="4.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="e09e23f2-b69d-1004-8a7d-e8456503ad86" name="lengthR2">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="5.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="e09e23f3-b69d-1004-8a7d-e8456503ad86" name="area">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="e09e23f4-b69d-1004-8a7d-e8456503ad86" name="volume">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <relations/>
+    <contexts>
+        <context id="IFACE_MODEL_CXT" name="Model View"/>
+    </contexts>
+    <views>
+        <view name="Build View">
+            <context id="IFACE_BUILD_CXT" name="Build View">
+                <modelobjects>
+                    <parameter name="width" idRef="e09e23f0-b69d-1004-8a7d-e8456503ad86"/>
+                    <parameter name="height" idRef="e09e23f1-b69d-1004-8a7d-e8456503ad86"/>
+                    <parameter name="lengthR2" idRef="e09e23f2-b69d-1004-8a7d-e8456503ad86"/>
+                    <parameter name="area" idRef="e09e23f3-b69d-1004-8a7d-e8456503ad86"/>
+                    <parameter name="volume" idRef="e09e23f4-b69d-1004-8a7d-e8456503ad86"/>
+                </modelobjects>
+            </context>
+        </view>
+        <view name="Interface Causality View">
+            <filter id="INPUTS_FILTER" name="Inputs">
+                <parameters>
+                    <parameter name="width" idRef="e09e23f0-b69d-1004-8a7d-e8456503ad86"/>
+                    <parameter name="height" idRef="e09e23f1-b69d-1004-8a7d-e8456503ad86"/>
+                    <parameter name="lengthR2" idRef="e09e23f2-b69d-1004-8a7d-e8456503ad86"/>
+                </parameters>
+            </filter>
+            <filter id="OUTPUTS_FILTER" name="Outputs">
+                <parameters>
+                    <parameter name="area" idRef="e09e23f3-b69d-1004-8a7d-e8456503ad86" causality="Result"/>
+                    <parameter name="volume" idRef="e09e23f4-b69d-1004-8a7d-e8456503ad86" causality="Result"/>
+                </parameters>
+            </filter>
+            <filter id="INDETERMINATES_FILTER" name="Indeterminates"/>
+        </view>
+        <view name="System Causality View">
+            <filter id="6b72deb0-b6dc-1004-8ffd-33d1ecd1ea3f" name="Independent">
+                <parameters>
+                    <parameter name="width" idRef="e09e23f0-b69d-1004-8a7d-e8456503ad86"/>
+                    <parameter name="height" idRef="e09e23f1-b69d-1004-8a7d-e8456503ad86"/>
+                    <parameter name="lengthR2" idRef="e09e23f2-b69d-1004-8a7d-e8456503ad86"/>
+                </parameters>
+            </filter>
+            <filter id="6b72deb1-b6dc-1004-8ffd-33d1ecd1ea3f" name="Intermediate"/>
+            <filter id="6b72deb2-b6dc-1004-8ffd-33d1ecd1ea3f" name="Result">
+                <parameters>
+                    <parameter name="area" idRef="e09e23f3-b69d-1004-8a7d-e8456503ad86"/>
+                    <parameter name="volume" idRef="e09e23f4-b69d-1004-8a7d-e8456503ad86"/>
+                </parameters>
+            </filter>
+        </view>
+    </views>
+    <directedGraph id="e069c420-b69d-1004-8a7d-e8456503ad86">
+        <nodes>
+            <node idRef="e09e23f4-b69d-1004-8a7d-e8456503ad86"/>
+            <node idRef="e09e23f0-b69d-1004-8a7d-e8456503ad86"/>
+            <node idRef="e09e23f3-b69d-1004-8a7d-e8456503ad86"/>
+            <node idRef="e09e23f2-b69d-1004-8a7d-e8456503ad86"/>
+            <node idRef="e09e23f1-b69d-1004-8a7d-e8456503ad86"/>
+        </nodes>
+        <arcs>
+            <from idRef="e09e23f1-b69d-1004-8a7d-e8456503ad86">
+                <to idRef="e09e23f4-b69d-1004-8a7d-e8456503ad86"/>
+                <to idRef="e09e23f3-b69d-1004-8a7d-e8456503ad86"/>
+            </from>
+            <from idRef="e09e23f0-b69d-1004-8a7d-e8456503ad86">
+                <to idRef="e09e23f4-b69d-1004-8a7d-e8456503ad86"/>
+                <to idRef="e09e23f3-b69d-1004-8a7d-e8456503ad86"/>
+            </from>
+            <from idRef="e09e23f3-b69d-1004-8a7d-e8456503ad86">
+                <to idRef="e09e23f4-b69d-1004-8a7d-e8456503ad86"/>
+            </from>
+            <from idRef="e09e23f2-b69d-1004-8a7d-e8456503ad86">
+                <to idRef="e09e23f4-b69d-1004-8a7d-e8456503ad86"/>
+            </from>
+        </arcs>
+    </directedGraph>
+</modelinterface>

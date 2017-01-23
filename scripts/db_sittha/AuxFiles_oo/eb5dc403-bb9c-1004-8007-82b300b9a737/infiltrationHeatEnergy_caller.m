@@ -1,0 +1,1 @@
+[Qinf, totQinf] = infiltrationHeatEnergy(leakType, leakSize, numSto, shield, Tin, Tavg, wind, heatDegHrs)

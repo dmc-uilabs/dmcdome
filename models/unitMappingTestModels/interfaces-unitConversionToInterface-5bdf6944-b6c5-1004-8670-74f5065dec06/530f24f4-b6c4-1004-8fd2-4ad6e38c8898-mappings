@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="530f24f4-b6c4-1004-8fd2-4ad6e38c8898" name="testInteface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="result" idRef="54b27ce8-b6c4-1004-8fd2-4ad6e38c8898">
+                    <parameter name="LHS" idRef="543efa39-b6c4-1004-8fd2-4ad6e38c8898" idRelationRef="543efa34-b6c4-1004-8fd2-4ad6e38c8898"/>
+                </mappedParameter>
+                <mappedParameter name="a" idRef="535f9a9c-b6c4-1004-8fd2-4ad6e38c8898">
+                    <parameter name="RHS" idRef="543efa38-b6c4-1004-8fd2-4ad6e38c8898" idRelationRef="543efa34-b6c4-1004-8fd2-4ad6e38c8898"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects/>
+    </mappingsandintermediates>
+</modelinterface>

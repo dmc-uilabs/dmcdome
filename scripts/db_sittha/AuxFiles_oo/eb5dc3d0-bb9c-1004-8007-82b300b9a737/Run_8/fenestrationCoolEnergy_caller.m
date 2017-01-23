@@ -1,0 +1,1 @@
+[qbtot, qdtot, qctot, qtot] = fenestrationCoolEnergy(U, A, coolDegHrs, glassID, IAC, theta, ED, Ed, Er, sunrise, sunset);

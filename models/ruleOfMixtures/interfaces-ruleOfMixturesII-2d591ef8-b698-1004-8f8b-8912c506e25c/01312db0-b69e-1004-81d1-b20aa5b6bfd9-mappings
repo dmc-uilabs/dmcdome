@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="01312db0-b69e-1004-81d1-b20aa5b6bfd9" name="fiberInterface">
+    <interfaceinfo>
+        <version>0.0.2</version>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="Ef" idRef="020eb4a0-b69e-1004-81d1-b20aa5b6bfd9">
+                    <parameter name="Ef" idRef="2d591f05-b698-1004-8f8b-8912c506e25c" idModelRef="2d591ef8-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="E1" idRef="022861ac-b69e-1004-81d1-b20aa5b6bfd9">
+                    <parameter name="E1" idRef="2d594627-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594620-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="G12" idRef="022861ae-b69e-1004-81d1-b20aa5b6bfd9">
+                    <parameter name="G12" idRef="2d596d20-b698-1004-8f8b-8912c506e25c" idRelationRef="2d596d18-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="Nuf" idRef="020eb4a1-b69e-1004-81d1-b20aa5b6bfd9">
+                    <parameter name="Nuf" idRef="2d594608-b698-1004-8f8b-8912c506e25c" idModelRef="2d591ef8-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="nu12" idRef="022861af-b69e-1004-81d1-b20aa5b6bfd9">
+                    <parameter name="nu12" idRef="2d596d29-b698-1004-8f8b-8912c506e25c" idRelationRef="2d596d21-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="E2" idRef="022861ad-b69e-1004-81d1-b20aa5b6bfd9">
+                    <parameter name="E2" idRef="2d594631-b698-1004-8f8b-8912c506e25c" idRelationRef="2d594629-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+                <mappedParameter name="vf" idRef="020eb4a2-b69e-1004-81d1-b20aa5b6bfd9">
+                    <parameter name="vf" idRef="2d59460b-b698-1004-8f8b-8912c506e25c" idModelRef="2d591ef8-b698-1004-8f8b-8912c506e25c"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects/>
+    </mappingsandintermediates>
+</modelinterface>

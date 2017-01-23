@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="b3167568-b6a5-1004-8d71-293cc5648337" name="Default Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <parameters>
+        <parameter id="b3169c76-b6a5-1004-8d71-293cc5648337" name="width">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="3.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="b3169c78-b6a5-1004-8d71-293cc5648337" name="height">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="4.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="b3169c7a-b6a5-1004-8d71-293cc5648337" name="area">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="b316c380-b6a5-1004-8d71-293cc5648337" name="volume">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="b3169c77-b6a5-1004-8d71-293cc5648337" name="width">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="3.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="b3169c79-b6a5-1004-8d71-293cc5648337" name="height">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="4.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="b3169c7b-b6a5-1004-8d71-293cc5648337" name="area">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="b316c381-b6a5-1004-8d71-293cc5648337" name="volume">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="b316ea9a-b6a5-1004-8d71-293cc5648337" name="lengthR2">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="5.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <relations>
+        <relation type="Procedural" id="b316c382-b6a5-1004-8d71-293cc5648337" name="calculateArea">
+            <parameters>
+                <parameter id="b316c386-b6a5-1004-8d71-293cc5648337" name="widthR1">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="3.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="b316c387-b6a5-1004-8d71-293cc5648337" name="areaR1">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="b316c388-b6a5-1004-8d71-293cc5648337" name="heightR1">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="4.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <body><![CDATA[areaR1 = widthR1*heightR1
+print 'areaR1: ',areaR1]]></body>
+            <dependencies>
+                <dependency idRef="b316c387-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="widthR1" idRef="b316c386-b6a5-1004-8d71-293cc5648337" idRelationRef="b316c382-b6a5-1004-8d71-293cc5648337"/>
+                    <parameter name="heightR1" idRef="b316c388-b6a5-1004-8d71-293cc5648337" idRelationRef="b316c382-b6a5-1004-8d71-293cc5648337"/>
+                </dependency>
+            </dependencies>
+        </relation>
+        <relation type="Procedural" id="b316ea93-b6a5-1004-8d71-293cc5648337" name="calculateVolume">
+            <parameters>
+                <parameter id="b316ea97-b6a5-1004-8d71-293cc5648337" name="areaR2">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="b316ea98-b6a5-1004-8d71-293cc5648337" name="volumeR2">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="b316ea99-b6a5-1004-8d71-293cc5648337" name="lengthR2">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="5.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <body><![CDATA[volumeR2 = areaR2*lengthR2
+print 'volumeR2: ',volumeR2]]></body>
+            <dependencies>
+                <dependency idRef="b316ea98-b6a5-1004-8d71-293cc5648337">
+                    <parameter name="areaR2" idRef="b316ea97-b6a5-1004-8d71-293cc5648337" idRelationRef="b316ea93-b6a5-1004-8d71-293cc5648337"/>
+                    <parameter name="lengthR2" idRef="b316ea99-b6a5-1004-8d71-293cc5648337" idRelationRef="b316ea93-b6a5-1004-8d71-293cc5648337"/>
+                </dependency>
+            </dependencies>
+        </relation>
+    </relations>
+    <contexts>
+        <context id="IFACE_MODEL_CXT" name="Model View">
+            <modelobjects>
+                <parameter name="width" idRef="b3169c76-b6a5-1004-8d71-293cc5648337"/>
+                <parameter name="height" idRef="b3169c78-b6a5-1004-8d71-293cc5648337"/>
+                <parameter name="area" idRef="b3169c7a-b6a5-1004-8d71-293cc5648337"/>
+                <parameter name="volume" idRef="b316c380-b6a5-1004-8d71-293cc5648337"/>
+                <relation name="calculateArea" idRef="b316c382-b6a5-1004-8d71-293cc5648337"/>
+                <relation name="calculateVolume" idRef="b316ea93-b6a5-1004-8d71-293cc5648337"/>
+            </modelobjects>
+        </context>
+    </contexts>
+    <views>
+        <view name="Build View">
+            <context id="IFACE_BUILD_CXT" name="Build View">
+                <modelobjects>
+                    <parameter name="width" idRef="b3169c77-b6a5-1004-8d71-293cc5648337"/>
+                    <parameter name="height" idRef="b3169c79-b6a5-1004-8d71-293cc5648337"/>
+                    <parameter name="area" idRef="b3169c7b-b6a5-1004-8d71-293cc5648337"/>
+                    <parameter name="volume" idRef="b316c381-b6a5-1004-8d71-293cc5648337"/>
+                    <parameter name="lengthR2" idRef="b316ea9a-b6a5-1004-8d71-293cc5648337"/>
+                </modelobjects>
+            </context>
+        </view>
+        <view name="Interface Causality View">
+            <filter id="INPUTS_FILTER" name="Inputs">
+                <parameters>
+                    <parameter name="width" idRef="b3169c77-b6a5-1004-8d71-293cc5648337"/>
+                    <parameter name="height" idRef="b3169c79-b6a5-1004-8d71-293cc5648337"/>
+                    <parameter name="lengthR2" idRef="b316ea9a-b6a5-1004-8d71-293cc5648337"/>
+                </parameters>
+            </filter>
+            <filter id="OUTPUTS_FILTER" name="Outputs">
+                <parameters>
+                    <parameter name="volume" idRef="b316c381-b6a5-1004-8d71-293cc5648337" causality="Result"/>
+                    <parameter name="area" idRef="b3169c7b-b6a5-1004-8d71-293cc5648337" causality="Result"/>
+                </parameters>
+            </filter>
+            <filter id="INDETERMINATES_FILTER" name="Indeterminates"/>
+        </view>
+        <view name="System Causality View">
+            <filter id="6b71f3ef-b6dc-1004-8ffd-33d1ecd1ea3f" name="Independent">
+                <parameters>
+                    <parameter name="width" idRef="b3169c77-b6a5-1004-8d71-293cc5648337"/>
+                    <parameter name="height" idRef="b3169c79-b6a5-1004-8d71-293cc5648337"/>
+                    <parameter name="lengthR2" idRef="b316ea9a-b6a5-1004-8d71-293cc5648337"/>
+                </parameters>
+            </filter>
+            <filter id="6b71f3f0-b6dc-1004-8ffd-33d1ecd1ea3f" name="Intermediate"/>
+            <filter id="6b71f3f1-b6dc-1004-8ffd-33d1ecd1ea3f" name="Result">
+                <parameters>
+                    <parameter name="area" idRef="b3169c7b-b6a5-1004-8d71-293cc5648337"/>
+                    <parameter name="volume" idRef="b316c381-b6a5-1004-8d71-293cc5648337"/>
+                </parameters>
+            </filter>
+        </view>
+    </views>
+    <directedGraph id="b3167568-b6a5-1004-8d71-293cc5648337">
+        <nodes>
+            <node idRef="b316c381-b6a5-1004-8d71-293cc5648337"/>
+            <node idRef="b3169c77-b6a5-1004-8d71-293cc5648337"/>
+            <node idRef="b3169c7b-b6a5-1004-8d71-293cc5648337"/>
+            <node idRef="b316ea9a-b6a5-1004-8d71-293cc5648337"/>
+            <node idRef="b3169c79-b6a5-1004-8d71-293cc5648337"/>
+        </nodes>
+        <arcs>
+            <from idRef="b3169c7b-b6a5-1004-8d71-293cc5648337">
+                <to idRef="b316c381-b6a5-1004-8d71-293cc5648337"/>
+            </from>
+            <from idRef="b3169c79-b6a5-1004-8d71-293cc5648337">
+                <to idRef="b316c381-b6a5-1004-8d71-293cc5648337"/>
+                <to idRef="b3169c7b-b6a5-1004-8d71-293cc5648337"/>
+            </from>
+            <from idRef="b3169c77-b6a5-1004-8d71-293cc5648337">
+                <to idRef="b316c381-b6a5-1004-8d71-293cc5648337"/>
+                <to idRef="b3169c7b-b6a5-1004-8d71-293cc5648337"/>
+            </from>
+            <from idRef="b316ea9a-b6a5-1004-8d71-293cc5648337">
+                <to idRef="b316c381-b6a5-1004-8d71-293cc5648337"/>
+            </from>
+        </arcs>
+    </directedGraph>
+</modelinterface>

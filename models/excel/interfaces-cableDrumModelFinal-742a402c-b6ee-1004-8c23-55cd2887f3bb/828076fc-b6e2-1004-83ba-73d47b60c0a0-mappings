@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="828076fc-b6e2-1004-83ba-73d47b60c0a0" name="Electrical Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="MaxStall" idRef="74040da9-b6ee-1004-8c23-55cd2887f3bb">
+                    <parameter name="MaxStall" idRef="d3b040a0-b6cb-1004-8511-6d78516dd70d" idModelRef="742a402c-b6ee-1004-8c23-55cd2887f3bb"/>
+                </mappedParameter>
+                <mappedParameter name="MotorTorque" idRef="73ce535d-b6ee-1004-8c23-55cd2887f3bb">
+                    <parameter name="MotorTorque" idRef="d0446f40-b6cb-1004-8511-6d78516dd70d" idModelRef="742a402c-b6ee-1004-8c23-55cd2887f3bb"/>
+                </mappedParameter>
+                <mappedParameter name="MotorSpeed" idRef="73ce535c-b6ee-1004-8c23-55cd2887f3bb">
+                    <parameter name="MotorSpeed" idRef="d021710c-b6cb-1004-8511-6d78516dd70d" idModelRef="742a402c-b6ee-1004-8c23-55cd2887f3bb"/>
+                </mappedParameter>
+                <mappedParameter name="MaxVel" idRef="74040da8-b6ee-1004-8c23-55cd2887f3bb">
+                    <parameter name="MaxVel" idRef="d0f11b8c-b6cb-1004-8511-6d78516dd70d" idModelRef="742a402c-b6ee-1004-8c23-55cd2887f3bb"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects/>
+    </mappingsandintermediates>
+</modelinterface>

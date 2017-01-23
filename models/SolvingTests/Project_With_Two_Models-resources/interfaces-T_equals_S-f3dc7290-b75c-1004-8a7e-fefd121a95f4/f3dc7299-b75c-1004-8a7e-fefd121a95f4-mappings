@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="f3dc7299-b75c-1004-8a7e-fefd121a95f4" name="Default Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="S" idRef="f44ca346-b75c-1004-8a7e-fefd121a95f4">
+                    <parameter name="S" idRef="f44ca344-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f4020938-b75c-1004-8a7e-fefd121a95f4"/>
+                </mappedParameter>
+                <mappedParameter name="T" idRef="f44e51be-b75c-1004-8a7e-fefd121a95f4">
+                    <parameter name="T" idRef="f44e51bc-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f4020938-b75c-1004-8a7e-fefd121a95f4"/>
+                </mappedParameter>
+                <mappedParameter name="S" idRef="f44ca345-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f402093c-b75c-1004-8a7e-fefd121a95f4">
+                    <parameter name="S" idRef="f44ca344-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f4020938-b75c-1004-8a7e-fefd121a95f4"/>
+                </mappedParameter>
+                <mappedParameter name="T" idRef="f44e51bd-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f402093c-b75c-1004-8a7e-fefd121a95f4">
+                    <parameter name="T" idRef="f44e51bc-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f4020938-b75c-1004-8a7e-fefd121a95f4"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects>
+            <parameter id="f44ca346-b75c-1004-8a7e-fefd121a95f4" name="S">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="0.0" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+            </parameter>
+            <parameter id="f44e51be-b75c-1004-8a7e-fefd121a95f4" name="T">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="0.0" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+            </parameter>
+        </intermediateobjects>
+    </mappingsandintermediates>
+    <lookupdata>
+        <objectmap>
+            <relation name="T_equals_S" idRef="f4020938-b75c-1004-8a7e-fefd121a95f4" description="key"/>
+            <relation name="T_equals_S" idRef="f402093c-b75c-1004-8a7e-fefd121a95f4" description="value"/>
+        </objectmap>
+        <viewobjectmap/>
+        <relationobjectmap>
+            <parameter name="S" idRef="f44ca344-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f4020938-b75c-1004-8a7e-fefd121a95f4" description="key"/>
+            <parameter name="S" idRef="f44ca346-b75c-1004-8a7e-fefd121a95f4" description="value"/>
+            <parameter name="T" idRef="f44e51bc-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f4020938-b75c-1004-8a7e-fefd121a95f4" description="key"/>
+            <parameter name="T" idRef="f44e51be-b75c-1004-8a7e-fefd121a95f4" description="value"/>
+        </relationobjectmap>
+    </lookupdata>
+</modelinterface>

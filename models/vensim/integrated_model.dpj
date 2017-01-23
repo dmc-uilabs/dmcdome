@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project id="4689b309-c09c-1004-8149-43c742e7b24b" name="Integrated Population Dynamics Project">
+    <projectinfo>
+        <version>0.0.1</version>
+    </projectinfo>
+    <resources>
+        <resource type="model" id="4689b30b-c09c-1004-8149-43c742e7b24b" name="Key Coefficient Estimation Model">
+            <location id="296909f2-c090-1004-8206-b5f9667dcd9c" hostName="18.80.6.126" ipAddress="18.80.6.126" port="8080"/>
+            <subscribedInterfaceIds>
+                <ifaceId>296909f4-c090-1004-8206-b5f9667dcd9c</ifaceId>
+            </subscribedInterfaceIds>
+        </resource>
+        <resource type="model" id="4689b30c-c09c-1004-8149-43c742e7b24b" name="World Population Dynamics Model">
+            <location id="296909f6-c090-1004-8206-b5f9667dcd9c" hostName="18.80.6.126" ipAddress="18.80.6.126" port="8080"/>
+            <subscribedInterfaceIds>
+                <ifaceId>296909f8-c090-1004-8206-b5f9667dcd9c</ifaceId>
+            </subscribedInterfaceIds>
+        </resource>
+        <resource type="imodel" id="4689b30d-c09c-1004-8149-43c742e7b24b" name="iModel">
+            <location id="4689b30d-c09c-1004-8149-43c742e7b24b" hostName="" ipAddress="" port=""/>
+        </resource>
+    </resources>
+    <integrationModels>
+        <imodel id="4689b30d-c09c-1004-8149-43c742e7b24b" name="iModel"/>
+    </integrationModels>
+</project>

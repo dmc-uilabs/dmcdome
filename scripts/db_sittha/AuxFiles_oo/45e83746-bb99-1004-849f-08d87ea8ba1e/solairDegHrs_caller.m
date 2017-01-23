@@ -1,0 +1,1 @@
+[cDegHrs, hDegHrs] = solairDegHrs(Et, sunrise, sunset, isLightColor, isHorizontal, cityID, month, Tin);

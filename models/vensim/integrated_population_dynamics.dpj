@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project id="2f97c200-c090-1004-8571-274748f4f678" name="Integrated Population Dynamics Project">
+    <projectinfo>
+        <version>0.0.1</version>
+    </projectinfo>
+    <resources>
+        <resource type="model" id="2f97c202-c090-1004-8571-274748f4f678" name="Key Coefficient Estimation Model">
+            <location id="296909f2-c090-1004-8206-b5f9667dcd9c" hostName="localhost" ipAddress="127.0.0.1" port="8080"/>
+            <subscribedInterfaceIds>
+                <ifaceId>296909f4-c090-1004-8206-b5f9667dcd9c</ifaceId>
+            </subscribedInterfaceIds>
+        </resource>
+        <resource type="model" id="2f97c203-c090-1004-8571-274748f4f678" name="World Population Dynamics Model">
+            <location id="296909f6-c090-1004-8206-b5f9667dcd9c" hostName="localhost" ipAddress="127.0.0.1" port="8080"/>
+            <subscribedInterfaceIds>
+                <ifaceId>296909f8-c090-1004-8206-b5f9667dcd9c</ifaceId>
+            </subscribedInterfaceIds>
+        </resource>
+        <resource type="imodel" id="2f97c204-c090-1004-8571-274748f4f678" name="iModel">
+            <location id="" hostName="" ipAddress="" port=""/>
+        </resource>
+    </resources>
+    <integrationModels>
+        <imodel id="2f97c204-c090-1004-8571-274748f4f678" name="iModel"/>
+    </integrationModels>
+</project>

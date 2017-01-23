@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="a4b11c2d-dadd-1004-82ff-61d8d40efb43" name="Wind DFIG Outputs">
+    <interfaceinfo>
+        <version>0.0.1</version>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="Starting Wind Speed" idRef="a4b11c36-dadd-1004-82ff-61d8d40efb43">
+                    <parameter name="Starting Wind Speed" idRef="42b8e3c7-dad7-1004-80f4-772a6c6cf8e0" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                </mappedParameter>
+                <mappedParameter name="Grid Data" idRef="a4b11c38-dadd-1004-82ff-61d8d40efb43">
+                    <parameter name="Grid Data" idRef="57e0638d-dad7-1004-816b-799bc0accdc8" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                </mappedParameter>
+                <mappedParameter name="Frequency" idRef="a4b11c34-dadd-1004-82ff-61d8d40efb43">
+                    <parameter name="Frequency" idRef="57e0637c-dad7-1004-816b-799bc0accdc8" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                </mappedParameter>
+                <mappedParameter name="Object Number" idRef="db216ce2-dade-1004-8f81-a646163d805e">
+                    <parameter name="Object Number" idRef="db216cdf-dade-1004-8f81-a646163d805e" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                </mappedParameter>
+                <mappedParameter name="Turbine Data " idRef="a4b11c39-dadd-1004-82ff-61d8d40efb43">
+                    <parameter name="Turbine Data " idRef="57e06390-dad7-1004-816b-799bc0accdc8" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                </mappedParameter>
+                <mappedParameter name="GraphTitles" idRef="1375f02c-db05-1004-8f38-e210175dd8c1">
+                    <parameter name="GraphTitles" idRef="1375f027-db05-1004-8f38-e210175dd8c1" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                </mappedParameter>
+                <mappedParameter name="Number Of Turbines" idRef="a4b11c35-dadd-1004-82ff-61d8d40efb43">
+                    <parameter name="Number Of Turbines" idRef="42b8e3bf-dad7-1004-80f4-772a6c6cf8e0" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                </mappedParameter>
+                <mappedParameter name="Line Length" idRef="a4b11c37-dadd-1004-82ff-61d8d40efb43">
+                    <parameter name="Line Length" idRef="e5da288d-dad4-1004-8855-6b2aadfa974a" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects/>
+    </mappingsandintermediates>
+</modelinterface>

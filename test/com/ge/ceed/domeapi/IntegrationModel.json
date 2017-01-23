@@ -1,0 +1,212 @@
+{
+  "model": {
+    "interFace": {
+      "version": 66,
+      "modelId": "newIntegrationModel_id",
+      "interfaceId": "newIntegrationInterfaceId",
+      "type": "interface",
+      "name": "newIntegrationInterfaceName",
+      "path": [
+        29,
+        32
+      ]
+    },
+    "inParams": {
+      "externalLength": {
+        "name": "externalLength",
+        "type": "int",
+        "unit": "cm",
+        "instancename": "XP"
+      },
+      "externalWidth": {
+        "name": "externalWidth",
+        "type": "int",
+        "unit": "cm",
+        "instancename": "XP"
+      }
+    },
+    "outParams": {
+      "externalArea": {
+        "name": "externalArea",
+        "type": "int",
+        "unit": "cm2",
+        "instancename": "XP"
+      },
+      "externalperimeter": {
+        "name": "externalperimeter",
+        "type": "int",
+        "unit": "cm",
+        "instancename": "XP"
+      }
+    },
+    "modelName": "integrationModelName1"
+  },
+  "resources": {
+    "PerimeterModel1": {
+      "interFace": {
+        "version": 68,
+        "modelId": "PerimeterModel_id",
+        "interfaceId": "PerimeterInterface_id",
+        "type": "interface",
+        "name": "PerimeterInterface",
+        "path": [
+          29
+        ]
+      },
+      "inParams": {
+        "PerimModelWidth": {
+          "name": "PerimModelWidth",
+          "type": "Real",
+          "unit": "cm",
+          "parameterid": "PerimModelWidth_id"
+        },
+        "PerimModelLength": {
+          "name": "PerimModelLength",
+          "type": "Real",
+          "unit": "cm",
+          "parameterid": "PerimModelLength_id"
+        }
+      },
+      "outParams": {
+        "OutputInternalPerimeter": {
+          "name": "OutputInternalPerimeter",
+          "type": "Real",
+          "unit": "cm",
+          "parameterid": "OutputInternalPerimeter_id"
+        }
+      },
+      "server": {
+        "name": "serverName",
+        "port": "8080",
+        "user": "userName",
+        "pw": "password",
+        "space": "USER"
+      }
+    },
+    "AreaModel1": {
+      "interFace": {
+        "version": 70,
+        "modelId": "AreaModel_id",
+        "interfaceId": "AreaInterface_id",
+        "type": "interface",
+        "name": "AreaInterface",
+        "path": [
+          29
+        ]
+      },
+      "inParams": {
+        "AreaModelLength": {
+          "name": "AreaModelLength",
+          "type": "Real",
+          "unit": "cm",
+          "parameterid": "AreaModelLength_id"
+        },
+        "AreaModelWidth": {
+          "name": "AreaModelWidth",
+          "type": "Real",
+          "unit": "cm",
+          "parameterid": "AreaModelWidth_id"
+        }
+      },
+      "outParams": {
+        "InternalAreaOutput": {
+          "name": "InternalAreaOutput",
+          "type": "Real",
+          "unit": "cm2",
+          "parameterid": "InternalAreaOutput_id"
+        }
+      },
+      "server": {
+        "name": "serverName",
+        "port": "8080",
+        "user": "userName",
+        "pw": "password",
+        "space": "USER"
+      }
+    }
+  },
+  "connectors": [
+    {
+      "from": {
+        "name": "externalLength",
+        "type": "int",
+        "unit": "cm",
+        "instancename": "XP"
+      },
+      "to": {
+        "parameterid": "AreaModelLength_id",
+        "instancename": "AreaModel1"
+      }
+    },
+    {
+      "from": {
+        "name": "externalLength",
+        "type": "int",
+        "unit": "cm",
+        "instancename": "XP"
+      },
+      "to": {
+        "parameterid": "PerimModelLength_id",
+        "instancename": "PerimeterModel1"
+      }
+    },
+    {
+      "from": {
+        "name": "externalWidth",
+        "type": "int",
+        "unit": "cm",
+        "instancename": "XP"
+      },
+      "to": {
+        "parameterid": "AreaModelWidth_id",
+        "instancename": "AreaModel1"
+      }
+    },
+    {
+      "from": {
+        "name": "externalWidth",
+        "type": "int",
+        "unit": "cm",
+        "instancename": "XP"
+      },
+      "to": {
+        "parameterid": "PerimModelWidth_id",
+        "instancename": "PerimeterModel1"
+      }
+    },
+    {
+      "from": {
+        "parameterid": "InternalAreaOutput_id",
+        "instancename": "AreaModel1"
+      },
+      "to": {
+        "name": "externalArea",
+        "type": "int",
+        "unit": "cm2",
+        "instancename": "XP"
+      }
+    },
+    {
+      "from": {
+        "parameterid": "OutputInternalPerimeter_id",
+        "instancename": "PerimeterModel1"
+      },
+      "to": {
+        "name": "externalperimeter",
+        "type": "int",
+        "unit": "cm",
+        "instancename": "XP"
+      }
+    }
+  ],
+  "space": "USERS",
+  "folder": {
+    "type": "folder",
+    "name": "DrewsModels",
+    "path": [
+      29,
+      32
+    ]
+  },
+  "description": "Description of intgrationModelName1"
+}

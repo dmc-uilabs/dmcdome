@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml'>
+   <head >
+      <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+      <title >Form Page: sampleform</title>
+   </head>
+   <script type="text/javascript">
+    var cbFunc = null;
+    
+   	function initPage() 
+   	{
+  		doAsyncCall(loadModels, "getModels");
+   	}
+   	
+   	function onError(e) {
+	  alert("Error " + e.target.status + " occurred while receiving the document.");
+	}
+	
+	function getModel()
+	{
+		var mGuid =  document.getElementById("modelGuid").value;
+		doAsyncCall(loadModels, "getModel?model="+mGuid);
+	}
+	
+   	function loadModels(res)
+   	{
+   		var outt = document.getElementById("ModelList");
+   		outt.innerHTML=formatJson(res);
+   	}
+   	
+   	function doAsyncCall(cbF, url)
+	{
+		var xmlhttp;
+		cbFunc = cbF;
+		if (window.XMLHttpRequest)
+		{// code for IE7+, Firefox, Chrome, Opera, Safari
+		  xmlhttp=new XMLHttpRequest();
+		}
+		else
+		{// code for IE6, IE5
+		  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		xmlhttp.onerror=onError;
+		xmlhttp.onreadystatechange=function(ors)
+		  {
+		  	if (xmlhttp.readyState==4 && xmlhttp.status==200)
+		    {
+		    	cbFunc(xmlhttp.responseText);
+		    }
+		  }
+		xmlhttp.open("GET",url,true);
+		xmlhttp.send();
+	}
+	
+	// formatJson() :: formats and indents JSON string
+	function formatJson(val) {
+	    var retval = '';
+	    var str = val;
+	    var pos = 0;
+	    var strLen = str.length;
+	    var indentStr = '&nbsp;&nbsp;&nbsp;&nbsp;';
+	    var newLine = '<br />';
+	    var char = '';
+	     
+	    for (var i=0; i<strLen; i++) {
+	        char = str.substring(i,i+1);
+	         
+	        if (char == '}' || char == ']') {
+	            retval = retval + newLine;
+	            pos = pos - 1;
+	             
+	            for (var j=0; j<pos; j++) {
+	                retval = retval + indentStr;
+	            }
+	        }
+	         
+	        retval = retval + char;
+	         
+	        if (char == '{' || char == '[' || char == ',') {
+	            retval = retval + newLine;
+	             
+	            if (char == '{' || char == '[') {
+	                pos = pos + 1;
+	            }
+	             
+	            for (var k=0; k<pos; k++) {
+	                retval = retval + indentStr;
+	            }
+	        }
+	    }
+	     
+	    return retval;
+	}
+	
+	function onRunModel(res)
+	{
+		
+	}
+   </script>
+<body onload="initPage()">
+
+<h3>Sample form page</h3>
+<hr>
+<h4> Get Model</h4>
+   <p>
+   Model Guid: <input type='text' id='modelGuid' style="width: 251px; height: 24px"/>
+   </p>
+   <button name='getModel' value='' onclick="getModel()">Get Model</button>
+   </p>
+
+<hr>
+<form id='sampleform' method='post' action='runModel'>
+   <p>
+   Model: <input type='text' name='model' style="width: 391px; height: 24px"/>
+   </p>
+   
+   <input type='submit' name='Submit' value='Run Model' />
+   </p>
+</form>
+<hr>
+<h3>Models</h3>
+	<div id="ModelList" style="height: 53px; width: 877px; ">
+	</div>
+</body>
+</html>

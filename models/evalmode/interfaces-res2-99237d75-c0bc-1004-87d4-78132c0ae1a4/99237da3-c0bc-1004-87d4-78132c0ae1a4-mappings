@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="99237da3-c0bc-1004-87d4-78132c0ae1a4" name="Dome Model Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="height" idRef="99237da9-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="height" idRef="99237d86-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d75-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="width" idRef="99237da8-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="width" idRef="99237d83-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d75-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="perimeter" idRef="99237dab-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="perimeter" idRef="99237d8c-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d75-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="area" idRef="99237daa-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="area" idRef="99237d89-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d75-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects/>
+    </mappingsandintermediates>
+</modelinterface>

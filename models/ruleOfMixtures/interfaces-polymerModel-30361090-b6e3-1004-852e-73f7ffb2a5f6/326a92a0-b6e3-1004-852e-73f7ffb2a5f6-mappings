@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="326a92a0-b6e3-1004-852e-73f7ffb2a5f6" name="polymer curing interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="curingTemperature" idRef="32a95184-b6e3-1004-852e-73f7ffb2a5f6">
+                    <parameter name="curingTemperature" idRef="312b1c98-b6e3-1004-852e-73f7ffb2a5f6" idRelationRef="305e8534-b6e3-1004-852e-73f7ffb2a5f6"/>
+                </mappedParameter>
+                <mappedParameter name="nominalModulus" idRef="32a95185-b6e3-1004-852e-73f7ffb2a5f6">
+                    <parameter name="nominalModulus" idRef="312ddf3c-b6e3-1004-852e-73f7ffb2a5f6" idRelationRef="305e8534-b6e3-1004-852e-73f7ffb2a5f6"/>
+                </mappedParameter>
+                <mappedParameter name="actualModulus" idRef="32a95186-b6e3-1004-852e-73f7ffb2a5f6">
+                    <parameter name="actualModulus" idRef="31309f24-b6e3-1004-852e-73f7ffb2a5f6" idRelationRef="305e8534-b6e3-1004-852e-73f7ffb2a5f6"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects/>
+    </mappingsandintermediates>
+</modelinterface>

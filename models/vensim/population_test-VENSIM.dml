@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<model type="PluginModel" id="5b62637c-c08e-1004-87bc-6bbffbf0d682" name="Vensim World Population Model" pluginType="VENSIM">
+    <modelinfo>
+        <version>0.0.0</version>
+    </modelinfo>
+    <parameters>
+        <parameter id="5b62638e-c08e-1004-87bc-6bbffbf0d682" name="given birth rate">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.04" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="5b626391-c08e-1004-87bc-6bbffbf0d682" name="estimated population">
+            <currentType value="Vector"/>
+            <data>
+                <dataobject type="Vector">
+                    <unit>No_Unit</unit>
+                    <rowVector>false</rowVector>
+                    <initialValue type="real">0.0</initialValue>
+                    <fixedSize>false</fixedSize>
+                    <data type="real"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="5b626394-c08e-1004-87bc-6bbffbf0d682" name="FileParameter">
+            <currentType value="File"/>
+            <data>
+                <dataobject type="File">
+                    <filePath>C:\dome3\models\vensim\WORLDAPP.VPM</filePath>
+                    <fileType>Binary</fileType>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="5b626395-c08e-1004-87bc-6bbffbf0d682" name="given cap invest rate">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.05" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="e5859b28-c08f-1004-8ac5-e5fc5549eda4" name="given death rate">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.028" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="e5859b2b-c08f-1004-8ac5-e5fc5549eda4" name="estimated final pollution">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="e5859b2e-c08f-1004-8ac5-e5fc5549eda4" name="estimated capital ratio">
+            <currentType value="Vector"/>
+            <data>
+                <dataobject type="Vector">
+                    <unit>No_Unit</unit>
+                    <rowVector>false</rowVector>
+                    <initialValue type="real">0.0</initialValue>
+                    <fixedSize>false</fixedSize>
+                    <data type="real"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="e5859c44-c08f-1004-8ac5-e5fc5549eda4" name="given population density">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="26.5" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <contexts>
+        <context id="BUILD_CXT" name="Build View">
+            <modelobjects>
+                <parameter name="given birth rate" idRef="5b62638e-c08e-1004-87bc-6bbffbf0d682" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682"/>
+                <parameter name="given cap invest rate" idRef="5b626395-c08e-1004-87bc-6bbffbf0d682" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682"/>
+                <parameter name="given death rate" idRef="e5859b28-c08f-1004-8ac5-e5fc5549eda4" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682"/>
+                <parameter name="given population density" idRef="e5859c44-c08f-1004-8ac5-e5fc5549eda4" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682"/>
+                <parameter name="estimated final pollution" idRef="e5859b2b-c08f-1004-8ac5-e5fc5549eda4" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682"/>
+                <parameter name="estimated capital ratio" idRef="e5859b2e-c08f-1004-8ac5-e5fc5549eda4" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682"/>
+                <parameter name="estimated population" idRef="5b626391-c08e-1004-87bc-6bbffbf0d682" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682"/>
+            </modelobjects>
+        </context>
+        <context id="FILE_CXT" name="Files">
+            <modelobjects>
+                <parameter name="FileParameter" idRef="5b626394-c08e-1004-87bc-6bbffbf0d682" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682"/>
+            </modelobjects>
+        </context>
+    </contexts>
+    <mappings>
+        <modelMappings>
+            <mappedParameter name="given birth rate" idRef="5b62638e-c08e-1004-87bc-6bbffbf0d682" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682">birth rate normal</mappedParameter>
+            <mappedParameter name="estimated population" idRef="5b626391-c08e-1004-87bc-6bbffbf0d682" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682">Population</mappedParameter>
+            <mappedParameter name="given population density" idRef="e5859c44-c08f-1004-8ac5-e5fc5549eda4" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682">population density normal</mappedParameter>
+            <mappedParameter name="given cap invest rate" idRef="5b626395-c08e-1004-87bc-6bbffbf0d682" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682">capital investment rate normal c</mappedParameter>
+            <mappedParameter name="given death rate" idRef="e5859b28-c08f-1004-8ac5-e5fc5549eda4" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682">death rate normal</mappedParameter>
+            <mappedParameter name="estimated final pollution" idRef="e5859b2b-c08f-1004-8ac5-e5fc5549eda4" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682">Pollution</mappedParameter>
+            <mappedParameter name="estimated capital ratio" idRef="e5859b2e-c08f-1004-8ac5-e5fc5549eda4" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682">capital ratio</mappedParameter>
+        </modelMappings>
+    </mappings>
+    <dependencies>
+        <dependency idRef="5b626391-c08e-1004-87bc-6bbffbf0d682">
+            <parameter name="given birth rate" idRef="5b62638e-c08e-1004-87bc-6bbffbf0d682" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682"/>
+            <parameter name="given cap invest rate" idRef="5b626395-c08e-1004-87bc-6bbffbf0d682" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682"/>
+            <parameter name="given death rate" idRef="e5859b28-c08f-1004-8ac5-e5fc5549eda4" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682"/>
+            <parameter name="given population density" idRef="e5859c44-c08f-1004-8ac5-e5fc5549eda4" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682"/>
+        </dependency>
+        <dependency idRef="e5859b2b-c08f-1004-8ac5-e5fc5549eda4">
+            <parameter name="given birth rate" idRef="5b62638e-c08e-1004-87bc-6bbffbf0d682" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682"/>
+            <parameter name="given cap invest rate" idRef="5b626395-c08e-1004-87bc-6bbffbf0d682" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682"/>
+            <parameter name="given death rate" idRef="e5859b28-c08f-1004-8ac5-e5fc5549eda4" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682"/>
+            <parameter name="given population density" idRef="e5859c44-c08f-1004-8ac5-e5fc5549eda4" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682"/>
+        </dependency>
+        <dependency idRef="e5859b2e-c08f-1004-8ac5-e5fc5549eda4">
+            <parameter name="given birth rate" idRef="5b62638e-c08e-1004-87bc-6bbffbf0d682" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682"/>
+            <parameter name="given cap invest rate" idRef="5b626395-c08e-1004-87bc-6bbffbf0d682" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682"/>
+            <parameter name="given death rate" idRef="e5859b28-c08f-1004-8ac5-e5fc5549eda4" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682"/>
+            <parameter name="given population density" idRef="e5859c44-c08f-1004-8ac5-e5fc5549eda4" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682"/>
+        </dependency>
+    </dependencies>
+    <setup>
+        <parameter id="software version" name="software version">
+            <currentType value="Enumeration"/>
+            <data>
+                <dataobject type="Enumeration">
+                    <data>
+                        <dataobject name="Vensim 5.5D" type="String"></dataobject>
+                    </data>
+                    <lastSelectionIndex>0</lastSelectionIndex>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="run in foreground" name="run in foreground">
+            <currentType value="Boolean"/>
+            <data>
+                <dataobject type="Boolean">true</dataobject>
+            </data>
+        </parameter>
+    </setup>
+    <auxfiles>
+        <auxfile id="5b62639e-c08e-1004-87bc-6bbffbf0d682" name="FileParameter">
+            <isMainModelFile value="true"/>
+            <isExcuteOnServer value="true"/>
+            <fileType>file:///</fileType>
+            <file>C:\dome3\models\vensim\WORLDAPP.VPM</file>
+        </auxfile>
+    </auxfiles>
+</model>

@@ -1,0 +1,92 @@
+Last revision date: Apr 3, 2003
+Documentation for how to integrate a plugin with the Java side of DOME.
+
+Assumptions:
+1) the plugin is already wrapped according to the plugin API and can be run
+   on the Java side
+
+Overview:
+Two more classes will need to be written to integrate the plugin into the Java side.
+Small modifications to the already written Plugin data types will be needed.
+
+Steps:
+STEP 0) read all instructions before starting and understand the Excel plugin example
+for each step before doing your own coding for each step.
+
+STEP 1) Modify Plugin data object classes to take in an instance of the Dome data object.
+
+Example:
+Initially, there is
+public PluginReal(NativeCaller caller, long modelPtr, String somePluginSpecificDataHere) {
+    // some code, then...
+    data = new RealData();
+}
+
+Create a new constructor which also takes in a DomeReal (or RealData if additional functionality is needed)
+and modify the old constructor to call the new one.
+
+So, there will now be
+public PluginReal(NativeCaller caller, long modelPtr, String somePluginSpecificDataHere) {
+    this(caller, modelPtr, somePluginSpecificDataHere, null); // old method calls new one
+}
+public PluginReal(NativeCaller caller, long modelPtr, String somePluginSpecificDataHere, DomeReal dReal) {
+    // some code, then...
+    if (dReal==null)
+        data = new RealData();
+    else
+        data = dReal;
+}
+
+STEP 2) Modify Plugin class to create instances of each data object with Dome data object instances.
+
+Example:
+Initially, there is
+public Object createReal(String somePluginSpecificDataHere)
+{
+    PluginReal real = new PluginReal(caller, modelPtr, somePluginSpecificDataHere);
+    data.addElement(real);
+    return real;
+}
+
+Create a new method that also takes in a DomeReal and returns a PluginReal (instead of Object)
+and modify the old method to call the new one.
+
+So, there will now be
+public Object createReal(String somePluginSpecificDataHere)
+{
+    return createReal(somePluginSpecificDataHere, null); // old method calls new one
+}
+public PluginReal createReal(String somePluginSpecificDataHere, DomeReal dReal)
+{
+    // use method created in step 1
+    PluginReal real = new PluginReal(caller, modelPtr, somePluginSpecificDataHere, dReal);
+    data.addElement(real);
+    return real;
+}
+
+STEP 3) create a class that extends from PluginConfiguration (see ExcelConfiguration for an example).
+Two public static constants, TYPE_INFO and VALID_DATA_TYPES must be defined.
+Read the documentation in PluginConfiguration for how these constants are used.
+Implement the two constructors and three methods as shown in the Excel Configuration.
+The first constructor creates a list of parameters to be used in setting up the particular plugin.
+Know what these should be before starting (ask someone if you do not know).
+
+If you would like custom data support, overide useCustomDatatype() and createParameter() methods.
+
+STEP 4) register your PluginConfiguration in DomeInit.registerPluginModels. Be sure to add a line
+to both arrays (null for the pluginRuntimes since you do not have that class implemented yet).
+Registering the PluginConfiguration adds the plugin to the menu options in build mode.
+
+STEP 5) using build mode, create your model. save it. look at the xml. make sure it is ok. close it,
+    open it up, make sure it is ok. change it, save it, make sure it is ok.
+
+STEP 6) create a class that extends from PluginModelRuntime (see ExcelModelRuntime for an example).
+In this class, create a loadNativeModel method and in it create the native plugin instance and
+the necessary links between items in the model created in build mode and items in the plugin application.
+Also implement executeNativePlugin and stopModel as shown in the example.
+
+STEP 7) add the PluginModelRuntime class to DomeInit.registerPluginModels. Take out the null entry from before.
+This will allow your model to be run from the Dome Server.
+
+STEP 8) create a class to test your runtime model instance. see RunExcelModel for an example.
+Or, if the server can run models, deploy your model and watch it run through DOME.

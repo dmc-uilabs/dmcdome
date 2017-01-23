@@ -1,0 +1,4 @@
+#######################################################
+# MODE      SHOULD_HIGHLIGHT CAN_HIGHLIGHT EXTENSIONS #
+#######################################################
+python      true             true          .py

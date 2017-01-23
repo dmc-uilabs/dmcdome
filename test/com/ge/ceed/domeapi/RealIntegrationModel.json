@@ -1,0 +1,153 @@
+{
+    "model":{
+        "interFace":{
+            "version":66,
+            "modelId":"newIntegrationModel_id",
+            "interfaceId":"newIntegrationInterfaceId",
+            "type":"interface",
+            "name":"Bob",
+            "path":[
+                29,
+                32
+            ]
+        },
+        "inParams":{
+            "externalInput":{
+                "name":"externalInput",
+                "type":"Real",
+                "unit":"no unit",
+                "parameterid":"externalInput",
+                "value":"5"
+            }
+        },
+        "outParams":{
+            "externalOutput":{
+                "name":"externalOutput",
+                "type":"Real",
+                "unit":"no unit",
+                "parameterid":"externalOutput",
+                "value":"0"
+            }
+        },
+        "modelName":"integrationModelName001"
+    },
+    "resources":{
+        "SquareModel001":{
+            "interFace":{
+                "version":1,
+                "modelId":"90a28cc4-d093-1004-87f0-b45ab5d8f614",
+                "interfaceId":"90a28cc5-d093-1004-87f0-b45ab5d8f614",
+                "type":"interface",
+                "path":[
+                    29,
+                    32
+                ]
+            },
+            "inParams":{
+                "InParam":{
+                    "name":"InParam",
+                    "type":"Real",
+                    "unit":"no unit",
+                    "parameterid":"dc7cba73-d0ad-1004-8ef8-9e203c99f336"
+                }
+            },
+            "outParams":{
+                "OutParam":{
+                    "name":"OutParam",
+                    "type":"Real",
+                    "unit":"no unit",
+                    "parameterid":"dc7cba76-d0ad-1004-8ef8-9e203c99f336"
+                }
+            },
+            "server":{
+                	"name":"nsk1502066264a.grmsamer.grms.ge.com",
+                	"port":"7790",
+                	"user":"darpa",
+                	"pw":"darpa",
+                	"space":"Users"
+            }
+        },
+        
+        "RootModel002":{
+            "interFace":{
+                "version":1,
+                "modelId":"90a28cad-d093-1004-87f0-b45ab5d8f614",
+                "interfaceId":"90a28cae-d093-1004-87f0-b45ab5d8f614",
+                "type":"interface",
+                "path":[
+                    29,
+                    32
+                ]
+            },
+            "inParams":{
+                "InParam":{
+                    "name":"InParam",
+                    "type":"Real",
+                    "unit":"no unit",
+                    "parameterid":"dc7cba57-d0ad-1004-8ef8-9e203c99f336"
+                }
+            },
+            "outParams":{
+                "OutParam":{
+                    "name":"OutParam",
+                    "type":"Real",
+                    "unit":"no unit",
+                    "parameterid":"dc7cba5a-d0ad-1004-8ef8-9e203c99f336"
+                }
+            },
+            "server":{
+                	"name":"nsk1502066264a.grmsamer.grms.ge.com",
+                	"port":"7790",
+                	"user":"darpa",
+                	"pw":"darpa",
+                	"space":"Users"
+            }
+        }
+    },
+    "connectors":{
+        "IM Input":{
+            "from":{
+                "name":"externalInput",
+                "instancename": "XP"
+            },
+            "to":{
+                "name":"InParam",
+                "parameterid":"dc7cba73-d0ad-1004-8ef8-9e203c99f336",
+                "instancename":"SquareModel001"
+            }
+        },
+        "internal connection":{
+            "from":{
+                "name":"OutParam",
+                "parameterid":"dc7cba76-d0ad-1004-8ef8-9e203c99f336",
+                "instancename":"SquareModel001"
+            },
+            "to":{
+                "name":"InParam",
+                "parameterid":"dc7cba57-d0ad-1004-8ef8-9e203c99f336",
+                "instancename":"RootModel002"
+            }
+        },
+        "IM Output":{
+            "from":{
+                "name":"OutParam",
+                "parameterid":"dc7cba5a-d0ad-1004-8ef8-9e203c99f336",
+                "instancename":"RootModel002"
+            },
+            "to":{
+                "name":"externalOutput",
+                "instancename": "XP"
+            }
+        }
+    },
+    "space":"USERS",
+    "folder":{
+        "type":"folder",
+        "name":"DrewsModels",
+        "path":[
+            29,
+            32
+        ]
+    },
+    "description":"Description of intgrationModelName1"
+}

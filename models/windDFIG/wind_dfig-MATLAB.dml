@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<model type="PluginModel" id="e5da2868-dad4-1004-8855-6b2aadfa974a" name="WindDFIG Matlab Model" pluginType="MATLAB">
+    <modelinfo>
+        <version>0.0.1</version>
+    </modelinfo>
+    <parameters>
+        <parameter id="e5da288d-dad4-1004-8855-6b2aadfa974a" name="Line Length">
+            <currentType value="Enumeration"/>
+            <data>
+                <dataobject type="Enumeration">
+                    <data>
+                        <dataobject name="e5da2890-dad4-1004-8855-6b2aadfa974a" type="Integer">10</dataobject>
+                        <dataobject name="e5da2891-dad4-1004-8855-6b2aadfa974a" type="Integer">50</dataobject>
+                        <dataobject name="e5da2892-dad4-1004-8855-6b2aadfa974a" type="Integer">100</dataobject>
+                    </data>
+                    <lastSelectionIndex>0</lastSelectionIndex>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="42b8e3bf-dad7-1004-80f4-772a6c6cf8e0" name="Number Of Turbines">
+            <currentType value="Enumeration"/>
+            <data>
+                <dataobject type="Enumeration">
+                    <data>
+                        <dataobject name="42b8e3c2-dad7-1004-80f4-772a6c6cf8e0" type="Integer">2</dataobject>
+                        <dataobject name="42b8e3c3-dad7-1004-80f4-772a6c6cf8e0" type="Integer">3</dataobject>
+                        <dataobject name="42b8e3c4-dad7-1004-80f4-772a6c6cf8e0" type="Integer">4</dataobject>
+                        <dataobject name="42b8e3c5-dad7-1004-80f4-772a6c6cf8e0" type="Integer">5</dataobject>
+                        <dataobject name="42b8e3c6-dad7-1004-80f4-772a6c6cf8e0" type="Integer">6</dataobject>
+                    </data>
+                    <lastSelectionIndex>0</lastSelectionIndex>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="42b8e3c7-dad7-1004-80f4-772a6c6cf8e0" name="Starting Wind Speed">
+            <currentType value="Enumeration"/>
+            <data>
+                <dataobject type="Enumeration">
+                    <data>
+                        <dataobject name="42b8e3ca-dad7-1004-80f4-772a6c6cf8e0" type="Integer">4</dataobject>
+                        <dataobject name="42b8e3cb-dad7-1004-80f4-772a6c6cf8e0" type="Integer">5</dataobject>
+                        <dataobject name="42b8e3cc-dad7-1004-80f4-772a6c6cf8e0" type="Integer">6</dataobject>
+                        <dataobject name="42b8e3cd-dad7-1004-80f4-772a6c6cf8e0" type="Integer">7</dataobject>
+                        <dataobject name="42b8e3ce-dad7-1004-80f4-772a6c6cf8e0" type="Integer">8</dataobject>
+                    </data>
+                    <lastSelectionIndex>0</lastSelectionIndex>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="42b8e3e1-dad7-1004-80f4-772a6c6cf8e0" name="RealParameter">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="42b8e3f2-dad7-1004-80f4-772a6c6cf8e0" name="matlabScripFileName">
+            <currentType value="File"/>
+            <data>
+                <dataobject type="File">
+                    <filePath>C:\aDigitalMfg\myDFIG\fnGetWindDFIGData.m</filePath>
+                    <fileType>Matlab</fileType>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="57e0637c-dad7-1004-816b-799bc0accdc8" name="Frequency">
+            <currentType value="Enumeration"/>
+            <data>
+                <dataobject type="Enumeration">
+                    <data>
+                        <dataobject name="57e0637f-dad7-1004-816b-799bc0accdc8" type="Integer">50</dataobject>
+                        <dataobject name="57e06380-dad7-1004-816b-799bc0accdc8" type="Integer">60</dataobject>
+                    </data>
+                    <lastSelectionIndex>0</lastSelectionIndex>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="57e0638d-dad7-1004-816b-799bc0accdc8" name="Grid Data">
+            <currentType value="Matrix"/>
+            <data>
+                <dataobject type="Matrix">
+                    <unit>No_Unit</unit>
+                    <initialValue type="real">0.0</initialValue>
+                    <fixedSize>false</fixedSize>
+                    <data type="real">0.0</data>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="57e06390-dad7-1004-816b-799bc0accdc8" name="Turbine Data ">
+            <currentType value="Matrix"/>
+            <data>
+                <dataobject type="Matrix">
+                    <unit>No_Unit</unit>
+                    <initialValue type="real">0.0</initialValue>
+                    <fixedSize>false</fixedSize>
+                    <data type="real">0.0</data>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="bec30f16-dada-1004-8ce1-b55516b2f543" name="matFileNameAtServer">
+            <currentType value="File"/>
+            <data>
+                <dataobject type="File">
+                    <filePath>C:\aDigitalMfg\myDFIG\power_wind_dfig_object_dome.mat</filePath>
+                    <fileType>Binary</fileType>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="44efc3c7-dadb-1004-8bc6-3827286cf9d7" name="MatFileReadByScript">
+            <currentType value="File"/>
+            <data>
+                <dataobject type="File">
+                    <filePath>C:\aDigitalMfg\myDFIG\power_wind_dfig_object_dome.mat</filePath>
+                    <fileType>Binary</fileType>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="db216cdf-dade-1004-8f81-a646163d805e" name="Object Number">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="1375f010-db05-1004-8f38-e210175dd8c1" name="FileWithGraphTitles">
+            <currentType value="File"/>
+            <data>
+                <dataobject type="File">
+                    <filePath>C:\aDigitalMfg\myDFIG\GraphTitles.txt</filePath>
+                    <fileType>Text</fileType>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="1375f027-db05-1004-8f38-e210175dd8c1" name="GraphTitles">
+            <currentType value="File"/>
+            <data>
+                <dataobject type="File">
+                    <filePath>C:\aDigitalMfg\myDFIG\GraphTitles.txt</filePath>
+                    <fileType>Text</fileType>
+                </dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <contexts>
+        <context id="e5da287a-dad4-1004-8855-6b2aadfa974a" name="Inputs">
+            <modelobjects>
+                <parameter name="Frequency" idRef="57e0637c-dad7-1004-816b-799bc0accdc8" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                <parameter name="Number Of Turbines" idRef="42b8e3bf-dad7-1004-80f4-772a6c6cf8e0" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                <parameter name="Starting Wind Speed" idRef="42b8e3c7-dad7-1004-80f4-772a6c6cf8e0" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                <parameter name="Line Length" idRef="e5da288d-dad4-1004-8855-6b2aadfa974a" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+            </modelobjects>
+        </context>
+        <context id="e5da2893-dad4-1004-8855-6b2aadfa974a" name="Output">
+            <modelobjects>
+                <parameter name="Grid Data" idRef="57e0638d-dad7-1004-816b-799bc0accdc8" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                <parameter name="Turbine Data " idRef="57e06390-dad7-1004-816b-799bc0accdc8" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                <parameter name="Object Number" idRef="db216cdf-dade-1004-8f81-a646163d805e" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                <parameter name="GraphTitles" idRef="1375f027-db05-1004-8f38-e210175dd8c1" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+            </modelobjects>
+        </context>
+        <context id="BUILD_CXT" name="Build View">
+            <modelobjects>
+                <context name="Inputs" idRef="e5da287a-dad4-1004-8855-6b2aadfa974a" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                <context name="Output" idRef="e5da2893-dad4-1004-8855-6b2aadfa974a" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+            </modelobjects>
+        </context>
+        <context id="FILE_CXT" name="Files">
+            <modelobjects>
+                <parameter name="matlabScripFileName" idRef="42b8e3f2-dad7-1004-80f4-772a6c6cf8e0" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                <parameter name="matFileNameAtServer" idRef="bec30f16-dada-1004-8ce1-b55516b2f543" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                <parameter name="MatFileReadByScript" idRef="44efc3c7-dadb-1004-8bc6-3827286cf9d7" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                <parameter name="FileWithGraphTitles" idRef="1375f010-db05-1004-8f38-e210175dd8c1" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+                <parameter name="GraphTitles" idRef="1375f027-db05-1004-8f38-e210175dd8c1" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+            </modelobjects>
+        </context>
+    </contexts>
+    <mappings>
+        <modelMappings>
+            <mappedParameter name="Grid Data" idRef="57e0638d-dad7-1004-816b-799bc0accdc8" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a">gD</mappedParameter>
+            <mappedParameter name="Number Of Turbines" idRef="42b8e3bf-dad7-1004-80f4-772a6c6cf8e0" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a">iNumT</mappedParameter>
+            <mappedParameter name="Frequency" idRef="57e0637c-dad7-1004-816b-799bc0accdc8" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a">iFreq</mappedParameter>
+            <mappedParameter name="Starting Wind Speed" idRef="42b8e3c7-dad7-1004-80f4-772a6c6cf8e0" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a">iSpeed</mappedParameter>
+            <mappedParameter name="Object Number" idRef="db216cdf-dade-1004-8f81-a646163d805e" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a">objNum</mappedParameter>
+            <mappedParameter name="Turbine Data " idRef="57e06390-dad7-1004-816b-799bc0accdc8" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a">tD</mappedParameter>
+            <mappedParameter name="Line Length" idRef="e5da288d-dad4-1004-8855-6b2aadfa974a" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a">iLine</mappedParameter>
+        </modelMappings>
+    </mappings>
+    <dependencies>
+        <dependency idRef="57e0638d-dad7-1004-816b-799bc0accdc8">
+            <parameter name="Line Length" idRef="e5da288d-dad4-1004-8855-6b2aadfa974a" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+            <parameter name="Number Of Turbines" idRef="42b8e3bf-dad7-1004-80f4-772a6c6cf8e0" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+            <parameter name="Starting Wind Speed" idRef="42b8e3c7-dad7-1004-80f4-772a6c6cf8e0" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+            <parameter name="Frequency" idRef="57e0637c-dad7-1004-816b-799bc0accdc8" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+        </dependency>
+        <dependency idRef="db216cdf-dade-1004-8f81-a646163d805e">
+            <parameter name="Line Length" idRef="e5da288d-dad4-1004-8855-6b2aadfa974a" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+            <parameter name="Number Of Turbines" idRef="42b8e3bf-dad7-1004-80f4-772a6c6cf8e0" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+            <parameter name="Starting Wind Speed" idRef="42b8e3c7-dad7-1004-80f4-772a6c6cf8e0" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+            <parameter name="Frequency" idRef="57e0637c-dad7-1004-816b-799bc0accdc8" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+        </dependency>
+        <dependency idRef="57e06390-dad7-1004-816b-799bc0accdc8">
+            <parameter name="Line Length" idRef="e5da288d-dad4-1004-8855-6b2aadfa974a" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+            <parameter name="Number Of Turbines" idRef="42b8e3bf-dad7-1004-80f4-772a6c6cf8e0" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+            <parameter name="Starting Wind Speed" idRef="42b8e3c7-dad7-1004-80f4-772a6c6cf8e0" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+            <parameter name="Frequency" idRef="57e0637c-dad7-1004-816b-799bc0accdc8" idModelRef="e5da2868-dad4-1004-8855-6b2aadfa974a"/>
+        </dependency>
+    </dependencies>
+    <setup>
+        <parameter id="software version" name="software version">
+            <currentType value="Enumeration"/>
+            <data>
+                <dataobject type="Enumeration">
+                    <data>
+                        <dataobject name="Matlab 6" type="String"></dataobject>
+                        <dataobject name="Matlab 6.5" type="String"></dataobject>
+                        <dataobject name="Matlab 7" type="String"></dataobject>
+                        <dataobject name="Matlab 8.3" type="String"></dataobject>
+                    </data>
+                    <lastSelectionIndex>3</lastSelectionIndex>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="run in foreground" name="run in foreground">
+            <currentType value="Boolean"/>
+            <data>
+                <dataobject type="Boolean">false</dataobject>
+            </data>
+        </parameter>
+    </setup>
+    <auxfiles>
+        <auxfile id="44efc3c8-dadb-1004-8bc6-3827286cf9d7" name="MatFileReadByScript">
+            <isMainModelFile value="false"/>
+            <isExcuteOnServer value="true"/>
+            <fileType>file:///</fileType>
+            <file>C:\aDigitalMfg\myDFIG\power_wind_dfig_object_dome.mat</file>
+        </auxfile>
+        <auxfile id="42b8e3f3-dad7-1004-80f4-772a6c6cf8e0" name="matlabScripFileName">
+            <isMainModelFile value="true"/>
+            <isExcuteOnServer value="true"/>
+            <fileType>file:///</fileType>
+            <file>C:\aDigitalMfg\myDFIG\fnGetWindDFIGData.m</file>
+        </auxfile>
+        <auxfile id="1375f011-db05-1004-8f38-e210175dd8c1" name="FileWithGraphTitles">
+            <isMainModelFile value="false"/>
+            <isExcuteOnServer value="true"/>
+            <fileType>file:///</fileType>
+            <file>C:\aDigitalMfg\myDFIG\GraphTitles.txt</file>
+        </auxfile>
+    </auxfiles>
+</model>

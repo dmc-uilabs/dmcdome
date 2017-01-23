@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<model type="DomeModel" id="d3a83b6c-b75c-1004-8ca4-1216ce4da944" name="B_equals_A">
+    <modelinfo>
+        <version>0.0.0</version>
+    </modelinfo>
+    <parameters/>
+    <relations>
+        <relation type="Procedural" id="d3b55b94-b75c-1004-8ca4-1216ce4da944" name="B_equals_A">
+            <parameters>
+                <parameter id="d3c3dffc-b75c-1004-8ca4-1216ce4da944" name="A">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="d3c5b520-b75c-1004-8ca4-1216ce4da944" name="B">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <body><![CDATA[B = A]]></body>
+            <dependencies>
+                <dependency idRef="d3c5b520-b75c-1004-8ca4-1216ce4da944">
+                    <parameter name="A" idRef="d3c3dffc-b75c-1004-8ca4-1216ce4da944" idRelationRef="d3b55b94-b75c-1004-8ca4-1216ce4da944"/>
+                </dependency>
+            </dependencies>
+        </relation>
+    </relations>
+    <visualizations/>
+    <contexts>
+        <context id="BUILD_CXT" name="Build View">
+            <modelobjects>
+                <relation name="B_equals_A" idRef="d3b55b94-b75c-1004-8ca4-1216ce4da944"/>
+            </modelobjects>
+        </context>
+    </contexts>
+    <mappings/>
+    <auxfiles/>
+</model>

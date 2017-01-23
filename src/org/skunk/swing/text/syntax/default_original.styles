@@ -1,0 +1,28 @@
+####################################################################
+# NAME          COLOR           BOLD		ITALIC		NO #
+####################################################################
+unfinished	white		false 		false 		1
+default		white		false		false		2
+keyword1	cyan		true		false		3
+keyword2	pink		false		false		4
+keyword3 	yellow		false		false		5
+keyword4	green		false		true		6
+literal1	150,255,255	false		false		7
+literal2	240,240,0	false		false		8
+literal3	150,255,150	false		true		9
+literal4	204,0,204	true		false		10
+comment1	red		false		true		11	
+comment2	153,153,255	false		true		12
+comment3	lightGray	false		true		13
+comment4	gray		false		true		14
+tag1		255,204,255	false		false		15
+tag2		51,255,0	false		false		16
+tag3		102,153,255	false		false		17
+tag4		yellow		false		false		18
+operator	yellow		true		false		19
+separator1	0,153,102	true		false		20
+separator2	205,204,153	false		false		21
+include		red		true		false		22
+identifier1	240,240,255	false		false		23	
+identifier2	240,255,240	false		true		24
+error		red		true		true		25

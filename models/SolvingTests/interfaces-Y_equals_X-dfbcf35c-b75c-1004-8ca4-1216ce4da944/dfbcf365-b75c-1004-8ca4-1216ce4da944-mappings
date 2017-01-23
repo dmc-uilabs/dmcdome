@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="dfbcf365-b75c-1004-8ca4-1216ce4da944" name="Y_equals_X">
+    <interfaceinfo>
+        <version>0.0.1</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="Y" idRef="e2dc5912-b75c-1004-8ca4-1216ce4da944">
+                    <parameter name="Y" idRef="e2dc5910-b75c-1004-8ca4-1216ce4da944" idRelationRef="e2b71024-b75c-1004-8ca4-1216ce4da944"/>
+                </mappedParameter>
+                <mappedParameter name="X" idRef="e2daf8ba-b75c-1004-8ca4-1216ce4da944">
+                    <parameter name="X" idRef="e2daf8b8-b75c-1004-8ca4-1216ce4da944" idRelationRef="e2b71024-b75c-1004-8ca4-1216ce4da944"/>
+                </mappedParameter>
+                <mappedParameter name="Y" idRef="e2dc5911-b75c-1004-8ca4-1216ce4da944" idRelationRef="e2b71028-b75c-1004-8ca4-1216ce4da944">
+                    <parameter name="Y" idRef="e2dc5910-b75c-1004-8ca4-1216ce4da944" idRelationRef="e2b71024-b75c-1004-8ca4-1216ce4da944"/>
+                </mappedParameter>
+                <mappedParameter name="X" idRef="e2daf8b9-b75c-1004-8ca4-1216ce4da944" idRelationRef="e2b71028-b75c-1004-8ca4-1216ce4da944">
+                    <parameter name="X" idRef="e2daf8b8-b75c-1004-8ca4-1216ce4da944" idRelationRef="e2b71024-b75c-1004-8ca4-1216ce4da944"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects/>
+    </mappingsandintermediates>
+    <lookupdata>
+        <objectmap>
+            <relation name="Y_equals_X" idRef="e2b71024-b75c-1004-8ca4-1216ce4da944" description="key"/>
+            <relation name="Y_equals_X" idRef="e2b71028-b75c-1004-8ca4-1216ce4da944" description="value"/>
+        </objectmap>
+        <viewobjectmap/>
+        <relationobjectmap>
+            <parameter name="X" idRef="e2daf8b8-b75c-1004-8ca4-1216ce4da944" idRelationRef="e2b71024-b75c-1004-8ca4-1216ce4da944" description="key"/>
+            <parameter name="X" idRef="e2daf8ba-b75c-1004-8ca4-1216ce4da944" description="value"/>
+            <parameter name="Y" idRef="e2dc5910-b75c-1004-8ca4-1216ce4da944" idRelationRef="e2b71024-b75c-1004-8ca4-1216ce4da944" description="key"/>
+            <parameter name="Y" idRef="e2dc5912-b75c-1004-8ca4-1216ce4da944" description="value"/>
+        </relationobjectmap>
+    </lookupdata>
+</modelinterface>

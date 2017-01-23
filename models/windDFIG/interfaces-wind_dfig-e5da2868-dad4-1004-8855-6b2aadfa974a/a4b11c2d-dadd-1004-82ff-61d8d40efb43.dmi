@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="a4b11c2d-dadd-1004-82ff-61d8d40efb43" name="Wind DFIG Outputs">
+    <interfaceinfo>
+        <version>0.0.1</version>
+    </interfaceinfo>
+    <parameters>
+        <parameter id="a4b11c34-dadd-1004-82ff-61d8d40efb43" name="Frequency">
+            <currentType value="Enumeration"/>
+            <data>
+                <dataobject type="Enumeration">
+                    <data>
+                        <dataobject name="57e0637f-dad7-1004-816b-799bc0accdc8" type="Integer">50</dataobject>
+                        <dataobject name="57e06380-dad7-1004-816b-799bc0accdc8" type="Integer">60</dataobject>
+                    </data>
+                    <lastSelectionIndex>0</lastSelectionIndex>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="a4b11c35-dadd-1004-82ff-61d8d40efb43" name="Number Of Turbines">
+            <currentType value="Enumeration"/>
+            <data>
+                <dataobject type="Enumeration">
+                    <data>
+                        <dataobject name="42b8e3c2-dad7-1004-80f4-772a6c6cf8e0" type="Integer">2</dataobject>
+                        <dataobject name="42b8e3c3-dad7-1004-80f4-772a6c6cf8e0" type="Integer">3</dataobject>
+                        <dataobject name="42b8e3c4-dad7-1004-80f4-772a6c6cf8e0" type="Integer">4</dataobject>
+                        <dataobject name="42b8e3c5-dad7-1004-80f4-772a6c6cf8e0" type="Integer">5</dataobject>
+                        <dataobject name="42b8e3c6-dad7-1004-80f4-772a6c6cf8e0" type="Integer">6</dataobject>
+                    </data>
+                    <lastSelectionIndex>0</lastSelectionIndex>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="a4b11c36-dadd-1004-82ff-61d8d40efb43" name="Starting Wind Speed">
+            <currentType value="Enumeration"/>
+            <data>
+                <dataobject type="Enumeration">
+                    <data>
+                        <dataobject name="42b8e3ca-dad7-1004-80f4-772a6c6cf8e0" type="Integer">4</dataobject>
+                        <dataobject name="42b8e3cb-dad7-1004-80f4-772a6c6cf8e0" type="Integer">5</dataobject>
+                        <dataobject name="42b8e3cc-dad7-1004-80f4-772a6c6cf8e0" type="Integer">6</dataobject>
+                        <dataobject name="42b8e3cd-dad7-1004-80f4-772a6c6cf8e0" type="Integer">7</dataobject>
+                        <dataobject name="42b8e3ce-dad7-1004-80f4-772a6c6cf8e0" type="Integer">8</dataobject>
+                    </data>
+                    <lastSelectionIndex>0</lastSelectionIndex>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="a4b11c37-dadd-1004-82ff-61d8d40efb43" name="Line Length">
+            <currentType value="Enumeration"/>
+            <data>
+                <dataobject type="Enumeration">
+                    <data>
+                        <dataobject name="e5da2890-dad4-1004-8855-6b2aadfa974a" type="Integer">10</dataobject>
+                        <dataobject name="e5da2891-dad4-1004-8855-6b2aadfa974a" type="Integer">50</dataobject>
+                        <dataobject name="e5da2892-dad4-1004-8855-6b2aadfa974a" type="Integer">100</dataobject>
+                    </data>
+                    <lastSelectionIndex>0</lastSelectionIndex>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="a4b11c38-dadd-1004-82ff-61d8d40efb43" name="Grid Data">
+            <currentType value="Matrix"/>
+            <data>
+                <dataobject type="Matrix">
+                    <unit>No_Unit</unit>
+                    <initialValue type="real">0.0</initialValue>
+                    <fixedSize>false</fixedSize>
+                    <data type="real">0.0</data>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="a4b11c39-dadd-1004-82ff-61d8d40efb43" name="Turbine Data ">
+            <currentType value="Matrix"/>
+            <data>
+                <dataobject type="Matrix">
+                    <unit>No_Unit</unit>
+                    <initialValue type="real">0.0</initialValue>
+                    <fixedSize>false</fixedSize>
+                    <data type="real">0.0</data>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="db216ce2-dade-1004-8f81-a646163d805e" name="Object Number">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="1375f02c-db05-1004-8f38-e210175dd8c1" name="GraphTitles">
+            <currentType value="File"/>
+            <data>
+                <dataobject type="File">
+                    <filePath>GraphTitles.txt</filePath>
+                    <fileType>Text</fileType>
+                </dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <visualizations/>
+    <relations/>
+    <contexts>
+        <context id="IFACE_MODEL_CXT" name="Model View"/>
+        <context id="a4b11c32-dadd-1004-82ff-61d8d40efb43" name="Inputs">
+            <modelobjects>
+                <parameter name="Frequency" idRef="a4b11c34-dadd-1004-82ff-61d8d40efb43"/>
+                <parameter name="Number Of Turbines" idRef="a4b11c35-dadd-1004-82ff-61d8d40efb43"/>
+                <parameter name="Starting Wind Speed" idRef="a4b11c36-dadd-1004-82ff-61d8d40efb43"/>
+                <parameter name="Line Length" idRef="a4b11c37-dadd-1004-82ff-61d8d40efb43"/>
+            </modelobjects>
+        </context>
+        <context id="a4b11c33-dadd-1004-82ff-61d8d40efb43" name="Outputs">
+            <modelobjects>
+                <parameter name="Grid Data" idRef="a4b11c38-dadd-1004-82ff-61d8d40efb43"/>
+                <parameter name="Turbine Data " idRef="a4b11c39-dadd-1004-82ff-61d8d40efb43"/>
+                <parameter name="Object Number" idRef="db216ce2-dade-1004-8f81-a646163d805e"/>
+                <parameter name="GraphTitles" idRef="1375f02c-db05-1004-8f38-e210175dd8c1"/>
+            </modelobjects>
+        </context>
+    </contexts>
+    <views>
+        <view name="Build View">
+            <context id="IFACE_BUILD_CXT" name="Build View">
+                <modelobjects>
+                    <context name="Inputs" idRef="a4b11c32-dadd-1004-82ff-61d8d40efb43"/>
+                    <context name="Outputs" idRef="a4b11c33-dadd-1004-82ff-61d8d40efb43"/>
+                </modelobjects>
+            </context>
+        </view>
+        <view name="Interface Causality View">
+            <filter id="INPUTS_FILTER" name="Inputs">
+                <parameters>
+                    <parameter name="Frequency" idRef="a4b11c34-dadd-1004-82ff-61d8d40efb43"/>
+                    <parameter name="Line Length" idRef="a4b11c37-dadd-1004-82ff-61d8d40efb43"/>
+                    <parameter name="Starting Wind Speed" idRef="a4b11c36-dadd-1004-82ff-61d8d40efb43"/>
+                    <parameter name="Number Of Turbines" idRef="a4b11c35-dadd-1004-82ff-61d8d40efb43"/>
+                </parameters>
+            </filter>
+            <filter id="OUTPUTS_FILTER" name="Outputs">
+                <parameters>
+                    <parameter name="Turbine Data " idRef="a4b11c39-dadd-1004-82ff-61d8d40efb43" causality="Result"/>
+                    <parameter name="Object Number" idRef="db216ce2-dade-1004-8f81-a646163d805e" causality="Result"/>
+                    <parameter name="Grid Data" idRef="a4b11c38-dadd-1004-82ff-61d8d40efb43" causality="Result"/>
+                </parameters>
+            </filter>
+            <filter id="INDETERMINATES_FILTER" name="Indeterminates">
+                <parameters>
+                    <parameter name="GraphTitles" idRef="1375f02c-db05-1004-8f38-e210175dd8c1"/>
+                </parameters>
+            </filter>
+        </view>
+    </views>
+    <directedGraph id="a4b11c2d-dadd-1004-82ff-61d8d40efb43">
+        <nodes>
+            <node idRef="1375f02c-db05-1004-8f38-e210175dd8c1"/>
+            <node idRef="a4b11c34-dadd-1004-82ff-61d8d40efb43"/>
+            <node idRef="a4b11c35-dadd-1004-82ff-61d8d40efb43"/>
+            <node idRef="a4b11c36-dadd-1004-82ff-61d8d40efb43"/>
+            <node idRef="a4b11c37-dadd-1004-82ff-61d8d40efb43"/>
+            <node idRef="a4b11c38-dadd-1004-82ff-61d8d40efb43"/>
+            <node idRef="a4b11c39-dadd-1004-82ff-61d8d40efb43"/>
+            <node idRef="db216ce2-dade-1004-8f81-a646163d805e"/>
+        </nodes>
+        <arcs>
+            <from idRef="a4b11c34-dadd-1004-82ff-61d8d40efb43">
+                <to idRef="a4b11c38-dadd-1004-82ff-61d8d40efb43"/>
+                <to idRef="a4b11c39-dadd-1004-82ff-61d8d40efb43"/>
+                <to idRef="db216ce2-dade-1004-8f81-a646163d805e"/>
+            </from>
+            <from idRef="a4b11c35-dadd-1004-82ff-61d8d40efb43">
+                <to idRef="a4b11c38-dadd-1004-82ff-61d8d40efb43"/>
+                <to idRef="a4b11c39-dadd-1004-82ff-61d8d40efb43"/>
+                <to idRef="db216ce2-dade-1004-8f81-a646163d805e"/>
+            </from>
+            <from idRef="a4b11c36-dadd-1004-82ff-61d8d40efb43">
+                <to idRef="a4b11c38-dadd-1004-82ff-61d8d40efb43"/>
+                <to idRef="a4b11c39-dadd-1004-82ff-61d8d40efb43"/>
+                <to idRef="db216ce2-dade-1004-8f81-a646163d805e"/>
+            </from>
+            <from idRef="a4b11c37-dadd-1004-82ff-61d8d40efb43">
+                <to idRef="a4b11c38-dadd-1004-82ff-61d8d40efb43"/>
+                <to idRef="a4b11c39-dadd-1004-82ff-61d8d40efb43"/>
+                <to idRef="db216ce2-dade-1004-8f81-a646163d805e"/>
+            </from>
+        </arcs>
+    </directedGraph>
+    <interfaceToRelParamMap>
+        <iToRpMap relParamId="1375f02c-db05-1004-8f38-e210175dd8c1" ifaceId="1375f027-db05-1004-8f38-e210175dd8c1"/>
+        <iToRpMap relParamId="a4b11c34-dadd-1004-82ff-61d8d40efb43" ifaceId="57e0637c-dad7-1004-816b-799bc0accdc8"/>
+        <iToRpMap relParamId="a4b11c35-dadd-1004-82ff-61d8d40efb43" ifaceId="42b8e3bf-dad7-1004-80f4-772a6c6cf8e0"/>
+        <iToRpMap relParamId="a4b11c36-dadd-1004-82ff-61d8d40efb43" ifaceId="42b8e3c7-dad7-1004-80f4-772a6c6cf8e0"/>
+        <iToRpMap relParamId="a4b11c37-dadd-1004-82ff-61d8d40efb43" ifaceId="e5da288d-dad4-1004-8855-6b2aadfa974a"/>
+        <iToRpMap relParamId="a4b11c38-dadd-1004-82ff-61d8d40efb43" ifaceId="57e0638d-dad7-1004-816b-799bc0accdc8"/>
+        <iToRpMap relParamId="a4b11c39-dadd-1004-82ff-61d8d40efb43" ifaceId="57e06390-dad7-1004-816b-799bc0accdc8"/>
+        <iToRpMap relParamId="db216ce2-dade-1004-8f81-a646163d805e" ifaceId="db216cdf-dade-1004-8f81-a646163d805e"/>
+    </interfaceToRelParamMap>
+</modelinterface>

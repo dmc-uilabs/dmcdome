@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="83598a6c-b83d-1004-856f-c2f5dcf7da5d" name="sum and product">
+    <interfaceinfo>
+        <version>0.0.1</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <parameters>
+        <parameter id="83849659-b83d-1004-856f-c2f5dcf7da5d" name="n1">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="1" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="838edff1-b83d-1004-856f-c2f5dcf7da5d" name="n2">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="5" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="839104c5-b83d-1004-856f-c2f5dcf7da5d" name="n3">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="3" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="839308c9-b83d-1004-856f-c2f5dcf7da5d" name="n3">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="2" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="83ba3741-b83d-1004-856f-c2f5dcf7da5d" name="sum">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="83bd1e9d-b83d-1004-856f-c2f5dcf7da5d" name="product">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="8384e540-b83d-1004-856f-c2f5dcf7da5d" name="n1">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="1" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="838edff2-b83d-1004-856f-c2f5dcf7da5d" name="n2">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="5" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="839104c6-b83d-1004-856f-c2f5dcf7da5d" name="n3">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="3" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="839308ca-b83d-1004-856f-c2f5dcf7da5d" name="n3">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="2" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="83ba3742-b83d-1004-856f-c2f5dcf7da5d" name="sum">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="83bd1e9e-b83d-1004-856f-c2f5dcf7da5d" name="product">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <relations/>
+    <contexts>
+        <context id="IFACE_MODEL_CXT" name="Model View">
+            <modelobjects>
+                <parameter name="n1" idRef="83849659-b83d-1004-856f-c2f5dcf7da5d"/>
+                <parameter name="n2" idRef="838edff1-b83d-1004-856f-c2f5dcf7da5d"/>
+                <parameter name="n3" idRef="839104c5-b83d-1004-856f-c2f5dcf7da5d"/>
+                <parameter name="n3" idRef="839308c9-b83d-1004-856f-c2f5dcf7da5d"/>
+                <parameter name="sum" idRef="83ba3741-b83d-1004-856f-c2f5dcf7da5d"/>
+                <parameter name="product" idRef="83bd1e9d-b83d-1004-856f-c2f5dcf7da5d"/>
+            </modelobjects>
+        </context>
+    </contexts>
+    <views>
+        <view name="Build View">
+            <context id="IFACE_BUILD_CXT" name="Build View">
+                <modelobjects>
+                    <parameter name="n1" idRef="8384e540-b83d-1004-856f-c2f5dcf7da5d"/>
+                    <parameter name="n2" idRef="838edff2-b83d-1004-856f-c2f5dcf7da5d"/>
+                    <parameter name="n3" idRef="839104c6-b83d-1004-856f-c2f5dcf7da5d"/>
+                    <parameter name="n3" idRef="839308ca-b83d-1004-856f-c2f5dcf7da5d"/>
+                    <parameter name="sum" idRef="83ba3742-b83d-1004-856f-c2f5dcf7da5d"/>
+                    <parameter name="product" idRef="83bd1e9e-b83d-1004-856f-c2f5dcf7da5d"/>
+                </modelobjects>
+            </context>
+        </view>
+        <view name="Interface Causality View">
+            <filter id="INPUTS_FILTER" name="Inputs">
+                <parameters>
+                    <parameter name="n1" idRef="8384e540-b83d-1004-856f-c2f5dcf7da5d"/>
+                    <parameter name="n2" idRef="838edff2-b83d-1004-856f-c2f5dcf7da5d"/>
+                    <parameter name="n3" idRef="839104c6-b83d-1004-856f-c2f5dcf7da5d"/>
+                    <parameter name="n3" idRef="839308ca-b83d-1004-856f-c2f5dcf7da5d"/>
+                </parameters>
+            </filter>
+            <filter id="OUTPUTS_FILTER" name="Outputs">
+                <parameters>
+                    <parameter name="product" idRef="83bd1e9e-b83d-1004-856f-c2f5dcf7da5d" causality="Result"/>
+                    <parameter name="sum" idRef="83ba3742-b83d-1004-856f-c2f5dcf7da5d" causality="Result"/>
+                </parameters>
+            </filter>
+            <filter id="INDETERMINATES_FILTER" name="Indeterminates"/>
+        </view>
+    </views>
+    <directedGraph id="83598a6c-b83d-1004-856f-c2f5dcf7da5d">
+        <nodes>
+            <node idRef="8384e540-b83d-1004-856f-c2f5dcf7da5d"/>
+            <node idRef="83ba3742-b83d-1004-856f-c2f5dcf7da5d"/>
+            <node idRef="839308ca-b83d-1004-856f-c2f5dcf7da5d"/>
+            <node idRef="83bd1e9e-b83d-1004-856f-c2f5dcf7da5d"/>
+            <node idRef="838edff2-b83d-1004-856f-c2f5dcf7da5d"/>
+            <node idRef="839104c6-b83d-1004-856f-c2f5dcf7da5d"/>
+        </nodes>
+        <arcs>
+            <from idRef="839308ca-b83d-1004-856f-c2f5dcf7da5d">
+                <to idRef="83ba3742-b83d-1004-856f-c2f5dcf7da5d"/>
+                <to idRef="83bd1e9e-b83d-1004-856f-c2f5dcf7da5d"/>
+            </from>
+            <from idRef="839104c6-b83d-1004-856f-c2f5dcf7da5d">
+                <to idRef="83ba3742-b83d-1004-856f-c2f5dcf7da5d"/>
+                <to idRef="83bd1e9e-b83d-1004-856f-c2f5dcf7da5d"/>
+            </from>
+            <from idRef="838edff2-b83d-1004-856f-c2f5dcf7da5d">
+                <to idRef="83ba3742-b83d-1004-856f-c2f5dcf7da5d"/>
+                <to idRef="83bd1e9e-b83d-1004-856f-c2f5dcf7da5d"/>
+            </from>
+            <from idRef="8384e540-b83d-1004-856f-c2f5dcf7da5d">
+                <to idRef="83ba3742-b83d-1004-856f-c2f5dcf7da5d"/>
+                <to idRef="83bd1e9e-b83d-1004-856f-c2f5dcf7da5d"/>
+            </from>
+        </arcs>
+    </directedGraph>
+    <interfaceToRelParamMap>
+        <iToRpMap relParamId="83849658-b83d-1004-856f-c2f5dcf7da5d" ifaceId="8384e540-b83d-1004-856f-c2f5dcf7da5d"/>
+        <iToRpMap relParamId="838edff0-b83d-1004-856f-c2f5dcf7da5d" ifaceId="838edff2-b83d-1004-856f-c2f5dcf7da5d"/>
+        <iToRpMap relParamId="839104c4-b83d-1004-856f-c2f5dcf7da5d" ifaceId="839104c6-b83d-1004-856f-c2f5dcf7da5d"/>
+        <iToRpMap relParamId="839308c8-b83d-1004-856f-c2f5dcf7da5d" ifaceId="839308ca-b83d-1004-856f-c2f5dcf7da5d"/>
+        <iToRpMap relParamId="83ba3740-b83d-1004-856f-c2f5dcf7da5d" ifaceId="83ba3742-b83d-1004-856f-c2f5dcf7da5d"/>
+        <iToRpMap relParamId="83bd1e9c-b83d-1004-856f-c2f5dcf7da5d" ifaceId="83bd1e9e-b83d-1004-856f-c2f5dcf7da5d"/>
+    </interfaceToRelParamMap>
+</modelinterface>

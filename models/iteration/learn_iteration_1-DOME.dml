@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<model type="DomeModel" id="c55c9650-c37a-1004-851d-d35b534f9d33" name="Iteration Test Model 1">
+    <modelinfo>
+        <version>0.0.1</version>
+    </modelinfo>
+    <parameters/>
+    <relations>
+        <relation type="Iteration" id="c55c965e-c37a-1004-851d-d35b534f9d33" name="Iteration Relation while loop">
+            <parameters>
+                <parameter id="c55c9671-c37a-1004-851d-d35b534f9d33" name="Avg">
+                    <currentType value="Integer"/>
+                    <data>
+                        <dataobject type="Integer">
+                            <quantity magnitude="0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="c55c9674-c37a-1004-851d-d35b534f9d33" name="Sum">
+                    <currentType value="Integer"/>
+                    <data>
+                        <dataobject type="Integer">
+                            <quantity magnitude="0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="c55c9733-c37a-1004-851d-d35b534f9d33" name="i">
+                    <currentType value="Iteration Variable"/>
+                    <data>
+                        <dataobject type="Iteration Variable">
+                            <quantity magnitude="0.0" unit="s"/>
+                            <increment>1.0</increment>
+                            <limit>10.0</limit>
+                        </dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <initcondition><![CDATA[Avg = 0
+Sum = 0]]></initcondition>
+            <condition><![CDATA[1]]></condition>
+            <body><![CDATA[Sum = Sum + 2
+Avg = Avg + 1]]></body>
+            <iterationtype>while loop</iterationtype>
+            <broadcasting value="true"/>
+            <dependencies>
+                <dependency idRef="c55c9674-c37a-1004-851d-d35b534f9d33">
+                    <parameter name="i" idRef="c55c9733-c37a-1004-851d-d35b534f9d33" idRelationRef="c55c965e-c37a-1004-851d-d35b534f9d33"/>
+                </dependency>
+                <dependency idRef="c55c9671-c37a-1004-851d-d35b534f9d33">
+                    <parameter name="i" idRef="c55c9733-c37a-1004-851d-d35b534f9d33" idRelationRef="c55c965e-c37a-1004-851d-d35b534f9d33"/>
+                </dependency>
+            </dependencies>
+            <iterationparameters>
+                <parameter name="i" idRef="c55c9733-c37a-1004-851d-d35b534f9d33" idRelationRef="c55c965e-c37a-1004-851d-d35b534f9d33"/>
+            </iterationparameters>
+        </relation>
+    </relations>
+    <visualizations/>
+    <contexts>
+        <context id="BUILD_CXT" name="Build View">
+            <modelobjects>
+                <relation name="Iteration Relation while loop" idRef="c55c965e-c37a-1004-851d-d35b534f9d33"/>
+            </modelobjects>
+        </context>
+        <context id="FILE_CXT" name="Files"/>
+    </contexts>
+    <mappings/>
+    <auxfiles/>
+</model>

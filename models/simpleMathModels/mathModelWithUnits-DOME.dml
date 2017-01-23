@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<model type="DomeModel" id="05bac60c-b6d0-1004-8396-684fd66df8c6" name="math model with units">
+    <modelinfo>
+        <version>0.0.3</version>
+    </modelinfo>
+    <parameters/>
+    <relations>
+        <relation type="Procedural" id="05e05804-b6d0-1004-8396-684fd66df8c6" name="calculateArea">
+            <parameters>
+                <parameter id="05e05808-b6d0-1004-8396-684fd66df8c6" name="widthR1">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="3.0" unit="[cm]"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="05e05809-b6d0-1004-8396-684fd66df8c6" name="areaR1">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="12.0" unit="[scm]"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="05e0580a-b6d0-1004-8396-684fd66df8c6" name="heightR1">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="4.0" unit="[cm]"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <body><![CDATA[areaR1 = widthR1*heightR1]]></body>
+            <dependencies>
+                <dependency idRef="05e05809-b6d0-1004-8396-684fd66df8c6">
+                    <parameter name="widthR1" idRef="05e05808-b6d0-1004-8396-684fd66df8c6" idRelationRef="05e05804-b6d0-1004-8396-684fd66df8c6"/>
+                    <parameter name="heightR1" idRef="05e0580a-b6d0-1004-8396-684fd66df8c6" idRelationRef="05e05804-b6d0-1004-8396-684fd66df8c6"/>
+                </dependency>
+            </dependencies>
+        </relation>
+        <relation type="Procedural" id="069cd7e0-b6d0-1004-8396-684fd66df8c6" name="calculateVolume">
+            <parameters>
+                <parameter id="069cd7e4-b6d0-1004-8396-684fd66df8c6" name="areaR2">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="12.0" unit="[scm]"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="069cd7e5-b6d0-1004-8396-684fd66df8c6" name="volumeR2">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="60.0" unit="[c_cm]"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="069cd7e6-b6d0-1004-8396-684fd66df8c6" name="lengthR2">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="5.0" unit="[cm]"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <body><![CDATA[volumeR2 = areaR2*lengthR2]]></body>
+            <dependencies>
+                <dependency idRef="069cd7e5-b6d0-1004-8396-684fd66df8c6">
+                    <parameter name="areaR2" idRef="069cd7e4-b6d0-1004-8396-684fd66df8c6" idRelationRef="069cd7e0-b6d0-1004-8396-684fd66df8c6"/>
+                    <parameter name="lengthR2" idRef="069cd7e6-b6d0-1004-8396-684fd66df8c6" idRelationRef="069cd7e0-b6d0-1004-8396-684fd66df8c6"/>
+                </dependency>
+            </dependencies>
+        </relation>
+    </relations>
+    <visualizations/>
+    <contexts>
+        <context id="BUILD_CXT" name="Build View">
+            <modelobjects>
+                <relation name="calculateArea" idRef="05e05804-b6d0-1004-8396-684fd66df8c6" idModelRef="05bac60c-b6d0-1004-8396-684fd66df8c6"/>
+                <relation name="calculateVolume" idRef="069cd7e0-b6d0-1004-8396-684fd66df8c6" idModelRef="05bac60c-b6d0-1004-8396-684fd66df8c6"/>
+            </modelobjects>
+        </context>
+    </contexts>
+    <mappings>
+        <modelMappings>
+            <mappedParameter name="areaR2" idRef="069cd7e4-b6d0-1004-8396-684fd66df8c6" idRelationRef="069cd7e0-b6d0-1004-8396-684fd66df8c6">
+                <parameter name="areaR1" idRef="05e05809-b6d0-1004-8396-684fd66df8c6" idRelationRef="05e05804-b6d0-1004-8396-684fd66df8c6"/>
+            </mappedParameter>
+        </modelMappings>
+    </mappings>
+</model>

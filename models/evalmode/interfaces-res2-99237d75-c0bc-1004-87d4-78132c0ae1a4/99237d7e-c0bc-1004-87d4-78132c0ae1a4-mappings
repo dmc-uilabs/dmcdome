@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="99237d7e-c0bc-1004-87d4-78132c0ae1a4" name="Default Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="height" idRef="99237d9c-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="height" idRef="99237d9a-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d8f-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="height" idRef="99237d88-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="height" idRef="99237d86-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d75-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="area" idRef="99237d9f-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="area" idRef="99237d9d-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d8f-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="perimeter" idRef="99237da2-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="perimeter" idRef="99237da0-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d8f-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="area" idRef="99237d8b-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="area" idRef="99237d89-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d75-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="width" idRef="99237d85-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="width" idRef="99237d83-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d75-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="width" idRef="99237d99-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="width" idRef="99237d97-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d8f-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="perimeter" idRef="99237d8e-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="perimeter" idRef="99237d8c-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d75-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="area" idRef="99237d9e-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d93-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="area" idRef="99237d9d-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d8f-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="perimeter" idRef="99237d8d-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="perimeter" idRef="99237d8c-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d75-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="width" idRef="99237d84-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="width" idRef="99237d83-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d75-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="perimeter" idRef="99237da1-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d93-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="perimeter" idRef="99237da0-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d8f-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="height" idRef="99237d9b-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d93-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="height" idRef="99237d9a-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d8f-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="height" idRef="99237d87-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="height" idRef="99237d86-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d75-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="width" idRef="99237d98-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d93-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="width" idRef="99237d97-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d8f-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="area" idRef="99237d8a-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="area" idRef="99237d89-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d75-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects>
+            <parameter id="99237d99-c0bc-1004-87d4-78132c0ae1a4" name="width">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="2.0" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+            </parameter>
+            <parameter id="99237d9c-c0bc-1004-87d4-78132c0ae1a4" name="height">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="2.0" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+            </parameter>
+            <parameter id="99237d9f-c0bc-1004-87d4-78132c0ae1a4" name="area">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="3.0" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+            </parameter>
+            <parameter id="99237da2-c0bc-1004-87d4-78132c0ae1a4" name="perimeter">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="12.0" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+            </parameter>
+        </intermediateobjects>
+    </mappingsandintermediates>
+    <lookupdata>
+        <objectmap>
+            <parameter name="perimeter" idRef="99237d8c-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d75-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="perimeter" idRef="99237d8d-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+            <parameter name="width" idRef="99237d97-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d8f-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="width" idRef="99237d98-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d93-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+            <parameter name="height" idRef="99237d86-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d75-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="height" idRef="99237d87-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+            <parameter name="width" idRef="99237d83-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d75-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="width" idRef="99237d84-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+            <relation name="Procedural Relation" idRef="99237d8f-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <relation name="Procedural Relation" idRef="99237d93-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+            <parameter name="height" idRef="99237d9a-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d8f-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="height" idRef="99237d9b-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d93-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+            <parameter name="perimeter" idRef="99237da0-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d8f-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="perimeter" idRef="99237da1-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d93-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+            <parameter name="area" idRef="99237d9d-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d8f-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="area" idRef="99237d9e-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d93-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+            <parameter name="area" idRef="99237d89-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d75-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="area" idRef="99237d8a-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+        </objectmap>
+        <viewobjectmap>
+            <parameter name="perimeter" idRef="99237d8d-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="perimeter" idRef="99237d8e-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+            <parameter name="width" idRef="99237d84-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="width" idRef="99237d85-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+            <parameter name="height" idRef="99237d87-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="height" idRef="99237d88-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+            <parameter name="area" idRef="99237d8a-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="area" idRef="99237d8b-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+        </viewobjectmap>
+        <relationobjectmap>
+            <parameter name="width" idRef="99237d97-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d8f-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="width" idRef="99237d99-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+            <parameter name="height" idRef="99237d9a-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d8f-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="height" idRef="99237d9c-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+            <parameter name="perimeter" idRef="99237da0-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d8f-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="perimeter" idRef="99237da2-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+            <parameter name="area" idRef="99237d9d-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d8f-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="area" idRef="99237d9f-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+        </relationobjectmap>
+    </lookupdata>
+</modelinterface>

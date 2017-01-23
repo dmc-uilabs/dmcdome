@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="5b626385-c08e-1004-87bc-6bbffbf0d682" name="Default Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="estimated population" idRef="5b626393-c08e-1004-87bc-6bbffbf0d682">
+                    <parameter name="estimated population" idRef="5b626391-c08e-1004-87bc-6bbffbf0d682" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682"/>
+                </mappedParameter>
+                <mappedParameter name="estimated final pollution" idRef="e5859b2d-c08f-1004-8ac5-e5fc5549eda4">
+                    <parameter name="estimated final pollution" idRef="e5859b2b-c08f-1004-8ac5-e5fc5549eda4" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682"/>
+                </mappedParameter>
+                <mappedParameter name="given cap invest rate" idRef="5b626397-c08e-1004-87bc-6bbffbf0d682">
+                    <parameter name="given cap invest rate" idRef="5b626395-c08e-1004-87bc-6bbffbf0d682" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682"/>
+                </mappedParameter>
+                <mappedParameter name="given population density" idRef="e5859c46-c08f-1004-8ac5-e5fc5549eda4">
+                    <parameter name="given population density" idRef="e5859c44-c08f-1004-8ac5-e5fc5549eda4" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682"/>
+                </mappedParameter>
+                <mappedParameter name="estimated capital ratio" idRef="e5859b30-c08f-1004-8ac5-e5fc5549eda4">
+                    <parameter name="estimated capital ratio" idRef="e5859b2e-c08f-1004-8ac5-e5fc5549eda4" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682"/>
+                </mappedParameter>
+                <mappedParameter name="given death rate" idRef="e5859b2a-c08f-1004-8ac5-e5fc5549eda4">
+                    <parameter name="given death rate" idRef="e5859b28-c08f-1004-8ac5-e5fc5549eda4" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682"/>
+                </mappedParameter>
+                <mappedParameter name="given birth rate" idRef="5b626390-c08e-1004-87bc-6bbffbf0d682">
+                    <parameter name="given birth rate" idRef="5b62638e-c08e-1004-87bc-6bbffbf0d682" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682"/>
+                </mappedParameter>
+                <mappedParameter name="given population density" idRef="e5859c45-c08f-1004-8ac5-e5fc5549eda4">
+                    <parameter name="given population density" idRef="e5859c44-c08f-1004-8ac5-e5fc5549eda4" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682"/>
+                </mappedParameter>
+                <mappedParameter name="estimated final pollution" idRef="e5859b2c-c08f-1004-8ac5-e5fc5549eda4">
+                    <parameter name="estimated final pollution" idRef="e5859b2b-c08f-1004-8ac5-e5fc5549eda4" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682"/>
+                </mappedParameter>
+                <mappedParameter name="given cap invest rate" idRef="5b626396-c08e-1004-87bc-6bbffbf0d682">
+                    <parameter name="given cap invest rate" idRef="5b626395-c08e-1004-87bc-6bbffbf0d682" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682"/>
+                </mappedParameter>
+                <mappedParameter name="given birth rate" idRef="5b62638f-c08e-1004-87bc-6bbffbf0d682">
+                    <parameter name="given birth rate" idRef="5b62638e-c08e-1004-87bc-6bbffbf0d682" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682"/>
+                </mappedParameter>
+                <mappedParameter name="estimated capital ratio" idRef="e5859b2f-c08f-1004-8ac5-e5fc5549eda4">
+                    <parameter name="estimated capital ratio" idRef="e5859b2e-c08f-1004-8ac5-e5fc5549eda4" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682"/>
+                </mappedParameter>
+                <mappedParameter name="given death rate" idRef="e5859b29-c08f-1004-8ac5-e5fc5549eda4">
+                    <parameter name="given death rate" idRef="e5859b28-c08f-1004-8ac5-e5fc5549eda4" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682"/>
+                </mappedParameter>
+                <mappedParameter name="estimated population" idRef="5b626392-c08e-1004-87bc-6bbffbf0d682">
+                    <parameter name="estimated population" idRef="5b626391-c08e-1004-87bc-6bbffbf0d682" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects/>
+    </mappingsandintermediates>
+    <lookupdata>
+        <objectmap>
+            <parameter name="given birth rate" idRef="5b62638e-c08e-1004-87bc-6bbffbf0d682" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682" description="key"/>
+            <parameter name="given birth rate" idRef="5b62638f-c08e-1004-87bc-6bbffbf0d682" description="value"/>
+            <parameter name="estimated population" idRef="5b626391-c08e-1004-87bc-6bbffbf0d682" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682" description="key"/>
+            <parameter name="estimated population" idRef="5b626392-c08e-1004-87bc-6bbffbf0d682" description="value"/>
+            <parameter name="given population density" idRef="e5859c44-c08f-1004-8ac5-e5fc5549eda4" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682" description="key"/>
+            <parameter name="given population density" idRef="e5859c45-c08f-1004-8ac5-e5fc5549eda4" description="value"/>
+            <parameter name="given cap invest rate" idRef="5b626395-c08e-1004-87bc-6bbffbf0d682" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682" description="key"/>
+            <parameter name="given cap invest rate" idRef="5b626396-c08e-1004-87bc-6bbffbf0d682" description="value"/>
+            <parameter name="given death rate" idRef="e5859b28-c08f-1004-8ac5-e5fc5549eda4" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682" description="key"/>
+            <parameter name="given death rate" idRef="e5859b29-c08f-1004-8ac5-e5fc5549eda4" description="value"/>
+            <parameter name="estimated final pollution" idRef="e5859b2b-c08f-1004-8ac5-e5fc5549eda4" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682" description="key"/>
+            <parameter name="estimated final pollution" idRef="e5859b2c-c08f-1004-8ac5-e5fc5549eda4" description="value"/>
+            <parameter name="estimated capital ratio" idRef="e5859b2e-c08f-1004-8ac5-e5fc5549eda4" idModelRef="5b62637c-c08e-1004-87bc-6bbffbf0d682" description="key"/>
+            <parameter name="estimated capital ratio" idRef="e5859b2f-c08f-1004-8ac5-e5fc5549eda4" description="value"/>
+        </objectmap>
+        <viewobjectmap>
+            <parameter name="given population density" idRef="e5859c45-c08f-1004-8ac5-e5fc5549eda4" description="key"/>
+            <parameter name="given population density" idRef="e5859c46-c08f-1004-8ac5-e5fc5549eda4" description="value"/>
+            <parameter name="estimated final pollution" idRef="e5859b2c-c08f-1004-8ac5-e5fc5549eda4" description="key"/>
+            <parameter name="estimated final pollution" idRef="e5859b2d-c08f-1004-8ac5-e5fc5549eda4" description="value"/>
+            <parameter name="given cap invest rate" idRef="5b626396-c08e-1004-87bc-6bbffbf0d682" description="key"/>
+            <parameter name="given cap invest rate" idRef="5b626397-c08e-1004-87bc-6bbffbf0d682" description="value"/>
+            <parameter name="given birth rate" idRef="5b62638f-c08e-1004-87bc-6bbffbf0d682" description="key"/>
+            <parameter name="given birth rate" idRef="5b626390-c08e-1004-87bc-6bbffbf0d682" description="value"/>
+            <parameter name="estimated capital ratio" idRef="e5859b2f-c08f-1004-8ac5-e5fc5549eda4" description="key"/>
+            <parameter name="estimated capital ratio" idRef="e5859b30-c08f-1004-8ac5-e5fc5549eda4" description="value"/>
+            <parameter name="given death rate" idRef="e5859b29-c08f-1004-8ac5-e5fc5549eda4" description="key"/>
+            <parameter name="given death rate" idRef="e5859b2a-c08f-1004-8ac5-e5fc5549eda4" description="value"/>
+            <parameter name="estimated population" idRef="5b626392-c08e-1004-87bc-6bbffbf0d682" description="key"/>
+            <parameter name="estimated population" idRef="5b626393-c08e-1004-87bc-6bbffbf0d682" description="value"/>
+        </viewobjectmap>
+        <relationobjectmap/>
+    </lookupdata>
+</modelinterface>

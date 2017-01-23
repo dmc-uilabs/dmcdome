@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<model type="DomeModel" id="99237d75-c0bc-1004-87d4-78132c0ae1a4" name="Resource 2 Model">
+    <modelinfo>
+        <version>0.0.1</version>
+    </modelinfo>
+    <parameters>
+        <parameter id="99237d83-c0bc-1004-87d4-78132c0ae1a4" name="width">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="2.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="99237d86-c0bc-1004-87d4-78132c0ae1a4" name="height">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="2.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="99237d89-c0bc-1004-87d4-78132c0ae1a4" name="area">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="3.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="99237d8c-c0bc-1004-87d4-78132c0ae1a4" name="perimeter">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="12.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <relations>
+        <relation type="Procedural" id="99237d8f-c0bc-1004-87d4-78132c0ae1a4" name="Procedural Relation">
+            <parameters>
+                <parameter id="99237d97-c0bc-1004-87d4-78132c0ae1a4" name="width">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="2.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="99237d9a-c0bc-1004-87d4-78132c0ae1a4" name="height">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="2.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="99237d9d-c0bc-1004-87d4-78132c0ae1a4" name="area">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="3.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="99237da0-c0bc-1004-87d4-78132c0ae1a4" name="perimeter">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="12.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <body><![CDATA[perimeter = width * 2 + height * 2;
+area = width * height;]]></body>
+            <dependencies>
+                <dependency idRef="99237da0-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="width" idRef="99237d97-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d8f-c0bc-1004-87d4-78132c0ae1a4"/>
+                    <parameter name="height" idRef="99237d9a-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d8f-c0bc-1004-87d4-78132c0ae1a4"/>
+                </dependency>
+                <dependency idRef="99237d9d-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="width" idRef="99237d97-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d8f-c0bc-1004-87d4-78132c0ae1a4"/>
+                    <parameter name="height" idRef="99237d9a-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d8f-c0bc-1004-87d4-78132c0ae1a4"/>
+                </dependency>
+            </dependencies>
+        </relation>
+    </relations>
+    <visualizations/>
+    <contexts>
+        <context id="BUILD_CXT" name="Build View">
+            <modelobjects>
+                <parameter name="width" idRef="99237d83-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d75-c0bc-1004-87d4-78132c0ae1a4"/>
+                <parameter name="height" idRef="99237d86-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d75-c0bc-1004-87d4-78132c0ae1a4"/>
+                <parameter name="area" idRef="99237d89-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d75-c0bc-1004-87d4-78132c0ae1a4"/>
+                <parameter name="perimeter" idRef="99237d8c-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d75-c0bc-1004-87d4-78132c0ae1a4"/>
+                <relation name="Procedural Relation" idRef="99237d8f-c0bc-1004-87d4-78132c0ae1a4"/>
+            </modelobjects>
+        </context>
+        <context id="FILE_CXT" name="Files"/>
+    </contexts>
+    <mappings>
+        <modelMappings>
+            <mappedParameter name="perimeter" idRef="99237d8c-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d75-c0bc-1004-87d4-78132c0ae1a4">
+                <parameter name="perimeter" idRef="99237da0-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d8f-c0bc-1004-87d4-78132c0ae1a4"/>
+            </mappedParameter>
+            <mappedParameter name="height" idRef="99237d86-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d75-c0bc-1004-87d4-78132c0ae1a4">
+                <parameter name="height" idRef="99237d9a-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d8f-c0bc-1004-87d4-78132c0ae1a4"/>
+            </mappedParameter>
+            <mappedParameter name="width" idRef="99237d83-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d75-c0bc-1004-87d4-78132c0ae1a4">
+                <parameter name="width" idRef="99237d97-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d8f-c0bc-1004-87d4-78132c0ae1a4"/>
+            </mappedParameter>
+            <mappedParameter name="area" idRef="99237d89-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d75-c0bc-1004-87d4-78132c0ae1a4">
+                <parameter name="area" idRef="99237d9d-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d8f-c0bc-1004-87d4-78132c0ae1a4"/>
+            </mappedParameter>
+        </modelMappings>
+    </mappings>
+    <auxfiles/>
+</model>

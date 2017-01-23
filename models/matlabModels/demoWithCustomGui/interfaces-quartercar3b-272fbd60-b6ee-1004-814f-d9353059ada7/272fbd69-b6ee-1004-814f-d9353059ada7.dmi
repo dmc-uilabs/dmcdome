@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="272fbd69-b6ee-1004-814f-d9353059ada7" name="Default Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <parameters>
+        <parameter id="2812853d-b6ee-1004-814f-d9353059ada7" name="leaf spring length">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="1.0" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="28622219-b6ee-1004-814f-d9353059ada7" name="leaf spring thickness">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0050" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="28a81e81-b6ee-1004-814f-d9353059ada7" name="leaf spring width">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.1" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="28f3e9a1-b6ee-1004-814f-d9353059ada7" name="axle tube thickness">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.01" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="293d1b85-b6ee-1004-814f-d9353059ada7" name="axle tube outer diameter">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.5" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="29998e51-b6ee-1004-814f-d9353059ada7" name="wheel to spring distance">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="1.0" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="2aa28658-b6ee-1004-814f-d9353059ada7" name="maximum accelaration">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="[MPs_S]"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="9c351025-b6f8-1004-8f4f-2eababe0f99c" name="suspension mass">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="60.0" unit="kg"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="9c36be9d-b6f8-1004-8f4f-2eababe0f99c" name="quarter vehicle mass">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="1800.0" unit="kg"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="c5606f0d-b6f8-1004-85ff-491bcd7d91fd" name="tire stiffness">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="161600.0" unit="[NPM]"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="d26f256d-b6f8-1004-8210-7cd65827d9c3" name="damping coefficient">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="1000.0" unit="[NSPM]"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="2812853e-b6ee-1004-814f-d9353059ada7" name="leaf spring length">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="1.0" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="2862221a-b6ee-1004-814f-d9353059ada7" name="leaf spring thickness">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0050" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="28a81e82-b6ee-1004-814f-d9353059ada7" name="leaf spring width">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.1" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="28f3e9a2-b6ee-1004-814f-d9353059ada7" name="axle tube thickness">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.01" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="293d1b86-b6ee-1004-814f-d9353059ada7" name="axle tube outer diameter">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.5" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="29998e52-b6ee-1004-814f-d9353059ada7" name="wheel to spring distance">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="1.0" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="2aa28659-b6ee-1004-814f-d9353059ada7" name="maximum accelaration">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="[MPs_S]"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="9c351026-b6f8-1004-8f4f-2eababe0f99c" name="suspension mass">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="60.0" unit="kg"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="9c36be9e-b6f8-1004-8f4f-2eababe0f99c" name="quarter vehicle mass">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="1800.0" unit="kg"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="c5606f0e-b6f8-1004-85ff-491bcd7d91fd" name="tire stiffness">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="161600.0" unit="[NPM]"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="d26f256e-b6f8-1004-8210-7cd65827d9c3" name="damping coefficient">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="1000.0" unit="[NSPM]"/>
+                </dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <relations/>
+    <contexts>
+        <context id="IFACE_MODEL_CXT" name="Model View">
+            <modelobjects>
+                <parameter name="leaf spring length" idRef="2812853d-b6ee-1004-814f-d9353059ada7"/>
+                <parameter name="leaf spring thickness" idRef="28622219-b6ee-1004-814f-d9353059ada7"/>
+                <parameter name="leaf spring width" idRef="28a81e81-b6ee-1004-814f-d9353059ada7"/>
+                <parameter name="axle tube thickness" idRef="28f3e9a1-b6ee-1004-814f-d9353059ada7"/>
+                <parameter name="axle tube outer diameter" idRef="293d1b85-b6ee-1004-814f-d9353059ada7"/>
+                <parameter name="wheel to spring distance" idRef="29998e51-b6ee-1004-814f-d9353059ada7"/>
+                <parameter name="maximum accelaration" idRef="2aa28658-b6ee-1004-814f-d9353059ada7"/>
+                <parameter name="suspension mass" idRef="9c351025-b6f8-1004-8f4f-2eababe0f99c"/>
+                <parameter name="quarter vehicle mass" idRef="9c36be9d-b6f8-1004-8f4f-2eababe0f99c"/>
+                <parameter name="tire stiffness" idRef="c5606f0d-b6f8-1004-85ff-491bcd7d91fd"/>
+                <parameter name="damping coefficient" idRef="d26f256d-b6f8-1004-8210-7cd65827d9c3"/>
+            </modelobjects>
+        </context>
+    </contexts>
+    <views>
+        <view name="Build View">
+            <context id="IFACE_BUILD_CXT" name="Build View">
+                <modelobjects>
+                    <parameter name="leaf spring length" idRef="2812853e-b6ee-1004-814f-d9353059ada7"/>
+                    <parameter name="leaf spring thickness" idRef="2862221a-b6ee-1004-814f-d9353059ada7"/>
+                    <parameter name="leaf spring width" idRef="28a81e82-b6ee-1004-814f-d9353059ada7"/>
+                    <parameter name="axle tube thickness" idRef="28f3e9a2-b6ee-1004-814f-d9353059ada7"/>
+                    <parameter name="axle tube outer diameter" idRef="293d1b86-b6ee-1004-814f-d9353059ada7"/>
+                    <parameter name="wheel to spring distance" idRef="29998e52-b6ee-1004-814f-d9353059ada7"/>
+                    <parameter name="maximum accelaration" idRef="2aa28659-b6ee-1004-814f-d9353059ada7"/>
+                    <parameter name="suspension mass" idRef="9c351026-b6f8-1004-8f4f-2eababe0f99c"/>
+                    <parameter name="quarter vehicle mass" idRef="9c36be9e-b6f8-1004-8f4f-2eababe0f99c"/>
+                    <parameter name="tire stiffness" idRef="c5606f0e-b6f8-1004-85ff-491bcd7d91fd"/>
+                    <parameter name="damping coefficient" idRef="d26f256e-b6f8-1004-8210-7cd65827d9c3"/>
+                </modelobjects>
+            </context>
+        </view>
+        <view name="Interface Causality View">
+            <filter id="INPUTS_FILTER" name="Inputs">
+                <parameters>
+                    <parameter name="leaf spring length" idRef="2812853e-b6ee-1004-814f-d9353059ada7"/>
+                    <parameter name="leaf spring thickness" idRef="2862221a-b6ee-1004-814f-d9353059ada7"/>
+                    <parameter name="leaf spring width" idRef="28a81e82-b6ee-1004-814f-d9353059ada7"/>
+                    <parameter name="axle tube thickness" idRef="28f3e9a2-b6ee-1004-814f-d9353059ada7"/>
+                    <parameter name="axle tube outer diameter" idRef="293d1b86-b6ee-1004-814f-d9353059ada7"/>
+                    <parameter name="wheel to spring distance" idRef="29998e52-b6ee-1004-814f-d9353059ada7"/>
+                    <parameter name="suspension mass" idRef="9c351026-b6f8-1004-8f4f-2eababe0f99c"/>
+                    <parameter name="quarter vehicle mass" idRef="9c36be9e-b6f8-1004-8f4f-2eababe0f99c"/>
+                    <parameter name="tire stiffness" idRef="c5606f0e-b6f8-1004-85ff-491bcd7d91fd"/>
+                    <parameter name="damping coefficient" idRef="d26f256e-b6f8-1004-8210-7cd65827d9c3"/>
+                </parameters>
+            </filter>
+            <filter id="OUTPUTS_FILTER" name="Outputs">
+                <parameters>
+                    <parameter name="maximum accelaration" idRef="2aa28659-b6ee-1004-814f-d9353059ada7" causality="Result"/>
+                </parameters>
+            </filter>
+            <filter id="INDETERMINATES_FILTER" name="Indeterminates"/>
+        </view>
+        <view name="System Causality View">
+            <filter id="eaf13dc0-b70f-1004-82bb-82c220aef49f" name="Independent"/>
+            <filter id="eaf13dc1-b70f-1004-82bb-82c220aef49f" name="Intermediate"/>
+            <filter id="eaf13dc2-b70f-1004-82bb-82c220aef49f" name="Result"/>
+        </view>
+    </views>
+    <directedGraph id="272fbd69-b6ee-1004-814f-d9353059ada7">
+        <nodes>
+            <node idRef="9c36be9e-b6f8-1004-8f4f-2eababe0f99c"/>
+            <node idRef="2862221a-b6ee-1004-814f-d9353059ada7"/>
+            <node idRef="c5606f0e-b6f8-1004-85ff-491bcd7d91fd"/>
+            <node idRef="9c351026-b6f8-1004-8f4f-2eababe0f99c"/>
+            <node idRef="2aa28659-b6ee-1004-814f-d9353059ada7"/>
+            <node idRef="d26f256e-b6f8-1004-8210-7cd65827d9c3"/>
+            <node idRef="28a81e82-b6ee-1004-814f-d9353059ada7"/>
+            <node idRef="29998e52-b6ee-1004-814f-d9353059ada7"/>
+            <node idRef="28f3e9a2-b6ee-1004-814f-d9353059ada7"/>
+            <node idRef="2812853e-b6ee-1004-814f-d9353059ada7"/>
+            <node idRef="293d1b86-b6ee-1004-814f-d9353059ada7"/>
+        </nodes>
+        <arcs>
+            <from idRef="29998e52-b6ee-1004-814f-d9353059ada7">
+                <to idRef="2aa28659-b6ee-1004-814f-d9353059ada7"/>
+            </from>
+            <from idRef="28a81e82-b6ee-1004-814f-d9353059ada7">
+                <to idRef="2aa28659-b6ee-1004-814f-d9353059ada7"/>
+            </from>
+            <from idRef="293d1b86-b6ee-1004-814f-d9353059ada7">
+                <to idRef="2aa28659-b6ee-1004-814f-d9353059ada7"/>
+            </from>
+            <from idRef="9c351026-b6f8-1004-8f4f-2eababe0f99c">
+                <to idRef="2aa28659-b6ee-1004-814f-d9353059ada7"/>
+            </from>
+            <from idRef="2812853e-b6ee-1004-814f-d9353059ada7">
+                <to idRef="2aa28659-b6ee-1004-814f-d9353059ada7"/>
+            </from>
+            <from idRef="d26f256e-b6f8-1004-8210-7cd65827d9c3">
+                <to idRef="2aa28659-b6ee-1004-814f-d9353059ada7"/>
+            </from>
+            <from idRef="c5606f0e-b6f8-1004-85ff-491bcd7d91fd">
+                <to idRef="2aa28659-b6ee-1004-814f-d9353059ada7"/>
+            </from>
+            <from idRef="9c36be9e-b6f8-1004-8f4f-2eababe0f99c">
+                <to idRef="2aa28659-b6ee-1004-814f-d9353059ada7"/>
+            </from>
+            <from idRef="28f3e9a2-b6ee-1004-814f-d9353059ada7">
+                <to idRef="2aa28659-b6ee-1004-814f-d9353059ada7"/>
+            </from>
+            <from idRef="2862221a-b6ee-1004-814f-d9353059ada7">
+                <to idRef="2aa28659-b6ee-1004-814f-d9353059ada7"/>
+            </from>
+        </arcs>
+    </directedGraph>
+    <interfaceToRelParamMap>
+        <iToRpMap relParamId="2812853c-b6ee-1004-814f-d9353059ada7" ifaceId="2812853e-b6ee-1004-814f-d9353059ada7"/>
+        <iToRpMap relParamId="28622218-b6ee-1004-814f-d9353059ada7" ifaceId="2862221a-b6ee-1004-814f-d9353059ada7"/>
+        <iToRpMap relParamId="28a81e80-b6ee-1004-814f-d9353059ada7" ifaceId="28a81e82-b6ee-1004-814f-d9353059ada7"/>
+        <iToRpMap relParamId="28f3e9a0-b6ee-1004-814f-d9353059ada7" ifaceId="28f3e9a2-b6ee-1004-814f-d9353059ada7"/>
+        <iToRpMap relParamId="293d1b84-b6ee-1004-814f-d9353059ada7" ifaceId="293d1b86-b6ee-1004-814f-d9353059ada7"/>
+        <iToRpMap relParamId="29998e50-b6ee-1004-814f-d9353059ada7" ifaceId="29998e52-b6ee-1004-814f-d9353059ada7"/>
+        <iToRpMap relParamId="2aa25f48-b6ee-1004-814f-d9353059ada7" ifaceId="2aa28659-b6ee-1004-814f-d9353059ada7"/>
+        <iToRpMap relParamId="9c351024-b6f8-1004-8f4f-2eababe0f99c" ifaceId="9c351026-b6f8-1004-8f4f-2eababe0f99c"/>
+        <iToRpMap relParamId="9c36be9c-b6f8-1004-8f4f-2eababe0f99c" ifaceId="9c36be9e-b6f8-1004-8f4f-2eababe0f99c"/>
+        <iToRpMap relParamId="c5606f0c-b6f8-1004-85ff-491bcd7d91fd" ifaceId="c5606f0e-b6f8-1004-85ff-491bcd7d91fd"/>
+        <iToRpMap relParamId="d26f256c-b6f8-1004-8210-7cd65827d9c3" ifaceId="d26f256e-b6f8-1004-8210-7cd65827d9c3"/>
+    </interfaceToRelParamMap>
+</modelinterface>

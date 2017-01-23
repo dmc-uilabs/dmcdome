@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="99237d7e-c0bc-1004-87d4-78132c0ae1a4" name="Default Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <parameters>
+        <parameter id="99237d84-c0bc-1004-87d4-78132c0ae1a4" name="width">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="2.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="99237d87-c0bc-1004-87d4-78132c0ae1a4" name="height">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="2.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="99237d8a-c0bc-1004-87d4-78132c0ae1a4" name="area">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="3.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="99237d8d-c0bc-1004-87d4-78132c0ae1a4" name="perimeter">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="12.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="99237d85-c0bc-1004-87d4-78132c0ae1a4" name="width">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="2.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="99237d88-c0bc-1004-87d4-78132c0ae1a4" name="height">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="2.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="99237d8b-c0bc-1004-87d4-78132c0ae1a4" name="area">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="3.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="99237d8e-c0bc-1004-87d4-78132c0ae1a4" name="perimeter">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="12.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <visualizations/>
+    <relations>
+        <relation type="Procedural" id="99237d93-c0bc-1004-87d4-78132c0ae1a4" name="Procedural Relation">
+            <parameters>
+                <parameter id="99237d98-c0bc-1004-87d4-78132c0ae1a4" name="width">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="2.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="99237d9b-c0bc-1004-87d4-78132c0ae1a4" name="height">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="2.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="99237d9e-c0bc-1004-87d4-78132c0ae1a4" name="area">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="3.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="99237da1-c0bc-1004-87d4-78132c0ae1a4" name="perimeter">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="12.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <body><![CDATA[perimeter = width * 2 + height * 2;
+area = width * height;]]></body>
+            <dependencies>
+                <dependency idRef="99237d9e-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="width" idRef="99237d98-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d93-c0bc-1004-87d4-78132c0ae1a4"/>
+                    <parameter name="height" idRef="99237d9b-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d93-c0bc-1004-87d4-78132c0ae1a4"/>
+                </dependency>
+                <dependency idRef="99237da1-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="width" idRef="99237d98-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d93-c0bc-1004-87d4-78132c0ae1a4"/>
+                    <parameter name="height" idRef="99237d9b-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d93-c0bc-1004-87d4-78132c0ae1a4"/>
+                </dependency>
+            </dependencies>
+        </relation>
+    </relations>
+    <contexts>
+        <context id="IFACE_MODEL_CXT" name="Model View">
+            <modelobjects>
+                <parameter name="width" idRef="99237d84-c0bc-1004-87d4-78132c0ae1a4"/>
+                <parameter name="height" idRef="99237d87-c0bc-1004-87d4-78132c0ae1a4"/>
+                <parameter name="area" idRef="99237d8a-c0bc-1004-87d4-78132c0ae1a4"/>
+                <parameter name="perimeter" idRef="99237d8d-c0bc-1004-87d4-78132c0ae1a4"/>
+                <relation name="Procedural Relation" idRef="99237d93-c0bc-1004-87d4-78132c0ae1a4"/>
+            </modelobjects>
+        </context>
+    </contexts>
+    <views>
+        <view name="Build View">
+            <context id="IFACE_BUILD_CXT" name="Build View">
+                <modelobjects>
+                    <parameter name="width" idRef="99237d85-c0bc-1004-87d4-78132c0ae1a4"/>
+                    <parameter name="height" idRef="99237d88-c0bc-1004-87d4-78132c0ae1a4"/>
+                    <parameter name="area" idRef="99237d8b-c0bc-1004-87d4-78132c0ae1a4"/>
+                    <parameter name="perimeter" idRef="99237d8e-c0bc-1004-87d4-78132c0ae1a4"/>
+                </modelobjects>
+            </context>
+        </view>
+        <view name="Interface Causality View">
+            <filter id="INPUTS_FILTER" name="Inputs">
+                <parameters>
+                    <parameter name="width" idRef="99237d85-c0bc-1004-87d4-78132c0ae1a4"/>
+                    <parameter name="height" idRef="99237d88-c0bc-1004-87d4-78132c0ae1a4"/>
+                </parameters>
+            </filter>
+            <filter id="OUTPUTS_FILTER" name="Outputs">
+                <parameters>
+                    <parameter name="area" idRef="99237d8b-c0bc-1004-87d4-78132c0ae1a4" causality="Result"/>
+                    <parameter name="perimeter" idRef="99237d8e-c0bc-1004-87d4-78132c0ae1a4" causality="Result"/>
+                </parameters>
+            </filter>
+            <filter id="INDETERMINATES_FILTER" name="Indeterminates"/>
+        </view>
+    </views>
+    <directedGraph id="99237d7e-c0bc-1004-87d4-78132c0ae1a4">
+        <nodes>
+            <node idRef="99237d85-c0bc-1004-87d4-78132c0ae1a4"/>
+            <node idRef="99237d88-c0bc-1004-87d4-78132c0ae1a4"/>
+            <node idRef="99237d8b-c0bc-1004-87d4-78132c0ae1a4"/>
+            <node idRef="99237d8e-c0bc-1004-87d4-78132c0ae1a4"/>
+        </nodes>
+        <arcs>
+            <from idRef="99237d85-c0bc-1004-87d4-78132c0ae1a4">
+                <to idRef="99237d8b-c0bc-1004-87d4-78132c0ae1a4"/>
+                <to idRef="99237d8e-c0bc-1004-87d4-78132c0ae1a4"/>
+            </from>
+            <from idRef="99237d88-c0bc-1004-87d4-78132c0ae1a4">
+                <to idRef="99237d8b-c0bc-1004-87d4-78132c0ae1a4"/>
+                <to idRef="99237d8e-c0bc-1004-87d4-78132c0ae1a4"/>
+            </from>
+        </arcs>
+    </directedGraph>
+    <interfaceToRelParamMap>
+        <iToRpMap relParamId="99237d85-c0bc-1004-87d4-78132c0ae1a4" ifaceId="99237d83-c0bc-1004-87d4-78132c0ae1a4"/>
+        <iToRpMap relParamId="99237d88-c0bc-1004-87d4-78132c0ae1a4" ifaceId="99237d86-c0bc-1004-87d4-78132c0ae1a4"/>
+        <iToRpMap relParamId="99237d8b-c0bc-1004-87d4-78132c0ae1a4" ifaceId="99237d89-c0bc-1004-87d4-78132c0ae1a4"/>
+        <iToRpMap relParamId="99237d8e-c0bc-1004-87d4-78132c0ae1a4" ifaceId="99237d8c-c0bc-1004-87d4-78132c0ae1a4"/>
+    </interfaceToRelParamMap>
+</modelinterface>

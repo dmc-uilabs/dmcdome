@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project id="e5859b86-c08f-1004-8ac5-e5fc5549eda4" name="World Population Project">
+    <projectinfo>
+        <version>0.0.1</version>
+    </projectinfo>
+    <resources>
+        <resource type="imodel" id="e5859b8a-c08f-1004-8ac5-e5fc5549eda4" name="iModel">
+            <location id="e5859b8a-c08f-1004-8ac5-e5fc5549eda4" hostName="" ipAddress="" port=""/>
+        </resource>
+        <resource type="model" id="e5859be8-c08f-1004-8ac5-e5fc5549eda4" name="Key Coefficient Estimation Model">
+            <location id="99259705-c08e-1004-889d-85f18abe9692" hostName="localhost" ipAddress="127.0.0.1" port="8080"/>
+            <subscribedInterfaceIds>
+                <ifaceId>99259733-c08e-1004-889d-85f18abe9692</ifaceId>
+            </subscribedInterfaceIds>
+        </resource>
+        <resource type="model" id="e5859c4e-c08f-1004-8ac5-e5fc5549eda4" name="Vensim World Population Model">
+            <location id="64adf055-c08e-1004-83b3-f8e21b4ee5d0" hostName="localhost" ipAddress="127.0.0.1" port="8080"/>
+            <subscribedInterfaceIds>
+                <ifaceId>99259732-c08e-1004-889d-85f18abe9692</ifaceId>
+            </subscribedInterfaceIds>
+        </resource>
+    </resources>
+    <integrationModels>
+        <imodel id="e5859b8a-c08f-1004-8ac5-e5fc5549eda4" name="iModel"/>
+    </integrationModels>
+</project>

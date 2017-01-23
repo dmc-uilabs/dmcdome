@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<model type="PluginModel" id="272fbd60-b6ee-1004-814f-d9353059ada7" name="quartercar3b" pluginType="MATLAB">
+    <modelinfo>
+        <version>0.0.0</version>
+    </modelinfo>
+    <parameters>
+        <parameter id="2812853c-b6ee-1004-814f-d9353059ada7" name="leaf spring length">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="1.0" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="28622218-b6ee-1004-814f-d9353059ada7" name="leaf spring thickness">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0050" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="28a81e80-b6ee-1004-814f-d9353059ada7" name="leaf spring width">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.1" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="28f3e9a0-b6ee-1004-814f-d9353059ada7" name="axle tube thickness">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.01" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="293d1b84-b6ee-1004-814f-d9353059ada7" name="axle tube outer diameter">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.5" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="29998e50-b6ee-1004-814f-d9353059ada7" name="wheel to spring distance">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="1.0" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="2aa25f48-b6ee-1004-814f-d9353059ada7" name="maximum accelaration">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="[MPs_S]"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="9c351024-b6f8-1004-8f4f-2eababe0f99c" name="suspension mass">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="60.0" unit="kg"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="9c36be9c-b6f8-1004-8f4f-2eababe0f99c" name="quarter vehicle mass">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="1800.0" unit="kg"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="c5606f0c-b6f8-1004-85ff-491bcd7d91fd" name="tire stiffness">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="161600.0" unit="[NPM]"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="d26f256c-b6f8-1004-8210-7cd65827d9c3" name="damping coefficient">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="1000.0" unit="[NSPM]"/>
+                </dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <contexts>
+        <context id="BUILD_CXT" name="Build View">
+            <modelobjects>
+                <parameter name="leaf spring length" idRef="2812853c-b6ee-1004-814f-d9353059ada7" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7"/>
+                <parameter name="leaf spring thickness" idRef="28622218-b6ee-1004-814f-d9353059ada7" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7"/>
+                <parameter name="leaf spring width" idRef="28a81e80-b6ee-1004-814f-d9353059ada7" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7"/>
+                <parameter name="axle tube thickness" idRef="28f3e9a0-b6ee-1004-814f-d9353059ada7" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7"/>
+                <parameter name="axle tube outer diameter" idRef="293d1b84-b6ee-1004-814f-d9353059ada7" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7"/>
+                <parameter name="wheel to spring distance" idRef="29998e50-b6ee-1004-814f-d9353059ada7" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7"/>
+                <parameter name="maximum accelaration" idRef="2aa25f48-b6ee-1004-814f-d9353059ada7" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7"/>
+                <parameter name="suspension mass" idRef="9c351024-b6f8-1004-8f4f-2eababe0f99c" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7"/>
+                <parameter name="quarter vehicle mass" idRef="9c36be9c-b6f8-1004-8f4f-2eababe0f99c" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7"/>
+                <parameter name="tire stiffness" idRef="c5606f0c-b6f8-1004-85ff-491bcd7d91fd" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7"/>
+                <parameter name="damping coefficient" idRef="d26f256c-b6f8-1004-8210-7cd65827d9c3" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7"/>
+            </modelobjects>
+        </context>
+    </contexts>
+    <mappings>
+        <modelMappings>
+            <mappedParameter name="quarter vehicle mass" idRef="9c36be9c-b6f8-1004-8f4f-2eababe0f99c" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7">Mc</mappedParameter>
+            <mappedParameter name="leaf spring thickness" idRef="28622218-b6ee-1004-814f-d9353059ada7" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7">hsIn</mappedParameter>
+            <mappedParameter name="suspension mass" idRef="9c351024-b6f8-1004-8f4f-2eababe0f99c" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7">MSuspension</mappedParameter>
+            <mappedParameter name="tire stiffness" idRef="c5606f0c-b6f8-1004-85ff-491bcd7d91fd" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7">Kt</mappedParameter>
+            <mappedParameter name="maximum accelaration" idRef="2aa25f48-b6ee-1004-814f-d9353059ada7" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7">MaxAccel1</mappedParameter>
+            <mappedParameter name="leaf spring width" idRef="28a81e80-b6ee-1004-814f-d9353059ada7" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7">bsIn</mappedParameter>
+            <mappedParameter name="damping coefficient" idRef="d26f256c-b6f8-1004-8210-7cd65827d9c3" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7">Cs</mappedParameter>
+            <mappedParameter name="axle tube thickness" idRef="28f3e9a0-b6ee-1004-814f-d9353059ada7" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7">taIn</mappedParameter>
+            <mappedParameter name="wheel to spring distance" idRef="29998e50-b6ee-1004-814f-d9353059ada7" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7">LaIn</mappedParameter>
+            <mappedParameter name="leaf spring length" idRef="2812853c-b6ee-1004-814f-d9353059ada7" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7">LsIn</mappedParameter>
+            <mappedParameter name="axle tube outer diameter" idRef="293d1b84-b6ee-1004-814f-d9353059ada7" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7">daoIn</mappedParameter>
+        </modelMappings>
+    </mappings>
+    <dependencies>
+        <dependency idRef="2aa25f48-b6ee-1004-814f-d9353059ada7">
+            <parameter name="leaf spring length" idRef="2812853c-b6ee-1004-814f-d9353059ada7" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7"/>
+            <parameter name="leaf spring thickness" idRef="28622218-b6ee-1004-814f-d9353059ada7" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7"/>
+            <parameter name="leaf spring width" idRef="28a81e80-b6ee-1004-814f-d9353059ada7" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7"/>
+            <parameter name="axle tube thickness" idRef="28f3e9a0-b6ee-1004-814f-d9353059ada7" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7"/>
+            <parameter name="axle tube outer diameter" idRef="293d1b84-b6ee-1004-814f-d9353059ada7" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7"/>
+            <parameter name="wheel to spring distance" idRef="29998e50-b6ee-1004-814f-d9353059ada7" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7"/>
+            <parameter name="suspension mass" idRef="9c351024-b6f8-1004-8f4f-2eababe0f99c" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7"/>
+            <parameter name="quarter vehicle mass" idRef="9c36be9c-b6f8-1004-8f4f-2eababe0f99c" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7"/>
+            <parameter name="tire stiffness" idRef="c5606f0c-b6f8-1004-85ff-491bcd7d91fd" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7"/>
+            <parameter name="damping coefficient" idRef="d26f256c-b6f8-1004-8210-7cd65827d9c3" idModelRef="272fbd60-b6ee-1004-814f-d9353059ada7"/>
+        </dependency>
+    </dependencies>
+    <setup>
+        <parameter id=".m file location" name=".m file location">
+            <currentType value="File"/>
+            <data>
+                <dataobject type="File">
+                    <filePath>C:\dome3\DomeModelFilesForTesting\matlab\demo with custom gui\SuspensionModel.m</filePath>
+                    <fileType>Matlab</fileType>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="software version" name="software version">
+            <currentType value="Enumeration"/>
+            <data>
+                <dataobject type="Enumeration">
+                    <data>
+                        <dataobject name="Matlab 6" type="String"></dataobject>
+                    </data>
+                    <lastSelectionIndex>0</lastSelectionIndex>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="run in foreground" name="run in foreground">
+            <currentType value="Boolean"/>
+            <data>
+                <dataobject type="Boolean">true</dataobject>
+            </data>
+        </parameter>
+    </setup>
+</model>

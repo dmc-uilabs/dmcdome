@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="c55c9659-c37a-1004-851d-d35b534f9d33" name="Default Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="Avg" idRef="c55c9673-c37a-1004-851d-d35b534f9d33">
+                    <parameter name="Avg" idRef="c55c9671-c37a-1004-851d-d35b534f9d33" idRelationRef="c55c965e-c37a-1004-851d-d35b534f9d33"/>
+                </mappedParameter>
+                <mappedParameter name="Sum" idRef="c55c9676-c37a-1004-851d-d35b534f9d33">
+                    <parameter name="Sum" idRef="c55c9674-c37a-1004-851d-d35b534f9d33" idRelationRef="c55c965e-c37a-1004-851d-d35b534f9d33"/>
+                </mappedParameter>
+                <mappedParameter name="i" idRef="c55c9735-c37a-1004-851d-d35b534f9d33">
+                    <parameter name="i" idRef="c55c9733-c37a-1004-851d-d35b534f9d33" idRelationRef="c55c965e-c37a-1004-851d-d35b534f9d33"/>
+                </mappedParameter>
+                <mappedParameter name="i" idRef="c55c9734-c37a-1004-851d-d35b534f9d33" idRelationRef="c55c9662-c37a-1004-851d-d35b534f9d33">
+                    <parameter name="i" idRef="c55c9733-c37a-1004-851d-d35b534f9d33" idRelationRef="c55c965e-c37a-1004-851d-d35b534f9d33"/>
+                </mappedParameter>
+                <mappedParameter name="Avg" idRef="c55c9672-c37a-1004-851d-d35b534f9d33" idRelationRef="c55c9662-c37a-1004-851d-d35b534f9d33">
+                    <parameter name="Avg" idRef="c55c9671-c37a-1004-851d-d35b534f9d33" idRelationRef="c55c965e-c37a-1004-851d-d35b534f9d33"/>
+                </mappedParameter>
+                <mappedParameter name="Sum" idRef="c55c9675-c37a-1004-851d-d35b534f9d33" idRelationRef="c55c9662-c37a-1004-851d-d35b534f9d33">
+                    <parameter name="Sum" idRef="c55c9674-c37a-1004-851d-d35b534f9d33" idRelationRef="c55c965e-c37a-1004-851d-d35b534f9d33"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects/>
+    </mappingsandintermediates>
+    <lookupdata>
+        <objectmap>
+            <parameter name="i" idRef="c55c9733-c37a-1004-851d-d35b534f9d33" idRelationRef="c55c965e-c37a-1004-851d-d35b534f9d33" description="key"/>
+            <parameter name="i" idRef="c55c9734-c37a-1004-851d-d35b534f9d33" idRelationRef="c55c9662-c37a-1004-851d-d35b534f9d33" description="value"/>
+            <parameter name="Sum" idRef="c55c9674-c37a-1004-851d-d35b534f9d33" idRelationRef="c55c965e-c37a-1004-851d-d35b534f9d33" description="key"/>
+            <parameter name="Sum" idRef="c55c9675-c37a-1004-851d-d35b534f9d33" idRelationRef="c55c9662-c37a-1004-851d-d35b534f9d33" description="value"/>
+            <relation name="Iteration Relation while loop" idRef="c55c965e-c37a-1004-851d-d35b534f9d33" description="key"/>
+            <relation name="Iteration Relation while loop" idRef="c55c9662-c37a-1004-851d-d35b534f9d33" description="value"/>
+            <parameter name="Avg" idRef="c55c9671-c37a-1004-851d-d35b534f9d33" idRelationRef="c55c965e-c37a-1004-851d-d35b534f9d33" description="key"/>
+            <parameter name="Avg" idRef="c55c9672-c37a-1004-851d-d35b534f9d33" idRelationRef="c55c9662-c37a-1004-851d-d35b534f9d33" description="value"/>
+        </objectmap>
+        <viewobjectmap/>
+        <relationobjectmap>
+            <parameter name="i" idRef="c55c9733-c37a-1004-851d-d35b534f9d33" idRelationRef="c55c965e-c37a-1004-851d-d35b534f9d33" description="key"/>
+            <parameter name="i" idRef="c55c9735-c37a-1004-851d-d35b534f9d33" description="value"/>
+            <parameter name="Sum" idRef="c55c9674-c37a-1004-851d-d35b534f9d33" idRelationRef="c55c965e-c37a-1004-851d-d35b534f9d33" description="key"/>
+            <parameter name="Sum" idRef="c55c9676-c37a-1004-851d-d35b534f9d33" description="value"/>
+            <parameter name="Avg" idRef="c55c9671-c37a-1004-851d-d35b534f9d33" idRelationRef="c55c965e-c37a-1004-851d-d35b534f9d33" description="key"/>
+            <parameter name="Avg" idRef="c55c9673-c37a-1004-851d-d35b534f9d33" description="value"/>
+        </relationobjectmap>
+    </lookupdata>
+</modelinterface>

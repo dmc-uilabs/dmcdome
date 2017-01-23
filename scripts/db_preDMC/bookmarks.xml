@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bookmarkFolders>
+    <bookmark_folder>
+        <foldername>root</foldername>
+        <bookmarks>
+            <bookmark_info>
+                <type>Interface</type>
+                <folder>root</folder>
+                <id>CID.STAT..IFf6979f37-c136-1004-823c-53bdcc699425.MLf6979f35-c136-1004-823c-53bdcc699425</id>
+                <serverUrl>localhost:8080</serverUrl>
+                <path>/Public/world dynamics/World Population Dynamics Model/Simple Interface</path>
+                <aliasName>Vensim Population Simulator - Simple Interface</aliasName>
+                <comment></comment>
+                <loginType>GUEST</loginType>
+                <loginName>guest</loginName>
+            </bookmark_info>
+            <bookmark_info>
+                <type>Interface</type>
+                <folder>root</folder>
+                <id>CID.STAT..IFf6979f34-c136-1004-823c-53bdcc699425.MLf6979f31-c136-1004-823c-53bdcc699425</id>
+                <serverUrl>localhost:8080</serverUrl>
+                <path>/Public/world dynamics/Key Coefficient Estimation Model/Complete Interface</path>
+                <aliasName>Excel Coefficient Calculator - Complete Interface</aliasName>
+                <comment></comment>
+                <loginType>GUEST</loginType>
+                <loginName>guest</loginName>
+            </bookmark_info>
+            <bookmark_info>
+                <type>Interface</type>
+                <folder>root</folder>
+                <id>CID.STAT..IF0dd82377-c69e-1004-8b1e-81d54d42966a.ML0dd82375-c69e-1004-8b1e-81d54d42966a</id>
+                <serverUrl>localhost:8080</serverUrl>
+                <path>/Public/solidworks demo/Hole locator (Excel version)/excel hole locator interface</path>
+                <aliasName>excel hole locator interface</aliasName>
+                <comment></comment>
+                <loginType>GUEST</loginType>
+                <loginName>guest</loginName>
+            </bookmark_info>
+            <bookmark_info>
+                <type>Interface</type>
+                <folder>root</folder>
+                <id>CID.STAT..IFd0f3a113-b916-1004-8866-4d25d22abb4f.MLd0f3a111-b916-1004-8866-4d25d22abb4f</id>
+                <serverUrl>localhost:8080</serverUrl>
+                <path>/Public/Tutorial examples/Tutorial resources/Rectangular solid with hole/volume and cost interface</path>
+                <aliasName>volume and cost interface</aliasName>
+                <comment></comment>
+                <loginType>GUEST</loginType>
+                <loginName>guest</loginName>
+            </bookmark_info>
+            <bookmark_info>
+                <type>Interface</type>
+                <folder>root</folder>
+                <id>CID.STAT..IFfd27a149-c5f2-1004-8153-18ad7e7e8cc5.MLfd27a148-c5f2-1004-8153-18ad7e7e8cc5</id>
+                <serverUrl>localhost:8080</serverUrl>
+                <path>/Public/catalog demo/engine catalog (mdo)/engine interface</path>
+                <aliasName>engine interface</aliasName>
+                <comment></comment>
+                <loginType>GUEST</loginType>
+                <loginName>guest</loginName>
+            </bookmark_info>
+            <bookmark_info>
+                <type>Interface</type>
+                <folder>root</folder>
+                <id>CID.STAT..IFfd27a224-c5f2-1004-8153-18ad7e7e8cc5.MLfd27a223-c5f2-1004-8153-18ad7e7e8cc5</id>
+                <serverUrl>localhost:8080</serverUrl>
+                <path>/Public/catalog demo/powertrain integration/default interface</path>
+                <aliasName>default interface</aliasName>
+                <comment></comment>
+                <loginType>GUEST</loginType>
+                <loginName>guest</loginName>
+            </bookmark_info>
+        </bookmarks>
+    </bookmark_folder>
+</bookmarkFolders>

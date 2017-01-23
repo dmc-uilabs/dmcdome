@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="cac23d7c-b6cb-1004-8511-6d78516dd70d" name="Default Interface">
+    <interfaceinfo>
+        <version>0.0.3</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="SealDragB" idRef="d000e506-b6cb-1004-8511-6d78516dd70d">
+                    <parameter name="SealDragB" idRef="d000e504-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+                </mappedParameter>
+                <mappedParameter name="SealDragB" idRef="d000e505-b6cb-1004-8511-6d78516dd70d">
+                    <parameter name="SealDragB" idRef="d000e504-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+                </mappedParameter>
+                <mappedParameter name="BPillarHeight" idRef="cf568370-b6cb-1004-8511-6d78516dd70d">
+                    <parameter name="BPillarHeight" idRef="cf55c020-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+                </mappedParameter>
+                <mappedParameter name="MotorSpeed" idRef="d021710e-b6cb-1004-8511-6d78516dd70d">
+                    <parameter name="MotorSpeed" idRef="d021710c-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+                </mappedParameter>
+                <mappedParameter name="BPillarHeight" idRef="cf56d190-b6cb-1004-8511-6d78516dd70d">
+                    <parameter name="BPillarHeight" idRef="cf55c020-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+                </mappedParameter>
+                <mappedParameter name="MotorSpeed" idRef="d021710d-b6cb-1004-8511-6d78516dd70d">
+                    <parameter name="MotorSpeed" idRef="d021710c-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+                </mappedParameter>
+                <mappedParameter name="MaxStall" idRef="d3b040a2-b6cb-1004-8511-6d78516dd70d">
+                    <parameter name="MaxStall" idRef="d3b040a0-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+                </mappedParameter>
+                <mappedParameter name="HeaderLength" idRef="d11c94da-b6cb-1004-8511-6d78516dd70d">
+                    <parameter name="HeaderLength" idRef="d11c94d8-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+                </mappedParameter>
+                <mappedParameter name="GlassRadius" idRef="cfb1964a-b6cb-1004-8511-6d78516dd70d">
+                    <parameter name="GlassRadius" idRef="cfb19648-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+                </mappedParameter>
+                <mappedParameter name="MaxStall" idRef="d3b040a1-b6cb-1004-8511-6d78516dd70d">
+                    <parameter name="MaxStall" idRef="d3b040a0-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+                </mappedParameter>
+                <mappedParameter name="MotorTorque" idRef="d0446f42-b6cb-1004-8511-6d78516dd70d">
+                    <parameter name="MotorTorque" idRef="d0446f40-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+                </mappedParameter>
+                <mappedParameter name="MotorTorque" idRef="d0446f41-b6cb-1004-8511-6d78516dd70d">
+                    <parameter name="MotorTorque" idRef="d0446f40-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+                </mappedParameter>
+                <mappedParameter name="GlassRadius" idRef="cfb19649-b6cb-1004-8511-6d78516dd70d">
+                    <parameter name="GlassRadius" idRef="cfb19648-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+                </mappedParameter>
+                <mappedParameter name="MaxVel" idRef="d0f11b8d-b6cb-1004-8511-6d78516dd70d">
+                    <parameter name="MaxVel" idRef="d0f11b8c-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+                </mappedParameter>
+                <mappedParameter name="GlassThickness" idRef="d0badc0e-b6cb-1004-8511-6d78516dd70d">
+                    <parameter name="GlassThickness" idRef="d0badc0c-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+                </mappedParameter>
+                <mappedParameter name="MaxVel" idRef="d0f11b8e-b6cb-1004-8511-6d78516dd70d">
+                    <parameter name="MaxVel" idRef="d0f11b8c-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+                </mappedParameter>
+                <mappedParameter name="GlassThickness" idRef="d0badc0d-b6cb-1004-8511-6d78516dd70d">
+                    <parameter name="GlassThickness" idRef="d0badc0c-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+                </mappedParameter>
+                <mappedParameter name="HeaderLength" idRef="d11c94d9-b6cb-1004-8511-6d78516dd70d">
+                    <parameter name="HeaderLength" idRef="d11c94d8-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects/>
+    </mappingsandintermediates>
+    <lookupdata>
+        <objectmap>
+            <parameter name="SealDragB" idRef="d000e504-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf" description="key"/>
+            <parameter name="SealDragB" idRef="d000e505-b6cb-1004-8511-6d78516dd70d" description="value"/>
+            <parameter name="GlassRadius" idRef="cfb19648-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf" description="key"/>
+            <parameter name="GlassRadius" idRef="cfb19649-b6cb-1004-8511-6d78516dd70d" description="value"/>
+            <parameter name="MaxStall" idRef="d3b040a0-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf" description="key"/>
+            <parameter name="MaxStall" idRef="d3b040a1-b6cb-1004-8511-6d78516dd70d" description="value"/>
+            <parameter name="GlassThickness" idRef="d0badc0c-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf" description="key"/>
+            <parameter name="GlassThickness" idRef="d0badc0d-b6cb-1004-8511-6d78516dd70d" description="value"/>
+            <parameter name="HeaderLength" idRef="d11c94d8-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf" description="key"/>
+            <parameter name="HeaderLength" idRef="d11c94d9-b6cb-1004-8511-6d78516dd70d" description="value"/>
+            <parameter name="BPillarHeight" idRef="cf55c020-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf" description="key"/>
+            <parameter name="BPillarHeight" idRef="cf568370-b6cb-1004-8511-6d78516dd70d" description="value"/>
+            <parameter name="MaxVel" idRef="d0f11b8c-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf" description="key"/>
+            <parameter name="MaxVel" idRef="d0f11b8d-b6cb-1004-8511-6d78516dd70d" description="value"/>
+            <parameter name="MotorTorque" idRef="d0446f40-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf" description="key"/>
+            <parameter name="MotorTorque" idRef="d0446f41-b6cb-1004-8511-6d78516dd70d" description="value"/>
+            <parameter name="MotorSpeed" idRef="d021710c-b6cb-1004-8511-6d78516dd70d" idModelRef="a025103c-b6fb-1004-838c-f144bf0bdddf" description="key"/>
+            <parameter name="MotorSpeed" idRef="d021710d-b6cb-1004-8511-6d78516dd70d" description="value"/>
+        </objectmap>
+        <viewobjectmap>
+            <parameter name="MaxStall" idRef="d3b040a1-b6cb-1004-8511-6d78516dd70d" description="key"/>
+            <parameter name="MaxStall" idRef="d3b040a2-b6cb-1004-8511-6d78516dd70d" description="value"/>
+            <parameter name="MotorTorque" idRef="d0446f41-b6cb-1004-8511-6d78516dd70d" description="key"/>
+            <parameter name="MotorTorque" idRef="d0446f42-b6cb-1004-8511-6d78516dd70d" description="value"/>
+            <parameter name="GlassRadius" idRef="cfb19649-b6cb-1004-8511-6d78516dd70d" description="key"/>
+            <parameter name="GlassRadius" idRef="cfb1964a-b6cb-1004-8511-6d78516dd70d" description="value"/>
+            <parameter name="SealDragB" idRef="d000e505-b6cb-1004-8511-6d78516dd70d" description="key"/>
+            <parameter name="SealDragB" idRef="d000e506-b6cb-1004-8511-6d78516dd70d" description="value"/>
+            <parameter name="BPillarHeight" idRef="cf568370-b6cb-1004-8511-6d78516dd70d" description="key"/>
+            <parameter name="BPillarHeight" idRef="cf56d190-b6cb-1004-8511-6d78516dd70d" description="value"/>
+            <parameter name="MaxVel" idRef="d0f11b8d-b6cb-1004-8511-6d78516dd70d" description="key"/>
+            <parameter name="MaxVel" idRef="d0f11b8e-b6cb-1004-8511-6d78516dd70d" description="value"/>
+            <parameter name="GlassThickness" idRef="d0badc0d-b6cb-1004-8511-6d78516dd70d" description="key"/>
+            <parameter name="GlassThickness" idRef="d0badc0e-b6cb-1004-8511-6d78516dd70d" description="value"/>
+            <parameter name="HeaderLength" idRef="d11c94d9-b6cb-1004-8511-6d78516dd70d" description="key"/>
+            <parameter name="HeaderLength" idRef="d11c94da-b6cb-1004-8511-6d78516dd70d" description="value"/>
+            <parameter name="MotorSpeed" idRef="d021710d-b6cb-1004-8511-6d78516dd70d" description="key"/>
+            <parameter name="MotorSpeed" idRef="d021710e-b6cb-1004-8511-6d78516dd70d" description="value"/>
+        </viewobjectmap>
+        <relationobjectmap/>
+    </lookupdata>
+</modelinterface>

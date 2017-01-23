@@ -1,0 +1,6 @@
+[submodule "python/3rd-party/XlsxWriter0.6.5"]
+	path = python/3rd-party/XlsxWriter0.6.5
+	url = https://github.com/jmcnamara/XlsxWriter.git
+[submodule "community/csharp/clientlib"]
+	path = csharp/community/clientlib
+	url = https://bitbucket.org/osmkhn/dome-client.git

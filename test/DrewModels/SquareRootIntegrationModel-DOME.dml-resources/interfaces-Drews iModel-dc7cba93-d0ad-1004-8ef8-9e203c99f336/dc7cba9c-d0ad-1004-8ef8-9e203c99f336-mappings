@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="dc7cba9c-d0ad-1004-8ef8-9e203c99f336" name="Default Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="InParam" idRef="dc7cbadd-d0ad-1004-8ef8-9e203c99f336">
+                    <parameter name="InParam" idRef="dc7cbac9-d0ad-1004-8ef8-9e203c99f336"/>
+                </mappedParameter>
+                <mappedParameter name="OutParam" idRef="dc7cbac0-d0ad-1004-8ef8-9e203c99f336">
+                    <parameter name="OutParam" idRef="dc7cbaab-d0ad-1004-8ef8-9e203c99f336"/>
+                </mappedParameter>
+                <mappedParameter name="OutParam" idRef="dc7cbadf-d0ad-1004-8ef8-9e203c99f336">
+                    <parameter name="OutParam" idRef="dc7cbaca-d0ad-1004-8ef8-9e203c99f336"/>
+                </mappedParameter>
+                <mappedParameter name="InParam" idRef="dc7cbabe-d0ad-1004-8ef8-9e203c99f336">
+                    <parameter name="InParam" idRef="dc7cbaaa-d0ad-1004-8ef8-9e203c99f336"/>
+                </mappedParameter>
+                <mappedParameter name="OutParam" idRef="dc7cbabf-d0ad-1004-8ef8-9e203c99f336">
+                    <parameter name="OutParam" idRef="dc7cbaab-d0ad-1004-8ef8-9e203c99f336"/>
+                </mappedParameter>
+                <mappedParameter name="InParam" idRef="dc7cbabd-d0ad-1004-8ef8-9e203c99f336">
+                    <parameter name="InParam" idRef="dc7cbaaa-d0ad-1004-8ef8-9e203c99f336"/>
+                </mappedParameter>
+                <mappedParameter name="OutParam" idRef="dc7cbade-d0ad-1004-8ef8-9e203c99f336">
+                    <parameter name="OutParam" idRef="dc7cbaca-d0ad-1004-8ef8-9e203c99f336"/>
+                </mappedParameter>
+                <mappedParameter name="InParam" idRef="dc7cbadc-d0ad-1004-8ef8-9e203c99f336">
+                    <parameter name="InParam" idRef="dc7cbac9-d0ad-1004-8ef8-9e203c99f336"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects>
+            <parameter id="dc7cbadd-d0ad-1004-8ef8-9e203c99f336" name="InParam">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="0.0" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+            </parameter>
+            <parameter id="dc7cbac0-d0ad-1004-8ef8-9e203c99f336" name="OutParam">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="0.0" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+            </parameter>
+        </intermediateobjects>
+    </mappingsandintermediates>
+    <lookupdata>
+        <objectmap>
+            <parameter name="InParam" idRef="dc7cbaaa-d0ad-1004-8ef8-9e203c99f336" description="key"/>
+            <parameter name="InParam" idRef="dc7cbabd-d0ad-1004-8ef8-9e203c99f336" description="value"/>
+            <parameter name="OutParam" idRef="dc7cbaab-d0ad-1004-8ef8-9e203c99f336" description="key"/>
+            <parameter name="OutParam" idRef="dc7cbabf-d0ad-1004-8ef8-9e203c99f336" description="value"/>
+            <parameter name="OutParam" idRef="dc7cbaca-d0ad-1004-8ef8-9e203c99f336" description="key"/>
+            <parameter name="OutParam" idRef="dc7cbade-d0ad-1004-8ef8-9e203c99f336" description="value"/>
+            <parameter name="InParam" idRef="dc7cbac9-d0ad-1004-8ef8-9e203c99f336" description="key"/>
+            <parameter name="InParam" idRef="dc7cbadc-d0ad-1004-8ef8-9e203c99f336" description="value"/>
+        </objectmap>
+        <viewobjectmap>
+            <parameter name="OutParam" idRef="dc7cbabf-d0ad-1004-8ef8-9e203c99f336" description="key"/>
+            <parameter name="OutParam" idRef="dc7cbac0-d0ad-1004-8ef8-9e203c99f336" description="value"/>
+            <parameter name="InParam" idRef="dc7cbabd-d0ad-1004-8ef8-9e203c99f336" description="key"/>
+            <parameter name="InParam" idRef="dc7cbabe-d0ad-1004-8ef8-9e203c99f336" description="value"/>
+            <parameter name="OutParam" idRef="dc7cbade-d0ad-1004-8ef8-9e203c99f336" description="key"/>
+            <parameter name="OutParam" idRef="dc7cbadf-d0ad-1004-8ef8-9e203c99f336" description="value"/>
+            <parameter name="InParam" idRef="dc7cbadc-d0ad-1004-8ef8-9e203c99f336" description="key"/>
+            <parameter name="InParam" idRef="dc7cbadd-d0ad-1004-8ef8-9e203c99f336" description="value"/>
+        </viewobjectmap>
+        <relationobjectmap/>
+    </lookupdata>
+</modelinterface>

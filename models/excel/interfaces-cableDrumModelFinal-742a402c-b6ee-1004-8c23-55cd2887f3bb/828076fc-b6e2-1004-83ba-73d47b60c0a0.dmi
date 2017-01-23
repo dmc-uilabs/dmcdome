@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="828076fc-b6e2-1004-83ba-73d47b60c0a0" name="Electrical Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+    </interfaceinfo>
+    <parameters>
+        <parameter id="73ce535c-b6ee-1004-8c23-55cd2887f3bb" name="MotorSpeed">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="82.0" unit="[RPM]"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="73ce535d-b6ee-1004-8c23-55cd2887f3bb" name="MotorTorque">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="5.5" unit="J"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="74040da8-b6ee-1004-8c23-55cd2887f3bb" name="MaxVel">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="[CMPS]"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="74040da9-b6ee-1004-8c23-55cd2887f3bb" name="MaxStall">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="N"/>
+                </dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <relations/>
+    <contexts>
+        <context id="IFACE_MODEL_CXT" name="Model View"/>
+        <context id="73b39fd0-b6ee-1004-8c23-55cd2887f3bb" name="motor">
+            <modelobjects>
+                <parameter name="MotorSpeed" idRef="73ce535c-b6ee-1004-8c23-55cd2887f3bb"/>
+                <parameter name="MotorTorque" idRef="73ce535d-b6ee-1004-8c23-55cd2887f3bb"/>
+            </modelobjects>
+        </context>
+        <context id="73d402d4-b6ee-1004-8c23-55cd2887f3bb" name="performance">
+            <modelobjects>
+                <parameter name="MaxVel" idRef="74040da8-b6ee-1004-8c23-55cd2887f3bb"/>
+                <parameter name="MaxStall" idRef="74040da9-b6ee-1004-8c23-55cd2887f3bb"/>
+            </modelobjects>
+        </context>
+    </contexts>
+    <views>
+        <view name="Build View">
+            <context id="IFACE_BUILD_CXT" name="Build View">
+                <modelobjects>
+                    <context name="motor" idRef="73b39fd0-b6ee-1004-8c23-55cd2887f3bb"/>
+                    <context name="performance" idRef="73d402d4-b6ee-1004-8c23-55cd2887f3bb"/>
+                </modelobjects>
+            </context>
+        </view>
+        <view name="Interface Causality View">
+            <filter id="INPUTS_FILTER" name="Inputs">
+                <parameters>
+                    <parameter name="MotorSpeed" idRef="73ce535c-b6ee-1004-8c23-55cd2887f3bb"/>
+                    <parameter name="MotorTorque" idRef="73ce535d-b6ee-1004-8c23-55cd2887f3bb"/>
+                </parameters>
+            </filter>
+            <filter id="OUTPUTS_FILTER" name="Outputs">
+                <parameters>
+                    <parameter name="MaxVel" idRef="74040da8-b6ee-1004-8c23-55cd2887f3bb" causality="Result"/>
+                    <parameter name="MaxStall" idRef="74040da9-b6ee-1004-8c23-55cd2887f3bb" causality="Result"/>
+                </parameters>
+            </filter>
+            <filter id="INDETERMINATES_FILTER" name="Indeterminates"/>
+        </view>
+    </views>
+    <directedGraph id="828076fc-b6e2-1004-83ba-73d47b60c0a0">
+        <nodes>
+            <node idRef="73ce535d-b6ee-1004-8c23-55cd2887f3bb"/>
+            <node idRef="73ce535c-b6ee-1004-8c23-55cd2887f3bb"/>
+            <node idRef="74040da9-b6ee-1004-8c23-55cd2887f3bb"/>
+            <node idRef="74040da8-b6ee-1004-8c23-55cd2887f3bb"/>
+        </nodes>
+        <arcs>
+            <from idRef="73ce535d-b6ee-1004-8c23-55cd2887f3bb">
+                <to idRef="74040da9-b6ee-1004-8c23-55cd2887f3bb"/>
+                <to idRef="74040da8-b6ee-1004-8c23-55cd2887f3bb"/>
+            </from>
+            <from idRef="73ce535c-b6ee-1004-8c23-55cd2887f3bb">
+                <to idRef="74040da9-b6ee-1004-8c23-55cd2887f3bb"/>
+                <to idRef="74040da8-b6ee-1004-8c23-55cd2887f3bb"/>
+            </from>
+        </arcs>
+    </directedGraph>
+    <interfaceToRelParamMap>
+        <iToRpMap relParamId="d021710c-b6cb-1004-8511-6d78516dd70d" ifaceId="73ce535c-b6ee-1004-8c23-55cd2887f3bb"/>
+        <iToRpMap relParamId="d0446f40-b6cb-1004-8511-6d78516dd70d" ifaceId="73ce535d-b6ee-1004-8c23-55cd2887f3bb"/>
+        <iToRpMap relParamId="d0f11b8c-b6cb-1004-8511-6d78516dd70d" ifaceId="74040da8-b6ee-1004-8c23-55cd2887f3bb"/>
+        <iToRpMap relParamId="d3b040a0-b6cb-1004-8511-6d78516dd70d" ifaceId="74040da9-b6ee-1004-8c23-55cd2887f3bb"/>
+    </interfaceToRelParamMap>
+</modelinterface>

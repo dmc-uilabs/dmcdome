@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="b32a7ddc-b6a3-1004-8acc-a94ce7e9e3d2" name="resinInterface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+    </interfaceinfo>
+    <parameters>
+        <parameter id="b32a7de3-b6a3-1004-8acc-a94ce7e9e3d2" name="E1">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="1.82E7" unit="No_Unit"/>
+                </dataobject>
+            </data>
+            <documentation>
+                <text format="plain"><![CDATA[longitudinal modulus]]></text>
+            </documentation>
+        </parameter>
+        <parameter id="b32a7de4-b6a3-1004-8acc-a94ce7e9e3d2" name="E2">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="1219512.1951219512" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="b32a7de5-b6a3-1004-8acc-a94ce7e9e3d2" name="G12">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="452898.55072463764" unit="No_Unit"/>
+                </dataobject>
+            </data>
+            <documentation>
+                <text format="plain"><![CDATA[Shear modulus]]></text>
+            </documentation>
+        </parameter>
+        <parameter id="b32a7de6-b6a3-1004-8acc-a94ce7e9e3d2" name="nu12">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.26" unit="No_Unit"/>
+                </dataobject>
+            </data>
+            <documentation>
+                <text format="plain"><![CDATA[poissonRatio
+]]></text>
+            </documentation>
+        </parameter>
+        <parameter id="b381c40c-b6a3-1004-8acc-a94ce7e9e3d2" name="Em">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="500000.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+            <documentation>
+                <text format="plain"><![CDATA[matrix Young's modulus]]></text>
+            </documentation>
+        </parameter>
+        <parameter id="b381c40d-b6a3-1004-8acc-a94ce7e9e3d2" name="Num">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.35" unit="No_Unit"/>
+                </dataobject>
+            </data>
+            <documentation>
+                <text format="plain"><![CDATA[matrix Possion ration]]></text>
+            </documentation>
+        </parameter>
+        <parameter id="b3a340b4-b6a3-1004-8acc-a94ce7e9e3d2" name="vm">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.4" unit="No_Unit"/>
+                </dataobject>
+            </data>
+            <documentation>
+                <text format="plain"><![CDATA[matrix volume fraction
+]]></text>
+            </documentation>
+        </parameter>
+    </parameters>
+    <relations/>
+    <contexts>
+        <context id="IFACE_MODEL_CXT" name="Model View"/>
+    </contexts>
+    <views>
+        <view name="Build View">
+            <context id="IFACE_BUILD_CXT" name="Build View">
+                <modelobjects>
+                    <parameter name="E1" idRef="b32a7de3-b6a3-1004-8acc-a94ce7e9e3d2"/>
+                    <parameter name="E2" idRef="b32a7de4-b6a3-1004-8acc-a94ce7e9e3d2"/>
+                    <parameter name="G12" idRef="b32a7de5-b6a3-1004-8acc-a94ce7e9e3d2"/>
+                    <parameter name="nu12" idRef="b32a7de6-b6a3-1004-8acc-a94ce7e9e3d2"/>
+                    <parameter name="Em" idRef="b381c40c-b6a3-1004-8acc-a94ce7e9e3d2"/>
+                    <parameter name="Num" idRef="b381c40d-b6a3-1004-8acc-a94ce7e9e3d2"/>
+                    <parameter name="vm" idRef="b3a340b4-b6a3-1004-8acc-a94ce7e9e3d2"/>
+                </modelobjects>
+            </context>
+        </view>
+        <view name="Interface Causality View">
+            <filter id="INPUTS_FILTER" name="Inputs">
+                <parameters>
+                    <parameter name="Em" idRef="b381c40c-b6a3-1004-8acc-a94ce7e9e3d2"/>
+                    <parameter name="Num" idRef="b381c40d-b6a3-1004-8acc-a94ce7e9e3d2"/>
+                </parameters>
+            </filter>
+            <filter id="OUTPUTS_FILTER" name="Outputs">
+                <parameters>
+                    <parameter name="E1" idRef="b32a7de3-b6a3-1004-8acc-a94ce7e9e3d2" causality="Result"/>
+                    <parameter name="E2" idRef="b32a7de4-b6a3-1004-8acc-a94ce7e9e3d2" causality="Result"/>
+                    <parameter name="G12" idRef="b32a7de5-b6a3-1004-8acc-a94ce7e9e3d2" causality="Result"/>
+                    <parameter name="nu12" idRef="b32a7de6-b6a3-1004-8acc-a94ce7e9e3d2" causality="Result"/>
+                    <parameter name="vm" idRef="b3a340b4-b6a3-1004-8acc-a94ce7e9e3d2" causality="Intermediate"/>
+                </parameters>
+            </filter>
+            <filter id="INDETERMINATES_FILTER" name="Indeterminates"/>
+        </view>
+        <view name="System Causality View">
+            <filter id="d494cde4-b70f-1004-8262-e863d912bb4a" name="Independent">
+                <parameters>
+                    <parameter name="Em" idRef="b381c40c-b6a3-1004-8acc-a94ce7e9e3d2"/>
+                    <parameter name="Num" idRef="b381c40d-b6a3-1004-8acc-a94ce7e9e3d2"/>
+                </parameters>
+            </filter>
+            <filter id="d494cde5-b70f-1004-8262-e863d912bb4a" name="Intermediate">
+                <parameters>
+                    <parameter name="vm" idRef="b3a340b4-b6a3-1004-8acc-a94ce7e9e3d2"/>
+                </parameters>
+            </filter>
+            <filter id="d494cde6-b70f-1004-8262-e863d912bb4a" name="Result">
+                <parameters>
+                    <parameter name="E1" idRef="b32a7de3-b6a3-1004-8acc-a94ce7e9e3d2"/>
+                    <parameter name="E2" idRef="b32a7de4-b6a3-1004-8acc-a94ce7e9e3d2"/>
+                    <parameter name="G12" idRef="b32a7de5-b6a3-1004-8acc-a94ce7e9e3d2"/>
+                    <parameter name="nu12" idRef="b32a7de6-b6a3-1004-8acc-a94ce7e9e3d2"/>
+                </parameters>
+            </filter>
+        </view>
+    </views>
+    <directedGraph id="b32a7ddc-b6a3-1004-8acc-a94ce7e9e3d2">
+        <nodes>
+            <node idRef="b32a7de4-b6a3-1004-8acc-a94ce7e9e3d2"/>
+            <node idRef="b381c40d-b6a3-1004-8acc-a94ce7e9e3d2"/>
+            <node idRef="b381c40c-b6a3-1004-8acc-a94ce7e9e3d2"/>
+            <node idRef="b3a340b4-b6a3-1004-8acc-a94ce7e9e3d2"/>
+            <node idRef="b32a7de6-b6a3-1004-8acc-a94ce7e9e3d2"/>
+            <node idRef="b32a7de5-b6a3-1004-8acc-a94ce7e9e3d2"/>
+            <node idRef="b32a7de3-b6a3-1004-8acc-a94ce7e9e3d2"/>
+            <node idRef="*MODEL*"/>
+        </nodes>
+        <arcs>
+            <from idRef="b3a340b4-b6a3-1004-8acc-a94ce7e9e3d2">
+                <to idRef="b32a7de4-b6a3-1004-8acc-a94ce7e9e3d2"/>
+                <to idRef="b32a7de6-b6a3-1004-8acc-a94ce7e9e3d2"/>
+                <to idRef="b32a7de5-b6a3-1004-8acc-a94ce7e9e3d2"/>
+                <to idRef="b32a7de3-b6a3-1004-8acc-a94ce7e9e3d2"/>
+            </from>
+            <from idRef="b381c40c-b6a3-1004-8acc-a94ce7e9e3d2">
+                <to idRef="b32a7de5-b6a3-1004-8acc-a94ce7e9e3d2"/>
+                <to idRef="b32a7de4-b6a3-1004-8acc-a94ce7e9e3d2"/>
+                <to idRef="b32a7de3-b6a3-1004-8acc-a94ce7e9e3d2"/>
+            </from>
+            <from idRef="b381c40d-b6a3-1004-8acc-a94ce7e9e3d2">
+                <to idRef="b32a7de6-b6a3-1004-8acc-a94ce7e9e3d2"/>
+                <to idRef="b32a7de5-b6a3-1004-8acc-a94ce7e9e3d2"/>
+            </from>
+            <from idRef="*MODEL*">
+                <to idRef="b3a340b4-b6a3-1004-8acc-a94ce7e9e3d2"/>
+            </from>
+        </arcs>
+    </directedGraph>
+    <interfaceToRelParamMap>
+        <iToRpMap relParamId="2d594617-b698-1004-8f8b-8912c506e25c" ifaceId="b381c40c-b6a3-1004-8acc-a94ce7e9e3d2"/>
+        <iToRpMap relParamId="2d594618-b698-1004-8f8b-8912c506e25c" ifaceId="b381c40d-b6a3-1004-8acc-a94ce7e9e3d2"/>
+        <iToRpMap relParamId="2d59461f-b698-1004-8f8b-8912c506e25c" ifaceId="b3a340b4-b6a3-1004-8acc-a94ce7e9e3d2"/>
+        <iToRpMap relParamId="2d594625-b698-1004-8f8b-8912c506e25c" ifaceId="b381c40c-b6a3-1004-8acc-a94ce7e9e3d2"/>
+        <iToRpMap relParamId="2d594627-b698-1004-8f8b-8912c506e25c" ifaceId="b32a7de3-b6a3-1004-8acc-a94ce7e9e3d2"/>
+        <iToRpMap relParamId="2d59462e-b698-1004-8f8b-8912c506e25c" ifaceId="b381c40c-b6a3-1004-8acc-a94ce7e9e3d2"/>
+        <iToRpMap relParamId="2d594631-b698-1004-8f8b-8912c506e25c" ifaceId="b32a7de4-b6a3-1004-8acc-a94ce7e9e3d2"/>
+        <iToRpMap relParamId="2d596d20-b698-1004-8f8b-8912c506e25c" ifaceId="b32a7de5-b6a3-1004-8acc-a94ce7e9e3d2"/>
+        <iToRpMap relParamId="2d596d26-b698-1004-8f8b-8912c506e25c" ifaceId="b381c40d-b6a3-1004-8acc-a94ce7e9e3d2"/>
+        <iToRpMap relParamId="2d596d29-b698-1004-8f8b-8912c506e25c" ifaceId="b32a7de6-b6a3-1004-8acc-a94ce7e9e3d2"/>
+    </interfaceToRelParamMap>
+</modelinterface>

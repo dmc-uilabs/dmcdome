@@ -1,0 +1,219 @@
+#
+# An unexpected error has been detected by HotSpot Virtual Machine:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x77c1dcb2, pid=2040, tid=308
+#
+# Java VM: Java HotSpot(TM) Client VM (1.4.2_13-b06 mixed mode)
+# Problematic frame:
+# C  [MSVCRT.dll+0xdcb2]
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x032c9da8):  JavaThread "Thread-430" [_thread_in_native, id=308]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0x00000000
+
+Registers:
+EAX=0x00000000, EBX=0x00000000, ECX=0x00000000, EDX=0x00000200
+ESP=0x03fae02c, EBP=0x03fae054, ESI=0x77c5f7a0, EDI=0x032d6388
+EIP=0x77c1dcb2, EFLAGS=0x00010206
+
+Top of Stack: (sp=0x03fae02c)
+0x03fae02c:   032c9da8 311540a8 31154060 77c33493
+0x03fae03c:   032d6388 00000000 00000000 77c5f7a0
+0x03fae04c:   03fae03c 0000273b 03fae06c 77c1de3f
+0x03fae05c:   77c5f7a0 032d6388 00000000 00000200
+0x03fae06c:   03faf8cc 635816a2 032d6388 00000000
+0x03fae07c:   00000200 ffffffff 03fae8b4 00000400
+0x03fae08c:   03fae0a4 ffffffff 03fae0a4 00000400
+0x03fae09c:   00000000 00330032 032d6388 00000200 
+
+Instructions: (pc=0x77c1dcb2)
+0x77c1dca2:   00 00 00 39 5e 14 75 30 3b d3 0f 86 bf 00 00 00
+0x77c1dcb2:   66 81 39 ff 00 0f 87 a6 00 00 00 8a 19 88 1c 07 
+
+
+Stack: [0x03f70000,0x03fb0000),  sp=0x03fae02c,  free space=248k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [MSVCRT.dll+0xdcb2]
+C  [MSVCRT.dll+0xde3f]
+C  [ExtendSimPlugin.dll+0x16a2]
+j  mit.cadlab.dome3.plugin.extendsim.ExtendSimPluginCaller._request(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;+0
+j  mit.cadlab.dome3.plugin.extendsim.ExtendSimPluginCaller.getRealValue(Ljava/lang/String;)D+10
+j  mit.cadlab.dome3.plugin.extendsim.ExtendSimModelRuntime.executeNativePlugin(Ljava/util/List;)V+499
+j  mit.cadlab.dome3.plugin.PluginModelRuntime.execute(Ljava/util/List;)V+2
+j  mit.cadlab.dome3.objectmodel.util.solving.PluginModelExecutionManager.executeNextStep()Z+24
+j  mit.cadlab.dome3.objectmodel.util.solving.AbstractModelExecutionManager.runModel()Z+49
+j  mit.cadlab.dome3.objectmodel.util.solving.PluginModelExecutionManager.startSolving()V+33
+j  mit.cadlab.dome3.plugin.PluginModelRuntime.startModel()V+4
+j  mit.cadlab.dome3.objectmodel.playspace.ServerPlayspace.setItems(Ljava/lang/String;Ljava/util/Vector;Z)V+238
+j  mit.cadlab.dome3.network.server.functions.RuntimeFunctionsServer.setItems(Ljava/lang/String;Ljava/util/Vector;Z)V+74
+j  mit.cadlab.dome3.network.server.handlers.RuntimeHandler.setItems(Ljava/util/Vector;)V+100
+j  mit.cadlab.dome3.network.server.handlers.RuntimeHandler.execute(Ljava/lang/String;Ljava/util/Vector;)Ljava/lang/Object;+168
+j  org.apache.xmlrpc.XmlRpcServer$Worker.executeInternal(Ljava/io/InputStream;Ljava/lang/String;Ljava/lang/String;)[B+313
+j  org.apache.xmlrpc.XmlRpcServer$Worker.execute(Ljava/io/InputStream;Ljava/lang/String;Ljava/lang/String;)[B+4
+j  org.apache.xmlrpc.XmlRpcServer.execute(Ljava/io/InputStream;Ljava/lang/String;Ljava/lang/String;)[B+11
+j  org.apache.xmlrpc.WebServer$Connection.run()V+252
+j  org.apache.xmlrpc.WebServer$Runner.run()V+21
+j  java.lang.Thread.run()V+11
+v  ~StubRoutines::call_stub
+V  [jvm.dll+0x74806]
+V  [jvm.dll+0xaeb36]
+V  [jvm.dll+0x74713]
+V  [jvm.dll+0x7440f]
+V  [jvm.dll+0x74448]
+V  [jvm.dll+0x8c360]
+V  [jvm.dll+0xd2d7c]
+V  [jvm.dll+0xd2d4a]
+C  [MSVCRT.dll+0x2a3b0]
+C  [kernel32.dll+0xb683]
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  mit.cadlab.dome3.plugin.extendsim.ExtendSimPluginCaller._request(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;+0
+j  mit.cadlab.dome3.plugin.extendsim.ExtendSimPluginCaller.getRealValue(Ljava/lang/String;)D+10
+j  mit.cadlab.dome3.plugin.extendsim.ExtendSimModelRuntime.executeNativePlugin(Ljava/util/List;)V+499
+j  mit.cadlab.dome3.plugin.PluginModelRuntime.execute(Ljava/util/List;)V+2
+j  mit.cadlab.dome3.objectmodel.util.solving.PluginModelExecutionManager.executeNextStep()Z+24
+j  mit.cadlab.dome3.objectmodel.util.solving.AbstractModelExecutionManager.runModel()Z+49
+j  mit.cadlab.dome3.objectmodel.util.solving.PluginModelExecutionManager.startSolving()V+33
+j  mit.cadlab.dome3.plugin.PluginModelRuntime.startModel()V+4
+j  mit.cadlab.dome3.objectmodel.playspace.ServerPlayspace.setItems(Ljava/lang/String;Ljava/util/Vector;Z)V+238
+j  mit.cadlab.dome3.network.server.functions.RuntimeFunctionsServer.setItems(Ljava/lang/String;Ljava/util/Vector;Z)V+74
+j  mit.cadlab.dome3.network.server.handlers.RuntimeHandler.setItems(Ljava/util/Vector;)V+100
+j  mit.cadlab.dome3.network.server.handlers.RuntimeHandler.execute(Ljava/lang/String;Ljava/util/Vector;)Ljava/lang/Object;+168
+j  org.apache.xmlrpc.XmlRpcServer$Worker.executeInternal(Ljava/io/InputStream;Ljava/lang/String;Ljava/lang/String;)[B+313
+j  org.apache.xmlrpc.XmlRpcServer$Worker.execute(Ljava/io/InputStream;Ljava/lang/String;Ljava/lang/String;)[B+4
+j  org.apache.xmlrpc.XmlRpcServer.execute(Ljava/io/InputStream;Ljava/lang/String;Ljava/lang/String;)[B+11
+j  org.apache.xmlrpc.WebServer$Connection.run()V+252
+j  org.apache.xmlrpc.WebServer$Runner.run()V+21
+j  java.lang.Thread.run()V+11
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+=>0x032c9da8 JavaThread "Thread-430" [_thread_in_native, id=308]
+  0x031281c8 JavaThread "Thread-3" [_thread_in_native, id=3348]
+  0x00036d38 JavaThread "DestroyJavaVM" [_thread_blocked, id=2688]
+  0x03412b30 JavaThread "XML-RPC Weblistener" [_thread_in_native, id=3012]
+  0x033e4390 JavaThread "TimerQueue" daemon [_thread_blocked, id=4088]
+  0x031af990 JavaThread "AWT-EventQueue-0" [_thread_blocked, id=3932]
+  0x0319b090 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=164]
+  0x030f4310 JavaThread "AWT-Windows" daemon [_thread_in_native, id=3468]
+  0x0309bea0 JavaThread "AWT-Shutdown" [_thread_blocked, id=2464]
+  0x0003fa48 JavaThread "CompilerThread0" daemon [_thread_blocked, id=3040]
+  0x0003ed48 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=2576]
+  0x00a11608 JavaThread "Finalizer" daemon [_thread_blocked, id=3488]
+  0x00a10280 JavaThread "Reference Handler" daemon [_thread_blocked, id=2924]
+
+Other Threads:
+  0x00a4b6f8 VMThread [id=3668]
+  0x00a4d570 WatcherThread [id=3500]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ def new generation   total 704K, used 503K [0x10010000, 0x100d0000, 0x12770000)
+  eden space 640K,  69% used [0x10010000, 0x1007e8a8, 0x100b0000)
+  from space 64K,  95% used [0x100b0000, 0x100bf4f0, 0x100c0000)
+  to   space 64K,   0% used [0x100c0000, 0x100c0000, 0x100d0000)
+ tenured generation   total 8588K, used 6941K [0x12770000, 0x12fd3000, 0x30010000)
+   the space 8588K,  80% used [0x12770000, 0x12e37580, 0x12e37600, 0x12fd3000)
+ compacting perm gen  total 17920K, used 17780K [0x30010000, 0x31190000, 0x34010000)
+   the space 17920K,  99% used [0x30010000, 0x3116d048, 0x3116d200, 0x31190000)
+
+Dynamic libraries:
+0x00400000 - 0x0040b000 	C:\j2sdk1.4.2_13\bin\java.exe
+0x7c900000 - 0x7c9b0000 	C:\WINDOWS\system32\ntdll.dll
+0x7c800000 - 0x7c8f5000 	C:\WINDOWS\system32\kernel32.dll
+0x77dd0000 - 0x77e6b000 	C:\WINDOWS\system32\ADVAPI32.dll
+0x77e70000 - 0x77f01000 	C:\WINDOWS\system32\RPCRT4.dll
+0x77c10000 - 0x77c68000 	C:\WINDOWS\system32\MSVCRT.dll
+0x08000000 - 0x08142000 	C:\j2sdk1.4.2_13\jre\bin\client\jvm.dll
+0x7e410000 - 0x7e4a0000 	C:\WINDOWS\system32\USER32.dll
+0x77f10000 - 0x77f57000 	C:\WINDOWS\system32\GDI32.dll
+0x76b40000 - 0x76b6d000 	C:\WINDOWS\system32\WINMM.dll
+0x76390000 - 0x763ad000 	C:\WINDOWS\system32\IMM32.DLL
+0x629c0000 - 0x629c9000 	C:\WINDOWS\system32\LPK.DLL
+0x74d90000 - 0x74dfb000 	C:\WINDOWS\system32\USP10.dll
+0x10000000 - 0x10007000 	C:\j2sdk1.4.2_13\jre\bin\hpi.dll
+0x76bf0000 - 0x76bfb000 	C:\WINDOWS\system32\PSAPI.DLL
+0x008a0000 - 0x008ae000 	C:\j2sdk1.4.2_13\jre\bin\verify.dll
+0x008b0000 - 0x008c9000 	C:\j2sdk1.4.2_13\jre\bin\java.dll
+0x008d0000 - 0x008de000 	C:\j2sdk1.4.2_13\jre\bin\zip.dll
+0x034a0000 - 0x035b4000 	C:\j2sdk1.4.2_13\jre\bin\awt.dll
+0x73000000 - 0x73026000 	C:\WINDOWS\system32\WINSPOOL.DRV
+0x774e0000 - 0x7761d000 	C:\WINDOWS\system32\ole32.dll
+0x035c0000 - 0x03611000 	C:\j2sdk1.4.2_13\jre\bin\fontmanager.dll
+0x73760000 - 0x737a9000 	C:\WINDOWS\system32\ddraw.dll
+0x73bc0000 - 0x73bc6000 	C:\WINDOWS\system32\DCIMAN32.dll
+0x73940000 - 0x73a10000 	C:\WINDOWS\system32\D3DIM700.DLL
+0x74720000 - 0x7476b000 	C:\WINDOWS\system32\MSCTF.dll
+0x755c0000 - 0x755ee000 	C:\WINDOWS\system32\msctfime.ime
+0x47bf0000 - 0x47c0a000 	C:\WINDOWS\system32\imekr61.ime
+0x7c9c0000 - 0x7d1d5000 	C:\WINDOWS\system32\SHELL32.dll
+0x77f60000 - 0x77fd6000 	C:\WINDOWS\system32\SHLWAPI.dll
+0x5d090000 - 0x5d12a000 	C:\WINDOWS\system32\COMCTL32.dll
+0x773d0000 - 0x774d3000 	C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.2982_x-ww_ac3f9c03\comctl32.dll
+0x5b860000 - 0x5b8b4000 	C:\WINDOWS\system32\netapi32.dll
+0x71b20000 - 0x71b32000 	C:\WINDOWS\system32\MPR.dll
+0x75f60000 - 0x75f67000 	C:\WINDOWS\System32\drprov.dll
+0x71c10000 - 0x71c1e000 	C:\WINDOWS\System32\ntlanman.dll
+0x71cd0000 - 0x71ce7000 	C:\WINDOWS\System32\NETUI0.dll
+0x71c90000 - 0x71cd0000 	C:\WINDOWS\System32\NETUI1.dll
+0x71c80000 - 0x71c87000 	C:\WINDOWS\System32\NETRAP.dll
+0x71bf0000 - 0x71c03000 	C:\WINDOWS\System32\SAMLIB.dll
+0x75f70000 - 0x75f79000 	C:\WINDOWS\System32\davclnt.dll
+0x77920000 - 0x77a13000 	C:\WINDOWS\system32\SETUPAPI.dll
+0x77b40000 - 0x77b62000 	C:\WINDOWS\system32\appHelp.dll
+0x5a500000 - 0x5a54e000 	C:\Program Files\MSN Messenger\fsshext.8.1.0178.00.dll
+0x78130000 - 0x781cb000 	C:\WINDOWS\WinSxS\x86_Microsoft.VC80.CRT_1fc8b3b9a1e18e3b_8.0.50727.163_x-ww_681e29fb\MSVCR80.dll
+0x4ec50000 - 0x4edf3000 	C:\WINDOWS\WinSxS\x86_Microsoft.Windows.GdiPlus_6595b64144ccf1df_1.0.2600.2180_x-ww_522f9f82\gdiplus.dll
+0x77120000 - 0x771ab000 	C:\WINDOWS\system32\OLEAUT32.dll
+0x76fd0000 - 0x7704f000 	C:\WINDOWS\system32\CLBCATQ.DLL
+0x77050000 - 0x77115000 	C:\WINDOWS\system32\COMRes.dll
+0x77c00000 - 0x77c08000 	C:\WINDOWS\system32\VERSION.dll
+0x03910000 - 0x0391f000 	C:\j2sdk1.4.2_13\jre\bin\net.dll
+0x71ab0000 - 0x71ac7000 	C:\WINDOWS\system32\WS2_32.dll
+0x71aa0000 - 0x71aa8000 	C:\WINDOWS\system32\WS2HELP.dll
+0x71a50000 - 0x71a8f000 	C:\WINDOWS\System32\mswsock.dll
+0x76f20000 - 0x76f47000 	C:\WINDOWS\system32\DNSAPI.dll
+0x76fb0000 - 0x76fb8000 	C:\WINDOWS\System32\winrnr.dll
+0x76f60000 - 0x76f8c000 	C:\WINDOWS\system32\WLDAP32.dll
+0x76fc0000 - 0x76fc6000 	C:\WINDOWS\system32\rasadhlp.dll
+0x662b0000 - 0x66308000 	C:\WINDOWS\system32\hnetcfg.dll
+0x71a90000 - 0x71a98000 	C:\WINDOWS\System32\wshtcpip.dll
+0x0ffd0000 - 0x0fff8000 	C:\WINDOWS\system32\rsaenh.dll
+0x769c0000 - 0x76a73000 	C:\WINDOWS\system32\USERENV.dll
+0x63580000 - 0x635d0000 	C:\WINDOWS\system32\ExtendSimPlugin.dll
+0x75e90000 - 0x75f40000 	C:\WINDOWS\system32\SXS.DLL
+0x03a80000 - 0x03d45000 	C:\WINDOWS\system32\xpsp2res.dll
+0x7d1e0000 - 0x7d49e000 	C:\WINDOWS\system32\msi.dll
+
+VM Arguments:
+jvm_args: -DDOMEROOT=C:\dome3 -Xmx512M -Dorg.omg.CORBA.ORBClass=com.iona.corba.art.artimpl.ORBImpl -Dorg.omg.CORBA.ORBSingletonClass=com.iona.corba.art.artimpl.ORBSingleton
+java_command: mit.cadlab.dome3.network.server.DomeServer -debug:50
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\j2sdk1.4.2_13
+CLASSPATH=C:\Program Files\prti1516\lib\prti1516.jar;.;C:\Java\jre1.6.0\lib\ext\QTJava.zip
+PATH=C:\Program Files\prti1516\lib;C:\Program Files\prti1516\lib\vc71;C:\Program Files\prti1516\jre\bin\client;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32\wbem;c:\program files\estsoft\alzip\;C:\MATLAB72\bin\win32;C:\Program Files\Common Files\Adobe\AGL;C:\Program Files\Common Files\Teruten\DSFilter;C:\Program Files\IDM Computer Solutions\UltraEdit-32;C:\Program Files\QuickTime\QTSystem\;C:\Program Files\SecureCRT\;C:\dev-cpp\bin;C:\Program Files\ESTsoft\ALZip\
+USERNAME=himosqui
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 15 Stepping 6, GenuineIntel
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows XP Build 2600 Service Pack 2
+
+CPU:total 2 family 6, cmov, cx8, fxsr, mmx, sse, sse2
+
+Memory: 4k page, physical 1563000k(488060k free), swap 2969876k(1773108k free)
+
+vm_info: Java HotSpot(TM) Client VM (1.4.2_13-b06) for windows-x86, built on Oct 18 2006 10:10:57 by "java_re" with MS VC++ 6.0
+

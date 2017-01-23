@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<model type="DomeModel" id="327d8310-b698-1004-8f8b-8912c506e25c" name="CorrelatedInputTest">
+    <modelinfo>
+        <version>0.0.1</version>
+    </modelinfo>
+    <parameters>
+        <parameter id="327d831d-b698-1004-8f8b-8912c506e25c" name="h">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="6.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <relations>
+        <relation type="Procedural" id="327d831e-b698-1004-8f8b-8912c506e25c" name="f2">
+            <parameters>
+                <parameter id="327d8322-b698-1004-8f8b-8912c506e25c" name="x">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="5.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="327d8323-b698-1004-8f8b-8912c506e25c" name="y">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="3.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="327d8324-b698-1004-8f8b-8912c506e25c" name="g">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <body><![CDATA[g = x + y]]></body>
+            <dependencies>
+                <dependency idRef="327d8324-b698-1004-8f8b-8912c506e25c">
+                    <parameter name="x" idRef="327d8322-b698-1004-8f8b-8912c506e25c" idRelationRef="327d831e-b698-1004-8f8b-8912c506e25c"/>
+                    <parameter name="y" idRef="327d8323-b698-1004-8f8b-8912c506e25c" idRelationRef="327d831e-b698-1004-8f8b-8912c506e25c"/>
+                </dependency>
+            </dependencies>
+        </relation>
+        <relation type="Procedural" id="327daa20-b698-1004-8f8b-8912c506e25c" name="f3">
+            <parameters>
+                <parameter id="327daa24-b698-1004-8f8b-8912c506e25c" name="g">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="327daa25-b698-1004-8f8b-8912c506e25c" name="h">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="6.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="327daa26-b698-1004-8f8b-8912c506e25c" name="i">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <body><![CDATA[i = g + h]]></body>
+            <dependencies>
+                <dependency idRef="327daa26-b698-1004-8f8b-8912c506e25c">
+                    <parameter name="g" idRef="327daa24-b698-1004-8f8b-8912c506e25c" idRelationRef="327daa20-b698-1004-8f8b-8912c506e25c"/>
+                    <parameter name="h" idRef="327daa25-b698-1004-8f8b-8912c506e25c" idRelationRef="327daa20-b698-1004-8f8b-8912c506e25c"/>
+                </dependency>
+            </dependencies>
+        </relation>
+        <relation type="Procedural" id="327daa27-b698-1004-8f8b-8912c506e25c" name="f4">
+            <parameters>
+                <parameter id="327daa2b-b698-1004-8f8b-8912c506e25c" name="h">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="6.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="327daa2c-b698-1004-8f8b-8912c506e25c" name="i">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="327daa2d-b698-1004-8f8b-8912c506e25c" name="a">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="327daa2e-b698-1004-8f8b-8912c506e25c" name="b">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <body><![CDATA[a = i
+b = i + h]]></body>
+            <dependencies>
+                <dependency idRef="327daa2d-b698-1004-8f8b-8912c506e25c">
+                    <parameter name="i" idRef="327daa2c-b698-1004-8f8b-8912c506e25c" idRelationRef="327daa27-b698-1004-8f8b-8912c506e25c"/>
+                </dependency>
+                <dependency idRef="327daa2e-b698-1004-8f8b-8912c506e25c">
+                    <parameter name="h" idRef="327daa2b-b698-1004-8f8b-8912c506e25c" idRelationRef="327daa27-b698-1004-8f8b-8912c506e25c"/>
+                    <parameter name="i" idRef="327daa2c-b698-1004-8f8b-8912c506e25c" idRelationRef="327daa27-b698-1004-8f8b-8912c506e25c"/>
+                </dependency>
+            </dependencies>
+        </relation>
+        <relation type="Procedural" id="327daa2f-b698-1004-8f8b-8912c506e25c" name="f1">
+            <parameters>
+                <parameter id="327daa33-b698-1004-8f8b-8912c506e25c" name="a">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="327daa34-b698-1004-8f8b-8912c506e25c" name="b">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="327daa35-b698-1004-8f8b-8912c506e25c" name="c">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="327daa36-b698-1004-8f8b-8912c506e25c" name="f">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="327daa37-b698-1004-8f8b-8912c506e25c" name="e">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="327daa38-b698-1004-8f8b-8912c506e25c" name="d">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <body><![CDATA[c = a + b
+f = e + d]]></body>
+            <dependencies>
+                <dependency idRef="327daa35-b698-1004-8f8b-8912c506e25c">
+                    <parameter name="a" idRef="327daa33-b698-1004-8f8b-8912c506e25c" idRelationRef="327daa2f-b698-1004-8f8b-8912c506e25c"/>
+                    <parameter name="b" idRef="327daa34-b698-1004-8f8b-8912c506e25c" idRelationRef="327daa2f-b698-1004-8f8b-8912c506e25c"/>
+                </dependency>
+                <dependency idRef="327daa36-b698-1004-8f8b-8912c506e25c">
+                    <parameter name="e" idRef="327daa37-b698-1004-8f8b-8912c506e25c" idRelationRef="327daa2f-b698-1004-8f8b-8912c506e25c"/>
+                    <parameter name="d" idRef="327daa38-b698-1004-8f8b-8912c506e25c" idRelationRef="327daa2f-b698-1004-8f8b-8912c506e25c"/>
+                </dependency>
+            </dependencies>
+        </relation>
+        <relation type="Procedural" id="327daa39-b698-1004-8f8b-8912c506e25c" name="f5">
+            <parameters>
+                <parameter id="327daa3d-b698-1004-8f8b-8912c506e25c" name="m">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="327daa3e-b698-1004-8f8b-8912c506e25c" name="z">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="2.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="327daa3f-b698-1004-8f8b-8912c506e25c" name="l">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <body><![CDATA[m = z + l]]></body>
+            <dependencies>
+                <dependency idRef="327daa3d-b698-1004-8f8b-8912c506e25c">
+                    <parameter name="z" idRef="327daa3e-b698-1004-8f8b-8912c506e25c" idRelationRef="327daa39-b698-1004-8f8b-8912c506e25c"/>
+                    <parameter name="l" idRef="327daa3f-b698-1004-8f8b-8912c506e25c" idRelationRef="327daa39-b698-1004-8f8b-8912c506e25c"/>
+                </dependency>
+            </dependencies>
+        </relation>
+        <relation type="Procedural" id="327dd130-b698-1004-8f8b-8912c506e25c" name="f6">
+            <parameters>
+                <parameter id="327dd134-b698-1004-8f8b-8912c506e25c" name="l">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="327dd135-b698-1004-8f8b-8912c506e25c" name="j">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="1.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="327dd136-b698-1004-8f8b-8912c506e25c" name="k">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="4.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <body><![CDATA[l = j + k]]></body>
+            <dependencies>
+                <dependency idRef="327dd134-b698-1004-8f8b-8912c506e25c">
+                    <parameter name="j" idRef="327dd135-b698-1004-8f8b-8912c506e25c" idRelationRef="327dd130-b698-1004-8f8b-8912c506e25c"/>
+                    <parameter name="k" idRef="327dd136-b698-1004-8f8b-8912c506e25c" idRelationRef="327dd130-b698-1004-8f8b-8912c506e25c"/>
+                </dependency>
+            </dependencies>
+        </relation>
+        <relation type="Procedural" id="327dd137-b698-1004-8f8b-8912c506e25c" name="f7">
+            <parameters>
+                <parameter id="327dd13b-b698-1004-8f8b-8912c506e25c" name="l">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="327dd13c-b698-1004-8f8b-8912c506e25c" name="e">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <body><![CDATA[e = l]]></body>
+            <dependencies>
+                <dependency idRef="327dd13c-b698-1004-8f8b-8912c506e25c">
+                    <parameter name="l" idRef="327dd13b-b698-1004-8f8b-8912c506e25c" idRelationRef="327dd137-b698-1004-8f8b-8912c506e25c"/>
+                </dependency>
+            </dependencies>
+        </relation>
+        <relation type="Procedural" id="327dd13d-b698-1004-8f8b-8912c506e25c" name="f8">
+            <parameters>
+                <parameter id="327dd141-b698-1004-8f8b-8912c506e25c" name="m">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="327dd142-b698-1004-8f8b-8912c506e25c" name="n">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <body><![CDATA[n = m]]></body>
+            <dependencies>
+                <dependency idRef="327dd142-b698-1004-8f8b-8912c506e25c">
+                    <parameter name="m" idRef="327dd141-b698-1004-8f8b-8912c506e25c" idRelationRef="327dd13d-b698-1004-8f8b-8912c506e25c"/>
+                </dependency>
+            </dependencies>
+        </relation>
+        <relation type="Procedural" id="327dd143-b698-1004-8f8b-8912c506e25c" name="f9">
+            <parameters>
+                <parameter id="327dd147-b698-1004-8f8b-8912c506e25c" name="n">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="327dd148-b698-1004-8f8b-8912c506e25c" name="d">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <body><![CDATA[d = n]]></body>
+            <dependencies>
+                <dependency idRef="327dd148-b698-1004-8f8b-8912c506e25c">
+                    <parameter name="n" idRef="327dd147-b698-1004-8f8b-8912c506e25c" idRelationRef="327dd143-b698-1004-8f8b-8912c506e25c"/>
+                </dependency>
+            </dependencies>
+        </relation>
+    </relations>
+    <visualizations/>
+    <contexts>
+        <context id="BUILD_CXT" name="Build View">
+            <modelobjects>
+                <parameter name="h" idRef="327d831d-b698-1004-8f8b-8912c506e25c" idModelRef="327d8310-b698-1004-8f8b-8912c506e25c"/>
+                <relation name="f2" idRef="327d831e-b698-1004-8f8b-8912c506e25c" idModelRef="327d8310-b698-1004-8f8b-8912c506e25c"/>
+                <relation name="f3" idRef="327daa20-b698-1004-8f8b-8912c506e25c" idModelRef="327d8310-b698-1004-8f8b-8912c506e25c"/>
+                <relation name="f4" idRef="327daa27-b698-1004-8f8b-8912c506e25c" idModelRef="327d8310-b698-1004-8f8b-8912c506e25c"/>
+                <relation name="f1" idRef="327daa2f-b698-1004-8f8b-8912c506e25c" idModelRef="327d8310-b698-1004-8f8b-8912c506e25c"/>
+                <relation name="f5" idRef="327daa39-b698-1004-8f8b-8912c506e25c" idModelRef="327d8310-b698-1004-8f8b-8912c506e25c"/>
+                <relation name="f6" idRef="327dd130-b698-1004-8f8b-8912c506e25c" idModelRef="327d8310-b698-1004-8f8b-8912c506e25c"/>
+                <relation name="f7" idRef="327dd137-b698-1004-8f8b-8912c506e25c" idModelRef="327d8310-b698-1004-8f8b-8912c506e25c"/>
+                <relation name="f8" idRef="327dd13d-b698-1004-8f8b-8912c506e25c" idModelRef="327d8310-b698-1004-8f8b-8912c506e25c"/>
+                <relation name="f9" idRef="327dd143-b698-1004-8f8b-8912c506e25c" idModelRef="327d8310-b698-1004-8f8b-8912c506e25c"/>
+            </modelobjects>
+        </context>
+    </contexts>
+    <mappings>
+        <modelMappings>
+            <mappedParameter name="n" idRef="327dd142-b698-1004-8f8b-8912c506e25c" idRelationRef="327dd13d-b698-1004-8f8b-8912c506e25c">
+                <parameter name="n" idRef="327dd147-b698-1004-8f8b-8912c506e25c" idRelationRef="327dd143-b698-1004-8f8b-8912c506e25c"/>
+            </mappedParameter>
+            <mappedParameter name="h" idRef="327d831d-b698-1004-8f8b-8912c506e25c" idModelRef="327d8310-b698-1004-8f8b-8912c506e25c">
+                <parameter name="h" idRef="327daa25-b698-1004-8f8b-8912c506e25c" idRelationRef="327daa20-b698-1004-8f8b-8912c506e25c"/>
+                <parameter name="h" idRef="327daa2b-b698-1004-8f8b-8912c506e25c" idRelationRef="327daa27-b698-1004-8f8b-8912c506e25c"/>
+            </mappedParameter>
+            <mappedParameter name="a" idRef="327daa33-b698-1004-8f8b-8912c506e25c" idRelationRef="327daa2f-b698-1004-8f8b-8912c506e25c">
+                <parameter name="a" idRef="327daa2d-b698-1004-8f8b-8912c506e25c" idRelationRef="327daa27-b698-1004-8f8b-8912c506e25c"/>
+            </mappedParameter>
+            <mappedParameter name="d" idRef="327dd148-b698-1004-8f8b-8912c506e25c" idRelationRef="327dd143-b698-1004-8f8b-8912c506e25c">
+                <parameter name="d" idRef="327daa38-b698-1004-8f8b-8912c506e25c" idRelationRef="327daa2f-b698-1004-8f8b-8912c506e25c"/>
+            </mappedParameter>
+            <mappedParameter name="g" idRef="327daa24-b698-1004-8f8b-8912c506e25c" idRelationRef="327daa20-b698-1004-8f8b-8912c506e25c">
+                <parameter name="g" idRef="327d8324-b698-1004-8f8b-8912c506e25c" idRelationRef="327d831e-b698-1004-8f8b-8912c506e25c"/>
+            </mappedParameter>
+            <mappedParameter name="e" idRef="327daa37-b698-1004-8f8b-8912c506e25c" idRelationRef="327daa2f-b698-1004-8f8b-8912c506e25c">
+                <parameter name="e" idRef="327dd13c-b698-1004-8f8b-8912c506e25c" idRelationRef="327dd137-b698-1004-8f8b-8912c506e25c"/>
+            </mappedParameter>
+            <mappedParameter name="b" idRef="327daa2e-b698-1004-8f8b-8912c506e25c" idRelationRef="327daa27-b698-1004-8f8b-8912c506e25c">
+                <parameter name="b" idRef="327daa34-b698-1004-8f8b-8912c506e25c" idRelationRef="327daa2f-b698-1004-8f8b-8912c506e25c"/>
+            </mappedParameter>
+            <mappedParameter name="l" idRef="327dd134-b698-1004-8f8b-8912c506e25c" idRelationRef="327dd130-b698-1004-8f8b-8912c506e25c">
+                <parameter name="l" idRef="327daa3f-b698-1004-8f8b-8912c506e25c" idRelationRef="327daa39-b698-1004-8f8b-8912c506e25c"/>
+                <parameter name="l" idRef="327dd13b-b698-1004-8f8b-8912c506e25c" idRelationRef="327dd137-b698-1004-8f8b-8912c506e25c"/>
+            </mappedParameter>
+            <mappedParameter name="m" idRef="327dd141-b698-1004-8f8b-8912c506e25c" idRelationRef="327dd13d-b698-1004-8f8b-8912c506e25c">
+                <parameter name="m" idRef="327daa3d-b698-1004-8f8b-8912c506e25c" idRelationRef="327daa39-b698-1004-8f8b-8912c506e25c"/>
+            </mappedParameter>
+            <mappedParameter name="i" idRef="327daa2c-b698-1004-8f8b-8912c506e25c" idRelationRef="327daa27-b698-1004-8f8b-8912c506e25c">
+                <parameter name="i" idRef="327daa26-b698-1004-8f8b-8912c506e25c" idRelationRef="327daa20-b698-1004-8f8b-8912c506e25c"/>
+            </mappedParameter>
+        </modelMappings>
+    </mappings>
+</model>

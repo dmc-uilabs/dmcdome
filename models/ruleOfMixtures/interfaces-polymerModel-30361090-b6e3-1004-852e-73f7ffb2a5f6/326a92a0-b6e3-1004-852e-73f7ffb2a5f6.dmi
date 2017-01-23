@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="326a92a0-b6e3-1004-852e-73f7ffb2a5f6" name="polymer curing interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+    </interfaceinfo>
+    <parameters>
+        <parameter id="32a95184-b6e3-1004-852e-73f7ffb2a5f6" name="curingTemperature">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="80.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="32a95185-b6e3-1004-852e-73f7ffb2a5f6" name="nominalModulus">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="500000.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="32a95186-b6e3-1004-852e-73f7ffb2a5f6" name="actualModulus">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="500000.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <relations/>
+    <contexts>
+        <context id="IFACE_MODEL_CXT" name="Model View"/>
+    </contexts>
+    <views>
+        <view name="Build View">
+            <context id="IFACE_BUILD_CXT" name="Build View">
+                <modelobjects>
+                    <parameter name="curingTemperature" idRef="32a95184-b6e3-1004-852e-73f7ffb2a5f6"/>
+                    <parameter name="nominalModulus" idRef="32a95185-b6e3-1004-852e-73f7ffb2a5f6"/>
+                    <parameter name="actualModulus" idRef="32a95186-b6e3-1004-852e-73f7ffb2a5f6"/>
+                </modelobjects>
+            </context>
+        </view>
+        <view name="Interface Causality View">
+            <filter id="INPUTS_FILTER" name="Inputs">
+                <parameters>
+                    <parameter name="curingTemperature" idRef="32a95184-b6e3-1004-852e-73f7ffb2a5f6"/>
+                    <parameter name="nominalModulus" idRef="32a95185-b6e3-1004-852e-73f7ffb2a5f6"/>
+                </parameters>
+            </filter>
+            <filter id="OUTPUTS_FILTER" name="Outputs">
+                <parameters>
+                    <parameter name="actualModulus" idRef="32a95186-b6e3-1004-852e-73f7ffb2a5f6" causality="Result"/>
+                </parameters>
+            </filter>
+            <filter id="INDETERMINATES_FILTER" name="Indeterminates"/>
+        </view>
+        <view name="System Causality View">
+            <filter id="326a92a1-b6e3-1004-852e-73f7ffb2a5f6" name="Independent">
+                <parameters>
+                    <parameter name="curingTemperature" idRef="32a95184-b6e3-1004-852e-73f7ffb2a5f6"/>
+                    <parameter name="nominalModulus" idRef="32a95185-b6e3-1004-852e-73f7ffb2a5f6"/>
+                </parameters>
+            </filter>
+            <filter id="326a92a2-b6e3-1004-852e-73f7ffb2a5f6" name="Intermediate"/>
+            <filter id="326a92a3-b6e3-1004-852e-73f7ffb2a5f6" name="Result">
+                <parameters>
+                    <parameter name="actualModulus" idRef="32a95186-b6e3-1004-852e-73f7ffb2a5f6"/>
+                </parameters>
+            </filter>
+        </view>
+    </views>
+    <directedGraph id="326a92a0-b6e3-1004-852e-73f7ffb2a5f6">
+        <nodes>
+            <node idRef="32a95186-b6e3-1004-852e-73f7ffb2a5f6"/>
+            <node idRef="32a95184-b6e3-1004-852e-73f7ffb2a5f6"/>
+            <node idRef="32a95185-b6e3-1004-852e-73f7ffb2a5f6"/>
+        </nodes>
+        <arcs>
+            <from idRef="32a95184-b6e3-1004-852e-73f7ffb2a5f6">
+                <to idRef="32a95186-b6e3-1004-852e-73f7ffb2a5f6"/>
+            </from>
+            <from idRef="32a95185-b6e3-1004-852e-73f7ffb2a5f6">
+                <to idRef="32a95186-b6e3-1004-852e-73f7ffb2a5f6"/>
+            </from>
+        </arcs>
+    </directedGraph>
+</modelinterface>

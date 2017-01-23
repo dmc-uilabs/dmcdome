@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script type="text/javascript" src="jquery-1.6.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	var $modelSelect = $("#modelSelect");
+	var $modelParams = $("#modelParams");
+	var $modelDefDiv = $("#modelDefDiv"); 
+	var $runModelForm = $("#runModelForm");
+	var $results = $("#results");
+	
+	$.ajax({
+		url: 'getModels',
+		dataType: 'json',
+		type: 'POST',
+		success: function(data) {	
+			$results.html(JSON.stringify(data))
+			for (var i in data.pkg) {
+				$modelSelect.append($("<option/>", 
+						{ value: JSON.stringify(data.pkg[i]) }).text(data.pkg[i].name));
+			}
+			$modelDefDiv.html($modelSelect.val());						
+		}
+	});
+	
+	$modelSelect.change(function() {
+		$modelDefDiv.html($modelSelect.val());
+		$modelParams.val('');
+		$runModelForm.hide();
+	});
+	
+	$("#submitButton").click(function() {
+		$.ajax({
+			url: 'getModel',
+			dataType: 'json',
+			type: 'POST',
+			data: { data: $modelSelect.val() },
+			success: function(data) {
+				$modelParams.val(JSON.stringify(data.pkg[0]));
+				$runModelForm.show();
+			}
+		});
+	});
+	
+	$("#runModelBtn").click(function() {
+		$.ajax({
+			url: 'runModel',
+			dataType: 'json',
+			type: 'POST',
+			data: { data: $modelParams.val() },
+			success: function(data) {
+				$results.html(JSON.stringify(data));
+			}
+		});
+	});
+	
+});
+</script>
+</head>
+<body>
+<form action="getModel">
+Select a Model:
+<select id="modelSelect" name="data">
+</select>
+<div id="modelDefDiv"></div>
+
+<button type="button" id="submitButton">Submit</button>
+</form>
+<form id="runModelForm" style="display:none">
+Change the following by adding fields value or vectorValue to each input parameter and submit to run:
+<textarea id="modelParams" style="width: 800px; height: 300px; display: block; clear: left;"></textarea>
+<button type="button" id="runModelBtn">Run Model</button>
+</form>
+
+<div id="results">
+</div>
+</body>
+</html>

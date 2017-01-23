@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="f3dc7299-b75c-1004-8a7e-fefd121a95f4" name="Default Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <parameters/>
+    <relations>
+        <relation type="Procedural" id="f402093c-b75c-1004-8a7e-fefd121a95f4" name="T_equals_S">
+            <parameters>
+                <parameter id="f44ca345-b75c-1004-8a7e-fefd121a95f4" name="S">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="f44e51bd-b75c-1004-8a7e-fefd121a95f4" name="T">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <body><![CDATA[T = S]]></body>
+            <dependencies>
+                <dependency idRef="f44e51bd-b75c-1004-8a7e-fefd121a95f4">
+                    <parameter name="S" idRef="f44ca345-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f402093c-b75c-1004-8a7e-fefd121a95f4"/>
+                </dependency>
+            </dependencies>
+        </relation>
+    </relations>
+    <contexts>
+        <context id="IFACE_MODEL_CXT" name="Model View">
+            <modelobjects>
+                <relation name="T_equals_S" idRef="f402093c-b75c-1004-8a7e-fefd121a95f4"/>
+            </modelobjects>
+        </context>
+    </contexts>
+    <views>
+        <view name="Build View">
+            <context id="IFACE_BUILD_CXT" name="Build View"/>
+        </view>
+        <view name="Interface Causality View">
+            <filter id="INPUTS_FILTER" name="Inputs"/>
+            <filter id="OUTPUTS_FILTER" name="Outputs"/>
+            <filter id="INDETERMINATES_FILTER" name="Indeterminates"/>
+        </view>
+        <view name="System Causality View">
+            <filter id="f60dc125-b75c-1004-8a7e-fefd121a95f4" name="Independent"/>
+            <filter id="f60dc126-b75c-1004-8a7e-fefd121a95f4" name="Intermediate"/>
+            <filter id="f60dc127-b75c-1004-8a7e-fefd121a95f4" name="Result"/>
+        </view>
+    </views>
+    <directedGraph id="f3dc7299-b75c-1004-8a7e-fefd121a95f4">
+        <nodes/>
+        <arcs/>
+    </directedGraph>
+</modelinterface>

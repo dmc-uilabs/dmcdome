@@ -1,0 +1,528 @@
+#VRML V2.0 utf8
+
+WorldInfo {
+	info [ "File created using CATIA" ]
+}
+NavigationInfo {
+	type [ "EXAMINE" , "WALK" , "FLY" ]
+}
+Background {
+	skyColor [ 0 0 0 ]
+}
+Viewpoint {
+	position      5.582173 -0.906433 0.631443
+	orientation   0.577350 0.577350 0.577350 2.094395
+	fieldOfView   0.471225
+	description   "Main Viewpoint"
+}
+Viewpoint {
+	position      3.222869 2.316436 3.854312
+	orientation   0.187054 0.451587 0.872399 2.448075
+	fieldOfView   0.471225
+	description   "Iso View"
+}
+Viewpoint {
+	position      5.582173 -0.906433 0.631443
+	orientation   0.577350 0.577350 0.577350 2.094395
+	fieldOfView   0.471225
+	description   "Front View"
+}
+Viewpoint {
+	position      -5.582173 -0.906433 0.631443
+	orientation   0.577350 -0.577350 -0.577350 2.094395
+	fieldOfView   0.471225
+	description   "Back View"
+}
+Viewpoint {
+	position      0.000000 -6.488605 0.631443
+	orientation   1.000000 -0.000173 0.000173 1.570796
+	fieldOfView   0.471225
+	description   "Left View"
+}
+Viewpoint {
+	position      0.000000 4.675740 0.631443
+	orientation   -0.000122 -0.707107 -0.707107 3.141348
+	fieldOfView   0.471225
+	description   "Right View"
+}
+Viewpoint {
+	position      0.000000 -0.906433 6.213616
+	orientation   0.000000 0.000000 1.000000 1.570796
+	fieldOfView   0.471225
+	description   "Top View"
+}
+Viewpoint {
+	position      0.000000 -0.906433 -4.950729
+	orientation   0.707107 0.707107 0.000000 3.141593
+	fieldOfView   0.471225
+	description   "Bottom View"
+}
+Transform {
+	scale         0.001 0.001 0.001
+	children [
+Group {
+	children [
+Group {
+	children [
+DEF _04B2F488 Group {
+	children [
+	]
+}
+	]
+}
+Group {
+	children [
+DEF _04B2CA68 Group {
+	children [
+	]
+}
+	]
+}
+Group {
+	children [
+DEF _04B2C888 Group {
+	children [
+	]
+}
+	]
+}
+Group {
+	children [
+Group {
+	children [
+	]
+}
+Group {
+	children [
+Shape {
+appearance Appearance {
+	material DEF _material0 Material {
+		emissiveColor 0.54902 0.54902 0.54902
+	}
+}
+geometry PointSet {
+	coord Coordinate {
+point	[
+		 0 -1.32289 -0.06989,
+		]
+}
+}
+}
+Shape {
+appearance Appearance {
+	material DEF _material1 Material {
+		emissiveColor 0 1 0
+	}
+}
+geometry PointSet {
+	coord Coordinate {
+point	[
+		 0 100 50,
+		]
+}
+}
+}
+Shape {
+appearance Appearance {
+material USE _material1
+}
+geometry PointSet {
+	coord Coordinate {
+point	[
+		 0 -900 50,
+		]
+}
+}
+}
+DEF _04339938 Group {
+	children [
+Shape {
+appearance Appearance {
+material USE _material0
+}
+geometry  IndexedLineSet {
+coord Coordinate {
+	point	[
+		 0 44.0607 650,
+		 0 200.644 650,
+	]
+}
+	coordIndex	[0 1 -1,]
+}
+}
+	]
+}
+Shape {
+appearance Appearance {
+material USE _material0
+}
+geometry PointSet {
+	coord Coordinate {
+point	[
+		 0 200.644 650,
+		]
+}
+}
+}
+Shape {
+appearance Appearance {
+material USE _material0
+}
+geometry PointSet {
+	coord Coordinate {
+point	[
+		 0 44.0607 650,
+		]
+}
+}
+}
+Shape {
+appearance Appearance {
+material USE _material0
+}
+geometry PointSet {
+	coord Coordinate {
+point	[
+		 0 143 650,
+		]
+}
+}
+}
+Shape {
+appearance Appearance {
+material USE _material0
+}
+geometry PointSet {
+	coord Coordinate {
+point	[
+		 0 -1075 731,
+		]
+}
+}
+}
+DEF _0433AA98 Group {
+	children [
+Shape {
+appearance Appearance {
+material USE _material0
+}
+geometry  IndexedLineSet {
+coord Coordinate {
+	point	[
+		 0 -972.209 731,
+		 0 -1075 731,
+	]
+}
+	coordIndex	[0 1 -1,]
+}
+}
+	]
+}
+Shape {
+appearance Appearance {
+material USE _material0
+}
+geometry PointSet {
+	coord Coordinate {
+point	[
+		 0 -1075 731,
+		]
+}
+}
+}
+Shape {
+appearance Appearance {
+material USE _material0
+}
+geometry PointSet {
+	coord Coordinate {
+point	[
+		 0 -972.209 731,
+		]
+}
+}
+}
+DEF _0433A1B8 Group {
+	children [
+Shape {
+appearance Appearance {
+material USE _material1
+}
+geometry  IndexedLineSet {
+coord Coordinate {
+	point	[
+		 0 100 841.348,
+		 0 100 50,
+	]
+}
+	coordIndex	[0 1 -1,]
+}
+}
+	]
+}
+Shape {
+appearance Appearance {
+material USE _material0
+}
+geometry PointSet {
+	coord Coordinate {
+point	[
+		 0 100 841.348,
+		]
+}
+}
+}
+DEF _0433BB78 Group {
+	children [
+Shape {
+appearance Appearance {
+material USE _material1
+}
+geometry  IndexedLineSet {
+coord Coordinate {
+	point	[
+		 0 143 650,
+		 0 143 102.278,
+	]
+}
+	coordIndex	[0 1 -1,]
+}
+}
+	]
+}
+Shape {
+appearance Appearance {
+material USE _material0
+}
+geometry PointSet {
+	coord Coordinate {
+point	[
+		 0 143 102.278,
+		]
+}
+}
+}
+Shape {
+appearance Appearance {
+material USE _material1
+}
+geometry PointSet {
+	coord Coordinate {
+point	[
+		 0 163.063 650,
+		]
+}
+}
+}
+Shape {
+appearance Appearance {
+material USE _material1
+}
+geometry PointSet {
+	coord Coordinate {
+point	[
+		 0 -815 230,
+		]
+}
+}
+}
+DEF _0433C868 Group {
+	children [
+Shape {
+appearance Appearance {
+material USE _material1
+}
+geometry  IndexedLineSet {
+coord Coordinate {
+	point	[
+		 0 -815 230,
+		 0 -209.291 230,
+	]
+}
+	coordIndex	[0 1 -1,]
+}
+}
+	]
+}
+Shape {
+appearance Appearance {
+material USE _material0
+}
+geometry PointSet {
+	coord Coordinate {
+point	[
+		 0 -209.291 230,
+		]
+}
+}
+}
+Shape {
+appearance Appearance {
+material USE _material1
+}
+geometry PointSet {
+	coord Coordinate {
+point	[
+		 0 -87.5387 650,
+		]
+}
+}
+}
+DEF _0433D878 Group {
+	children [
+Shape {
+appearance Appearance {
+material USE _material1
+}
+geometry  IndexedLineSet {
+coord Coordinate {
+	point	[
+		 0 -900 50,
+		 0 -900 -282.45,
+	]
+}
+	coordIndex	[0 1 -1,]
+}
+}
+	]
+}
+Shape {
+appearance Appearance {
+material USE _material0
+}
+geometry PointSet {
+	coord Coordinate {
+point	[
+		 0 -900 -282.45,
+		]
+}
+}
+}
+Group {
+	children [
+Shape {
+appearance Appearance {
+	material DEF _material2 Material {
+		emissiveColor 0.86 0.86 0
+	}
+}
+geometry PointSet {
+	coord Coordinate {
+point	[
+		 0 0 0,
+		]
+}
+}
+}
+DEF _0448A658 Group {
+	children [
+	]
+}
+DEF _0448A508 Group {
+	children [
+	]
+}
+	]
+}
+	]
+}
+Group {
+	children [
+DEF _04338368 Group {
+	children [
+Shape {
+appearance Appearance {
+material USE _material1
+}
+geometry  IndexedLineSet {
+coord Coordinate {
+	point	[
+		 0 100 50,
+		 0 -900 50,
+	]
+}
+	coordIndex	[0 1 -1,]
+}
+}
+	]
+}
+DEF _0433B548 Group {
+	children [
+Shape {
+appearance Appearance {
+material USE _material1
+}
+geometry  IndexedLineSet {
+coord Coordinate {
+	point	[
+		 0 100 50,
+		 0 163.063 650,
+	]
+}
+	coordIndex	[0 1 -1,]
+}
+}
+	]
+}
+DEF _0433CEB8 Group {
+	children [
+Shape {
+appearance Appearance {
+material USE _material1
+}
+geometry  IndexedLineSet {
+coord Coordinate {
+	point	[
+		 0 -900 50,
+		 0 -815 230,
+	]
+}
+	coordIndex	[0 1 -1,]
+}
+}
+	]
+}
+DEF _0433C238 Group {
+	children [
+Shape {
+appearance Appearance {
+material USE _material1
+}
+geometry  IndexedLineSet {
+coord Coordinate {
+	point	[
+		 0 -815 230,
+		 0 -87.5387 650,
+	]
+}
+	coordIndex	[0 1 -1,]
+}
+}
+	]
+}
+DEF _0433DBF8 Group {
+	children [
+Shape {
+appearance Appearance {
+material USE _material1
+}
+geometry  IndexedLineSet {
+coord Coordinate {
+	point	[
+		 0 163.063 650,
+		 0 -87.5387 650,
+	]
+}
+	coordIndex	[0 1 -1,]
+}
+}
+	]
+}
+	]
+}
+	]
+}
+	]
+}
+	]
+}

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<model type="PluginModel" id="8358ec9c-b83d-1004-856f-c2f5dcf7da5d" name="sum and product model" pluginType="NAME_VALUE">
+    <modelinfo>
+        <version>0.0.1</version>
+    </modelinfo>
+    <parameters>
+        <parameter id="83849658-b83d-1004-856f-c2f5dcf7da5d" name="n1">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="1" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="838edff0-b83d-1004-856f-c2f5dcf7da5d" name="n2">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="5" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="839104c4-b83d-1004-856f-c2f5dcf7da5d" name="n3">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="3" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="839308c8-b83d-1004-856f-c2f5dcf7da5d" name="n4">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="2" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="83ba3740-b83d-1004-856f-c2f5dcf7da5d" name="sum">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="83bd1e9c-b83d-1004-856f-c2f5dcf7da5d" name="product">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="8412f1b4-b83d-1004-856f-c2f5dcf7da5d" name="input">
+            <currentType value="File"/>
+            <data>
+                <dataobject type="File">
+                    <filePath>C:\dome3\DomeModelFilesForTesting\nameValueModel\input.txt</filePath>
+                    <fileType>Text</fileType>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="8a86d7a4-b83d-1004-8809-882d8819ada5" name="output">
+            <currentType value="File"/>
+            <data>
+                <dataobject type="File">
+                    <filePath>C:\dome3\DomeModelFilesForTesting\nameValueModel\output.txt</filePath>
+                    <fileType>Text</fileType>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="8b176008-b83d-1004-8809-882d8819ada5" name="program">
+            <currentType value="File"/>
+            <data>
+                <dataobject type="File">
+                    <filePath>C:\dome3\DomeModelFilesForTesting\nameValueModel\compute.py</filePath>
+                    <fileType>Binary</fileType>
+                </dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <contexts>
+        <context id="BUILD_CXT" name="Build View">
+            <modelobjects>
+                <parameter name="n2" idRef="838edff0-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d"/>
+                <parameter name="n3" idRef="839104c4-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d"/>
+                <parameter name="n4" idRef="839308c8-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d"/>
+                <parameter name="n1" idRef="83849658-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d"/>
+                <parameter name="sum" idRef="83ba3740-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d"/>
+                <parameter name="product" idRef="83bd1e9c-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d"/>
+            </modelobjects>
+        </context>
+    </contexts>
+    <mappings>
+        <modelMappings>
+            <mappedParameter name="n1" idRef="83849658-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d">d</mappedParameter>
+            <mappedParameter name="n4" idRef="839308c8-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d">c</mappedParameter>
+            <mappedParameter name="sum" idRef="83ba3740-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d">sum</mappedParameter>
+            <mappedParameter name="n2" idRef="838edff0-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d">a</mappedParameter>
+            <mappedParameter name="product" idRef="83bd1e9c-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d">product</mappedParameter>
+            <mappedParameter name="n3" idRef="839104c4-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d">b</mappedParameter>
+        </modelMappings>
+    </mappings>
+    <dependencies>
+        <dependency idRef="83ba3740-b83d-1004-856f-c2f5dcf7da5d">
+            <parameter name="n1" idRef="83849658-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d"/>
+            <parameter name="n2" idRef="838edff0-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d"/>
+            <parameter name="n3" idRef="839104c4-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d"/>
+            <parameter name="n4" idRef="839308c8-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d"/>
+        </dependency>
+        <dependency idRef="83bd1e9c-b83d-1004-856f-c2f5dcf7da5d">
+            <parameter name="n1" idRef="83849658-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d"/>
+            <parameter name="n2" idRef="838edff0-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d"/>
+            <parameter name="n3" idRef="839104c4-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d"/>
+            <parameter name="n4" idRef="839308c8-b83d-1004-856f-c2f5dcf7da5d" idModelRef="8358ec9c-b83d-1004-856f-c2f5dcf7da5d"/>
+        </dependency>
+    </dependencies>
+    <setup>
+        <parameter id="input file location" name="input file location">
+            <currentType value="File"/>
+            <data>
+                <dataobject type="File">
+                    <filePath>input.txt</filePath>
+                    <fileType>Binary</fileType>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="output file location" name="output file location">
+            <currentType value="File"/>
+            <data>
+                <dataobject type="File">
+                    <filePath>output.txt</filePath>
+                    <fileType>Binary</fileType>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="executable location" name="executable location">
+            <currentType value="File"/>
+            <data>
+                <dataobject type="File">
+                    <filePath>C:\Python22\pythonw.exe</filePath>
+                    <fileType>Binary</fileType>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="command line arguments" name="command line arguments">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String">compute.py input.txt output.txt</dataobject>
+            </data>
+        </parameter>
+    </setup>
+    <auxfiles>
+        <auxfile id="8655b1dc-b83d-1004-856f-c2f5dcf7da5d" name="input">
+            <isMainModelFile value="false"/>
+            <isExcuteOnServer value="true"/>
+            <fileType>file:///</fileType>
+            <file>C:\dome3\DomeModelFilesForTesting\nameValueModel\input.txt</file>
+        </auxfile>
+        <auxfile id="8afc97c8-b83d-1004-8809-882d8819ada5" name="output">
+            <isMainModelFile value="false"/>
+            <isExcuteOnServer value="true"/>
+            <fileType>file:///</fileType>
+            <file>C:\dome3\DomeModelFilesForTesting\nameValueModel\output.txt</file>
+        </auxfile>
+        <auxfile id="8b44b1fc-b83d-1004-8809-882d8819ada5" name="program">
+            <isMainModelFile value="true"/>
+            <isExcuteOnServer value="true"/>
+            <fileType>file:///</fileType>
+            <file>C:\dome3\DomeModelFilesForTesting\nameValueModel\compute.py</file>
+        </auxfile>
+    </auxfiles>
+</model>

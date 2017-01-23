@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script type="text/javascript" src="jquery.js"></script>
+<style type="text/css">
+li.folder { color: blue; cursor: pointer; } 
+li.model { color: green; cursor: pointer; }
+li.interface { color: black; cursor: pointer; } 
+li.project { color: orange; cursor: pointer; }
+#folders {
+	float: left; 
+	width: 35%;
+}
+#def {
+	float: right;
+	width: 60%;
+}
+textarea {
+	width: 300px;
+	height: 200px;
+}
+</style>
+<script type="text/javascript">
+$(document).ready(function() {
+	var $def = $("#def");
+	
+	function getChildren($parent, el) {		
+		$.ajax({
+			url: 'getChildren',
+			dataType: 'json',
+			type: 'POST',
+			data: { data: el? JSON.stringify(el) : undefined } ,
+			success: function(data) {	
+				if (data.status == 'error') {
+					alert("Error: " + data.msg);
+				} else if (data.pkg && data.pkg.children && data.pkg.children.length > 0) {
+					var $ul = $("<ul>").appendTo($parent);
+					$parent.addClass("expanded");
+					
+					for (var i = 0; i < data.pkg.children.length; ++i) {
+						var child = data.pkg.children[i];
+						var $li = $("<li>");
+						if (child.description) {
+							$li.text(child.name + " - " + child.description);
+						} else {
+							$li.text(child.name);
+						}
+						$li.addClass(child.type);	
+						$li.data("data", child);
+						
+						$ul.append($li);
+						$li.click(function(e) {
+							e.stopPropagation();
+							var $this = $(this);							
+							var data = $this.data("data");
+							if (data.type == 'interface') {
+								getModelDef(data);
+							} else {								
+								$def.hide();
+								if ($this.hasClass("expanded")) {
+									$this.find("ul").slideUp();
+									$this.removeClass("expanded");							
+								} else {
+									var $children = $this.find("ul");
+									if ($children.size() > 0) {
+										$children.slideDown();
+										$this.addClass("expanded");
+									} else {
+										getChildren($this, data);
+									}
+								}
+							}
+						});	
+					}
+				}
+			},
+			error: function(data, err, e) {
+				alert('error: ' + err + " e: " + e);			
+			}			
+		});
+		
+		function getModelDef(intface) {
+			$def.show();
+			$def.find('.title').text(intface.name);
+			$("#params").val("loading..."); // clear out the contents
+			$("#results").html(""); // clear out the results
+			$.ajax({
+				url: 'getModel',
+				dataType: 'json',
+				type: 'POST',
+				data: { data: JSON.stringify(intface) } ,
+				success: function(data) {	
+					$("#params").val(JSON.stringify(data.pkg));
+				},
+				error: function(data, err, e) {
+					alert('error: ' + err + ' e: ' + e);			
+				}			
+			});
+		}
+	}
+	
+	
+	$("#run").click(function() {
+		$.ajax({
+			url: 'runModel',
+			dataType: 'json',
+			type: 'POST',
+			data: { data: $("#params").val(), queue: "DOME_Model_Run_TestQueue" },
+			success: function(data) {
+				if (data.status == 'error') {
+					alert("Error: " + data.msg);
+				} else {
+					$("#results").html(JSON.stringify(data.pkg));
+				}
+			},
+			error: function(data, err, e) {
+				alert('error: ' + err + ' e: ' + e);
+			}
+			
+		});
+	});
+	
+	getChildren($("#folders"));
+	
+});
+</script>
+</head>
+<body>
+<div id="folders">
+Folders:
+</div>
+
+<div id="def" style="display: none">
+<span class="title"></span><br>
+<textarea id="params" style="width: 500px"></textarea>
+<button type="button" id="run">Run</button>
+<div id="results" style="width: 500px"></div>
+</div>
+
+</body>
+</html>

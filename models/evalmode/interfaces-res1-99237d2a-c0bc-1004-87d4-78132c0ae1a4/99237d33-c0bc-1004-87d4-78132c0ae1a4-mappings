@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="99237d33-c0bc-1004-87d4-78132c0ae1a4" name="Default Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="LHS" idRef="99237d65-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="LHS" idRef="99237d5d-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d58-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="RHS" idRef="99237d64-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="RHS" idRef="99237d5c-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d58-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="d" idRef="99237d43-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="d" idRef="99237d41-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d2a-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="a" idRef="99237d3a-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="a" idRef="99237d38-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d2a-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="a" idRef="99237d51-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="a" idRef="99237d4f-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d47-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="c" idRef="99237d40-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="c" idRef="99237d3e-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d2a-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="b" idRef="99237d3d-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="b" idRef="99237d3b-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d2a-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="d" idRef="99237d57-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="d" idRef="99237d55-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d47-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="b" idRef="99237d54-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="b" idRef="99237d52-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d47-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="e" idRef="99237d46-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="e" idRef="99237d44-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d2a-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="d" idRef="99237d56-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d4b-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="d" idRef="99237d55-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d47-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="b" idRef="99237d53-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d4b-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="b" idRef="99237d52-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d47-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="d" idRef="99237d42-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="d" idRef="99237d41-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d2a-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="b" idRef="99237d3c-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="b" idRef="99237d3b-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d2a-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="e" idRef="99237d45-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="e" idRef="99237d44-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d2a-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="a" idRef="99237d50-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d4b-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="a" idRef="99237d4f-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d47-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="a" idRef="99237d39-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="a" idRef="99237d38-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d2a-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="LHS" idRef="99237d63-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d5e-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="LHS" idRef="99237d5d-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d58-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="RHS" idRef="99237d62-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d5e-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="RHS" idRef="99237d5c-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d58-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+                <mappedParameter name="c" idRef="99237d3f-c0bc-1004-87d4-78132c0ae1a4">
+                    <parameter name="c" idRef="99237d3e-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d2a-c0bc-1004-87d4-78132c0ae1a4"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects>
+            <parameter id="99237d51-c0bc-1004-87d4-78132c0ae1a4" name="a">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="0.0" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+            </parameter>
+            <parameter id="99237d54-c0bc-1004-87d4-78132c0ae1a4" name="b">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="0.0" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+            </parameter>
+            <parameter id="99237d57-c0bc-1004-87d4-78132c0ae1a4" name="d">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="0.0" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+            </parameter>
+            <parameter id="99237d64-c0bc-1004-87d4-78132c0ae1a4" name="RHS">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="0.0" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+            </parameter>
+            <parameter id="99237d65-c0bc-1004-87d4-78132c0ae1a4" name="LHS">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="0.0" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+            </parameter>
+        </intermediateobjects>
+    </mappingsandintermediates>
+    <lookupdata>
+        <objectmap>
+            <relation name="Equal Relation" idRef="99237d58-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <relation name="Equal Relation" idRef="99237d5e-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+            <parameter name="c" idRef="99237d3e-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d2a-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="c" idRef="99237d3f-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+            <parameter name="b" idRef="99237d52-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d47-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="b" idRef="99237d53-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d4b-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+            <relation name="Procedural Relation" idRef="99237d47-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <relation name="Procedural Relation" idRef="99237d4b-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+            <parameter name="a" idRef="99237d4f-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d47-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="a" idRef="99237d50-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d4b-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+            <parameter name="e" idRef="99237d44-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d2a-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="e" idRef="99237d45-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+            <parameter name="RHS" idRef="99237d5c-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d58-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="RHS" idRef="99237d62-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d5e-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+            <parameter name="d" idRef="99237d55-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d47-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="d" idRef="99237d56-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d4b-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+            <parameter name="d" idRef="99237d41-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d2a-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="d" idRef="99237d42-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+            <parameter name="b" idRef="99237d3b-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d2a-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="b" idRef="99237d3c-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+            <parameter name="LHS" idRef="99237d5d-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d58-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="LHS" idRef="99237d63-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d5e-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+            <parameter name="a" idRef="99237d38-c0bc-1004-87d4-78132c0ae1a4" idModelRef="99237d2a-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="a" idRef="99237d39-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+        </objectmap>
+        <viewobjectmap>
+            <parameter name="d" idRef="99237d42-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="d" idRef="99237d43-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+            <parameter name="b" idRef="99237d3c-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="b" idRef="99237d3d-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+            <parameter name="e" idRef="99237d45-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="e" idRef="99237d46-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+            <parameter name="a" idRef="99237d39-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="a" idRef="99237d3a-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+            <parameter name="c" idRef="99237d3f-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="c" idRef="99237d40-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+        </viewobjectmap>
+        <relationobjectmap>
+            <parameter name="b" idRef="99237d52-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d47-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="b" idRef="99237d54-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+            <parameter name="a" idRef="99237d4f-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d47-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="a" idRef="99237d51-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+            <parameter name="RHS" idRef="99237d5c-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d58-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="RHS" idRef="99237d64-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+            <parameter name="d" idRef="99237d55-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d47-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="d" idRef="99237d57-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+            <parameter name="LHS" idRef="99237d5d-c0bc-1004-87d4-78132c0ae1a4" idRelationRef="99237d58-c0bc-1004-87d4-78132c0ae1a4" description="key"/>
+            <parameter name="LHS" idRef="99237d65-c0bc-1004-87d4-78132c0ae1a4" description="value"/>
+        </relationobjectmap>
+    </lookupdata>
+</modelinterface>

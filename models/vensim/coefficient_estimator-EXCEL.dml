@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<model type="PluginModel" id="e5859b48-c08f-1004-8ac5-e5fc5549eda4" name="Key Coefficient Estimation Model" pluginType="EXCEL">
+    <modelinfo>
+        <version>0.0.0</version>
+    </modelinfo>
+    <parameters>
+        <parameter id="e5859b5a-c08f-1004-8ac5-e5fc5549eda4" name="sample birth">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="40.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="e5859b5d-c08f-1004-8ac5-e5fc5549eda4" name="life expectancy at birth">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="37.55" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="e5859b60-c08f-1004-8ac5-e5fc5549eda4" name="birth rate">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="e5859b63-c08f-1004-8ac5-e5fc5549eda4" name="death rate">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="e5859b66-c08f-1004-8ac5-e5fc5549eda4" name="sample population">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="1000.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="e5859b69-c08f-1004-8ac5-e5fc5549eda4" name="percentage of land area increase">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0040" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="e5859b6c-c08f-1004-8ac5-e5fc5549eda4" name="population density">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="e5859b72-c08f-1004-8ac5-e5fc5549eda4" name="FileParameter">
+            <currentType value="File"/>
+            <data>
+                <dataobject type="File">
+                    <filePath>C:\dome3\models\vensim\coefficient_estimator.xls</filePath>
+                    <fileType>Excel</fileType>
+                </dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <contexts>
+        <context id="BUILD_CXT" name="Build View">
+            <modelobjects>
+                <parameter name="sample population" idRef="e5859b66-c08f-1004-8ac5-e5fc5549eda4" idModelRef="e5859b48-c08f-1004-8ac5-e5fc5549eda4"/>
+                <parameter name="sample birth" idRef="e5859b5a-c08f-1004-8ac5-e5fc5549eda4" idModelRef="e5859b48-c08f-1004-8ac5-e5fc5549eda4"/>
+                <parameter name="life expectancy at birth" idRef="e5859b5d-c08f-1004-8ac5-e5fc5549eda4" idModelRef="e5859b48-c08f-1004-8ac5-e5fc5549eda4"/>
+                <parameter name="birth rate" idRef="e5859b60-c08f-1004-8ac5-e5fc5549eda4" idModelRef="e5859b48-c08f-1004-8ac5-e5fc5549eda4"/>
+                <parameter name="death rate" idRef="e5859b63-c08f-1004-8ac5-e5fc5549eda4" idModelRef="e5859b48-c08f-1004-8ac5-e5fc5549eda4"/>
+                <parameter name="percentage of land area increase" idRef="e5859b69-c08f-1004-8ac5-e5fc5549eda4" idModelRef="e5859b48-c08f-1004-8ac5-e5fc5549eda4"/>
+                <parameter name="population density" idRef="e5859b6c-c08f-1004-8ac5-e5fc5549eda4" idModelRef="e5859b48-c08f-1004-8ac5-e5fc5549eda4"/>
+            </modelobjects>
+        </context>
+        <context id="FILE_CXT" name="Files">
+            <modelobjects>
+                <parameter name="FileParameter" idRef="e5859b72-c08f-1004-8ac5-e5fc5549eda4" idModelRef="e5859b48-c08f-1004-8ac5-e5fc5549eda4"/>
+            </modelobjects>
+        </context>
+    </contexts>
+    <mappings>
+        <modelMappings>
+            <mappedParameter name="birth rate" idRef="e5859b60-c08f-1004-8ac5-e5fc5549eda4" idModelRef="e5859b48-c08f-1004-8ac5-e5fc5549eda4">birth_death_rate!D5</mappedParameter>
+            <mappedParameter name="percentage of land area increase" idRef="e5859b69-c08f-1004-8ac5-e5fc5549eda4" idModelRef="e5859b48-c08f-1004-8ac5-e5fc5549eda4">land_area_pop_density!D3</mappedParameter>
+            <mappedParameter name="population density" idRef="e5859b6c-c08f-1004-8ac5-e5fc5549eda4" idModelRef="e5859b48-c08f-1004-8ac5-e5fc5549eda4">land_area_pop_density!D5</mappedParameter>
+            <mappedParameter name="sample birth" idRef="e5859b5a-c08f-1004-8ac5-e5fc5549eda4" idModelRef="e5859b48-c08f-1004-8ac5-e5fc5549eda4">birth_death_rate!D3</mappedParameter>
+            <mappedParameter name="sample population" idRef="e5859b66-c08f-1004-8ac5-e5fc5549eda4" idModelRef="e5859b48-c08f-1004-8ac5-e5fc5549eda4">birth_death_rate!D2</mappedParameter>
+            <mappedParameter name="life expectancy at birth" idRef="e5859b5d-c08f-1004-8ac5-e5fc5549eda4" idModelRef="e5859b48-c08f-1004-8ac5-e5fc5549eda4">birth_death_rate!D4</mappedParameter>
+            <mappedParameter name="death rate" idRef="e5859b63-c08f-1004-8ac5-e5fc5549eda4" idModelRef="e5859b48-c08f-1004-8ac5-e5fc5549eda4">birth_death_rate!D6</mappedParameter>
+        </modelMappings>
+    </mappings>
+    <dependencies>
+        <dependency idRef="e5859b60-c08f-1004-8ac5-e5fc5549eda4">
+            <parameter name="sample birth" idRef="e5859b5a-c08f-1004-8ac5-e5fc5549eda4" idModelRef="e5859b48-c08f-1004-8ac5-e5fc5549eda4"/>
+            <parameter name="sample population" idRef="e5859b66-c08f-1004-8ac5-e5fc5549eda4" idModelRef="e5859b48-c08f-1004-8ac5-e5fc5549eda4"/>
+        </dependency>
+        <dependency idRef="e5859b6c-c08f-1004-8ac5-e5fc5549eda4">
+            <parameter name="percentage of land area increase" idRef="e5859b69-c08f-1004-8ac5-e5fc5549eda4" idModelRef="e5859b48-c08f-1004-8ac5-e5fc5549eda4"/>
+        </dependency>
+        <dependency idRef="e5859b63-c08f-1004-8ac5-e5fc5549eda4">
+            <parameter name="life expectancy at birth" idRef="e5859b5d-c08f-1004-8ac5-e5fc5549eda4" idModelRef="e5859b48-c08f-1004-8ac5-e5fc5549eda4"/>
+        </dependency>
+    </dependencies>
+    <setup>
+        <parameter id="software version" name="software version">
+            <currentType value="Enumeration"/>
+            <data>
+                <dataobject type="Enumeration">
+                    <data>
+                        <dataobject name="Excel 97" type="String"></dataobject>
+                        <dataobject name="Excel 2000" type="String"></dataobject>
+                        <dataobject name="Excel XP" type="String"></dataobject>
+                    </data>
+                    <lastSelectionIndex>1</lastSelectionIndex>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="run in foreground" name="run in foreground">
+            <currentType value="Boolean"/>
+            <data>
+                <dataobject type="Boolean">false</dataobject>
+            </data>
+        </parameter>
+    </setup>
+    <auxfiles>
+        <auxfile id="e5859b73-c08f-1004-8ac5-e5fc5549eda4" name="FileParameter">
+            <isMainModelFile value="true"/>
+            <isExcuteOnServer value="true"/>
+            <fileType>file:///</fileType>
+            <file>C:\dome3\models\vensim\coefficient_estimator.xls</file>
+        </auxfile>
+    </auxfiles>
+</model>

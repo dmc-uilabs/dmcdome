@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<model type="DomeModel" id="f52aaab8-b75c-1004-8a7e-fefd121a95f4" name="iModel">
+    <modelinfo>
+        <version>0.0.1</version>
+        <imodel/>
+    </modelinfo>
+    <parameters/>
+    <relations>
+        <relation type="Procedural" id="f5355d00-b75c-1004-8a7e-fefd121a95f4" name="C_equals_A_plus_B">
+            <parameters>
+                <parameter id="f556d430-b75c-1004-8a7e-fefd121a95f4" name="A">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="f5580d14-b75c-1004-8a7e-fefd121a95f4" name="B">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="f55a2cd4-b75c-1004-8a7e-fefd121a95f4" name="C">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <body><![CDATA[C = A + B]]></body>
+            <dependencies>
+                <dependency idRef="f55a2cd4-b75c-1004-8a7e-fefd121a95f4">
+                    <parameter name="A" idRef="f556d430-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f5355d00-b75c-1004-8a7e-fefd121a95f4"/>
+                    <parameter name="B" idRef="f5580d14-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f5355d00-b75c-1004-8a7e-fefd121a95f4"/>
+                </dependency>
+            </dependencies>
+        </relation>
+    </relations>
+    <visualizations/>
+    <subscriptions>
+        <subscription type="Subscription" id="f5a07b4a-b75c-1004-8a7e-fefd121a95f4" name="Y_equals_X">
+            <locationIds resourceId="f5274e2c-b75c-1004-8a7e-fefd121a95f4" ifaceId="f26d57a9-b75c-1004-89fe-53c809e5870d"/>
+            <loginInfo>
+                <loginType>ADMIN</loginType>
+                <loginName>root</loginName>
+                <password>TJn1gnmkMVt/E3tY6pdIeIS/TGk=</password>
+            </loginInfo>
+            <defaultView>
+                <filter name="Inputs">
+                    <parameter id="f5a07b4b-b75c-1004-8a7e-fefd121a95f4" name="X">
+                        <currentType value="Real"/>
+                        <data>
+                            <dataobject type="Real">
+                                <quantity magnitude="0.0" unit="No_Unit"/>
+                            </dataobject>
+                        </data>
+                    </parameter>
+                </filter>
+                <filter name="Outputs">
+                    <parameter id="f5a07b4c-b75c-1004-8a7e-fefd121a95f4" name="Y">
+                        <currentType value="Real"/>
+                        <data>
+                            <dataobject type="Real">
+                                <quantity magnitude="0.0" unit="No_Unit"/>
+                            </dataobject>
+                        </data>
+                    </parameter>
+                </filter>
+                <filter name="Indeterminates"/>
+            </defaultView>
+            <directedGraph id="f5a07b4a-b75c-1004-8a7e-fefd121a95f4">
+                <nodes>
+                    <node idRef="f5a07b4b-b75c-1004-8a7e-fefd121a95f4"/>
+                    <node idRef="f5a07b4c-b75c-1004-8a7e-fefd121a95f4"/>
+                </nodes>
+                <arcs>
+                    <from idRef="f5a07b4b-b75c-1004-8a7e-fefd121a95f4">
+                        <to idRef="f5a07b4c-b75c-1004-8a7e-fefd121a95f4"/>
+                    </from>
+                </arcs>
+            </directedGraph>
+            <paramIdMap>
+                <entry thisId="f5a07b4b-b75c-1004-8a7e-fefd121a95f4" origId="e2daf8ba-b75c-1004-8ca4-1216ce4da944"/>
+                <entry thisId="f5a07b4c-b75c-1004-8a7e-fefd121a95f4" origId="e2dc5912-b75c-1004-8ca4-1216ce4da944"/>
+            </paramIdMap>
+        </subscription>
+    </subscriptions>
+    <contexts>
+        <context id="BUILD_CXT" name="Build View">
+            <modelobjects>
+                <relation name="C_equals_A_plus_B" idRef="f5355d00-b75c-1004-8a7e-fefd121a95f4"/>
+                <subscription name="Y_equals_X" idRef="f5a07b4a-b75c-1004-8a7e-fefd121a95f4"/>
+            </modelobjects>
+        </context>
+    </contexts>
+    <mappings>
+        <modelMappings>
+            <mappedParameter name="Y" idRef="f5a07b4c-b75c-1004-8a7e-fefd121a95f4">
+                <parameter name="A" idRef="f556d430-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f5355d00-b75c-1004-8a7e-fefd121a95f4"/>
+                <parameter name="B" idRef="f5580d14-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f5355d00-b75c-1004-8a7e-fefd121a95f4"/>
+            </mappedParameter>
+        </modelMappings>
+    </mappings>
+    <auxfiles/>
+</model>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="e5859b3d-c08f-1004-8ac5-e5fc5549eda4" name="Simple Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="given death rate" idRef="e5859b44-c08f-1004-8ac5-e5fc5549eda4">
+                    <parameter name="given death rate" idRef="e5859b28-c08f-1004-8ac5-e5fc5549eda4" idModelRef="2f97c1bd-c090-1004-8571-274748f4f678"/>
+                </mappedParameter>
+                <mappedParameter name="estimated final pollution" idRef="e5859b45-c08f-1004-8ac5-e5fc5549eda4">
+                    <parameter name="estimated final pollution" idRef="e5859b2b-c08f-1004-8ac5-e5fc5549eda4" idModelRef="2f97c1bd-c090-1004-8571-274748f4f678"/>
+                </mappedParameter>
+                <mappedParameter name="given birth rate" idRef="e5859b42-c08f-1004-8ac5-e5fc5549eda4">
+                    <parameter name="given birth rate" idRef="5b62638e-c08e-1004-87bc-6bbffbf0d682" idModelRef="2f97c1bd-c090-1004-8571-274748f4f678"/>
+                </mappedParameter>
+                <mappedParameter name="given population density" idRef="e5859c47-c08f-1004-8ac5-e5fc5549eda4">
+                    <parameter name="given population density" idRef="e5859c44-c08f-1004-8ac5-e5fc5549eda4" idModelRef="2f97c1bd-c090-1004-8571-274748f4f678"/>
+                </mappedParameter>
+                <mappedParameter name="estimated population" idRef="e5859b47-c08f-1004-8ac5-e5fc5549eda4">
+                    <parameter name="estimated population" idRef="5b626391-c08e-1004-87bc-6bbffbf0d682" idModelRef="2f97c1bd-c090-1004-8571-274748f4f678"/>
+                </mappedParameter>
+                <mappedParameter name="estimated pollution" idRef="2f97c29b-c090-1004-8571-274748f4f678">
+                    <parameter name="estimated pollution" idRef="2f97c292-c090-1004-8571-274748f4f678" idModelRef="2f97c1bd-c090-1004-8571-274748f4f678"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects/>
+    </mappingsandintermediates>
+</modelinterface>

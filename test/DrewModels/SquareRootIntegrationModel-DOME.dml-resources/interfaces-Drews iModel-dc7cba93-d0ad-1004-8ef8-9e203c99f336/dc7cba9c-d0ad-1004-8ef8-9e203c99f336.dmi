@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="dc7cba9c-d0ad-1004-8ef8-9e203c99f336" name="Default Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <parameters>
+        <parameter id="dc7cbabd-d0ad-1004-8ef8-9e203c99f336" name="InParam">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="dc7cbabf-d0ad-1004-8ef8-9e203c99f336" name="OutParam">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="dc7cbadc-d0ad-1004-8ef8-9e203c99f336" name="InParam">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="dc7cbade-d0ad-1004-8ef8-9e203c99f336" name="OutParam">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="dc7cbabe-d0ad-1004-8ef8-9e203c99f336" name="InParam">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="dc7cbadf-d0ad-1004-8ef8-9e203c99f336" name="OutParam">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <visualizations/>
+    <relations/>
+    <contexts>
+        <context id="IFACE_MODEL_CXT" name="Model View">
+            <modelobjects>
+                <parameter name="InParam" idRef="dc7cbabd-d0ad-1004-8ef8-9e203c99f336"/>
+                <parameter name="OutParam" idRef="dc7cbabf-d0ad-1004-8ef8-9e203c99f336"/>
+                <parameter name="InParam" idRef="dc7cbadc-d0ad-1004-8ef8-9e203c99f336"/>
+                <parameter name="OutParam" idRef="dc7cbade-d0ad-1004-8ef8-9e203c99f336"/>
+            </modelobjects>
+        </context>
+    </contexts>
+    <views>
+        <view name="Build View">
+            <context id="IFACE_BUILD_CXT" name="Build View">
+                <modelobjects>
+                    <parameter name="InParam" idRef="dc7cbabe-d0ad-1004-8ef8-9e203c99f336"/>
+                    <parameter name="OutParam" idRef="dc7cbadf-d0ad-1004-8ef8-9e203c99f336"/>
+                </modelobjects>
+            </context>
+        </view>
+        <view name="Interface Causality View">
+            <filter id="INPUTS_FILTER" name="Inputs">
+                <parameters>
+                    <parameter name="InParam" idRef="dc7cbabe-d0ad-1004-8ef8-9e203c99f336"/>
+                </parameters>
+            </filter>
+            <filter id="OUTPUTS_FILTER" name="Outputs">
+                <parameters>
+                    <parameter name="OutParam" idRef="dc7cbadf-d0ad-1004-8ef8-9e203c99f336" causality="Result"/>
+                </parameters>
+            </filter>
+            <filter id="INDETERMINATES_FILTER" name="Indeterminates"/>
+        </view>
+    </views>
+    <directedGraph id="dc7cba9c-d0ad-1004-8ef8-9e203c99f336">
+        <nodes>
+            <node idRef="dc7cbabe-d0ad-1004-8ef8-9e203c99f336"/>
+            <node idRef="dc7cbadf-d0ad-1004-8ef8-9e203c99f336"/>
+        </nodes>
+        <arcs>
+            <from idRef="dc7cbabe-d0ad-1004-8ef8-9e203c99f336">
+                <to idRef="dc7cbadf-d0ad-1004-8ef8-9e203c99f336"/>
+            </from>
+        </arcs>
+    </directedGraph>
+    <interfaceToRelParamMap>
+        <iToRpMap relParamId="dc7cbabe-d0ad-1004-8ef8-9e203c99f336" ifaceId="dc7cbaaa-d0ad-1004-8ef8-9e203c99f336"/>
+        <iToRpMap relParamId="dc7cbadf-d0ad-1004-8ef8-9e203c99f336" ifaceId="dc7cbaca-d0ad-1004-8ef8-9e203c99f336"/>
+    </interfaceToRelParamMap>
+</modelinterface>

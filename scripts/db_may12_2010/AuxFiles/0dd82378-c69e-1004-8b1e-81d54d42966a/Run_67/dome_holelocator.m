@@ -1,0 +1,1 @@
+[edgetohole] = holelocator(holediameter, platedepth);

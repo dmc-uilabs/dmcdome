@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<filetype binary="false" default_extension="py" extensions="py" description="Python files" name="Python source code">
+  <highlighting>
+    <options>
+      <option name="LINE_COMMENT" value="#" />
+      <option name="COMMENT_START" value="" />
+      <option name="COMMENT_END" value="" />
+      <option name="HEX_PREFIX" value="" />
+      <option name="NUM_POSTFIXES" value="" />
+    </options>
+    <keywords ignore_case="false">
+      <keyword name="and" />
+      <keyword name="assert" />
+      <keyword name="break" />
+      <keyword name="class" />
+      <keyword name="continue" />
+      <keyword name="def" />
+      <keyword name="del" />
+      <keyword name="elif" />
+      <keyword name="else" />
+      <keyword name="except" />
+      <keyword name="exec" />
+      <keyword name="finally" />
+      <keyword name="for" />
+      <keyword name="from" />
+      <keyword name="global" />
+      <keyword name="if" />
+      <keyword name="import" />
+      <keyword name="in" />
+      <keyword name="is" />
+      <keyword name="lambda" />
+      <keyword name="not" />
+      <keyword name="or" />
+      <keyword name="pass" />
+      <keyword name="print" />
+      <keyword name="raise" />
+      <keyword name="return" />
+      <keyword name="try" />
+      <keyword name="while" />
+    </keywords>
+    <keywords2 />
+    <keywords3 />
+    <keywords4 />
+  </highlighting>
+</filetype>
+

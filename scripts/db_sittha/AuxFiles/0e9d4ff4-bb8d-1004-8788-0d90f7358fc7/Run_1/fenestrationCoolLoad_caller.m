@@ -1,0 +1,1 @@
+[Qb, Qdcr, Qconv, Qtot] = fenestrationCoolLoad(1, 0.0, qb, qd, qc)

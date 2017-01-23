@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+hi
+To build the dome server, client, and dome3 jar:
+ant -f build.xml dist-dome dist-server dist-client
+
+or build all three with:
+ant -f build.xml dist
+
+To run dome client, change to the dist/client directory and run:
+java -Xms128M -Xmx720M -DDOMEROOT=. -cp ./ceed_client-<timestamp>.jar:./../dome3/ceed_dome3-<timestamp>.jar mit.cadlab.dome3.DomeClientApplication -debug:50
+
+To run DOME server, change to the dist/server directory and run:
+java -Xms128M -Xmx720M -DDOMEROOT=. -cp ./ceed_server-<timestamp>.jar:./../dome3/ceed_dome3-<timestamp>.jar mit.cadlab.dome3.network.server.DomeServer 7795 7792 -debug:50
+
+-->
+<project name="dome" default="dist" basedir=".">
+	<description>
+	</description>
+
+	<property environment="env"/>
+	<property name="debuglevel" value="source,lines,vars"/>
+
+	<property name="target" value="1.6"/>
+	<property name="source" value="1.6"/>
+
+	<property name="home" location="${basedir}" />
+	<property name="src.home" location="src" />
+	<property name="lib.home" location="lib" />
+    <property name="scripts.home" location="scripts" />
+	<property name="tomcat_home" location="${lib.home}/apache-tomcat7" />
+
+	<property name="build.home" location="bld" />
+	<property name="dist.home" location="dist" />
+	<property name="test.home" location="test-reports" />
+	
+	<property name="build.home-client" location="${build.home}/client" />
+	<property name="build.home-server" location="${build.home}/server" />
+	<property name="build.home-dome3" location="${build.home}/dome3" />
+	<property name="build.home-war" location="${build.home}/war" />
+	<property name="build.home-test" location="${build.home}/test" />
+	<property name="dist.home-client" location="${dist.home}/client" />
+	<property name="dist.home-server" location="${dist.home}/server" />
+	<property name="dist.home-dome3" location="${dist.home}/dome3" />
+	<property name="dist.home-war" location="${dist.home}/war" />
+    <property name="dist.home-bin" location="${dist.home}/bin" />
+    <property name="test.home-client" location="${test.home}/client" />
+	<property name="test.home-server" location="${test.home}/server" />
+	<property name="test.home-dome3" location="${test.home}/dome3" />
+	<property name="test.home-war" location="${test.home}/war" />
+
+
+<!-- START -->
+
+	<path id="client.classpath">
+		<fileset id="client.jars" dir="${lib.home}">
+			<include name="colt.jar" />
+			<include name="commons-codec-1.5.jar" />
+			<include name="commons-fileupload-1.0.jar" />
+			<include name="commons-lang3-3.0.1.jar" />
+			<include name="domehelp.jar" />
+			<include name="dom4j-full.jar" />
+			<include name="groovy-all-2.3.6.jar" />
+			<include name="Jama-1.0.1.jar" />
+			<include name="jakarta-oro-2.0.6.jar" />
+			<include name="jcommon-1.0.5.jar" />
+			<include name="jfreechart-0.9.14.jar" />
+			<include name="jfreechart-1.0.2.jar" />
+			<include name="jh.jar" />
+			<include name="jsp-api.jar" />
+			<include name="jython-standalone-2.7.0.jar" />
+			<include name="openideas13.jar" />
+			<include name="ostermillerutils_1_02_24.jar" />
+			<include name="secondstring-2003.jar" />
+			<include name="servlet-api.jar" />
+			<include name="vecmath.jar" />
+			<include name="apache-xmlrpc-3.1.3/lib/xmlrpc-server-3.1.3.jar" />
+			<include name="apache-xmlrpc-3.1.3/lib/commons-logging-1.1.jar" />
+			<include name="apache-xmlrpc-3.1.3/lib/xmlrpc-common-3.1.3.jar" />
+			<include name="apache-xmlrpc-3.1.3/lib/xmlrpc-client-3.1.3.jar" />
+			<include name="apache-xmlrpc-3.1.3/lib/ws-commons-util-1.0.2.jar" />
+<!--                        <include name="slf4j-api-1.6.4.jar" />
+                        <include name="slf4j-ext-1.6.4.jar" /> 
+                        <include name="slf4j-log4j12-1.6.4.jar" /> -->
+		</fileset>
+	</path>
+	<path id="junit-stuff">
+		<pathelement path="${build.home}" />
+		<pathelement path="${build.home}/test"/>
+		<fileset id="jars" dir="${lib.home}">
+			<include name="junit-4.8.jar" />
+		</fileset>
+	</path>
+	<pathconvert property="libs.project" pathsep=" ">
+		<mapper>
+			<chainedmapper>
+
+				<!-- remove absolute path -->
+				<flattenmapper />
+
+				<!-- add lib/ prefix -->
+				<globmapper from="*" to="lib/*" />
+			</chainedmapper>
+		</mapper>
+	 
+		<path refid="client.classpath" />
+	</pathconvert>
+
+	<path id="server.classpath">
+		<fileset id="server.jars" dir="${lib.home}">
+			<include name="axis.jar" />
+			<include name="colt.jar" />
+			<include name="commons-codec-1.5.jar" />
+			<include name="commons-fileupload-1.0.jar" />
+			<include name="commons-lang3-3.0.1.jar" />
+			<include name="DceGui.jar" />
+			<include name="domehelp.jar" />
+			<include name="dom4j-full.jar" />
+			<include name="groovy-all-2.3.6.jar" />
+			<include name="hsqldb.jar" />
+			<include name="Jama-1.0.1.jar" />
+			<include name="jakarta-oro-2.0.6.jar" />
+			<include name="jcommon-1.0.5.jar" />
+			<include name="jfreechart-0.9.14.jar" />
+			<include name="jfreechart-1.0.2.jar" />
+			<include name="jh.jar" />
+			<include name="jsp-api.jar" />
+			<include name="jython-standalone-2.7.0.jar" />
+			<include name="mysql.jar" />
+			<include name="openideas13.jar" />
+			<include name="ostermillerutils_1_02_24.jar" />
+			<include name="secondstring-2003.jar" />
+			<include name="secondstring.jar" />
+			<include name="servlet-api.jar" />
+			<include name="vecmath.jar" />
+			<include name="Vensim.jar" />
+			<include name="apache-xmlrpc-3.1.3/lib/xmlrpc-server-3.1.3.jar" />
+			<include name="apache-xmlrpc-3.1.3/lib/commons-logging-1.1.jar" />
+			<include name="apache-xmlrpc-3.1.3/lib/xmlrpc-common-3.1.3.jar" />
+			<include name="apache-xmlrpc-3.1.3/lib/xmlrpc-client-3.1.3.jar" />
+			<include name="apache-xmlrpc-3.1.3/lib/ws-commons-util-1.0.2.jar" />
+		</fileset>
+	</path>
+	<pathconvert property="server-libs.project" pathsep=" ">
+		<mapper>
+			<chainedmapper>
+				<!-- remove absolute path -->
+				<flattenmapper />
+				<!-- add lib/ prefix -->
+				<globmapper from="*" to="lib/*" />
+			</chainedmapper>
+		</mapper>
+		<path refid="server.classpath" />
+	</pathconvert>
+	
+
+	<!-- START -->
+	<path id="war.classpath">
+                <fileset id="war.jars" dir="${lib.home}">
+                        <include name="activemq-core-5.6.0.jar" />
+                        <include name="aws-java-sdk-1.3.0.jar" />
+                        <include name="axis.jar" />
+                        <include name="colt.jar" />
+                        <include name="commons-codec-1.5.jar" />
+                        <include name="commons-fileupload-1.2.2.jar" /> <!--  different that in DOMEApiServices -->
+                        <include name="commons-io-2.3.jar" />
+                        <include name="commons-lang-2.1.jar" />  <!--  different that in DOMEApiServices -->
+                        <include name="commons-logging-1.1.1.jar" />
+                        <include name="dom4j-full.jar" />
+                        <include name="domehelp.jar" />
+                        <include name="geronimo-j2ee-management_1.1_spec-1.0.1.jar" />
+                        <include name="groovy-all-2.3.6.jar" />
+                        <include name="gson-2.1.jar" />
+                        <include name="hsqldb.jar" />
+                        <include name="httpclient-4.1.1.jar" />
+                        <include name="httpcore-4.1.jar" />
+                        <include name="jai_codec.jar" />
+                        <include name="jai_core.jar" />
+                        <include name="jakarta-oro-2.0.6.jar" />
+                        <include name="javahelp-2.0.02.jar" />
+                        <include name="javax.jms.jar" />
+                        <include name="javax.transaction.jar" />
+                        <include name="jcommon-1.0.5.jar" />
+                        <include name="json_simple.jar" />
+                        <include name="junit-4.10.jar" />
+                        <include name="jython-standalone-2.7.0.jar" />
+                        <include name="log4j-1.2.16.jar" />
+                        <include name="ostermillerutils_1_02_24.jar" />
+                        <include name="pemsweb.jar" />
+                        <include name="slf4j-api-1.6.4.jar" />
+                        <include name="slf4j-ext-1.6.4.jar" />
+                        <include name="slf4j-log4j12-1.6.4.jar" />
+                        <include name="vecmath.jar" />
+                </fileset>
+        </path>
+        <pathconvert property="war-libs.project" pathsep=" ">
+                <mapper>
+                        <chainedmapper>
+                                <!-- remove absolute path -->
+                                <flattenmapper />
+                                <!-- add lib/ prefix -->
+                                <globmapper from="*" to="lib/*" />
+                        </chainedmapper>
+                </mapper>
+                <path refid="war.classpath" />
+        </pathconvert>
+
+	<path id="Apache Tomcat v7.0 [Apache Tomcat v7.0].libraryclasspath">
+          <pathelement location="${tomcat_home}/lib/annotations-api.jar"/>
+          <pathelement location="${tomcat_home}/lib/catalina-ant.jar"/>
+          <pathelement location="${tomcat_home}/lib/catalina-ha.jar"/>
+          <pathelement location="${tomcat_home}/lib/catalina-tribes.jar"/>
+          <pathelement location="${tomcat_home}/lib/catalina.jar"/>
+          <pathelement location="${tomcat_home}/lib/ecj-3.7.jar"/>
+          <pathelement location="${tomcat_home}/lib/el-api.jar"/>
+          <pathelement location="${tomcat_home}/lib/jasper-el.jar"/>
+          <pathelement location="${tomcat_home}/lib/jasper.jar"/>
+          <pathelement location="${tomcat_home}/lib/jsp-api.jar"/>
+          <pathelement location="${tomcat_home}/lib/servlet-api.jar"/>
+          <pathelement location="${tomcat_home}/lib/tomcat-api.jar"/>
+          <pathelement location="${tomcat_home}/lib/tomcat-coyote.jar"/>
+          <pathelement location="${tomcat_home}/lib/tomcat-dbcp.jar"/>
+          <pathelement location="${tomcat_home}/lib/tomcat-i18n-es.jar"/>
+          <pathelement location="${tomcat_home}/lib/tomcat-i18n-fr.jar"/>
+          <pathelement location="${tomcat_home}/lib/tomcat-i18n-ja.jar"/>
+          <pathelement location="${tomcat_home}/lib/tomcat-jdbc.jar"/>
+          <pathelement location="${tomcat_home}/lib/tomcat-util.jar"/>
+	</path>
+
+
+
+        <path id="dome3.classpath">
+                <fileset id="dome3.jars" dir="${lib.home}">
+			<include name="log4j-1.2.16.jar" />
+                        <include name="slf4j-api-1.6.4.jar" />
+                        <include name="slf4j-ext-1.6.4.jar" />
+                        <include name="slf4j-log4j12-1.6.4.jar" />
+                </fileset>
+        </path>
+        <pathconvert property="dome3-libs.project" pathsep=" ">
+                <mapper>
+                        <chainedmapper>
+                                <!-- remove absolute path -->
+                                <flattenmapper />
+                                <!-- add lib/ prefix -->
+                                <globmapper from="*" to="lib/*" />
+                        </chainedmapper>
+                </mapper>
+                <path refid="dome3.classpath" />
+		<path refid="server.classpath" />
+                <path refid="client.classpath" />
+        </pathconvert>
+
+
+
+
+<!-- END -->
+
+
+
+
+	<!-- SHARED -->
+	
+	<target name="-init">
+		<tstamp />
+		<mkdir dir="${build.home-client}" />
+		<mkdir dir="${build.home-server}" />
+		<mkdir dir="${build.home-dome3}" />
+		<mkdir dir="${build.home-war}" />
+		<mkdir dir="${build.home-test}" />
+
+		<copy includeemptydirs="false" todir="${build.home-test}">
+		  <fileset dir="test">
+		    <exclude name="**/*.java"/>
+		  </fileset>
+		</copy>
+	</target>	
+
+	<target name="compile" depends="compile-all-dome,compile-client,compile-server" />
+
+	<target name="dist" depends="dist-dome, dist-client, dist-server" />		
+
+	<target name="clean" depends="clean-tests">
+        <tstamp />
+		<delete dir="${build.home}" />
+		<delete dir="${dist.home}" />
+        <delete>
+            <fileset dir="${home}" includes="domeInstall-${DSTAMP}.zip"/>
+            <fileset dir="${home}" includes="domeInstall-*.zip"/>
+        </delete>
+	</target>
+	
+	
+	<!-- CLIENT 
+	This compiles only the DomeClientApplication and the files that are necessary at compile time.
+	This has NOT been tested to find runtime errors and missing classes that are instantiated
+	by Class.forName("xxx").newInstance(), etc.	
+	-->
+	
+	<target name="compile-client" depends="-init" description="Compile DomeClientApplication">
+		<javac  srcdir="${src.home}" 
+				destdir="${build.home-client}" 
+				includeantruntime="false"
+				includes="mit/cadlab/dome3/DomeClientApplication.java"
+				excludes="mit/cadlab/dome3/api/demo/**,se/**,com/ge/**"> 
+			<classpath refid="client.classpath" />
+			<classpath refid="dome3.classpath" />
+		</javac>
+		<copy todir="${build.home-client}/mit/cadlab/dome3/icons">
+			<fileset dir="${src.home}/mit/cadlab/dome3/icons">
+				<include name="**/*.gif" />
+			</fileset>
+		</copy>
+        	<copy todir="${build.home-client}/mit/cadlab/dome3/plugin/catalog/ui/images">
+            		<fileset dir="${src.home}/mit/cadlab/dome3/plugin/catalog/ui/images">
+                		<include name="**/*.gif" />
+            		</fileset>
+        	</copy>
+	</target>
+	
+	<target name="dist-client" depends="dist-dome,compile-client" description="Make DomeClientApplication jar">
+		<mkdir dir="${dist.home-client}" />
+		<jar 	jarfile="${dist.home-client}/ceed_client-${DSTAMP}.jar" 
+				basedir="${build.home-client}">
+			<manifest>
+				<attribute name="Built-By" value="${user.name}" />
+				<attribute name="Main-Class" value="mit.cadlab.dome3.DomeClientApplication" />				
+				<attribute name="Class-Path" value="${libs.project} ../dome3/ceed_dome3-${DSTAMP}.jar" />
+			</manifest>
+		</jar>
+		<copy todir="${dist.home-client}/python">
+		  <fileset dir="${basedir}/python"/>
+		</copy>
+		<copy todir="${dist.home-client}/lib">
+			<fileset refid="client.jars" />
+		</copy>
+	</target>
+	
+	<target name="run-client" depends="dist-client" description="Run DomeClientApplication jar">
+		<java fork="true" spawn="false" classname="mit.cadlab.dome3.DomeClientApplication" dir="${dist.home-client}">
+<!--			<jvmarg value="-Xdebug" />
+			<jvmarg value="-Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5432" />
+-->			<jvmarg line="-Xms128M -Xmx720M -DDOMEROOT=${dist.home-client}"/>
+			<classpath>
+			    <path location="${dist.home-client}/ceed_client-${DSTAMP}.jar"/>
+			    <path location="${dist.home-dome3}/ceed_dome3-${DSTAMP}.jar"/>
+			</classpath>
+			<arg value="-debug:50"/>
+		</java>
+	</target>
+	
+	<!-- SERVER -->
+	
+	<target name="compile-server" depends="-init" description="Compile DomeServer">
+		<javac  srcdir="${src.home}" 
+				destdir="${build.home-server}" 
+				includeantruntime="false"
+				includes="mit/cadlab/dome3/network/server/DomeServer.java"
+				excludes="mit/cadlab/dome3/api/demo/**,se/**,com/ge/**"> 
+			<classpath refid="server.classpath" />
+			<classpath refid="dome3.classpath" />
+		</javac>
+		<copy todir="${build.home-server}/mit/cadlab/dome3/icons">
+			<fileset dir="${src.home}/mit/cadlab/dome3/icons">
+				<include name="**/*.gif" />
+			</fileset>
+		</copy>
+	</target>
+	
+	<target name="dist-server" depends="dist-dome,compile-server" description="Make DomeServer jar">
+		<mkdir dir="${dist.home-server}" />
+		<jar 	jarfile="${dist.home-server}/ceed_server-${DSTAMP}.jar" 
+				basedir="${build.home-server}">
+			<manifest>
+				<attribute name="Built-By" value="${user.name}" />
+				<attribute name="Main-Class" value="mit.cadlab.dome3.network.server.DomeServer" />				
+				<attribute name="Class-Path" value="${server-libs.project} ../dome3/ceed_dome3-${DSTAMP}.jar" />
+			</manifest>
+		</jar>
+
+		<copy todir="${dist.home-server}">
+		  <fileset dir="${basedir}/scripts/db/">
+		    <include name="*.properties" />
+		    <include name="*.script" />
+		  </fileset>
+		</copy>
+
+		<copy todir="${dist.home-server}/AuxFiles">
+		  <fileset dir="${basedir}/scripts/db/AuxFiles" />
+		</copy>
+
+		<copy todir="${dist.home-server}/python">
+		  <fileset dir="${basedir}/python"/>
+		</copy>
+		<copy todir="${dist.home-server}/lib">
+			<fileset refid="server.jars" />
+		</copy>
+	</target>
+
+	<target name="run-server" depends="dist-server" description="Run DomeServer jar">
+		<java fork="true" spawn="false" classname="mit.cadlab.dome3.network.server.DomeServer" dir="${dist.home-server}">
+			<jvmarg line="-Xms128M -Xmx720M -DDOMEROOT=${dist.home-server}"/>
+			<classpath>
+			    <path location="${dist.home-server}/ceed_server-${DSTAMP}.jar"/>
+			    <path location="${dist.home-dome3}/ceed_dome3-${DSTAMP}.jar"/>
+	        </classpath>
+			<arg line="7795 7792 -debug:50"/>
+		</java>
+	</target>
+	
+    <target name="copy-db" depends="" description="Copy">
+        <copy todir="${basedir}/scripts/db/">
+            <fileset dir="${dist.home-server}">
+                <include name="*.properties" />
+                <include name="*.script" />
+            </fileset>
+        </copy>
+        
+        <copy todir="${basedir}/scripts/db/AuxFiles">
+            <fileset dir="${dist.home-server}/AuxFiles" />
+        </copy>
+    </target>
+    
+    
+	<!-- DOME3 jar -->
+
+	<target name="compile-all-dome" depends="-init" description="Compile all java files under the src tree">
+		<javac	srcdir="${src.home}"
+				destdir="${build.home-dome3}"
+				includeantruntime="false"
+				
+				excludes="mit/cadlab/dome3/api/demo/**,se/**,fullWindNoiseToolGUI/**,test/**,dceGUI/**,com/ge/**"> 
+			<classpath refid="server.classpath" />
+			<classpath refid="client.classpath" />
+			<classpath refid="dome3.classpath" />
+		</javac>
+	</target>
+	
+	<target name="dist-dome" depends="compile-all-dome" description="Make Dome3 jar">
+                <mkdir dir="${dist.home-dome3}" />
+                <copy todir="${dist.home-dome3}/lib">
+                        <fileset refid="server.jars" />
+                        <fileset refid="client.jars" />
+                        <fileset refid="dome3.jars" />
+                </copy>
+                <jar jarfile="${dist.home-dome3}/ceed_dome3-${DSTAMP}.jar" basedir="${build.home-dome3}">
+                  <manifest>
+                    <attribute name="Built-By" value="${user.name}" />  
+                    <attribute name="Class-Path" value="${dome3-libs.project}" />
+                  </manifest>
+                </jar>
+        </target>
+
+
+	<!-- DOMEApiServices WAR -->
+
+	<target name="build-war" depends="dist-dome">
+    	<echo message="${ant.project.name}: ${ant.file}"/>
+	  	<javac  srcdir="${src.home}"  destdir="${build.home-war}"  includeantruntime="false"  includes="com/ge/**/*.java"  excludes="mit/**,se/**">
+			<classpath>
+            	<path refid="Apache Tomcat v7.0 [Apache Tomcat v7.0].libraryclasspath" />
+			  	<path location="${dist.home-dome3}/ceed_dome3-${DSTAMP}.jar"/>
+			</classpath>
+            <classpath refid="war.classpath" />
+<!--			<classpath refid="client.classpath" />  -->
+	  	</javac>
+	</target>
+
+       <target name="build-war-tests" depends="-init">
+         <javac  srcdir="test"  destdir="${build.home-test}"  includeantruntime="false"  includes="com/ge/**/*.java"  excludes="mit/**,se/**">
+           <classpath refid="war.classpath" />
+           <classpath>
+	     <pathelement location="${build.home-war}"/>
+	     <path refid="Apache Tomcat v7.0 [Apache Tomcat v7.0].libraryclasspath" />
+             <path location="${dist.home-dome3}/ceed_dome3-${DSTAMP}.jar"/>
+           </classpath>
+           <classpath refid="war.classpath" />
+           <classpath refid="client.classpath" />
+         </javac>
+       </target>
+
+       <target name="test-war" depends="build-war-tests,init-tests">
+	  <junit printsummary="yes" haltonfailure="no">
+            <classpath>
+              <pathelement location="${build.home-war}"/>
+              <pathelement location="${build.home-test}"/>
+              <pathelement location="${lib.home}/colt.jar"/>
+              <pathelement location="${lib.home}/commons-codec-1.3.jar"/>
+              <pathelement location="${lib.home}/commons-fileupload-1.2.2.jar"/>
+              <pathelement location="${lib.home}/commons-io-2.3.jar"/>
+              <pathelement location="${lib.home}/commons-lang-2.1.jar"/>
+              <pathelement location="${lib.home}/commons-logging-1.1.1.jar"/>
+              <pathelement location="${lib.home}/dom4j-full.jar"/>
+              <pathelement location="${lib.home}/dome3.jar"/>
+              <pathelement location="${lib.home}/gson-2.1.jar"/>
+              <pathelement location="${lib.home}/jython-standalone-2.7.0.jar"/>
+              <pathelement location="${lib.home}/log4j-1.2.16.jar"/>
+              <pathelement location="${lib.home}/slf4j-log4j12-1.6.4.jar"/>
+              <pathelement location="${lib.home}/slf4j-api-1.6.4.jar"/>
+              <pathelement location="${lib.home}/slf4j-ext-1.6.4.jar"/>
+              <path id="Web App Libraries.libraryclasspath"/>
+              <path refid="junit-stuff"/>
+            </classpath>
+	    
+            <!-- <test name="com.ge.ceed.domeapi.DomeEntitySerializerTest" /> -->
+            <batchtest fork="no" todir="${test.home}">
+				<formatter type="xml"/>
+				<fileset dir="test">
+				<include name="**/*Test*.java"/>
+				<exclude name="mit/**"/>
+				<exclude name="**/*ModelTestUtility.java"/>
+				<exclude name="**/CeedIntegrationProjectBuilderTest.java"/>
+              </fileset>
+            </batchtest>
+            <!-- <formatter type="plain" usefile="false" /> -->
+	  </junit>
+       </target>
+
+
+       <target name="ensure-test-name" unless="test">
+	 <fail message="You must run this target with -Dtest=TestName"/>
+       </target>
+       <target name="single-test" description="Runs the test you specify on the command line with -Dtest=" depends="ensure-test-name,build-war-tests">
+	 <junit printsummary="withOutAndErr" fork="yes">
+	   <classpath>
+             <pathelement location="${build.home-war}"/>
+             <pathelement location="${build.home-test}"/>
+             <pathelement location="${lib.home}/colt.jar"/>
+             <pathelement location="${lib.home}/commons-codec-1.3.jar"/>
+             <pathelement location="${lib.home}/commons-fileupload-1.2.2.jar"/>
+             <pathelement location="${lib.home}/commons-io-2.3.jar"/>
+             <pathelement location="${lib.home}/commons-lang-2.1.jar"/>
+             <pathelement location="${lib.home}/commons-logging-1.1.1.jar"/>
+             <pathelement location="${lib.home}/dom4j-full.jar"/>
+             <pathelement location="${lib.home}/dome3.jar"/>
+             <pathelement location="${lib.home}/gson-2.1.jar"/>
+             <pathelement location="${lib.home}/jython-standalone-2.7.0.jar"/>
+             <pathelement location="${lib.home}/log4j-1.2.16.jar"/>
+             <pathelement location="${lib.home}/slf4j-log4j12-1.6.4.jar"/>
+             <pathelement location="${lib.home}/slf4j-api-1.6.4.jar"/>
+             <pathelement location="${lib.home}/slf4j-ext-1.6.4.jar"/>
+             <path id="Web App Libraries.libraryclasspath"/>
+             <path refid="junit-stuff"/>
+           </classpath>
+           <formatter type="plain" usefile="false"/>
+           <batchtest>
+             <fileset dir="test">
+               <include name="**/${test}.java"/>
+             </fileset>
+           </batchtest>
+	 </junit>
+       </target>
+
+
+
+
+<!--
+          <javac debug="true" debuglevel="${debuglevel}" destdir="test-classes" source="${source}" target="${target}">
+            <src path="test"/>
+            <classpath refid="DOMEApiServices.classpath"/>
+          </javac>
+	</target>
+-->
+
+	<target name="dist-war" depends="build-war">
+		
+		<mkdir dir="${dist.home-war}/dependencies/WEB-INF/lib" />
+		<copy file="${dist.home-dome3}/ceed_dome3-${DSTAMP}.jar" todir="${dist.home-war}/dependencies/WEB-INF/lib" />
+		
+		<copy todir="${dist.home-war}/dependencies/WEB-INF/db">
+			<fileset dir="${basedir}/scripts/db/">
+				<include name="*.properties" />
+				<include name="*.script" />
+			</fileset>
+		</copy>
+
+		<copy todir="${dist.home-war}/dependencies/WEB-INF/db/AuxFiles">
+			<fileset dir="${basedir}/scripts/db/AuxFiles" />
+		</copy>
+
+		<copy todir="${dist.home-war}/dependencies/WEB-INF/python">
+			<fileset dir="${basedir}/python"/>
+		</copy>
+		<copy todir="${dist.home-war}/dependencies/WEB-INF/lib">
+			<fileset refid="war.jars" />
+		</copy>
+		
+		
+		<war destfile="${dist.home-war}/DOMEApiServices-${DSTAMP}.war" webxml="WebContent/web.xml">
+       			<fileset dir="WebContent">
+           			<exclude name="**/cachedir/"/>
+       	  			<exclude name="**/junit*.jar"/>
+              			<exclude name="**/dome3.jar"/>
+           			<exclude name="**/AwsCredentials.properties"/>
+           		</fileset>
+			<fileset dir="${dist.home-war}/dependencies"/>
+           			<classes dir="${build.home-war}" excludes="**/junit*.jar"/>
+				<classes dir="${src.home}" includes="config/config.properties"/>
+				<classes dir="${src.home}" includes="log4j.xml"/>
+	  		</war>
+	  
+	  	<war destfile="${dist.home-war}/DOMEApiServicesV7.war" webxml="WebContent/web.xml">
+            		<fileset dir="WebContent">
+        			<exclude name="**/cachedir/"/>
+            			<exclude name="**/junit*.jar"/>
+            			<exclude name="**/dome3.jar"/>
+            			<exclude name="**/AwsCredentials.properties"/>
+            		</fileset>
+	  		<fileset dir="${dist.home-war}/dependencies"/>
+            		<classes dir="${build.home-war}" excludes="**/junit*.jar"/>
+			<classes dir="${src.home}" includes="config/config.properties"/>
+			<classes dir="${src.home}" includes="log4j.xml"/>
+	  	</war>
+	</target>
+
+
+
+    <!-- Distribution bin directory -->
+    <target name="dist-bin" depends="dist-dome,dist-client,dist-server">
+        <mkdir dir="${dist.home-bin}" />
+        
+        <!-- Linux DOME Client -->
+        <echo message="java -DDOMEROOT=../client -classpath ../client/ceed_client-${DSTAMP}.jar:../dome3/ceed_dome3-${DSTAMP}.jar mit.cadlab.dome3.DomeClientApplication" file="${dist.home-bin}/DomeClient.sh"/>
+        
+        <!-- Windows DOME Client -->
+        <echo message="java -DDOMEROOT=..\client -classpath ..\client\ceed_client-${DSTAMP}.jar;..\dome3\ceed_dome3-${DSTAMP}.jar mit.cadlab.dome3.DomeClientApplication" file="${dist.home-bin}/DomeClient.bat"/>
+
+        <!-- Linux DOME Server -->
+        <echo message="java -DDOMEROOT=../server -classpath ../server/ceed_server-${DSTAMP}.jar:../dome3/ceed_dome3-${DSTAMP}.jar mit.cadlab.dome3.network.server.DomeServer 7795 7792" file="${dist.home-bin}/DomeServer.sh"/>
+
+        <!-- Windows DOME Server -->
+        <echo message="java -DDOMEROOT=..\server -classpath ..\server\ceed_server-${DSTAMP}.jar;..\dome3\ceed_dome3-${DSTAMP}.jar mit.cadlab.dome3.network.server.DomeServer 7795 7792" file="${dist.home-bin}/DomeServer.bat"/>
+    </target>
+
+
+    <!-- Zipped Distribution -->
+    <target name="dist-zip" depends="dist-bin">
+        <zip destfile="${home}/domeInstall-${DSTAMP}.zip" basedir="${dist.home}" />
+    </target>
+
+	<!-- tests -->
+
+	<target name="init-tests">
+		<mkdir dir="${test.home}" />
+		<mkdir dir="${test.home-dome3}"/>
+		<mkdir dir="${test.home-client}"/>
+		<mkdir dir="${test.home-server}"/>
+	</target>
+
+	<target name="clean-tests" description="Clean the output directory and such">
+		<delete dir="${test.home}" />
+	</target>
+	
+	<target name="build-test" description="Build the test code" depends="init-tests">
+		<compile-one-test file="test/ParameterStatusTester.java"/>
+		<compile-one-test file="test/PingXml Rpc.java"/>
+		<compile-one-test file="test/testVector.java"/>
+		<compile-one-test file="test/XmlTests.java"/>
+		<compile-one-test file="test/SmokeJunit.java"/>
+		<compile-one-test file="test/TestSmoke.java"/>
+		<compile-one-test file="test/TestNetworkFunctions.java"/>
+		<compile-one-test file="test/TestLogin.java"/>
+		<compile-one-test file="test/TestDomeProperties.java"/>
+		<compile-one-test file="test/domeapi/TestDomeapi01.java"/>
+		<compile-one-test file="test/TestClassAvailability.java"/>
+	</target>
+
+	<target name="test" description="Run the tests" depends="dist,init-tests">
+		
+		<javac  srcdir="test"  destdir="${build.home-test}"  includeantruntime="false"  includes="mit/**/*.java"  excludes="se/**,com/ge/**">
+			<classpath>
+			    <pathelement location="${dist.home-client}/ceed_client-${DSTAMP}.jar"/>
+			    <pathelement location="${dist.home-server}/ceed_server-${DSTAMP}.jar"/>
+			    <pathelement location="${dist.home-dome3}/ceed_dome3-${DSTAMP}.jar"/>
+			</classpath>
+			<classpath refid="junit-stuff"/>
+
+		</javac>
+		
+		
+		<junit printsummary="yes" haltonfailure="no">
+			<classpath>
+			    <pathelement location="${dist.home-client}/ceed_client-${DSTAMP}.jar"/>
+			    <pathelement location="${dist.home-server}/ceed_server-${DSTAMP}.jar"/>
+			    <pathelement location="${dist.home-dome3}/ceed_dome3-${DSTAMP}.jar"/>
+			</classpath>
+			
+			<classpath>
+				<pathelement location="${build.home-test}"/>
+			</classpath>
+			<classpath refid="junit-stuff" />
+			
+			
+			<batchtest fork="no" todir="${test.home}">
+				<formatter type="xml"/>
+				<fileset dir="test">
+					<include name="mit/**"/>
+					<exclude name="**/*ModelTestUtility.java"/>
+					<exclude name="**/CeedIntegrationProjectBuilderTest.java"/>
+				</fileset>
+			</batchtest>
+			
+		</junit>
+	</target>
+
+
+	<target name="smokeapi" description="Non-junit test of Dome API">
+		<javac  srcdir="${src.home}"
+				destdir="${build.home}"
+				failonerror="true"
+				includeantruntime="false"
+				includes="test/domeapi/SmokeDomeApi.java">
+			<classpath refid="server.classpath"/>
+		</javac>
+		<java classname="test.domeapi.SmokeDomeApi">
+			<classpath refid="server.classpath"/>
+			<classpath>
+				<pathelement path="${build.home}"/>
+				<pathelement path="${src.home}"/>
+			</classpath>
+		</java>
+	</target>
+
+	<target name="cmd-test" description="run a JUnit test from the command line">
+		<java classname="org.junit.runner.JUnitCore">
+			<arg value="test.domeapi.TestDomeapi01"/>
+			<classpath refid="server.classpath"/>
+			<classpath>
+				<pathelement path="${build.home}"/>
+				<pathelement path="${src.home}"/>
+			</classpath>
+			<classpath refid="junit-stuff"/>
+		</java>
+	</target>
+
+	<macrodef name="compile-one-test">
+		<attribute name="file"/>
+		<sequential>
+			<echo message="Compiling @{file}"/>
+			<javac	srcdir="${src.home}"
+					destdir="${build.home}"
+					failonerror="false"
+					verbose="no"
+					includeantruntime="false"
+					includes="@{file}">
+				<classpath refid="server.classpath"/>
+				<classpath refid="junit-stuff"/>
+			</javac>
+		</sequential>
+	</macrodef>
+
+
+	<macrodef name="do-interactive-test">
+		<attribute name="javafile"/>
+		<attribute name="classname"/>
+		<sequential>
+			<compile-one-test file="@{javafile}"/>
+			<java classname="@{classname}" classpath="${build.home};${lib.home}/jython-standalone-2.7.0.jar;${lib.home}/dom4j-full.jar;${src.home}" fork="true">
+			</java>
+		</sequential>
+	</macrodef>
+
+
+	<target name="interactive-test" description="set up path and run a test which brings up a Swing GUI and needs human interaction">
+		<!--
+		<do-interactive-test javafile="test/deploy/SimpleModelDeploy.java" classname="test.deploy.SimpleModelDeploy"/>
+		<do-interactive-test javafile="test/deploy/SimplePlayspaceDeploy.java" classname="test.deploy.SimplePlayspaceDeploy"/>
+		<do-interactive-test javafile="test/deploy/SimpleProjectDeploy.java" classname="test.deploy.SimpleProjectDeploy"/>
+		<do-interactive-test javafile="test/gui/CompleteInterfaceCustomGui.java" classname="test.gui.CompleteInterfaceCustomGui"/>
+		<do-interactive-test javafile="test/gui/CustomSimpleMathModelGui.java" classname="test.gui.CustomSimpleMathModelGui"/>
+		<do-interactive-test javafile="test/gui/MechanicalGlassDropCustomGui.java" classname="test.gui.MechanicalGlassDropCustomGui"/>
+		<do-interactive-test javafile="test/jython/JythonTests.java" classname="test.jython.JythonTests"/>
+		<do-interactive-test javafile="test/jython/RelationExecutor.java" classname="test.jython.RelationExecutor"/>
+		<do-interactive-test javafile="test/jython/SimpleData.java" classname="test.jython.SimpleData"/>
+		<do-interactive-test javafile="test/jython/DataType/TestUnits.java" classname="test.jython.DataType.TestUnits"/>
+		<do-interactive-test javafile="test/model/RunDomeModel.java" classname="test.model.RunDomeModel"/>
+		<do-interactive-test javafile="test/model/RunExcelModel.java" classname="test.model.RunExcelModel"/>
+		<do-interactive-test javafile="test/model/RunMathematicaModel.java" classname="test.model.RunMathematicaModel"/>
+		<do-interactive-test javafile="test/model/RunMatlabModel.java" classname="test.model.RunMatlabModel"/>
+		<do-interactive-test javafile="test/model/RunSolidworksModel.java" classname="test.model.RunSolidworksModel"/>
+		<do-interactive-test javafile="test/model/RuntimeModelTest.java" classname="test.model.RuntimeModelTest"/>
+		<do-interactive-test javafile="test/plugin/CirculationPlugTest.java" classname="test.plugin.CirculationPlugTest"/>
+		<do-interactive-test javafile="test/plugin/ExamplePlugTest.java" classname="test.plugin.ExamplePlugTest"/>
+		<do-interactive-test javafile="test/plugin/ExcelPlugTest.java" classname="test.plugin.ExcelPlugTest"/>
+		<do-interactive-test javafile="test/plugin/Ideas10PluginTest.java" classname="test.plugin.Ideas10PluginTest"/>
+		<do-interactive-test javafile="test/plugin/IdeasPluginTest.java" classname="test.plugin.IdeasPluginTest"/>
+		<do-interactive-test javafile="test/plugin/IOAnalysisPlugTest.java" classname="test.plugin.IOAnalysisPlugTest"/>
+		<do-interactive-test javafile="test/plugin/LanduseAggPluginTest.java" classname="test.plugin.LanduseAggPluginTest"/>
+		<do-interactive-test javafile="test/plugin/MathematicaPlugTest.java" classname="test.plugin.MathematicaPlugTest"/>
+		<do-interactive-test javafile="test/plugin/MatlabPlugTest.java" classname="test.plugin.MatlabPlugTest"/>
+		<do-interactive-test javafile="test/plugin/NastranTest.java" classname="test.plugin.NastranTest"/>
+		<do-interactive-test javafile="test/plugin/OptimizationPluginTest.java" classname="test.plugin.OptimizationPluginTest"/>
+		<do-interactive-test javafile="test/plugin/SolidworksPluginTest.java" classname="test.plugin.SolidworksPluginTest"/>
+		<do-interactive-test javafile="test/tableExample/JavaDataObjectTableModel.java" classname="test.tableExample.JavaDataObjectTableModel"/>
+		<do-interactive-test javafile="test/tableExample/ObjectTableTest.java" classname="test.tableExample.ObjectTableTest"/>
+		<do-interactive-test javafile="test/treetableexample/FileObject.java" classname="test.treetableexample.FileObject"/>
+		<do-interactive-test javafile="test/treetableexample/FileTreeTableTest.java" classname="test.treetableexample.FileTreeTableTest"/>
+		<do-interactive-test javafile="test/ParameterStatusTester.java" classname="test.ParameterStatusTester"/>
+		<do-interactive-test javafile="test/XmlTests.java" classname="test.XmlTests"/>
+		-->
+		<do-interactive-test javafile="test/plugin/ExamplePlugTest.java" classname="test.plugin.ExamplePlugTest"/>
+	</target>
+
+</project>

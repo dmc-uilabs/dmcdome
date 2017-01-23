@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="dc7cba64-d0ad-1004-8ef8-9e203c99f336" name="Default Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="OutParam" idRef="dc7cba76-d0ad-1004-8ef8-9e203c99f336">
+                    <parameter name="OutParam" idRef="dc7cba74-d0ad-1004-8ef8-9e203c99f336" idRelationRef="dc7cba69-d0ad-1004-8ef8-9e203c99f336"/>
+                </mappedParameter>
+                <mappedParameter name="InParam" idRef="dc7cba73-d0ad-1004-8ef8-9e203c99f336">
+                    <parameter name="InParam" idRef="dc7cba71-d0ad-1004-8ef8-9e203c99f336" idRelationRef="dc7cba69-d0ad-1004-8ef8-9e203c99f336"/>
+                </mappedParameter>
+                <mappedParameter name="OutParam" idRef="dc7cba75-d0ad-1004-8ef8-9e203c99f336" idRelationRef="dc7cba6d-d0ad-1004-8ef8-9e203c99f336">
+                    <parameter name="OutParam" idRef="dc7cba74-d0ad-1004-8ef8-9e203c99f336" idRelationRef="dc7cba69-d0ad-1004-8ef8-9e203c99f336"/>
+                </mappedParameter>
+                <mappedParameter name="InParam" idRef="dc7cba72-d0ad-1004-8ef8-9e203c99f336" idRelationRef="dc7cba6d-d0ad-1004-8ef8-9e203c99f336">
+                    <parameter name="InParam" idRef="dc7cba71-d0ad-1004-8ef8-9e203c99f336" idRelationRef="dc7cba69-d0ad-1004-8ef8-9e203c99f336"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects/>
+    </mappingsandintermediates>
+    <lookupdata>
+        <objectmap>
+            <relation name="Procedural Relation" idRef="dc7cba69-d0ad-1004-8ef8-9e203c99f336" description="key"/>
+            <relation name="Procedural Relation" idRef="dc7cba6d-d0ad-1004-8ef8-9e203c99f336" description="value"/>
+            <parameter name="OutParam" idRef="dc7cba74-d0ad-1004-8ef8-9e203c99f336" idRelationRef="dc7cba69-d0ad-1004-8ef8-9e203c99f336" description="key"/>
+            <parameter name="OutParam" idRef="dc7cba75-d0ad-1004-8ef8-9e203c99f336" idRelationRef="dc7cba6d-d0ad-1004-8ef8-9e203c99f336" description="value"/>
+            <parameter name="InParam" idRef="dc7cba71-d0ad-1004-8ef8-9e203c99f336" idRelationRef="dc7cba69-d0ad-1004-8ef8-9e203c99f336" description="key"/>
+            <parameter name="InParam" idRef="dc7cba72-d0ad-1004-8ef8-9e203c99f336" idRelationRef="dc7cba6d-d0ad-1004-8ef8-9e203c99f336" description="value"/>
+        </objectmap>
+        <viewobjectmap/>
+        <relationobjectmap>
+            <parameter name="OutParam" idRef="dc7cba74-d0ad-1004-8ef8-9e203c99f336" idRelationRef="dc7cba69-d0ad-1004-8ef8-9e203c99f336" description="key"/>
+            <parameter name="OutParam" idRef="dc7cba76-d0ad-1004-8ef8-9e203c99f336" description="value"/>
+            <parameter name="InParam" idRef="dc7cba71-d0ad-1004-8ef8-9e203c99f336" idRelationRef="dc7cba69-d0ad-1004-8ef8-9e203c99f336" description="key"/>
+            <parameter name="InParam" idRef="dc7cba73-d0ad-1004-8ef8-9e203c99f336" description="value"/>
+        </relationobjectmap>
+    </lookupdata>
+</modelinterface>

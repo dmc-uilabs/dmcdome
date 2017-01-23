@@ -1,0 +1,1 @@
+[qb, qd, qc] = fenestrationHeatGains(U, A, Tin, Tout, glassID, IAC, theta, ED, Ed, Er, sunrise, sunset);

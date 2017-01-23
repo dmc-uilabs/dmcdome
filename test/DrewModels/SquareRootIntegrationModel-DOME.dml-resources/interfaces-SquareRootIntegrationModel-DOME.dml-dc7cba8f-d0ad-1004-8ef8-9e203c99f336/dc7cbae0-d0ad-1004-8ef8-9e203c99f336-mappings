@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="dc7cbae0-d0ad-1004-8ef8-9e203c99f336" name="Drews New Project Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="OutParam" idRef="dc7cbae6-d0ad-1004-8ef8-9e203c99f336">
+                    <parameter name="OutParam" idRef="dc7cbaca-d0ad-1004-8ef8-9e203c99f336"/>
+                </mappedParameter>
+                <mappedParameter name="InParam" idRef="dc7cbae5-d0ad-1004-8ef8-9e203c99f336">
+                    <parameter name="InParam" idRef="dc7cbaaa-d0ad-1004-8ef8-9e203c99f336"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects/>
+    </mappingsandintermediates>
+</modelinterface>

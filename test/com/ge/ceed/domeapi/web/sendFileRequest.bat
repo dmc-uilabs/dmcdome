@@ -1,0 +1,1 @@
+wget -O - --post-file squareRootTestRequest.txt http://localhost:8080/DOMEApiServices/runModel

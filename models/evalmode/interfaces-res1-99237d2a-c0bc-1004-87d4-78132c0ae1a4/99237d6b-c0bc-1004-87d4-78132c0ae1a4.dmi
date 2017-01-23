@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="99237d6b-c0bc-1004-87d4-78132c0ae1a4" name="Dome Model Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+    </interfaceinfo>
+    <parameters>
+        <parameter id="99237d70-c0bc-1004-87d4-78132c0ae1a4" name="a">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="99237d71-c0bc-1004-87d4-78132c0ae1a4" name="b">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="99237d72-c0bc-1004-87d4-78132c0ae1a4" name="c">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String"></dataobject>
+            </data>
+        </parameter>
+        <parameter id="99237d73-c0bc-1004-87d4-78132c0ae1a4" name="d">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="99237d74-c0bc-1004-87d4-78132c0ae1a4" name="e">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String"></dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <visualizations/>
+    <relations/>
+    <contexts>
+        <context id="IFACE_MODEL_CXT" name="Model View"/>
+    </contexts>
+    <views>
+        <view name="Build View">
+            <context id="IFACE_BUILD_CXT" name="Build View">
+                <modelobjects>
+                    <parameter name="a" idRef="99237d70-c0bc-1004-87d4-78132c0ae1a4"/>
+                    <parameter name="b" idRef="99237d71-c0bc-1004-87d4-78132c0ae1a4"/>
+                    <parameter name="c" idRef="99237d72-c0bc-1004-87d4-78132c0ae1a4"/>
+                    <parameter name="d" idRef="99237d73-c0bc-1004-87d4-78132c0ae1a4"/>
+                    <parameter name="e" idRef="99237d74-c0bc-1004-87d4-78132c0ae1a4"/>
+                </modelobjects>
+            </context>
+        </view>
+        <view name="Interface Causality View">
+            <filter id="INPUTS_FILTER" name="Inputs">
+                <parameters>
+                    <parameter name="a" idRef="99237d70-c0bc-1004-87d4-78132c0ae1a4"/>
+                    <parameter name="b" idRef="99237d71-c0bc-1004-87d4-78132c0ae1a4"/>
+                    <parameter name="c" idRef="99237d72-c0bc-1004-87d4-78132c0ae1a4"/>
+                </parameters>
+            </filter>
+            <filter id="OUTPUTS_FILTER" name="Outputs">
+                <parameters>
+                    <parameter name="d" idRef="99237d73-c0bc-1004-87d4-78132c0ae1a4" causality="Result"/>
+                    <parameter name="e" idRef="99237d74-c0bc-1004-87d4-78132c0ae1a4" causality="Result"/>
+                </parameters>
+            </filter>
+            <filter id="INDETERMINATES_FILTER" name="Indeterminates"/>
+        </view>
+    </views>
+    <directedGraph id="99237d6b-c0bc-1004-87d4-78132c0ae1a4">
+        <nodes>
+            <node idRef="99237d70-c0bc-1004-87d4-78132c0ae1a4"/>
+            <node idRef="99237d71-c0bc-1004-87d4-78132c0ae1a4"/>
+            <node idRef="99237d72-c0bc-1004-87d4-78132c0ae1a4"/>
+            <node idRef="99237d73-c0bc-1004-87d4-78132c0ae1a4"/>
+            <node idRef="99237d74-c0bc-1004-87d4-78132c0ae1a4"/>
+        </nodes>
+        <arcs>
+            <from idRef="99237d70-c0bc-1004-87d4-78132c0ae1a4">
+                <to idRef="99237d73-c0bc-1004-87d4-78132c0ae1a4"/>
+            </from>
+            <from idRef="99237d71-c0bc-1004-87d4-78132c0ae1a4">
+                <to idRef="99237d73-c0bc-1004-87d4-78132c0ae1a4"/>
+            </from>
+            <from idRef="99237d72-c0bc-1004-87d4-78132c0ae1a4">
+                <to idRef="99237d74-c0bc-1004-87d4-78132c0ae1a4"/>
+            </from>
+        </arcs>
+    </directedGraph>
+    <interfaceToRelParamMap>
+        <iToRpMap relParamId="99237d70-c0bc-1004-87d4-78132c0ae1a4" ifaceId="99237d38-c0bc-1004-87d4-78132c0ae1a4"/>
+        <iToRpMap relParamId="99237d71-c0bc-1004-87d4-78132c0ae1a4" ifaceId="99237d3b-c0bc-1004-87d4-78132c0ae1a4"/>
+        <iToRpMap relParamId="99237d72-c0bc-1004-87d4-78132c0ae1a4" ifaceId="99237d3e-c0bc-1004-87d4-78132c0ae1a4"/>
+        <iToRpMap relParamId="99237d73-c0bc-1004-87d4-78132c0ae1a4" ifaceId="99237d41-c0bc-1004-87d4-78132c0ae1a4"/>
+        <iToRpMap relParamId="99237d74-c0bc-1004-87d4-78132c0ae1a4" ifaceId="99237d44-c0bc-1004-87d4-78132c0ae1a4"/>
+    </interfaceToRelParamMap>
+</modelinterface>

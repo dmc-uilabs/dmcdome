@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="2f58259d-b6ae-1004-86d2-40c13943eb91" name="Default Interface">
+    <interfaceinfo>
+        <version>0.0.4</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="numberBldg" idRef="397dbd2e-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="numberBldg" idRef="397dbd2c-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="db" idRef="3902a705-b6ae-1004-86d2-40c13943eb91" idRelationRef="36c8d534-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="db" idRef="3902a704-b6ae-1004-86d2-40c13943eb91" idRelationRef="36c8d530-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="selType" idRef="3718991e-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="selType" idRef="3718991c-b6ae-1004-86d2-40c13943eb91" idRelationRef="36c8d530-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="east" idRef="2f7998dd-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="east" idRef="2f7998dc-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="s" idRef="31eceeea-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="s" idRef="31eceee8-b6ae-1004-86d2-40c13943eb91" idRelationRef="31d5b4d0-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="groundArea" idRef="3976dd05-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="groundArea" idRef="3976dd04-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="north" idRef="2f7e7cd2-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="north" idRef="2f7e7cd0-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="e" idRef="31e79629-b6ae-1004-86d2-40c13943eb91" idRelationRef="31d5b4d4-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="e" idRef="31e79628-b6ae-1004-86d2-40c13943eb91" idRelationRef="31d5b4d0-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="north" idRef="2f7e7cd1-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="north" idRef="2f7e7cd0-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="w" idRef="31e9925e-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="w" idRef="31e9925c-b6ae-1004-86d2-40c13943eb91" idRelationRef="31d5b4d0-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="totalFlrArea" idRef="37822ffa-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="totalFlrArea" idRef="37822ff8-b6ae-1004-86d2-40c13943eb91" idRelationRef="36c8d530-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="db" idRef="3902a706-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="db" idRef="3902a704-b6ae-1004-86d2-40c13943eb91" idRelationRef="36c8d530-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="selType" idRef="3718991d-b6ae-1004-86d2-40c13943eb91" idRelationRef="36c8d534-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="selType" idRef="3718991c-b6ae-1004-86d2-40c13943eb91" idRelationRef="36c8d530-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="polygonPoints" idRef="314e2a61-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="polygonPoints" idRef="314e2a60-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="groundArea" idRef="3976dd06-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="groundArea" idRef="3976dd04-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="numBldg" idRef="37407ae1-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="numBldg" idRef="374053d0-b6ae-1004-86d2-40c13943eb91" idRelationRef="36c8d530-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="totalNumberBldg" idRef="39b0c731-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="totalNumberBldg" idRef="39b0c730-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="w" idRef="31e9925d-b6ae-1004-86d2-40c13943eb91" idRelationRef="31d5b4d4-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="w" idRef="31e9925c-b6ae-1004-86d2-40c13943eb91" idRelationRef="31d5b4d0-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="west" idRef="2f7ca749-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="west" idRef="2f7ca748-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="polygonPoints" idRef="314e2a62-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="polygonPoints" idRef="314e2a60-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="south" idRef="2f802ae6-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="south" idRef="2f802ae4-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="numberBldg" idRef="397dbd2d-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="numberBldg" idRef="397dbd2c-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="dataType" idRef="30734cb1-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="dataType" idRef="30734cb0-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="totalGndArea" idRef="377efa7d-b6ae-1004-86d2-40c13943eb91" idRelationRef="36c8d534-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="totalGndArea" idRef="377efa7c-b6ae-1004-86d2-40c13943eb91" idRelationRef="36c8d530-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="selectedTypes" idRef="2fe95079-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="selectedTypes" idRef="2fe95078-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="flrArea" idRef="373d6cda-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="flrArea" idRef="373d6cd8-b6ae-1004-86d2-40c13943eb91" idRelationRef="36c8d530-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="n" idRef="31eb40d6-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="n" idRef="31eb40d4-b6ae-1004-86d2-40c13943eb91" idRelationRef="31d5b4d0-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="database" idRef="35671185-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="database" idRef="35671184-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="n" idRef="31eb40d5-b6ae-1004-86d2-40c13943eb91" idRelationRef="31d5b4d4-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="n" idRef="31eb40d4-b6ae-1004-86d2-40c13943eb91" idRelationRef="31d5b4d0-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="dataType" idRef="30734cb2-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="dataType" idRef="30734cb0-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="area" idRef="333354b9-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="area" idRef="333354b8-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="dataFile" idRef="2fc0d212-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="dataFile" idRef="2fc0d210-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="totalFloorArea" idRef="39aeca35-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="totalFloorArea" idRef="39aeca34-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="east" idRef="2f7998de-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="east" idRef="2f7998dc-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="totalNumberBldg" idRef="39b0c732-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="totalNumberBldg" idRef="39b0c730-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="selectedTypes" idRef="2fe9507a-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="selectedTypes" idRef="2fe95078-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="area" idRef="333354ba-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="area" idRef="333354b8-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="database" idRef="35671186-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="database" idRef="35671184-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="rarea" idRef="323e60ea-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="rarea" idRef="323e60e8-b6ae-1004-86d2-40c13943eb91" idRelationRef="31d5b4d0-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="totalNumBldg" idRef="37845405-b6ae-1004-86d2-40c13943eb91" idRelationRef="36c8d534-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="totalNumBldg" idRef="37845404-b6ae-1004-86d2-40c13943eb91" idRelationRef="36c8d530-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="s" idRef="31eceee9-b6ae-1004-86d2-40c13943eb91" idRelationRef="31d5b4d4-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="s" idRef="31eceee8-b6ae-1004-86d2-40c13943eb91" idRelationRef="31d5b4d0-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="landuse_base" idRef="343e6c1e-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="landuse_base" idRef="343e6c1c-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="e" idRef="31e7962a-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="e" idRef="31e79628-b6ae-1004-86d2-40c13943eb91" idRelationRef="31d5b4d0-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="landuse_base" idRef="343e6c1d-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="landuse_base" idRef="343e6c1c-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="nameFile" idRef="2faf8bce-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="nameFile" idRef="2faf8bcc-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="gndArea" idRef="3739e93d-b6ae-1004-86d2-40c13943eb91" idRelationRef="36c8d534-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="gndArea" idRef="3739e93c-b6ae-1004-86d2-40c13943eb91" idRelationRef="36c8d530-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="totalGroundArea" idRef="39ad1bbe-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="totalGroundArea" idRef="39ad1bbc-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="totalFlrArea" idRef="37822ff9-b6ae-1004-86d2-40c13943eb91" idRelationRef="36c8d534-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="totalFlrArea" idRef="37822ff8-b6ae-1004-86d2-40c13943eb91" idRelationRef="36c8d530-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="numBldg" idRef="37407ae0-b6ae-1004-86d2-40c13943eb91" idRelationRef="36c8d534-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="numBldg" idRef="374053d0-b6ae-1004-86d2-40c13943eb91" idRelationRef="36c8d530-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="totalGroundArea" idRef="39ad1bbd-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="totalGroundArea" idRef="39ad1bbc-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="south" idRef="2f802ae5-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="south" idRef="2f802ae4-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="gndArea" idRef="3739e93e-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="gndArea" idRef="3739e93c-b6ae-1004-86d2-40c13943eb91" idRelationRef="36c8d530-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="dataFile" idRef="2fc0d211-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="dataFile" idRef="2fc0d210-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="rarea" idRef="323e60e9-b6ae-1004-86d2-40c13943eb91" idRelationRef="31d5b4d4-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="rarea" idRef="323e60e8-b6ae-1004-86d2-40c13943eb91" idRelationRef="31d5b4d0-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="nameFile" idRef="2faf8bcd-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="nameFile" idRef="2faf8bcc-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="totalFloorArea" idRef="39aeca36-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="totalFloorArea" idRef="39aeca34-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="flrArea" idRef="373d6cd9-b6ae-1004-86d2-40c13943eb91" idRelationRef="36c8d534-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="flrArea" idRef="373d6cd8-b6ae-1004-86d2-40c13943eb91" idRelationRef="36c8d530-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="totalNumBldg" idRef="37845406-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="totalNumBldg" idRef="37845404-b6ae-1004-86d2-40c13943eb91" idRelationRef="36c8d530-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="west" idRef="2f7ca74a-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="west" idRef="2f7ca748-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="floorArea" idRef="39799d51-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="floorArea" idRef="39799d50-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="totalGndArea" idRef="377efa7e-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="totalGndArea" idRef="377efa7c-b6ae-1004-86d2-40c13943eb91" idRelationRef="36c8d530-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="floorArea" idRef="39799d52-b6ae-1004-86d2-40c13943eb91">
+                    <parameter name="floorArea" idRef="39799d50-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects>
+            <parameter id="31e7962a-b6ae-1004-86d2-40c13943eb91" name="e">
+                <currentType value="Integer"/>
+                <data>
+                    <dataobject type="Integer">
+                        <quantity magnitude="0" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+            </parameter>
+            <parameter id="31e9925e-b6ae-1004-86d2-40c13943eb91" name="w">
+                <currentType value="Integer"/>
+                <data>
+                    <dataobject type="Integer">
+                        <quantity magnitude="0" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+            </parameter>
+            <parameter id="31eb40d6-b6ae-1004-86d2-40c13943eb91" name="n">
+                <currentType value="Integer"/>
+                <data>
+                    <dataobject type="Integer">
+                        <quantity magnitude="0" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+            </parameter>
+            <parameter id="31eceeea-b6ae-1004-86d2-40c13943eb91" name="s">
+                <currentType value="Integer"/>
+                <data>
+                    <dataobject type="Integer">
+                        <quantity magnitude="0" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+            </parameter>
+            <parameter id="323e60ea-b6ae-1004-86d2-40c13943eb91" name="rarea">
+                <currentType value="Integer"/>
+                <data>
+                    <dataobject type="Integer">
+                        <quantity magnitude="0" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+            </parameter>
+            <parameter id="3718991e-b6ae-1004-86d2-40c13943eb91" name="selType">
+                <currentType value="Vector"/>
+                <data>
+                    <dataobject type="Vector">
+                        <unit>No_Unit</unit>
+                        <rowVector>false</rowVector>
+                        <initialValue type="integer">0</initialValue>
+                        <fixedSize>false</fixedSize>
+                        <data type="integer">0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</data>
+                    </dataobject>
+                </data>
+            </parameter>
+            <parameter id="3902a706-b6ae-1004-86d2-40c13943eb91" name="db">
+                <currentType value="Matrix"/>
+                <data>
+                    <dataobject type="Matrix">
+                        <unit>No_Unit</unit>
+                        <initialValue type="real">0.0</initialValue>
+                        <fixedSize>false</fixedSize>
+                        <data type="real">0.0,0.0,0.0;0.0,0.0,0.0;0.0,0.0,0.0;0.0,0.0,0.0;0.0,0.0,0.0;0.0,0.0,0.0;0.0,0.0,0.0;0.0,0.0,0.0;0.0,0.0,0.0;0.0,0.0,0.0;0.0,0.0,0.0;0.0,0.0,0.0;0.0,0.0,0.0;0.0,0.0,0.0;0.0,0.0,0.0;0.0,0.0,0.0;0.0,0.0,0.0;0.0,0.0,0.0;0.0,0.0,0.0;0.0,0.0,0.0;0.0,0.0,0.0;0.0,0.0,0.0;0.0,0.0,0.0;0.0,0.0,0.0;0.0,0.0,0.0;0.0,0.0,0.0;0.0,0.0,0.0</data>
+                    </dataobject>
+                </data>
+            </parameter>
+            <parameter id="3739e93e-b6ae-1004-86d2-40c13943eb91" name="gndArea">
+                <currentType value="Vector"/>
+                <data>
+                    <dataobject type="Vector">
+                        <unit>No_Unit</unit>
+                        <rowVector>false</rowVector>
+                        <initialValue type="real">0.0</initialValue>
+                        <fixedSize>false</fixedSize>
+                        <data type="real">0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0</data>
+                    </dataobject>
+                </data>
+            </parameter>
+            <parameter id="373d6cda-b6ae-1004-86d2-40c13943eb91" name="flrArea">
+                <currentType value="Vector"/>
+                <data>
+                    <dataobject type="Vector">
+                        <unit>No_Unit</unit>
+                        <rowVector>false</rowVector>
+                        <initialValue type="real">0.0</initialValue>
+                        <fixedSize>false</fixedSize>
+                        <data type="real">0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0</data>
+                    </dataobject>
+                </data>
+            </parameter>
+            <parameter id="37407ae1-b6ae-1004-86d2-40c13943eb91" name="numBldg">
+                <currentType value="Vector"/>
+                <data>
+                    <dataobject type="Vector">
+                        <unit>No_Unit</unit>
+                        <rowVector>false</rowVector>
+                        <initialValue type="integer">0</initialValue>
+                        <fixedSize>false</fixedSize>
+                        <data type="integer">0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</data>
+                    </dataobject>
+                </data>
+            </parameter>
+            <parameter id="377efa7e-b6ae-1004-86d2-40c13943eb91" name="totalGndArea">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="0.0" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+            </parameter>
+            <parameter id="37822ffa-b6ae-1004-86d2-40c13943eb91" name="totalFlrArea">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="0.0" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+            </parameter>
+            <parameter id="37845406-b6ae-1004-86d2-40c13943eb91" name="totalNumBldg">
+                <currentType value="Integer"/>
+                <data>
+                    <dataobject type="Integer">
+                        <quantity magnitude="0" unit="No_Unit"/>
+                    </dataobject>
+                </data>
+            </parameter>
+        </intermediateobjects>
+    </mappingsandintermediates>
+    <lookupdata>
+        <objectmap>
+            <parameter name="nameFile" idRef="2faf8bcc-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="nameFile" idRef="2faf8bcd-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="area" idRef="333354b8-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="area" idRef="333354b9-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="numberBldg" idRef="397dbd2c-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="numberBldg" idRef="397dbd2d-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="east" idRef="2f7998dc-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="east" idRef="2f7998dd-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="north" idRef="2f7e7cd0-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="north" idRef="2f7e7cd1-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="floorArea" idRef="39799d50-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="floorArea" idRef="39799d51-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="landuse_base" idRef="343e6c1c-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="landuse_base" idRef="343e6c1d-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <relation name="calcTypeData" idRef="36c8d530-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <relation name="calcTypeData" idRef="36c8d534-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="south" idRef="2f802ae4-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="south" idRef="2f802ae5-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="dataFile" idRef="2fc0d210-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="dataFile" idRef="2fc0d211-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="selectedTypes" idRef="2fe95078-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="selectedTypes" idRef="2fe95079-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="groundArea" idRef="3976dd04-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="groundArea" idRef="3976dd05-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="totalNumberBldg" idRef="39b0c730-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="totalNumberBldg" idRef="39b0c731-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="totalFloorArea" idRef="39aeca34-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="totalFloorArea" idRef="39aeca35-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="totalGroundArea" idRef="39ad1bbc-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="totalGroundArea" idRef="39ad1bbd-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="polygonPoints" idRef="314e2a60-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="polygonPoints" idRef="314e2a61-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <relation name="CalculateArea" idRef="31d5b4d0-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <relation name="CalculateArea" idRef="31d5b4d4-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="dataType" idRef="30734cb0-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="dataType" idRef="30734cb1-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="database" idRef="35671184-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="database" idRef="35671185-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="west" idRef="2f7ca748-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="west" idRef="2f7ca749-b6ae-1004-86d2-40c13943eb91" description="value"/>
+        </objectmap>
+        <viewobjectmap>
+            <parameter name="totalNumberBldg" idRef="39b0c731-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="totalNumberBldg" idRef="39b0c732-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="totalGroundArea" idRef="39ad1bbd-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="totalGroundArea" idRef="39ad1bbe-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="south" idRef="2f802ae5-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="south" idRef="2f802ae6-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="west" idRef="2f7ca749-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="west" idRef="2f7ca74a-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="east" idRef="2f7998dd-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="east" idRef="2f7998de-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="numberBldg" idRef="397dbd2d-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="numberBldg" idRef="397dbd2e-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="dataType" idRef="30734cb1-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="dataType" idRef="30734cb2-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="dataFile" idRef="2fc0d211-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="dataFile" idRef="2fc0d212-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="groundArea" idRef="3976dd05-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="groundArea" idRef="3976dd06-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="selectedTypes" idRef="2fe95079-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="selectedTypes" idRef="2fe9507a-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="nameFile" idRef="2faf8bcd-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="nameFile" idRef="2faf8bce-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="north" idRef="2f7e7cd1-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="north" idRef="2f7e7cd2-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="database" idRef="35671185-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="database" idRef="35671186-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="landuse_base" idRef="343e6c1d-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="landuse_base" idRef="343e6c1e-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="area" idRef="333354b9-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="area" idRef="333354ba-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="floorArea" idRef="39799d51-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="floorArea" idRef="39799d52-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="totalFloorArea" idRef="39aeca35-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="totalFloorArea" idRef="39aeca36-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="polygonPoints" idRef="314e2a61-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="polygonPoints" idRef="314e2a62-b6ae-1004-86d2-40c13943eb91" description="value"/>
+        </viewobjectmap>
+        <relationobjectmap>
+            <parameter name="totalGndArea" idRef="377efa7c-b6ae-1004-86d2-40c13943eb91" idRelationRef="36c8d530-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="totalGndArea" idRef="377efa7e-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="flrArea" idRef="373d6cd8-b6ae-1004-86d2-40c13943eb91" idRelationRef="36c8d530-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="flrArea" idRef="373d6cda-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="db" idRef="3902a704-b6ae-1004-86d2-40c13943eb91" idRelationRef="36c8d530-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="db" idRef="3902a706-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="n" idRef="31eb40d4-b6ae-1004-86d2-40c13943eb91" idRelationRef="31d5b4d0-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="n" idRef="31eb40d6-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="totalNumBldg" idRef="37845404-b6ae-1004-86d2-40c13943eb91" idRelationRef="36c8d530-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="totalNumBldg" idRef="37845406-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="totalFlrArea" idRef="37822ff8-b6ae-1004-86d2-40c13943eb91" idRelationRef="36c8d530-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="totalFlrArea" idRef="37822ffa-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="w" idRef="31e9925c-b6ae-1004-86d2-40c13943eb91" idRelationRef="31d5b4d0-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="w" idRef="31e9925e-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="rarea" idRef="323e60e8-b6ae-1004-86d2-40c13943eb91" idRelationRef="31d5b4d0-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="rarea" idRef="323e60ea-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="s" idRef="31eceee8-b6ae-1004-86d2-40c13943eb91" idRelationRef="31d5b4d0-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="s" idRef="31eceeea-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="e" idRef="31e79628-b6ae-1004-86d2-40c13943eb91" idRelationRef="31d5b4d0-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="e" idRef="31e7962a-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="selType" idRef="3718991c-b6ae-1004-86d2-40c13943eb91" idRelationRef="36c8d530-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="selType" idRef="3718991e-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="numBldg" idRef="374053d0-b6ae-1004-86d2-40c13943eb91" idRelationRef="36c8d530-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="numBldg" idRef="37407ae1-b6ae-1004-86d2-40c13943eb91" description="value"/>
+            <parameter name="gndArea" idRef="3739e93c-b6ae-1004-86d2-40c13943eb91" idRelationRef="36c8d530-b6ae-1004-86d2-40c13943eb91" description="key"/>
+            <parameter name="gndArea" idRef="3739e93e-b6ae-1004-86d2-40c13943eb91" description="value"/>
+        </relationobjectmap>
+    </lookupdata>
+</modelinterface>

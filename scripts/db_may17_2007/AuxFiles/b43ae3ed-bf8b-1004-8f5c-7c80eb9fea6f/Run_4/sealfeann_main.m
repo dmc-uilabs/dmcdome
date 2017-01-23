@@ -1,0 +1,1 @@
+[contact_length deflection_nom load_per_length] = sealfeann(seal_width, seal_height, seal_thickness, seal_gap);

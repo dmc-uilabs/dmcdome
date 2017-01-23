@@ -1,0 +1,1 @@
+[cap, stor, qh, qtot] = hotWater(cityID, to, bldgType, fixtures, use)

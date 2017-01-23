@@ -1,0 +1,18 @@
+public class NewType {
+	public NewType() {
+		println("new type created");
+	}
+	
+	public void doSomething() {
+		println "i am tired";
+	}
+}
+
+def ny = new NewType();
+ny.doSomething();
+
+int y = 5
+def x = 10
+
+NewType ny3 = ny.class.newInstance();
+println y + x

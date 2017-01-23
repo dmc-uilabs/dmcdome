@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="f61e1aa4-b75c-1004-8a7e-fefd121a95f4" name="T_equals_S (iface)">
+    <interfaceinfo>
+        <version>0.0.1</version>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="Y" idRef="f63cd189-b75c-1004-8a7e-fefd121a95f4">
+                    <parameter name="Y" idRef="f3f9c91e-b75c-1004-8a7e-fefd121a95f4"/>
+                </mappedParameter>
+                <mappedParameter name="X" idRef="f63cd188-b75c-1004-8a7e-fefd121a95f4">
+                    <parameter name="X" idRef="f3f9c91d-b75c-1004-8a7e-fefd121a95f4"/>
+                </mappedParameter>
+                <mappedParameter name="S" idRef="f63cd18c-b75c-1004-8a7e-fefd121a95f4">
+                    <parameter name="S" idRef="f44ca344-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f4020938-b75c-1004-8a7e-fefd121a95f4"/>
+                </mappedParameter>
+                <mappedParameter name="B" idRef="f63cd18b-b75c-1004-8a7e-fefd121a95f4">
+                    <parameter name="B" idRef="f3f9f034-b75c-1004-8a7e-fefd121a95f4"/>
+                </mappedParameter>
+                <mappedParameter name="A" idRef="f63cd18a-b75c-1004-8a7e-fefd121a95f4">
+                    <parameter name="A" idRef="f3f9f033-b75c-1004-8a7e-fefd121a95f4"/>
+                </mappedParameter>
+                <mappedParameter name="T" idRef="f63cd18d-b75c-1004-8a7e-fefd121a95f4">
+                    <parameter name="T" idRef="f44e51bc-b75c-1004-8a7e-fefd121a95f4" idRelationRef="f4020938-b75c-1004-8a7e-fefd121a95f4"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects/>
+    </mappingsandintermediates>
+</modelinterface>

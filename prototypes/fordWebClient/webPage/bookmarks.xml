@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bookmarkFolders>
+    <bookmark_folder>
+        <foldername>root</foldername>
+        <bookmarks>
+            <bookmark_info>
+                <type>Project interface</type>
+                <folder>root</folder>
+                <id>CID.STAT..PJ774ec3ad-b947-1004-8637-2873a514c322.IF774ec3af-b947-1004-8637-2873a514c322</id>
+                <serverUrl>cc0056.pd9.ford.com:8080$$cc0056.pd9.ford.com:8080</serverUrl>
+                <path>/Public/Ford wind noise/Seal design and effort/interference tradeoff tool/Interfaces/Body/seal/door design interface</path>
+                <aliasName>Effort/Sealing tradeoff for inhouse seal design/FEA process</aliasName>
+		<comment>This tool takes 10-15 minutes to run the first time you submit changes. Subsequent runs take approximately 6-8 minutes.</comment>
+                <loginType>ADMIN$$ADMIN</loginType>
+                <loginName>root$$root</loginName>
+            </bookmark_info>
+            <bookmark_info>
+                <type>Project interface</type>
+                <folder>root</folder>
+                <id>CID.STAT..PJ774ec3a9-b947-1004-8637-2873a514c322.IF774ec3aa-b947-1004-8637-2873a514c322</id>
+                <serverUrl>cc0056.pd9.ford.com:8080$$cc0056.pd9.ford.com:8080</serverUrl>
+                <path>/Public/Ford wind noise/CLD design and interference/effort tradeoff tool/Interfaces/Body, seal, door and cld interface</path>
+                <aliasName>Effort/Sealing tradeoff for supplier seal design process</aliasName>
+                <comment>This tool takes 5-8 minutes to run the first time you submit changes. Subsequent runs take approximately 2-3 minutes.</comment>
+                <loginType>ADMIN$$ADMIN</loginType>
+                <loginName>root$$root</loginName>
+            </bookmark_info>
+            <bookmark_info>
+                <type>Project interface</type>
+                <folder>Models related to door closing effort</folder>
+                <id>CID.STAT..PJb59246d6-b943-1004-832b-7e5db4a99d8d.IFb59246d7-b943-1004-832b-7e5db4a99d8d</id>
+                <serverUrl>foc1143feb0.floc.ford.com:8080$$foc1143feb0.floc.ford.com:8080</serverUrl>
+                <path>/Public/Door wind noise/Door closing effort tool/Interfaces/complete DCE tool interface</path>
+                <aliasName>Door closing effort tool</aliasName>
+                <comment>This tool takes 5-8 minutes to run the first time you submit changes. Subsequent runs take approximately 2-3 minutes.</comment>
+                <loginType>ADMIN$$ADMIN</loginType>
+                <loginName>root$$root</loginName>
+            </bookmark_info>
+            <bookmark_info>
+                <type>Interface</type>
+                <folder>Models related to door closing effort</folder>
+                <id>CID.STAT..IF1ca5f784-b938-1004-8a59-51f85e1bdfd4.ML1ca5f783-b938-1004-8a59-51f85e1bdfd4</id>
+                <serverUrl>foc1143feb0.floc.ford.com:8080</serverUrl>
+                <path>/Public/Door wind noise/Resource models/Seal-on-body damping coefficient calculator/Seal-on-body interface</path>
+                <aliasName>Seal damping coefficient calculator</aliasName>
+                <comment>This tool takes only a few seconds to run.</comment>
+                <loginType>USER</loginType>
+                <loginName>wallace</loginName>
+            </bookmark_info>
+            <bookmark_info>
+                <type>Interface</type>
+                <folder>root</folder>
+                <id>CID.STAT..IF361e2966-b96a-1004-8dea-16f2e433a5f9.ML361e2965-b96a-1004-8dea-16f2e433a5f9</id>
+                <serverUrl>cc0056.pd9.ford.com:8080</serverUrl>
+                <path>/Public/Ford wind noise/3D parametric door/body/seal design and interference tool/Geometry and analysis interface</path>
+                <aliasName>Seal/body interference analysis tool</aliasName>
+                <comment>This tool takes 2-4 minutes to run the first time you submit changes. Subsequent run times depend on section spacing.</comment>
+                <loginType>USER</loginType>
+                <loginName>wallace</loginName>
+            </bookmark_info>
+            <bookmark_info>
+                <type>Interface</type>
+                <folder>root</folder>
+                <id>CID.STAT..IFd9426070-b977-1004-86f6-5785c2fb9ea7.MLd942606e-b977-1004-86f6-5785c2fb9ea7</id>
+                <serverUrl>foc1xpgc2zk21.floc.ford.com:8080</serverUrl>
+                <path>/Public/Door wind noise/Dynamic door deflection model/Bpillar deflection interface</path>
+                <aliasName>B pillar dynamic door deflection tool</aliasName>
+                <comment>This tool takes approximately 20-30 minutes to run.</comment>
+                <loginType>ADMIN</loginType>
+                <loginName>root</loginName>
+            </bookmark_info>
+        </bookmarks>
+    </bookmark_folder>
+</bookmarkFolders>

@@ -1,0 +1,19 @@
+;;; -*- Mode: lisp -*-
+
+;;; This is just a sample of building series with MK defsystem. You
+;;; may need to change :source-pathname appropriately for your system.
+
+(mk:defsystem series
+    :source-pathname #.(logical-pathname "series:;")
+    :source-extension "lisp"
+    :components ((:file "s-package")
+		 (:file "s-code")
+		 (:file "s-install"
+			:load-only t)))
+
+
+(mk:defsystem series-tests
+    :source-pathname "lisp:series;"
+    :depends-on (series)
+    :components ((:file "s-test")))
+    

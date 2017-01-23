@@ -1,0 +1,5 @@
+volume << area * height;
+
+println height
+println area
+println volume

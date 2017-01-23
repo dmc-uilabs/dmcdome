@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bookmarkFolders>
+    <bookmark_folder>
+        <foldername>root</foldername>
+        <bookmarks>
+            <bookmark_info>
+                <type>Interface</type>
+                <folder>root</folder>
+                <id>CID.STAT..IFf6979f37-c136-1004-823c-53bdcc699425.MLf6979f35-c136-1004-823c-53bdcc699425</id>
+                <serverUrl>localhost:8080</serverUrl>
+                <path>/Public/world dynamics/World Population Dynamics Model/Simple Interface</path>
+                <aliasName>Vensim Population Simulator - Simple Interface</aliasName>
+                <comment></comment>
+                <loginType>GUEST</loginType>
+                <loginName>guest</loginName>
+            </bookmark_info>
+            <bookmark_info>
+                <type>Interface</type>
+                <folder>root</folder>
+                <id>CID.STAT..IFf6979f34-c136-1004-823c-53bdcc699425.MLf6979f31-c136-1004-823c-53bdcc699425</id>
+                <serverUrl>localhost:8080</serverUrl>
+                <path>/Public/world dynamics/Key Coefficient Estimation Model/Complete Interface</path>
+                <aliasName>Excel Coefficient Calculator - Complete Interface</aliasName>
+                <comment></comment>
+                <loginType>GUEST</loginType>
+                <loginName>guest</loginName>
+            </bookmark_info>
+        </bookmarks>
+    </bookmark_folder>
+</bookmarkFolders>

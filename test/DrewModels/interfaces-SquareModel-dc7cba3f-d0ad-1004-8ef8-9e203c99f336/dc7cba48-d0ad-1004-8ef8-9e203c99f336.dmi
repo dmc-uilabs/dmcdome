@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="dc7cba48-d0ad-1004-8ef8-9e203c99f336" name="Default Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <parameters>
+        <parameter id="dc7cba57-d0ad-1004-8ef8-9e203c99f336" name="InParam">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="dc7cba5a-d0ad-1004-8ef8-9e203c99f336" name="OutParam">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <visualizations/>
+    <relations>
+        <relation type="Procedural" id="dc7cba51-d0ad-1004-8ef8-9e203c99f336" name="Procedural Relation">
+            <parameters>
+                <parameter id="dc7cba56-d0ad-1004-8ef8-9e203c99f336" name="InParam">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="dc7cba59-d0ad-1004-8ef8-9e203c99f336" name="OutParam">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <body><![CDATA[OutParam = InParam ** 2]]></body>
+            <dependencies>
+                <dependency idRef="dc7cba59-d0ad-1004-8ef8-9e203c99f336">
+                    <parameter name="InParam" idRef="dc7cba56-d0ad-1004-8ef8-9e203c99f336" idRelationRef="dc7cba51-d0ad-1004-8ef8-9e203c99f336"/>
+                </dependency>
+            </dependencies>
+        </relation>
+    </relations>
+    <contexts>
+        <context id="IFACE_MODEL_CXT" name="Model View">
+            <modelobjects>
+                <relation name="Procedural Relation" idRef="dc7cba51-d0ad-1004-8ef8-9e203c99f336"/>
+            </modelobjects>
+        </context>
+    </contexts>
+    <views>
+        <view name="Build View">
+            <context id="IFACE_BUILD_CXT" name="Build View">
+                <modelobjects>
+                    <parameter name="InParam" idRef="dc7cba57-d0ad-1004-8ef8-9e203c99f336"/>
+                    <parameter name="OutParam" idRef="dc7cba5a-d0ad-1004-8ef8-9e203c99f336"/>
+                </modelobjects>
+            </context>
+        </view>
+        <view name="Interface Causality View">
+            <filter id="INPUTS_FILTER" name="Inputs">
+                <parameters>
+                    <parameter name="InParam" idRef="dc7cba57-d0ad-1004-8ef8-9e203c99f336"/>
+                </parameters>
+            </filter>
+            <filter id="OUTPUTS_FILTER" name="Outputs">
+                <parameters>
+                    <parameter name="OutParam" idRef="dc7cba5a-d0ad-1004-8ef8-9e203c99f336" causality="Result"/>
+                </parameters>
+            </filter>
+            <filter id="INDETERMINATES_FILTER" name="Indeterminates"/>
+        </view>
+    </views>
+    <directedGraph id="dc7cba48-d0ad-1004-8ef8-9e203c99f336">
+        <nodes>
+            <node idRef="dc7cba57-d0ad-1004-8ef8-9e203c99f336"/>
+            <node idRef="dc7cba5a-d0ad-1004-8ef8-9e203c99f336"/>
+        </nodes>
+        <arcs>
+            <from idRef="dc7cba57-d0ad-1004-8ef8-9e203c99f336">
+                <to idRef="dc7cba5a-d0ad-1004-8ef8-9e203c99f336"/>
+            </from>
+        </arcs>
+    </directedGraph>
+    <interfaceToRelParamMap>
+        <iToRpMap relParamId="dc7cba57-d0ad-1004-8ef8-9e203c99f336" ifaceId="dc7cba55-d0ad-1004-8ef8-9e203c99f336"/>
+        <iToRpMap relParamId="dc7cba5a-d0ad-1004-8ef8-9e203c99f336" ifaceId="dc7cba58-d0ad-1004-8ef8-9e203c99f336"/>
+    </interfaceToRelParamMap>
+</modelinterface>

@@ -1,0 +1,1 @@
+[cDegHr, hDegHr] = degHrs(cityID, month, Tin);

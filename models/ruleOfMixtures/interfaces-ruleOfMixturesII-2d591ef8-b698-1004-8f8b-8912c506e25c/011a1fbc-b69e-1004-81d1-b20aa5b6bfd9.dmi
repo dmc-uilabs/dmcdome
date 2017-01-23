@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="011a1fbc-b69e-1004-81d1-b20aa5b6bfd9" name="completeInterface">
+    <interfaceinfo>
+        <version>0.0.2</version>
+    </interfaceinfo>
+    <parameters>
+        <parameter id="01958b70-b69e-1004-81d1-b20aa5b6bfd9" name="E1">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="1.82E7" unit="No_Unit"/>
+                </dataobject>
+            </data>
+            <documentation>
+                <text format="plain"><![CDATA[longitudinal modulus]]></text>
+            </documentation>
+        </parameter>
+        <parameter id="01958b71-b69e-1004-81d1-b20aa5b6bfd9" name="E2">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="1219512.1951219512" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="01958b72-b69e-1004-81d1-b20aa5b6bfd9" name="G12">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="452898.55072463764" unit="No_Unit"/>
+                </dataobject>
+            </data>
+            <documentation>
+                <text format="plain"><![CDATA[Shear modulus]]></text>
+            </documentation>
+        </parameter>
+        <parameter id="01958b73-b69e-1004-81d1-b20aa5b6bfd9" name="nu12">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.26" unit="No_Unit"/>
+                </dataobject>
+            </data>
+            <documentation>
+                <text format="plain"><![CDATA[poissonRatio
+]]></text>
+            </documentation>
+        </parameter>
+        <parameter id="01b297c4-b69e-1004-81d1-b20aa5b6bfd9" name="vm">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.4" unit="No_Unit"/>
+                </dataobject>
+            </data>
+            <documentation>
+                <text format="plain"><![CDATA[matrix volume fraction
+]]></text>
+            </documentation>
+        </parameter>
+        <parameter id="01c6e634-b69e-1004-81d1-b20aa5b6bfd9" name="Em">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="500000.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+            <documentation>
+                <text format="plain"><![CDATA[matrix Young's modulus]]></text>
+            </documentation>
+        </parameter>
+        <parameter id="01c6e635-b69e-1004-81d1-b20aa5b6bfd9" name="Num">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.35" unit="No_Unit"/>
+                </dataobject>
+            </data>
+            <documentation>
+                <text format="plain"><![CDATA[matrix Possion ration]]></text>
+            </documentation>
+        </parameter>
+        <parameter id="01e39bd0-b69e-1004-81d1-b20aa5b6bfd9" name="Ef">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="3.0E7" unit="No_Unit"/>
+                </dataobject>
+            </data>
+            <documentation>
+                <text format="plain"><![CDATA[fiber Young's modulus]]></text>
+            </documentation>
+        </parameter>
+        <parameter id="01e39bd1-b69e-1004-81d1-b20aa5b6bfd9" name="Nuf">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.2" unit="No_Unit"/>
+                </dataobject>
+            </data>
+            <documentation>
+                <text format="plain"><![CDATA[fiber Possion ration]]></text>
+            </documentation>
+        </parameter>
+        <parameter id="01e39bd2-b69e-1004-81d1-b20aa5b6bfd9" name="vf">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.6" unit="No_Unit"/>
+                </dataobject>
+            </data>
+            <documentation>
+                <text format="plain"><![CDATA[fiber volume fraction]]></text>
+            </documentation>
+        </parameter>
+    </parameters>
+    <relations/>
+    <contexts>
+        <context id="IFACE_MODEL_CXT" name="Model View"/>
+        <context id="0160908c-b69e-1004-81d1-b20aa5b6bfd9" name="fiber">
+            <modelobjects>
+                <parameter name="Ef" idRef="01e39bd0-b69e-1004-81d1-b20aa5b6bfd9"/>
+                <parameter name="Nuf" idRef="01e39bd1-b69e-1004-81d1-b20aa5b6bfd9"/>
+                <parameter name="vf" idRef="01e39bd2-b69e-1004-81d1-b20aa5b6bfd9"/>
+            </modelobjects>
+        </context>
+        <context id="01635074-b69e-1004-81d1-b20aa5b6bfd9" name="matrix">
+            <modelobjects>
+                <parameter name="vm" idRef="01b297c4-b69e-1004-81d1-b20aa5b6bfd9"/>
+                <parameter name="Em" idRef="01c6e634-b69e-1004-81d1-b20aa5b6bfd9"/>
+                <parameter name="Num" idRef="01c6e635-b69e-1004-81d1-b20aa5b6bfd9"/>
+            </modelobjects>
+        </context>
+        <context id="0164fe24-b69e-1004-81d1-b20aa5b6bfd9" name="lamina">
+            <modelobjects>
+                <parameter name="E1" idRef="01958b70-b69e-1004-81d1-b20aa5b6bfd9"/>
+                <parameter name="E2" idRef="01958b71-b69e-1004-81d1-b20aa5b6bfd9"/>
+                <parameter name="G12" idRef="01958b72-b69e-1004-81d1-b20aa5b6bfd9"/>
+                <parameter name="nu12" idRef="01958b73-b69e-1004-81d1-b20aa5b6bfd9"/>
+            </modelobjects>
+        </context>
+    </contexts>
+    <views>
+        <view name="Build View">
+            <context id="IFACE_BUILD_CXT" name="Build View">
+                <modelobjects>
+                    <context name="fiber" idRef="0160908c-b69e-1004-81d1-b20aa5b6bfd9"/>
+                    <context name="matrix" idRef="01635074-b69e-1004-81d1-b20aa5b6bfd9"/>
+                    <context name="lamina" idRef="0164fe24-b69e-1004-81d1-b20aa5b6bfd9"/>
+                </modelobjects>
+            </context>
+        </view>
+        <view name="Interface Causality View">
+            <filter id="INPUTS_FILTER" name="Inputs">
+                <parameters>
+                    <parameter name="Em" idRef="01c6e634-b69e-1004-81d1-b20aa5b6bfd9"/>
+                    <parameter name="Num" idRef="01c6e635-b69e-1004-81d1-b20aa5b6bfd9"/>
+                    <parameter name="Ef" idRef="01e39bd0-b69e-1004-81d1-b20aa5b6bfd9"/>
+                    <parameter name="Nuf" idRef="01e39bd1-b69e-1004-81d1-b20aa5b6bfd9"/>
+                    <parameter name="vf" idRef="01e39bd2-b69e-1004-81d1-b20aa5b6bfd9"/>
+                </parameters>
+            </filter>
+            <filter id="OUTPUTS_FILTER" name="Outputs">
+                <parameters>
+                    <parameter name="G12" idRef="01958b72-b69e-1004-81d1-b20aa5b6bfd9" causality="Result"/>
+                    <parameter name="E2" idRef="01958b71-b69e-1004-81d1-b20aa5b6bfd9" causality="Result"/>
+                    <parameter name="vm" idRef="01b297c4-b69e-1004-81d1-b20aa5b6bfd9" causality="Intermediate"/>
+                    <parameter name="nu12" idRef="01958b73-b69e-1004-81d1-b20aa5b6bfd9" causality="Result"/>
+                    <parameter name="E1" idRef="01958b70-b69e-1004-81d1-b20aa5b6bfd9" causality="Result"/>
+                </parameters>
+            </filter>
+            <filter id="INDETERMINATES_FILTER" name="Indeterminates"/>
+        </view>
+        <view name="System Causality View">
+            <filter id="d4939500-b70f-1004-8262-e863d912bb4a" name="Independent">
+                <parameters>
+                    <parameter name="Em" idRef="01c6e634-b69e-1004-81d1-b20aa5b6bfd9"/>
+                    <parameter name="Num" idRef="01c6e635-b69e-1004-81d1-b20aa5b6bfd9"/>
+                    <parameter name="Ef" idRef="01e39bd0-b69e-1004-81d1-b20aa5b6bfd9"/>
+                    <parameter name="Nuf" idRef="01e39bd1-b69e-1004-81d1-b20aa5b6bfd9"/>
+                    <parameter name="vf" idRef="01e39bd2-b69e-1004-81d1-b20aa5b6bfd9"/>
+                </parameters>
+            </filter>
+            <filter id="d4939501-b70f-1004-8262-e863d912bb4a" name="Intermediate">
+                <parameters>
+                    <parameter name="vm" idRef="01b297c4-b69e-1004-81d1-b20aa5b6bfd9"/>
+                </parameters>
+            </filter>
+            <filter id="d4939502-b70f-1004-8262-e863d912bb4a" name="Result">
+                <parameters>
+                    <parameter name="E1" idRef="01958b70-b69e-1004-81d1-b20aa5b6bfd9"/>
+                    <parameter name="E2" idRef="01958b71-b69e-1004-81d1-b20aa5b6bfd9"/>
+                    <parameter name="G12" idRef="01958b72-b69e-1004-81d1-b20aa5b6bfd9"/>
+                    <parameter name="nu12" idRef="01958b73-b69e-1004-81d1-b20aa5b6bfd9"/>
+                </parameters>
+            </filter>
+        </view>
+    </views>
+    <customGUIs>
+        <customGuiInfo>
+            <jarFilepath>C:\dome3\development\src\test\customGui\customGui.jar</jarFilepath>
+            <shortName>Custom GUI</shortName>
+            <className>test.gui.CompleteInterfaceCustomGui</className>
+        </customGuiInfo>
+    </customGUIs>
+    <directedGraph id="011a1fbc-b69e-1004-81d1-b20aa5b6bfd9">
+        <nodes>
+            <node idRef="01e39bd1-b69e-1004-81d1-b20aa5b6bfd9"/>
+            <node idRef="01e39bd0-b69e-1004-81d1-b20aa5b6bfd9"/>
+            <node idRef="01e39bd2-b69e-1004-81d1-b20aa5b6bfd9"/>
+            <node idRef="01c6e634-b69e-1004-81d1-b20aa5b6bfd9"/>
+            <node idRef="01b297c4-b69e-1004-81d1-b20aa5b6bfd9"/>
+            <node idRef="01c6e635-b69e-1004-81d1-b20aa5b6bfd9"/>
+            <node idRef="01958b70-b69e-1004-81d1-b20aa5b6bfd9"/>
+            <node idRef="01958b71-b69e-1004-81d1-b20aa5b6bfd9"/>
+            <node idRef="01958b73-b69e-1004-81d1-b20aa5b6bfd9"/>
+            <node idRef="01958b72-b69e-1004-81d1-b20aa5b6bfd9"/>
+        </nodes>
+        <arcs>
+            <from idRef="01e39bd1-b69e-1004-81d1-b20aa5b6bfd9">
+                <to idRef="01958b73-b69e-1004-81d1-b20aa5b6bfd9"/>
+                <to idRef="01958b72-b69e-1004-81d1-b20aa5b6bfd9"/>
+            </from>
+            <from idRef="01b297c4-b69e-1004-81d1-b20aa5b6bfd9">
+                <to idRef="01958b70-b69e-1004-81d1-b20aa5b6bfd9"/>
+                <to idRef="01958b71-b69e-1004-81d1-b20aa5b6bfd9"/>
+                <to idRef="01958b73-b69e-1004-81d1-b20aa5b6bfd9"/>
+                <to idRef="01958b72-b69e-1004-81d1-b20aa5b6bfd9"/>
+            </from>
+            <from idRef="01c6e634-b69e-1004-81d1-b20aa5b6bfd9">
+                <to idRef="01958b72-b69e-1004-81d1-b20aa5b6bfd9"/>
+                <to idRef="01958b71-b69e-1004-81d1-b20aa5b6bfd9"/>
+                <to idRef="01958b70-b69e-1004-81d1-b20aa5b6bfd9"/>
+            </from>
+            <from idRef="01e39bd0-b69e-1004-81d1-b20aa5b6bfd9">
+                <to idRef="01958b71-b69e-1004-81d1-b20aa5b6bfd9"/>
+                <to idRef="01958b72-b69e-1004-81d1-b20aa5b6bfd9"/>
+                <to idRef="01958b70-b69e-1004-81d1-b20aa5b6bfd9"/>
+            </from>
+            <from idRef="01e39bd2-b69e-1004-81d1-b20aa5b6bfd9">
+                <to idRef="01958b72-b69e-1004-81d1-b20aa5b6bfd9"/>
+                <to idRef="01b297c4-b69e-1004-81d1-b20aa5b6bfd9"/>
+                <to idRef="01958b70-b69e-1004-81d1-b20aa5b6bfd9"/>
+                <to idRef="01958b73-b69e-1004-81d1-b20aa5b6bfd9"/>
+                <to idRef="01958b71-b69e-1004-81d1-b20aa5b6bfd9"/>
+            </from>
+            <from idRef="01c6e635-b69e-1004-81d1-b20aa5b6bfd9">
+                <to idRef="01958b73-b69e-1004-81d1-b20aa5b6bfd9"/>
+                <to idRef="01958b72-b69e-1004-81d1-b20aa5b6bfd9"/>
+            </from>
+        </arcs>
+    </directedGraph>
+    <interfaceToRelParamMap>
+        <iToRpMap relParamId="2d594610-b698-1004-8f8b-8912c506e25c" ifaceId="01e39bd0-b69e-1004-81d1-b20aa5b6bfd9"/>
+        <iToRpMap relParamId="2d594611-b698-1004-8f8b-8912c506e25c" ifaceId="01e39bd1-b69e-1004-81d1-b20aa5b6bfd9"/>
+        <iToRpMap relParamId="2d594617-b698-1004-8f8b-8912c506e25c" ifaceId="01c6e634-b69e-1004-81d1-b20aa5b6bfd9"/>
+        <iToRpMap relParamId="2d594618-b698-1004-8f8b-8912c506e25c" ifaceId="01c6e635-b69e-1004-81d1-b20aa5b6bfd9"/>
+        <iToRpMap relParamId="2d59461e-b698-1004-8f8b-8912c506e25c" ifaceId="01e39bd2-b69e-1004-81d1-b20aa5b6bfd9"/>
+        <iToRpMap relParamId="2d59461f-b698-1004-8f8b-8912c506e25c" ifaceId="01b297c4-b69e-1004-81d1-b20aa5b6bfd9"/>
+        <iToRpMap relParamId="2d594624-b698-1004-8f8b-8912c506e25c" ifaceId="01e39bd0-b69e-1004-81d1-b20aa5b6bfd9"/>
+        <iToRpMap relParamId="2d594625-b698-1004-8f8b-8912c506e25c" ifaceId="01c6e634-b69e-1004-81d1-b20aa5b6bfd9"/>
+        <iToRpMap relParamId="2d594626-b698-1004-8f8b-8912c506e25c" ifaceId="01e39bd2-b69e-1004-81d1-b20aa5b6bfd9"/>
+        <iToRpMap relParamId="2d594627-b698-1004-8f8b-8912c506e25c" ifaceId="01958b70-b69e-1004-81d1-b20aa5b6bfd9"/>
+        <iToRpMap relParamId="2d59462d-b698-1004-8f8b-8912c506e25c" ifaceId="01e39bd0-b69e-1004-81d1-b20aa5b6bfd9"/>
+        <iToRpMap relParamId="2d59462e-b698-1004-8f8b-8912c506e25c" ifaceId="01c6e634-b69e-1004-81d1-b20aa5b6bfd9"/>
+        <iToRpMap relParamId="2d59462f-b698-1004-8f8b-8912c506e25c" ifaceId="01e39bd2-b69e-1004-81d1-b20aa5b6bfd9"/>
+        <iToRpMap relParamId="2d594631-b698-1004-8f8b-8912c506e25c" ifaceId="01958b71-b69e-1004-81d1-b20aa5b6bfd9"/>
+        <iToRpMap relParamId="2d596d1c-b698-1004-8f8b-8912c506e25c" ifaceId="01e39bd2-b69e-1004-81d1-b20aa5b6bfd9"/>
+        <iToRpMap relParamId="2d596d20-b698-1004-8f8b-8912c506e25c" ifaceId="01958b72-b69e-1004-81d1-b20aa5b6bfd9"/>
+        <iToRpMap relParamId="2d596d25-b698-1004-8f8b-8912c506e25c" ifaceId="01e39bd1-b69e-1004-81d1-b20aa5b6bfd9"/>
+        <iToRpMap relParamId="2d596d26-b698-1004-8f8b-8912c506e25c" ifaceId="01c6e635-b69e-1004-81d1-b20aa5b6bfd9"/>
+        <iToRpMap relParamId="2d596d27-b698-1004-8f8b-8912c506e25c" ifaceId="01e39bd2-b69e-1004-81d1-b20aa5b6bfd9"/>
+        <iToRpMap relParamId="2d596d29-b698-1004-8f8b-8912c506e25c" ifaceId="01958b73-b69e-1004-81d1-b20aa5b6bfd9"/>
+    </interfaceToRelParamMap>
+</modelinterface>

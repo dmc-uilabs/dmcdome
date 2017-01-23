@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="530f24f4-b6c4-1004-8fd2-4ad6e38c8898" name="testInteface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+    </interfaceinfo>
+    <parameters>
+        <parameter id="535f9a9c-b6c4-1004-8fd2-4ad6e38c8898" name="a">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="100.0" unit="m"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="54b27ce8-b6c4-1004-8fd2-4ad6e38c8898" name="result">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="10.0" unit="[cm]"/>
+                </dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <relations/>
+    <contexts>
+        <context id="IFACE_MODEL_CXT" name="Model View"/>
+    </contexts>
+    <views>
+        <view name="Build View">
+            <context id="IFACE_BUILD_CXT" name="Build View">
+                <modelobjects>
+                    <parameter name="a" idRef="535f9a9c-b6c4-1004-8fd2-4ad6e38c8898"/>
+                    <parameter name="result" idRef="54b27ce8-b6c4-1004-8fd2-4ad6e38c8898"/>
+                </modelobjects>
+            </context>
+        </view>
+        <view name="Interface Causality View">
+            <filter id="INPUTS_FILTER" name="Inputs">
+                <parameters>
+                    <parameter name="a" idRef="535f9a9c-b6c4-1004-8fd2-4ad6e38c8898"/>
+                </parameters>
+            </filter>
+            <filter id="OUTPUTS_FILTER" name="Outputs">
+                <parameters>
+                    <parameter name="result" idRef="54b27ce8-b6c4-1004-8fd2-4ad6e38c8898" causality="Result"/>
+                </parameters>
+            </filter>
+            <filter id="INDETERMINATES_FILTER" name="Indeterminates"/>
+        </view>
+        <view name="System Causality View">
+            <filter id="5b82720c-b6c5-1004-8670-74f5065dec06" name="Independent">
+                <parameters>
+                    <parameter name="a" idRef="535f9a9c-b6c4-1004-8fd2-4ad6e38c8898"/>
+                </parameters>
+            </filter>
+            <filter id="5b82720d-b6c5-1004-8670-74f5065dec06" name="Intermediate"/>
+            <filter id="5b82720e-b6c5-1004-8670-74f5065dec06" name="Result">
+                <parameters>
+                    <parameter name="result" idRef="54b27ce8-b6c4-1004-8fd2-4ad6e38c8898"/>
+                </parameters>
+            </filter>
+        </view>
+    </views>
+</modelinterface>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="7b29a608-b6e2-1004-83ba-73d47b60c0a0" name="Mechanical Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+    </interfaceinfo>
+    <parameters>
+        <parameter id="736cafa8-b6ee-1004-8c23-55cd2887f3bb" name="SealDragB">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.05" unit="[NPMM]"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="7396982c-b6ee-1004-8c23-55cd2887f3bb" name="MaxVel">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="[CMPS]"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="7396982d-b6ee-1004-8c23-55cd2887f3bb" name="MaxStall">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="N"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="36856648-b6f8-1004-8ce2-080c14818a9c" name="BPillarHeight">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="400.0" unit="mm"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="36856649-b6f8-1004-8ce2-080c14818a9c" name="GlassRadius">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="1293.0" unit="mm"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="3685664a-b6f8-1004-8ce2-080c14818a9c" name="GlassThickness">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="3.0" unit="mm"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="3685664b-b6f8-1004-8ce2-080c14818a9c" name="HeaderLength">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="300.0" unit="mm"/>
+                </dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <relations/>
+    <contexts>
+        <context id="IFACE_MODEL_CXT" name="Model View"/>
+        <context id="72ff6588-b6ee-1004-8c23-55cd2887f3bb" name="geometry">
+            <modelobjects>
+                <parameter name="BPillarHeight" idRef="36856648-b6f8-1004-8ce2-080c14818a9c"/>
+                <parameter name="GlassRadius" idRef="36856649-b6f8-1004-8ce2-080c14818a9c"/>
+                <parameter name="GlassThickness" idRef="3685664a-b6f8-1004-8ce2-080c14818a9c"/>
+                <parameter name="HeaderLength" idRef="3685664b-b6f8-1004-8ce2-080c14818a9c"/>
+            </modelobjects>
+        </context>
+        <context id="73345db0-b6ee-1004-8c23-55cd2887f3bb" name="seal">
+            <modelobjects>
+                <parameter name="SealDragB" idRef="736cafa8-b6ee-1004-8c23-55cd2887f3bb"/>
+            </modelobjects>
+        </context>
+        <context id="7374ac30-b6ee-1004-8c23-55cd2887f3bb" name="performance">
+            <modelobjects>
+                <parameter name="MaxVel" idRef="7396982c-b6ee-1004-8c23-55cd2887f3bb"/>
+                <parameter name="MaxStall" idRef="7396982d-b6ee-1004-8c23-55cd2887f3bb"/>
+            </modelobjects>
+        </context>
+    </contexts>
+    <views>
+        <view name="Build View">
+            <context id="IFACE_BUILD_CXT" name="Build View">
+                <modelobjects>
+                    <context name="geometry" idRef="72ff6588-b6ee-1004-8c23-55cd2887f3bb"/>
+                    <context name="seal" idRef="73345db0-b6ee-1004-8c23-55cd2887f3bb"/>
+                    <context name="performance" idRef="7374ac30-b6ee-1004-8c23-55cd2887f3bb"/>
+                </modelobjects>
+            </context>
+        </view>
+        <view name="Interface Causality View">
+            <filter id="INPUTS_FILTER" name="Inputs">
+                <parameters>
+                    <parameter name="SealDragB" idRef="736cafa8-b6ee-1004-8c23-55cd2887f3bb"/>
+                    <parameter name="BPillarHeight" idRef="36856648-b6f8-1004-8ce2-080c14818a9c"/>
+                    <parameter name="GlassRadius" idRef="36856649-b6f8-1004-8ce2-080c14818a9c"/>
+                    <parameter name="GlassThickness" idRef="3685664a-b6f8-1004-8ce2-080c14818a9c"/>
+                    <parameter name="HeaderLength" idRef="3685664b-b6f8-1004-8ce2-080c14818a9c"/>
+                </parameters>
+            </filter>
+            <filter id="OUTPUTS_FILTER" name="Outputs">
+                <parameters>
+                    <parameter name="MaxStall" idRef="7396982d-b6ee-1004-8c23-55cd2887f3bb" causality="Result"/>
+                    <parameter name="MaxVel" idRef="7396982c-b6ee-1004-8c23-55cd2887f3bb" causality="Result"/>
+                </parameters>
+            </filter>
+            <filter id="INDETERMINATES_FILTER" name="Indeterminates"/>
+        </view>
+        <view name="System Causality View">
+            <filter id="d185e550-b70f-1004-8273-2a8f45ebb56f" name="Independent"/>
+            <filter id="d185e551-b70f-1004-8273-2a8f45ebb56f" name="Intermediate"/>
+            <filter id="d185e552-b70f-1004-8273-2a8f45ebb56f" name="Result"/>
+        </view>
+    </views>
+    <customGUIs>
+        <customGuiInfo>
+            <jarFilepath>C:\DOME\GUIPorting\test\customGui\glassDrop.jar</jarFilepath>
+            <shortName>Custom GUI with chart</shortName>
+            <className>test.MechanicalGlassDropCustomGui</className>
+        </customGuiInfo>
+    </customGUIs>
+    <directedGraph id="7b29a608-b6e2-1004-83ba-73d47b60c0a0">
+        <nodes>
+            <node idRef="736cafa8-b6ee-1004-8c23-55cd2887f3bb"/>
+            <node idRef="36856649-b6f8-1004-8ce2-080c14818a9c"/>
+            <node idRef="7396982d-b6ee-1004-8c23-55cd2887f3bb"/>
+            <node idRef="3685664b-b6f8-1004-8ce2-080c14818a9c"/>
+            <node idRef="3685664a-b6f8-1004-8ce2-080c14818a9c"/>
+            <node idRef="36856648-b6f8-1004-8ce2-080c14818a9c"/>
+            <node idRef="7396982c-b6ee-1004-8c23-55cd2887f3bb"/>
+        </nodes>
+        <arcs>
+            <from idRef="736cafa8-b6ee-1004-8c23-55cd2887f3bb">
+                <to idRef="7396982d-b6ee-1004-8c23-55cd2887f3bb"/>
+                <to idRef="7396982c-b6ee-1004-8c23-55cd2887f3bb"/>
+            </from>
+            <from idRef="36856649-b6f8-1004-8ce2-080c14818a9c">
+                <to idRef="7396982d-b6ee-1004-8c23-55cd2887f3bb"/>
+                <to idRef="7396982c-b6ee-1004-8c23-55cd2887f3bb"/>
+            </from>
+            <from idRef="36856648-b6f8-1004-8ce2-080c14818a9c">
+                <to idRef="7396982d-b6ee-1004-8c23-55cd2887f3bb"/>
+                <to idRef="7396982c-b6ee-1004-8c23-55cd2887f3bb"/>
+            </from>
+            <from idRef="3685664b-b6f8-1004-8ce2-080c14818a9c">
+                <to idRef="7396982d-b6ee-1004-8c23-55cd2887f3bb"/>
+                <to idRef="7396982c-b6ee-1004-8c23-55cd2887f3bb"/>
+            </from>
+            <from idRef="3685664a-b6f8-1004-8ce2-080c14818a9c">
+                <to idRef="7396982d-b6ee-1004-8c23-55cd2887f3bb"/>
+                <to idRef="7396982c-b6ee-1004-8c23-55cd2887f3bb"/>
+            </from>
+        </arcs>
+    </directedGraph>
+    <interfaceToRelParamMap>
+        <iToRpMap relParamId="cf55c020-b6cb-1004-8511-6d78516dd70d" ifaceId="36856648-b6f8-1004-8ce2-080c14818a9c"/>
+        <iToRpMap relParamId="cfb19648-b6cb-1004-8511-6d78516dd70d" ifaceId="36856649-b6f8-1004-8ce2-080c14818a9c"/>
+        <iToRpMap relParamId="d000e504-b6cb-1004-8511-6d78516dd70d" ifaceId="736cafa8-b6ee-1004-8c23-55cd2887f3bb"/>
+        <iToRpMap relParamId="d0badc0c-b6cb-1004-8511-6d78516dd70d" ifaceId="3685664a-b6f8-1004-8ce2-080c14818a9c"/>
+        <iToRpMap relParamId="d0f11b8c-b6cb-1004-8511-6d78516dd70d" ifaceId="7396982c-b6ee-1004-8c23-55cd2887f3bb"/>
+        <iToRpMap relParamId="d11c94d8-b6cb-1004-8511-6d78516dd70d" ifaceId="3685664b-b6f8-1004-8ce2-080c14818a9c"/>
+        <iToRpMap relParamId="d3b040a0-b6cb-1004-8511-6d78516dd70d" ifaceId="7396982d-b6ee-1004-8c23-55cd2887f3bb"/>
+    </interfaceToRelParamMap>
+</modelinterface>

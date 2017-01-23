@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="cac23d7c-b6cb-1004-8511-6d78516dd70d" name="Default Interface">
+    <interfaceinfo>
+        <version>0.0.3</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <parameters>
+        <parameter id="cf568370-b6cb-1004-8511-6d78516dd70d" name="BPillarHeight">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="400.0" unit="mm"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="cfb19649-b6cb-1004-8511-6d78516dd70d" name="GlassRadius">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="1293.0" unit="mm"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="d000e505-b6cb-1004-8511-6d78516dd70d" name="SealDragB">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.05" unit="[NPMM]"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="d021710d-b6cb-1004-8511-6d78516dd70d" name="MotorSpeed">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="82.0" unit="[RPM]"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="d0446f41-b6cb-1004-8511-6d78516dd70d" name="MotorTorque">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="5.5" unit="J"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="d0badc0d-b6cb-1004-8511-6d78516dd70d" name="GlassThickness">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="3.0" unit="mm"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="d0f11b8d-b6cb-1004-8511-6d78516dd70d" name="MaxVel">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="[CMPS]"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="d11c94d9-b6cb-1004-8511-6d78516dd70d" name="HeaderLength">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="300.0" unit="mm"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="d3b040a1-b6cb-1004-8511-6d78516dd70d" name="MaxStall">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="N"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="cf56d190-b6cb-1004-8511-6d78516dd70d" name="BPillarHeight">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="400.0" unit="mm"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="cfb1964a-b6cb-1004-8511-6d78516dd70d" name="GlassRadius">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="1293.0" unit="mm"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="d000e506-b6cb-1004-8511-6d78516dd70d" name="SealDragB">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.05" unit="[NPMM]"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="d021710e-b6cb-1004-8511-6d78516dd70d" name="MotorSpeed">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="82.0" unit="[RPM]"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="d0446f42-b6cb-1004-8511-6d78516dd70d" name="MotorTorque">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="5.5" unit="J"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="d0badc0e-b6cb-1004-8511-6d78516dd70d" name="GlassThickness">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="3.0" unit="mm"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="d0f11b8e-b6cb-1004-8511-6d78516dd70d" name="MaxVel">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="[CMPS]"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="d11c94da-b6cb-1004-8511-6d78516dd70d" name="HeaderLength">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="300.0" unit="mm"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="d3b040a2-b6cb-1004-8511-6d78516dd70d" name="MaxStall">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="N"/>
+                </dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <relations/>
+    <contexts>
+        <context id="IFACE_MODEL_CXT" name="Model View">
+            <modelobjects>
+                <parameter name="BPillarHeight" idRef="cf568370-b6cb-1004-8511-6d78516dd70d"/>
+                <parameter name="GlassRadius" idRef="cfb19649-b6cb-1004-8511-6d78516dd70d"/>
+                <parameter name="SealDragB" idRef="d000e505-b6cb-1004-8511-6d78516dd70d"/>
+                <parameter name="MotorSpeed" idRef="d021710d-b6cb-1004-8511-6d78516dd70d"/>
+                <parameter name="MotorTorque" idRef="d0446f41-b6cb-1004-8511-6d78516dd70d"/>
+                <parameter name="GlassThickness" idRef="d0badc0d-b6cb-1004-8511-6d78516dd70d"/>
+                <parameter name="MaxVel" idRef="d0f11b8d-b6cb-1004-8511-6d78516dd70d"/>
+                <parameter name="HeaderLength" idRef="d11c94d9-b6cb-1004-8511-6d78516dd70d"/>
+                <parameter name="MaxStall" idRef="d3b040a1-b6cb-1004-8511-6d78516dd70d"/>
+            </modelobjects>
+        </context>
+    </contexts>
+    <views>
+        <view name="Build View">
+            <context id="IFACE_BUILD_CXT" name="Build View">
+                <modelobjects>
+                    <parameter name="BPillarHeight" idRef="cf56d190-b6cb-1004-8511-6d78516dd70d"/>
+                    <parameter name="GlassRadius" idRef="cfb1964a-b6cb-1004-8511-6d78516dd70d"/>
+                    <parameter name="SealDragB" idRef="d000e506-b6cb-1004-8511-6d78516dd70d"/>
+                    <parameter name="MotorSpeed" idRef="d021710e-b6cb-1004-8511-6d78516dd70d"/>
+                    <parameter name="MotorTorque" idRef="d0446f42-b6cb-1004-8511-6d78516dd70d"/>
+                    <parameter name="GlassThickness" idRef="d0badc0e-b6cb-1004-8511-6d78516dd70d"/>
+                    <parameter name="MaxVel" idRef="d0f11b8e-b6cb-1004-8511-6d78516dd70d"/>
+                    <parameter name="HeaderLength" idRef="d11c94da-b6cb-1004-8511-6d78516dd70d"/>
+                    <parameter name="MaxStall" idRef="d3b040a2-b6cb-1004-8511-6d78516dd70d"/>
+                </modelobjects>
+            </context>
+        </view>
+        <view name="Interface Causality View">
+            <filter id="INPUTS_FILTER" name="Inputs">
+                <parameters>
+                    <parameter name="BPillarHeight" idRef="cf56d190-b6cb-1004-8511-6d78516dd70d"/>
+                    <parameter name="GlassRadius" idRef="cfb1964a-b6cb-1004-8511-6d78516dd70d"/>
+                    <parameter name="SealDragB" idRef="d000e506-b6cb-1004-8511-6d78516dd70d"/>
+                    <parameter name="MotorSpeed" idRef="d021710e-b6cb-1004-8511-6d78516dd70d"/>
+                    <parameter name="MotorTorque" idRef="d0446f42-b6cb-1004-8511-6d78516dd70d"/>
+                    <parameter name="GlassThickness" idRef="d0badc0e-b6cb-1004-8511-6d78516dd70d"/>
+                    <parameter name="HeaderLength" idRef="d11c94da-b6cb-1004-8511-6d78516dd70d"/>
+                </parameters>
+            </filter>
+            <filter id="OUTPUTS_FILTER" name="Outputs">
+                <parameters>
+                    <parameter name="MaxStall" idRef="d3b040a2-b6cb-1004-8511-6d78516dd70d" causality="Result"/>
+                    <parameter name="MaxVel" idRef="d0f11b8e-b6cb-1004-8511-6d78516dd70d" causality="Result"/>
+                </parameters>
+            </filter>
+            <filter id="INDETERMINATES_FILTER" name="Indeterminates"/>
+        </view>
+        <view name="System Causality View">
+            <filter id="d1860c58-b70f-1004-8273-2a8f45ebb56f" name="Independent"/>
+            <filter id="d1860c59-b70f-1004-8273-2a8f45ebb56f" name="Intermediate"/>
+            <filter id="d1860c5a-b70f-1004-8273-2a8f45ebb56f" name="Result"/>
+        </view>
+    </views>
+    <directedGraph id="cac23d7c-b6cb-1004-8511-6d78516dd70d">
+        <nodes>
+            <node idRef="d000e506-b6cb-1004-8511-6d78516dd70d"/>
+            <node idRef="cfb1964a-b6cb-1004-8511-6d78516dd70d"/>
+            <node idRef="d3b040a2-b6cb-1004-8511-6d78516dd70d"/>
+            <node idRef="d11c94da-b6cb-1004-8511-6d78516dd70d"/>
+            <node idRef="d0badc0e-b6cb-1004-8511-6d78516dd70d"/>
+            <node idRef="cf56d190-b6cb-1004-8511-6d78516dd70d"/>
+            <node idRef="d0f11b8e-b6cb-1004-8511-6d78516dd70d"/>
+            <node idRef="d0446f42-b6cb-1004-8511-6d78516dd70d"/>
+            <node idRef="d021710e-b6cb-1004-8511-6d78516dd70d"/>
+        </nodes>
+        <arcs>
+            <from idRef="d11c94da-b6cb-1004-8511-6d78516dd70d">
+                <to idRef="d3b040a2-b6cb-1004-8511-6d78516dd70d"/>
+                <to idRef="d0f11b8e-b6cb-1004-8511-6d78516dd70d"/>
+            </from>
+            <from idRef="cfb1964a-b6cb-1004-8511-6d78516dd70d">
+                <to idRef="d3b040a2-b6cb-1004-8511-6d78516dd70d"/>
+                <to idRef="d0f11b8e-b6cb-1004-8511-6d78516dd70d"/>
+            </from>
+            <from idRef="d0446f42-b6cb-1004-8511-6d78516dd70d">
+                <to idRef="d3b040a2-b6cb-1004-8511-6d78516dd70d"/>
+                <to idRef="d0f11b8e-b6cb-1004-8511-6d78516dd70d"/>
+            </from>
+            <from idRef="d000e506-b6cb-1004-8511-6d78516dd70d">
+                <to idRef="d3b040a2-b6cb-1004-8511-6d78516dd70d"/>
+                <to idRef="d0f11b8e-b6cb-1004-8511-6d78516dd70d"/>
+            </from>
+            <from idRef="d0badc0e-b6cb-1004-8511-6d78516dd70d">
+                <to idRef="d3b040a2-b6cb-1004-8511-6d78516dd70d"/>
+                <to idRef="d0f11b8e-b6cb-1004-8511-6d78516dd70d"/>
+            </from>
+            <from idRef="d021710e-b6cb-1004-8511-6d78516dd70d">
+                <to idRef="d3b040a2-b6cb-1004-8511-6d78516dd70d"/>
+                <to idRef="d0f11b8e-b6cb-1004-8511-6d78516dd70d"/>
+            </from>
+            <from idRef="cf56d190-b6cb-1004-8511-6d78516dd70d">
+                <to idRef="d3b040a2-b6cb-1004-8511-6d78516dd70d"/>
+                <to idRef="d0f11b8e-b6cb-1004-8511-6d78516dd70d"/>
+            </from>
+        </arcs>
+    </directedGraph>
+    <interfaceToRelParamMap>
+        <iToRpMap relParamId="cf55c020-b6cb-1004-8511-6d78516dd70d" ifaceId="cf56d190-b6cb-1004-8511-6d78516dd70d"/>
+        <iToRpMap relParamId="cfb19648-b6cb-1004-8511-6d78516dd70d" ifaceId="cfb1964a-b6cb-1004-8511-6d78516dd70d"/>
+        <iToRpMap relParamId="d000e504-b6cb-1004-8511-6d78516dd70d" ifaceId="d000e506-b6cb-1004-8511-6d78516dd70d"/>
+        <iToRpMap relParamId="d021710c-b6cb-1004-8511-6d78516dd70d" ifaceId="d021710e-b6cb-1004-8511-6d78516dd70d"/>
+        <iToRpMap relParamId="d0446f40-b6cb-1004-8511-6d78516dd70d" ifaceId="d0446f42-b6cb-1004-8511-6d78516dd70d"/>
+        <iToRpMap relParamId="d0badc0c-b6cb-1004-8511-6d78516dd70d" ifaceId="d0badc0e-b6cb-1004-8511-6d78516dd70d"/>
+        <iToRpMap relParamId="d0f11b8c-b6cb-1004-8511-6d78516dd70d" ifaceId="d0f11b8e-b6cb-1004-8511-6d78516dd70d"/>
+        <iToRpMap relParamId="d11c94d8-b6cb-1004-8511-6d78516dd70d" ifaceId="d11c94da-b6cb-1004-8511-6d78516dd70d"/>
+        <iToRpMap relParamId="d3b040a0-b6cb-1004-8511-6d78516dd70d" ifaceId="d3b040a2-b6cb-1004-8511-6d78516dd70d"/>
+    </interfaceToRelParamMap>
+</modelinterface>

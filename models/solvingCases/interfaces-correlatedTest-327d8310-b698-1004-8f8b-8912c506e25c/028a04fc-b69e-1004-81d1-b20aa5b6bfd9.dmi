@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="028a04fc-b69e-1004-81d1-b20aa5b6bfd9" name="completeInterface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+    </interfaceinfo>
+    <parameters>
+        <parameter id="02cd8bb4-b69e-1004-81d1-b20aa5b6bfd9" name="h">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="6.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="02cd8bb5-b69e-1004-81d1-b20aa5b6bfd9" name="x">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="5.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="02cd8bb6-b69e-1004-81d1-b20aa5b6bfd9" name="y">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="3.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="02cd8bb7-b69e-1004-81d1-b20aa5b6bfd9" name="z">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="2.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="02cd8bb8-b69e-1004-81d1-b20aa5b6bfd9" name="j">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="1.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="02cd8bb9-b69e-1004-81d1-b20aa5b6bfd9" name="k">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="4.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="02cd8bba-b69e-1004-81d1-b20aa5b6bfd9" name="c">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="02cd8bbb-b69e-1004-81d1-b20aa5b6bfd9" name="f">
+            <currentType value="Real"/>
+            <data>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <relations/>
+    <contexts>
+        <context id="IFACE_MODEL_CXT" name="Model View"/>
+    </contexts>
+    <views>
+        <view name="Build View">
+            <context id="IFACE_BUILD_CXT" name="Build View">
+                <modelobjects>
+                    <parameter name="h" idRef="02cd8bb4-b69e-1004-81d1-b20aa5b6bfd9"/>
+                    <parameter name="x" idRef="02cd8bb5-b69e-1004-81d1-b20aa5b6bfd9"/>
+                    <parameter name="y" idRef="02cd8bb6-b69e-1004-81d1-b20aa5b6bfd9"/>
+                    <parameter name="z" idRef="02cd8bb7-b69e-1004-81d1-b20aa5b6bfd9"/>
+                    <parameter name="j" idRef="02cd8bb8-b69e-1004-81d1-b20aa5b6bfd9"/>
+                    <parameter name="k" idRef="02cd8bb9-b69e-1004-81d1-b20aa5b6bfd9"/>
+                    <parameter name="c" idRef="02cd8bba-b69e-1004-81d1-b20aa5b6bfd9"/>
+                    <parameter name="f" idRef="02cd8bbb-b69e-1004-81d1-b20aa5b6bfd9"/>
+                </modelobjects>
+            </context>
+        </view>
+        <view name="Interface Causality View">
+            <filter id="INPUTS_FILTER" name="Inputs">
+                <parameters>
+                    <parameter name="h" idRef="02cd8bb4-b69e-1004-81d1-b20aa5b6bfd9"/>
+                    <parameter name="x" idRef="02cd8bb5-b69e-1004-81d1-b20aa5b6bfd9"/>
+                    <parameter name="y" idRef="02cd8bb6-b69e-1004-81d1-b20aa5b6bfd9"/>
+                    <parameter name="z" idRef="02cd8bb7-b69e-1004-81d1-b20aa5b6bfd9"/>
+                    <parameter name="j" idRef="02cd8bb8-b69e-1004-81d1-b20aa5b6bfd9"/>
+                    <parameter name="k" idRef="02cd8bb9-b69e-1004-81d1-b20aa5b6bfd9"/>
+                </parameters>
+            </filter>
+            <filter id="OUTPUTS_FILTER" name="Outputs">
+                <parameters>
+                    <parameter name="f" idRef="02cd8bbb-b69e-1004-81d1-b20aa5b6bfd9" causality="Result"/>
+                    <parameter name="c" idRef="02cd8bba-b69e-1004-81d1-b20aa5b6bfd9" causality="Result"/>
+                </parameters>
+            </filter>
+            <filter id="INDETERMINATES_FILTER" name="Indeterminates"/>
+        </view>
+        <view name="System Causality View">
+            <filter id="6be3fdac-b6dc-1004-8ffd-33d1ecd1ea3f" name="Independent">
+                <parameters>
+                    <parameter name="h" idRef="02cd8bb4-b69e-1004-81d1-b20aa5b6bfd9"/>
+                    <parameter name="x" idRef="02cd8bb5-b69e-1004-81d1-b20aa5b6bfd9"/>
+                    <parameter name="y" idRef="02cd8bb6-b69e-1004-81d1-b20aa5b6bfd9"/>
+                    <parameter name="z" idRef="02cd8bb7-b69e-1004-81d1-b20aa5b6bfd9"/>
+                    <parameter name="j" idRef="02cd8bb8-b69e-1004-81d1-b20aa5b6bfd9"/>
+                    <parameter name="k" idRef="02cd8bb9-b69e-1004-81d1-b20aa5b6bfd9"/>
+                </parameters>
+            </filter>
+            <filter id="6be3fdad-b6dc-1004-8ffd-33d1ecd1ea3f" name="Intermediate"/>
+            <filter id="6be3fdae-b6dc-1004-8ffd-33d1ecd1ea3f" name="Result">
+                <parameters>
+                    <parameter name="c" idRef="02cd8bba-b69e-1004-81d1-b20aa5b6bfd9"/>
+                    <parameter name="f" idRef="02cd8bbb-b69e-1004-81d1-b20aa5b6bfd9"/>
+                </parameters>
+            </filter>
+        </view>
+    </views>
+    <directedGraph id="028a04fc-b69e-1004-81d1-b20aa5b6bfd9">
+        <nodes>
+            <node idRef="02cd8bb9-b69e-1004-81d1-b20aa5b6bfd9"/>
+            <node idRef="02cd8bb7-b69e-1004-81d1-b20aa5b6bfd9"/>
+            <node idRef="02cd8bb4-b69e-1004-81d1-b20aa5b6bfd9"/>
+            <node idRef="02cd8bbb-b69e-1004-81d1-b20aa5b6bfd9"/>
+            <node idRef="02cd8bba-b69e-1004-81d1-b20aa5b6bfd9"/>
+            <node idRef="02cd8bb6-b69e-1004-81d1-b20aa5b6bfd9"/>
+            <node idRef="02cd8bb5-b69e-1004-81d1-b20aa5b6bfd9"/>
+            <node idRef="02cd8bb8-b69e-1004-81d1-b20aa5b6bfd9"/>
+        </nodes>
+        <arcs>
+            <from idRef="02cd8bb5-b69e-1004-81d1-b20aa5b6bfd9">
+                <to idRef="02cd8bba-b69e-1004-81d1-b20aa5b6bfd9"/>
+            </from>
+            <from idRef="02cd8bb8-b69e-1004-81d1-b20aa5b6bfd9">
+                <to idRef="02cd8bbb-b69e-1004-81d1-b20aa5b6bfd9"/>
+            </from>
+            <from idRef="02cd8bb9-b69e-1004-81d1-b20aa5b6bfd9">
+                <to idRef="02cd8bbb-b69e-1004-81d1-b20aa5b6bfd9"/>
+            </from>
+            <from idRef="02cd8bb6-b69e-1004-81d1-b20aa5b6bfd9">
+                <to idRef="02cd8bba-b69e-1004-81d1-b20aa5b6bfd9"/>
+            </from>
+            <from idRef="02cd8bb4-b69e-1004-81d1-b20aa5b6bfd9">
+                <to idRef="02cd8bba-b69e-1004-81d1-b20aa5b6bfd9"/>
+            </from>
+            <from idRef="02cd8bb7-b69e-1004-81d1-b20aa5b6bfd9">
+                <to idRef="02cd8bbb-b69e-1004-81d1-b20aa5b6bfd9"/>
+            </from>
+        </arcs>
+    </directedGraph>
+</modelinterface>

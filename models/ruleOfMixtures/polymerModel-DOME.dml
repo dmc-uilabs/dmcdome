@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<model type="DomeModel" id="30361090-b6e3-1004-852e-73f7ffb2a5f6" name="Polymer curing model">
+    <modelinfo>
+        <version>0.0.1</version>
+    </modelinfo>
+    <parameters/>
+    <relations>
+        <relation type="Procedural" id="305e8534-b6e3-1004-852e-73f7ffb2a5f6" name="temperaturePropertyRelation">
+            <parameters>
+                <parameter id="312b1c98-b6e3-1004-852e-73f7ffb2a5f6" name="curingTemperature">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="80.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="312ddf3c-b6e3-1004-852e-73f7ffb2a5f6" name="nominalModulus">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="500000.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="31309f24-b6e3-1004-852e-73f7ffb2a5f6" name="actualModulus">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="500000.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <body><![CDATA[actualModulus = nominalModulus * curingTemperature/80]]></body>
+            <dependencies>
+                <dependency idRef="31309f24-b6e3-1004-852e-73f7ffb2a5f6">
+                    <parameter name="curingTemperature" idRef="312b1c98-b6e3-1004-852e-73f7ffb2a5f6" idRelationRef="305e8534-b6e3-1004-852e-73f7ffb2a5f6"/>
+                    <parameter name="nominalModulus" idRef="312ddf3c-b6e3-1004-852e-73f7ffb2a5f6" idRelationRef="305e8534-b6e3-1004-852e-73f7ffb2a5f6"/>
+                </dependency>
+            </dependencies>
+        </relation>
+    </relations>
+    <visualizations/>
+    <contexts>
+        <context id="BUILD_CXT" name="Build View">
+            <modelobjects>
+                <relation name="temperaturePropertyRelation" idRef="305e8534-b6e3-1004-852e-73f7ffb2a5f6"/>
+            </modelobjects>
+        </context>
+    </contexts>
+    <mappings/>
+</model>

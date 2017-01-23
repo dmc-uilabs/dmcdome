@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="05bac615-b6d0-1004-8396-684fd66df8c6" name="Default Interface">
+    <interfaceinfo>
+        <version>0.0.3</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="heightR1" idRef="05e05811-b6d0-1004-8396-684fd66df8c6" idRelationRef="05e0580b-b6d0-1004-8396-684fd66df8c6">
+                    <parameter name="heightR1" idRef="05e0580a-b6d0-1004-8396-684fd66df8c6" idRelationRef="05e05804-b6d0-1004-8396-684fd66df8c6"/>
+                </mappedParameter>
+                <mappedParameter name="heightR1" idRef="05e05812-b6d0-1004-8396-684fd66df8c6">
+                    <parameter name="heightR1" idRef="05e0580a-b6d0-1004-8396-684fd66df8c6" idRelationRef="05e05804-b6d0-1004-8396-684fd66df8c6"/>
+                </mappedParameter>
+                <mappedParameter name="lengthR2" idRef="069cfef1-b6d0-1004-8396-684fd66df8c6" idRelationRef="069cd7e7-b6d0-1004-8396-684fd66df8c6">
+                    <parameter name="lengthR2" idRef="069cd7e6-b6d0-1004-8396-684fd66df8c6" idRelationRef="069cd7e0-b6d0-1004-8396-684fd66df8c6"/>
+                </mappedParameter>
+                <mappedParameter name="widthR1" idRef="05e0580f-b6d0-1004-8396-684fd66df8c6" idRelationRef="05e0580b-b6d0-1004-8396-684fd66df8c6">
+                    <parameter name="widthR1" idRef="05e05808-b6d0-1004-8396-684fd66df8c6" idRelationRef="05e05804-b6d0-1004-8396-684fd66df8c6"/>
+                </mappedParameter>
+                <mappedParameter name="areaR2" idRef="069cfef4-b6d0-1004-8396-684fd66df8c6">
+                    <parameter name="areaR2" idRef="069cd7e4-b6d0-1004-8396-684fd66df8c6" idRelationRef="069cd7e0-b6d0-1004-8396-684fd66df8c6"/>
+                </mappedParameter>
+                <mappedParameter name="areaR2" idRef="069cd7eb-b6d0-1004-8396-684fd66df8c6" idRelationRef="069cd7e7-b6d0-1004-8396-684fd66df8c6">
+                    <parameter name="areaR2" idRef="069cd7e4-b6d0-1004-8396-684fd66df8c6" idRelationRef="069cd7e0-b6d0-1004-8396-684fd66df8c6"/>
+                </mappedParameter>
+                <mappedParameter name="volumeR2" idRef="069cfef0-b6d0-1004-8396-684fd66df8c6" idRelationRef="069cd7e7-b6d0-1004-8396-684fd66df8c6">
+                    <parameter name="volumeR2" idRef="069cd7e5-b6d0-1004-8396-684fd66df8c6" idRelationRef="069cd7e0-b6d0-1004-8396-684fd66df8c6"/>
+                </mappedParameter>
+                <mappedParameter name="lengthR2" idRef="069cfef2-b6d0-1004-8396-684fd66df8c6">
+                    <parameter name="lengthR2" idRef="069cd7e6-b6d0-1004-8396-684fd66df8c6" idRelationRef="069cd7e0-b6d0-1004-8396-684fd66df8c6"/>
+                </mappedParameter>
+                <mappedParameter name="areaR1" idRef="05e05810-b6d0-1004-8396-684fd66df8c6" idRelationRef="05e0580b-b6d0-1004-8396-684fd66df8c6">
+                    <parameter name="areaR1" idRef="05e05809-b6d0-1004-8396-684fd66df8c6" idRelationRef="05e05804-b6d0-1004-8396-684fd66df8c6"/>
+                </mappedParameter>
+                <mappedParameter name="areaR1" idRef="05e05814-b6d0-1004-8396-684fd66df8c6">
+                    <parameter name="areaR1" idRef="05e05809-b6d0-1004-8396-684fd66df8c6" idRelationRef="05e05804-b6d0-1004-8396-684fd66df8c6"/>
+                </mappedParameter>
+                <mappedParameter name="volumeR2" idRef="069cfef3-b6d0-1004-8396-684fd66df8c6">
+                    <parameter name="volumeR2" idRef="069cd7e5-b6d0-1004-8396-684fd66df8c6" idRelationRef="069cd7e0-b6d0-1004-8396-684fd66df8c6"/>
+                </mappedParameter>
+                <mappedParameter name="widthR1" idRef="05e05813-b6d0-1004-8396-684fd66df8c6">
+                    <parameter name="widthR1" idRef="05e05808-b6d0-1004-8396-684fd66df8c6" idRelationRef="05e05804-b6d0-1004-8396-684fd66df8c6"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects>
+            <parameter id="069cfef4-b6d0-1004-8396-684fd66df8c6" name="areaR2">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="12.0" unit="[scm]"/>
+                    </dataobject>
+                </data>
+            </parameter>
+            <parameter id="05e05814-b6d0-1004-8396-684fd66df8c6" name="areaR1">
+                <currentType value="Real"/>
+                <data>
+                    <dataobject type="Real">
+                        <quantity magnitude="12.0" unit="[scm]"/>
+                    </dataobject>
+                </data>
+            </parameter>
+        </intermediateobjects>
+    </mappingsandintermediates>
+    <lookupdata>
+        <objectmap>
+            <relation name="calculateArea" idRef="05e05804-b6d0-1004-8396-684fd66df8c6" idModelRef="05bac60c-b6d0-1004-8396-684fd66df8c6" description="key"/>
+            <relation name="calculateArea" idRef="05e0580b-b6d0-1004-8396-684fd66df8c6" description="value"/>
+            <relation name="calculateVolume" idRef="069cd7e0-b6d0-1004-8396-684fd66df8c6" idModelRef="05bac60c-b6d0-1004-8396-684fd66df8c6" description="key"/>
+            <relation name="calculateVolume" idRef="069cd7e7-b6d0-1004-8396-684fd66df8c6" description="value"/>
+        </objectmap>
+        <viewobjectmap/>
+        <relationobjectmap>
+            <parameter name="heightR1" idRef="05e0580a-b6d0-1004-8396-684fd66df8c6" idRelationRef="05e05804-b6d0-1004-8396-684fd66df8c6" description="key"/>
+            <parameter name="heightR1" idRef="05e05812-b6d0-1004-8396-684fd66df8c6" description="value"/>
+            <parameter name="areaR2" idRef="069cd7e4-b6d0-1004-8396-684fd66df8c6" idRelationRef="069cd7e0-b6d0-1004-8396-684fd66df8c6" description="key"/>
+            <parameter name="areaR2" idRef="069cfef4-b6d0-1004-8396-684fd66df8c6" description="value"/>
+            <parameter name="volumeR2" idRef="069cd7e5-b6d0-1004-8396-684fd66df8c6" idRelationRef="069cd7e0-b6d0-1004-8396-684fd66df8c6" description="key"/>
+            <parameter name="volumeR2" idRef="069cfef3-b6d0-1004-8396-684fd66df8c6" description="value"/>
+            <parameter name="lengthR2" idRef="069cd7e6-b6d0-1004-8396-684fd66df8c6" idRelationRef="069cd7e0-b6d0-1004-8396-684fd66df8c6" description="key"/>
+            <parameter name="lengthR2" idRef="069cfef2-b6d0-1004-8396-684fd66df8c6" description="value"/>
+            <parameter name="widthR1" idRef="05e05808-b6d0-1004-8396-684fd66df8c6" idRelationRef="05e05804-b6d0-1004-8396-684fd66df8c6" description="key"/>
+            <parameter name="widthR1" idRef="05e05813-b6d0-1004-8396-684fd66df8c6" description="value"/>
+            <parameter name="areaR1" idRef="05e05809-b6d0-1004-8396-684fd66df8c6" idRelationRef="05e05804-b6d0-1004-8396-684fd66df8c6" description="key"/>
+            <parameter name="areaR1" idRef="05e05814-b6d0-1004-8396-684fd66df8c6" description="value"/>
+        </relationobjectmap>
+    </lookupdata>
+</modelinterface>

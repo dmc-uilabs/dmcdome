@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="4e9d46dc-b6ae-1004-80ec-4fad9b9ba845" name="SimpleInterface">
+    <interfaceinfo>
+        <version>0.0.2</version>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="east" idRef="4ec862cc-b6ae-1004-80ec-4fad9b9ba845">
+                    <parameter name="east" idRef="2f7998dc-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="south" idRef="4ec862cf-b6ae-1004-80ec-4fad9b9ba845">
+                    <parameter name="south" idRef="2f802ae4-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="west" idRef="4ec862cd-b6ae-1004-80ec-4fad9b9ba845">
+                    <parameter name="west" idRef="2f7ca748-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="area" idRef="4ec862d0-b6ae-1004-80ec-4fad9b9ba845">
+                    <parameter name="area" idRef="333354b8-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+                <mappedParameter name="north" idRef="4ec862ce-b6ae-1004-80ec-4fad9b9ba845">
+                    <parameter name="north" idRef="2f7e7cd0-b6ae-1004-86d2-40c13943eb91" idModelRef="2f582594-b6ae-1004-86d2-40c13943eb91"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects/>
+    </mappingsandintermediates>
+</modelinterface>

@@ -1,0 +1,39 @@
+{
+  "interFace": {
+    "version": 66,
+    "modelId": "domeModelId",
+    "interfaceId": "domeInterfaceId",
+    "type": "interface",
+    "name": "domeInterfaceName",
+    "path": [
+      1,
+      2,
+      4,
+      12123
+    ]
+  },
+  "inParams": {
+    "externalLength": {
+      "name": "externalLength",
+      "type": "int",
+      "unit": "cm"
+    },
+    "width": {
+      "name": "width",
+      "type": "int",
+      "unit": "cm"
+    }
+  },
+  "outParams": {
+    "area": {
+      "name": "area",
+      "type": "int",
+      "unit": "cm2"
+    },
+    "perimeter": {
+      "name": "perimeter",
+      "type": "int",
+      "unit": "cm"
+    }
+  }
+}

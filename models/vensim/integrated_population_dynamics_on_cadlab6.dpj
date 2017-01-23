@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project id="3c5e02f2-c137-1004-897d-3bb20626b724" name="Integrated Population Dynamics Project">
+    <projectinfo>
+        <version>0.0.1</version>
+    </projectinfo>
+    <resources>
+        <resource type="model" id="3c5e02f4-c137-1004-897d-3bb20626b724" name="Key Coefficient Estimation Model">
+            <location id="d883bc6d-c09c-1004-8cd1-fb2c4b95d03d" hostName="CADLAB6.MIT.EDU" ipAddress="18.80.1.101" port="8080"/>
+            <subscribedInterfaceIds>
+                <ifaceId>d883bc6f-c09c-1004-8cd1-fb2c4b95d03d</ifaceId>
+            </subscribedInterfaceIds>
+        </resource>
+        <resource type="model" id="3c5e02f5-c137-1004-897d-3bb20626b724" name="World Population Dynamics Model">
+            <location id="d883bc70-c09c-1004-8cd1-fb2c4b95d03d" hostName="CADLAB6.MIT.EDU" ipAddress="18.80.1.101" port="8080"/>
+            <subscribedInterfaceIds>
+                <ifaceId>d883bc72-c09c-1004-8cd1-fb2c4b95d03d</ifaceId>
+            </subscribedInterfaceIds>
+        </resource>
+        <resource type="imodel" id="3c5e02f6-c137-1004-897d-3bb20626b724" name="iModel">
+            <location id="3c5e02f6-c137-1004-897d-3bb20626b724" hostName="" ipAddress="" port=""/>
+        </resource>
+    </resources>
+    <integrationModels>
+        <imodel id="3c5e02f6-c137-1004-897d-3bb20626b724" name="iModel"/>
+    </integrationModels>
+</project>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<model type="DomeModel" id="dc7cba93-d0ad-1004-8ef8-9e203c99f336" name="Drews iModel">
+    <modelinfo>
+        <version>0.0.1</version>
+        <imodel/>
+    </modelinfo>
+    <parameters/>
+    <relations/>
+    <visualizations/>
+    <subscriptions>
+        <subscription type="Subscription" id="dc7cbaa8-d0ad-1004-8ef8-9e203c99f336" name="Default Interface" version="1">
+            <locationIds resourceId="dc7cba91-d0ad-1004-8ef8-9e203c99f336" ifaceId="90a28cae-d093-1004-87f0-b45ab5d8f614"/>
+            <loginInfo>
+                <loginType>USER</loginType>
+                <loginName>darpa</loginName>
+                <password>tpjHYDlOLO8KPa87CcOH1b9sGL8=</password>
+                <serverPort>ceed2:8080</serverPort>
+            </loginInfo>
+            <parameters>
+                <parameter id="dc7cbaaa-d0ad-1004-8ef8-9e203c99f336" name="InParam">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="dc7cbaab-d0ad-1004-8ef8-9e203c99f336" name="OutParam">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <contexts>
+                <context id="SUBSCRIPTION_BUILD_CXT" name="Build View">
+                    <modelobjects>
+                        <parameter name="InParam" idRef="dc7cbaaa-d0ad-1004-8ef8-9e203c99f336"/>
+                        <parameter name="OutParam" idRef="dc7cbaab-d0ad-1004-8ef8-9e203c99f336"/>
+                    </modelobjects>
+                </context>
+            </contexts>
+            <directedGraph id="dc7cbaa8-d0ad-1004-8ef8-9e203c99f336">
+                <nodes>
+                    <node idRef="dc7cbaaa-d0ad-1004-8ef8-9e203c99f336"/>
+                    <node idRef="dc7cbaab-d0ad-1004-8ef8-9e203c99f336"/>
+                </nodes>
+                <arcs>
+                    <from idRef="dc7cbaaa-d0ad-1004-8ef8-9e203c99f336">
+                        <to idRef="dc7cbaab-d0ad-1004-8ef8-9e203c99f336"/>
+                    </from>
+                </arcs>
+            </directedGraph>
+            <paramIdMap>
+                <entry thisId="dc7cbaaa-d0ad-1004-8ef8-9e203c99f336" origId="dc7cba57-d0ad-1004-8ef8-9e203c99f336"/>
+                <entry thisId="dc7cbaab-d0ad-1004-8ef8-9e203c99f336" origId="dc7cba5a-d0ad-1004-8ef8-9e203c99f336"/>
+            </paramIdMap>
+        </subscription>
+        <subscription type="Subscription" id="dc7cbac7-d0ad-1004-8ef8-9e203c99f336" name="Default Interface" version="1">
+            <locationIds resourceId="dc7cba92-d0ad-1004-8ef8-9e203c99f336" ifaceId="90a28cc5-d093-1004-87f0-b45ab5d8f614"/>
+            <loginInfo>
+                <loginType>USER</loginType>
+                <loginName>darpa</loginName>
+                <password>tpjHYDlOLO8KPa87CcOH1b9sGL8=</password>
+                <serverPort>ceed2:8080</serverPort>
+            </loginInfo>
+            <parameters>
+                <parameter id="dc7cbac9-d0ad-1004-8ef8-9e203c99f336" name="InParam">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="dc7cbaca-d0ad-1004-8ef8-9e203c99f336" name="OutParam">
+                    <currentType value="Real"/>
+                    <data>
+                        <dataobject type="Real">
+                            <quantity magnitude="0.0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <contexts>
+                <context id="SUBSCRIPTION_BUILD_CXT" name="Build View">
+                    <modelobjects>
+                        <parameter name="InParam" idRef="dc7cbac9-d0ad-1004-8ef8-9e203c99f336"/>
+                        <parameter name="OutParam" idRef="dc7cbaca-d0ad-1004-8ef8-9e203c99f336"/>
+                    </modelobjects>
+                </context>
+            </contexts>
+            <directedGraph id="dc7cbac7-d0ad-1004-8ef8-9e203c99f336">
+                <nodes>
+                    <node idRef="dc7cbac9-d0ad-1004-8ef8-9e203c99f336"/>
+                    <node idRef="dc7cbaca-d0ad-1004-8ef8-9e203c99f336"/>
+                </nodes>
+                <arcs>
+                    <from idRef="dc7cbac9-d0ad-1004-8ef8-9e203c99f336">
+                        <to idRef="dc7cbaca-d0ad-1004-8ef8-9e203c99f336"/>
+                    </from>
+                </arcs>
+            </directedGraph>
+            <paramIdMap>
+                <entry thisId="dc7cbac9-d0ad-1004-8ef8-9e203c99f336" origId="dc7cba73-d0ad-1004-8ef8-9e203c99f336"/>
+                <entry thisId="dc7cbaca-d0ad-1004-8ef8-9e203c99f336" origId="dc7cba76-d0ad-1004-8ef8-9e203c99f336"/>
+            </paramIdMap>
+        </subscription>
+    </subscriptions>
+    <contexts>
+        <context id="BUILD_CXT" name="Build View">
+            <modelobjects>
+                <subscription name="Default Interface" idRef="dc7cbaa8-d0ad-1004-8ef8-9e203c99f336"/>
+                <subscription name="Default Interface" idRef="dc7cbac7-d0ad-1004-8ef8-9e203c99f336"/>
+            </modelobjects>
+        </context>
+        <context id="FILE_CXT" name="Files"/>
+    </contexts>
+    <mappings>
+        <modelMappings>
+            <mappedParameter name="OutParam" idRef="dc7cbaab-d0ad-1004-8ef8-9e203c99f336">
+                <parameter name="InParam" idRef="dc7cbac9-d0ad-1004-8ef8-9e203c99f336"/>
+            </mappedParameter>
+        </modelMappings>
+    </mappings>
+    <auxfiles/>
+</model>

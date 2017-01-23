@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="c55c9659-c37a-1004-851d-d35b534f9d33" name="Default Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <parameters>
+        <parameter id="c55c9673-c37a-1004-851d-d35b534f9d33" name="Avg">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="c55c9676-c37a-1004-851d-d35b534f9d33" name="Sum">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="c55c9735-c37a-1004-851d-d35b534f9d33" name="i">
+            <currentType value="Iteration Variable"/>
+            <data>
+                <dataobject type="Iteration Variable">
+                    <quantity magnitude="0.0" unit="s"/>
+                    <increment>1.0</increment>
+                    <limit>10.0</limit>
+                </dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <visualizations/>
+    <relations>
+        <relation type="Iteration" id="c55c9662-c37a-1004-851d-d35b534f9d33" name="Iteration Relation while loop">
+            <parameters>
+                <parameter id="c55c9672-c37a-1004-851d-d35b534f9d33" name="Avg">
+                    <currentType value="Integer"/>
+                    <data>
+                        <dataobject type="Integer">
+                            <quantity magnitude="0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="c55c9675-c37a-1004-851d-d35b534f9d33" name="Sum">
+                    <currentType value="Integer"/>
+                    <data>
+                        <dataobject type="Integer">
+                            <quantity magnitude="0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="c55c9734-c37a-1004-851d-d35b534f9d33" name="i">
+                    <currentType value="Iteration Variable"/>
+                    <data>
+                        <dataobject type="Iteration Variable">
+                            <quantity magnitude="0.0" unit="s"/>
+                            <increment>1.0</increment>
+                            <limit>10.0</limit>
+                        </dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <initcondition><![CDATA[]]></initcondition>
+            <condition><![CDATA[1]]></condition>
+            <body><![CDATA[Sum = Sum + 2
+Avg = Avg + 1]]></body>
+            <iterationtype>while loop</iterationtype>
+            <broadcasting value="true"/>
+            <dependencies>
+                <dependency idRef="c55c9672-c37a-1004-851d-d35b534f9d33">
+                    <parameter name="i" idRef="c55c9734-c37a-1004-851d-d35b534f9d33" idRelationRef="c55c9662-c37a-1004-851d-d35b534f9d33"/>
+                </dependency>
+                <dependency idRef="c55c9675-c37a-1004-851d-d35b534f9d33">
+                    <parameter name="i" idRef="c55c9734-c37a-1004-851d-d35b534f9d33" idRelationRef="c55c9662-c37a-1004-851d-d35b534f9d33"/>
+                </dependency>
+            </dependencies>
+        </relation>
+    </relations>
+    <contexts>
+        <context id="IFACE_MODEL_CXT" name="Model View">
+            <modelobjects>
+                <relation name="Iteration Relation while loop" idRef="c55c9662-c37a-1004-851d-d35b534f9d33"/>
+            </modelobjects>
+        </context>
+    </contexts>
+    <views>
+        <view name="Build View">
+            <context id="IFACE_BUILD_CXT" name="Build View">
+                <modelobjects>
+                    <parameter name="Avg" idRef="c55c9673-c37a-1004-851d-d35b534f9d33"/>
+                    <parameter name="Sum" idRef="c55c9676-c37a-1004-851d-d35b534f9d33"/>
+                    <parameter name="i" idRef="c55c9735-c37a-1004-851d-d35b534f9d33"/>
+                </modelobjects>
+            </context>
+        </view>
+        <view name="Interface Causality View">
+            <filter id="INPUTS_FILTER" name="Inputs">
+                <parameters>
+                    <parameter name="i" idRef="c55c9735-c37a-1004-851d-d35b534f9d33"/>
+                </parameters>
+            </filter>
+            <filter id="OUTPUTS_FILTER" name="Outputs">
+                <parameters>
+                    <parameter name="Sum" idRef="c55c9676-c37a-1004-851d-d35b534f9d33" causality="Result"/>
+                    <parameter name="Avg" idRef="c55c9673-c37a-1004-851d-d35b534f9d33" causality="Result"/>
+                </parameters>
+            </filter>
+            <filter id="INDETERMINATES_FILTER" name="Indeterminates"/>
+        </view>
+    </views>
+    <directedGraph id="c55c9659-c37a-1004-851d-d35b534f9d33">
+        <nodes>
+            <node idRef="c55c9673-c37a-1004-851d-d35b534f9d33"/>
+            <node idRef="c55c9676-c37a-1004-851d-d35b534f9d33"/>
+            <node idRef="c55c9735-c37a-1004-851d-d35b534f9d33"/>
+        </nodes>
+        <arcs>
+            <from idRef="c55c9735-c37a-1004-851d-d35b534f9d33">
+                <to idRef="c55c9673-c37a-1004-851d-d35b534f9d33"/>
+                <to idRef="c55c9676-c37a-1004-851d-d35b534f9d33"/>
+            </from>
+        </arcs>
+    </directedGraph>
+    <interfaceToRelParamMap>
+        <iToRpMap relParamId="c55c9673-c37a-1004-851d-d35b534f9d33" ifaceId="c55c9671-c37a-1004-851d-d35b534f9d33"/>
+        <iToRpMap relParamId="c55c9676-c37a-1004-851d-d35b534f9d33" ifaceId="c55c9674-c37a-1004-851d-d35b534f9d33"/>
+        <iToRpMap relParamId="c55c9735-c37a-1004-851d-d35b534f9d33" ifaceId="c55c9733-c37a-1004-851d-d35b534f9d33"/>
+    </interfaceToRelParamMap>
+</modelinterface>

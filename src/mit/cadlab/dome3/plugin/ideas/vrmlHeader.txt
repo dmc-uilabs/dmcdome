@@ -1,0 +1,78 @@
+#VRML V2.0 utf8
+#Interactive VRML
+WorldInfo{ info "Apr-28-2003  10:46:51" title "I-DEAS: vrml.wrl" }
+
+DEF RecordIn Script { eventIn SFInt32 record eventOut SFInt32 store
+    url "javascript:
+    function initialize() { store = -1; }
+    function record(value) {
+        store = value; print(store); }"
+}
+
+Shape { appearance Appearance {
+    material DEF MatSet Material { transparency 0.0 shininess -1.0 ambientIntensity -1.0 } } }
+
+PROTO Entity [ exposedField SFNode geometry NULL 
+exposedField SFNode defaultMaterial NULL exposedField SFNode currentMaterial NULL exposedField SFBool isSelected FALSE 
+exposedField SFBool enabled  TRUE exposedField SFInt32 state 0 exposedField SFString name "" 
+exposedField MFInt32 id [0,0,0] exposedField SFInt32 type 0 eventOut SFBool isOver  ] { 
+Group { children [   Switch { 
+whichChoice IS state choice [ Shape  { appearance Appearance { material IS currentMaterial } geometry IS geometry }   ] 
+} ] } } 
+
+PROTO Face [ exposedField SFFloat  ambientIntensity .2 exposedField SFColor  diffuseColor  .8 .8 .8 
+exposedField SFColor  emissiveColor  0 0 0  exposedField SFFloat  shininess .2 
+exposedField SFColor  specularColor  0 0 0  exposedField SFColor  originalEmissiveColor  0 0 0  
+field SFNode  geometry NULL exposedField SFBool isSelected  FALSE exposedField SFBool enabled  TRUE 
+exposedField SFFloat transparency 0 exposedField SFInt32 state 0 exposedField SFString name "" 
+exposedField MFInt32 id [0,0,0] exposedField SFInt32 type 0 eventOut SFBool isOver  ] { 
+Group { children [  Switch { 
+whichChoice IS state choice [ Shape  { appearance Appearance { material Material { ambientIntensity IS ambientIntensity 
+diffuseColor  IS diffuseColor emissiveColor  IS emissiveColor shininess IS shininess specularColor  IS specularColor 
+transparency  IS transparency } } geometry IS geometry } ] } ] } } 
+
+PROTO Annotation [ field SFNode geometry NULL 
+exposedField MFNode BBChild  [Group{}] exposedField SFNode defaultMaterial  NULL 
+exposedField SFNode currentMaterial  NULL  exposedField SFBool isSelected FALSE exposedField SFBool enabled  TRUE 
+exposedField SFInt32 state  0 exposedField SFString name "" exposedField MFInt32 id [0,0,0] exposedField SFInt32 type 0 
+eventOut SFBool isOver eventOut SFTime touchTime ] { Group { children [ TouchSensor  {  enabled IS enabled 
+isOver  IS isOver touchTime IS touchTime } Switch { whichChoice IS state choice [ Group { children [ Shape  { 
+appearance Appearance { material IS currentMaterial } geometry IS geometry } Group { children IS BBChild } ] } ] } ] } 
+} 
+
+PROTO Part [ 
+exposedField SFString name "" exposedField SFInt32 hId 0 exposedField SFInt32 nlId 0 
+exposedField SFFloat transparency 0 exposedField SFVec3f translation  0 0 0 exposedField SFRotation rotation  0 0 1 0 
+exposedField SFInt32 state 0 exposedField MFNode children  [Group{}] exposedField MFNode lowestDetail  [Group{}] 
+field MFFloat range 0 field SFVec3f center  0 0 0 ] { Group { children [ Transform { translation IS translation 
+rotation IS rotation children [ Switch { whichChoice IS state choice [ LOD{ level[ Group{children[ 
+Group{children IS children} ]} Group{children IS lowestDetail} WorldInfo{} ] range IS range } ] } ]  } ] } } 
+
+PROTO BBoard [ field SFRotation rotation  0 0 1 0 field SFVec3f  translation  0 0 0 exposedField SFVec3f  scale  1 1 1 
+exposedField SFVec3f  axisOfRotation 0 0 0 exposedField MFNode  children  [Group{}] ] { Transform { 
+rotation IS rotation translation IS translation scale IS scale children [ Billboard { axisOfRotation IS axisOfRotation 
+children IS children } ] } } 
+
+PROTO Assembly [ exposedField SFString name "" exposedField SFInt32 whichConfig 0 
+exposedField MFNode configList [Group{}] ] { Group{ children[ Switch{ whichChoice IS whichConfig choice IS configList } 
+] } } 
+
+PROTO Configuration [ exposedField SFString name "" exposedField MFNode children [Group{}] ] { Group{ 
+children IS children } } 
+
+PROTO ConfigInstance [ exposedField SFVec3f translation 0 0 0 
+exposedField SFRotation rotation 0 0 1 0 exposedField MFNode children [Group{}] ] { Transform{ 
+translation IS translation rotation IS rotation children IS children } } 
+
+PROTO ProdStructure [ 
+exposedField MFString structure "" ] {Group{}} 
+
+PROTO Measure [ exposedField SFBool enabled  TRUE eventOut SFBool isOver 
+eventOut SFTime touchTime eventOut SFVec3f hitPoint_changed exposedField MFNode MPSChild [Group{}] ] { Group { 
+children [ TouchSensor  {  enabled IS enabled isOver  IS isOver touchTime IS touchTime 
+hitPoint_changed IS hitPoint_changed } Group { children IS MPSChild } ] } } 
+
+PROTO MeasurePointSet [ 
+field SFNode coord NULL exposedField SFInt32 state -1 exposedField SFInt32 hId 0 ] { Group { children [ Switch { 
+whichChoice IS state choice [ Shape  { appearance Appearance { material Material {emissiveColor 1 1 1} } 
+geometry PointSet { coord IS coord } } ] } ] } } 
